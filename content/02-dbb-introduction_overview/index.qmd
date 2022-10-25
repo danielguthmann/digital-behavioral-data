@@ -1,0 +1,221 @@
+---
+title: "Einführung und Überblick"
+subtitle: "Digital behavioral data"
+author: 
+  - name: Christoph Adrian 
+    url: https://twitter.com/chrdrn
+    affiliation: Chair of Communication Science
+    affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
+date: 27 10 2022
+date-format: "DD.MM.YYYY"
+format:
+  revealjs:
+    theme: ../../slidetheme.scss
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: images/FAU_FB_WiSo_Q_RGB_blue.png
+    footer: "[Home](https://niklasjohannes.github.io/power-workshop/)"
+execute:
+  echo: true
+---
+
+## Herzlich willkommen!
+
+#### Christoph Adrian
+
+-   seit 2016: Research Assistant / PhD Candidate FAU
+-   M. Sc. Sozialökonomik (FAU)
+-   B.A. Sozialökonomik (FAU)
+
+#### Forschungs- und Lehrschwerpunkte
+
+-   Computer-assisted and automated (corpus-based) content analysis (with R)
+-   Social media research (Twitter)
+-   Potential influence of media use on attitude changes
+
+## Und nun zu Ihnen!
+
+#### Vorstellungsrunde
+
+-   Wie heißen Sie?
+-   Was und wo haben Sie im Bachelor studiert?
+-   Welches soziale Netzwerk/Medium nutzen Sie aktuell am häufigsten?
+-   Welche Erwartungen haben Sie an das Seminar?
+
+# Computation Social Science & Digital behavioral data {background-color="#E6002E"}
+
+Was ist das eigentlich ...
+
+... und was können wir damit machen?
+
+## Computation Social Science
+
+::: columns
+::: {.column width="50%"}
+#### Sie sind gefragt!
+
+Was verstehen Sie unter Computation Social Science?
+
+Scannen Sie bitten den QR-Code oder besuchen Sie den Link
+:::
+
+::: {.column width="50%"}
+![](images/mentimeter_qr_code.png)
+
+Link: https://www.menti.com/alv6himtf4x7
+:::
+:::
+
+## 
+
+::: {style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;"}
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/al2k4h28jd6rzbdx9bcumajptfag6kpd/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
+
+</iframe>
+:::
+
+## Alles beginnt mit CSS
+
+![](images/wordcloud.png){fig-align="center"}
+
+## Inwiefern hilft uns CSS?
+
+**Beispiel: Typische Fragebogenitems in Surveys**
+
+-   *Wie häufig sprechen Sie mit Ihren Freund\*Innen am Smartphone?*
+-   *Wie viele Stunden verbringen Sie außerhalb Ihrer Wohnung?*
+-   *Wie häufig haben Sie sich in den letzten 14 Tage mit Freund\*Innen getroffen*
+
+. . .
+
+**Problem**:
+
+-   🍀 Bestenfalls gute Schätzung
+
+-   💩Schlechtestenfalls falsche Erinnerung
+
+## Digital Behavioral Data als (Teil) der Antwort
+
+Digitale (smarte) Geräte und Sensoren können sich besser an bestimmte Fakten "erinnern" als das menschliche Gedächnis
+
+Beispiel: Socio Patterns - RFID Sensoren zu Messung von Face-to-Face Interaktionen
+
+## Digital Behavioral Data als (Teil) der Antwort
+
+Häufig sind Sensoren bereits in alltägliche Technologie eingebaut und produzieren digitale Verhaltensdaten als ein "Nebenprodukt".
+
+Beispiel: COVID-19 Mobiliy Monitor
+
+## Digital Behavioral Data
+
+-   Definition
+
+-   GESIS -Schema
+
+## Grundidee des Seminars
+
+-   Fokus auf Konzeption & Datenerhebung
+
+-   Ausblick auf Datenverarbeitung und -analyse
+
+-   Lernziele
+
+# Kleine Pause (5 min)
+
+# Überblick & Organisation {background-color="#E6002E"}
+
+Seminarplan, Themen, Prüfungsleistungen
+
+## Seminarplan {.smaller}
+
+| Sitzung | Datum      | Thema                          | Referent\*Innen |
+|---------|------------|--------------------------------|-----------------|
+| 1       | 20.10.2022 | Planspielwoche                 |                 |
+| 2       | 27.10.2022 | Kick-Off Session               | C. Adrian       |
+| 3       | 03.11.2022 | DBD: Einführung und Überblick  | C. Adrian       |
+| 4       | 10.11.2022 | DBD: Datenerhebung             | C. Adrian       |
+| 5       | 17.11.2022 | API-Access (I): *Twitter*      |                 |
+| 6       | 24.11.2022 | API-Access (II): *YouTube*     |                 |
+| 7       | 01.12.2022 | API-Access (II): *Reddit*      |                 |
+| 8       | 08.12.2022 | Webscraping: *TikTok*          |                 |
+| 9       | 15.12.2022 | ESM: *m-path*                  |                 |
+|         |            | [Weihnachtspause]{.smallcaps}  |                 |
+| 10      | 12.01.2023 | Data Donations                 |                 |
+| 11      | 19.01.2023 | Mock-Up-Virtual Environments   |                 |
+| 12      | 26.01.2023 | Open Science                   |                 |
+| 13      | 02.02.2023 | Guest Lecture                  |                 |
+| 14      | 09.02.2023 | Semesterabschluss & Evaluation | C. Adrian       |
+
+## Organisation der Lehre auf einen Blick
+
+-   StudOn: Kursmaterialien
+
+-   Mail: wichtige Ankündigungen durch Dozent & persönliche Fragen an Dozenten
+
+## Leistungsanforderungen & Prüfungsleistungen
+
+-   Regelmäßige Teilnahme an den Sitzungen
+
+-   Präsentation
+
+-   Diskussionbeitrag
+
+-   Seminarbericht
+
+## Aufteilung Präsentationsthemen
+
+1.  
+
+## Präsentationsvorbereitung
+
+-   Literatur
+
+-   Sprechstunde
+
+-   Einreichung vollständiger Präsentationsentwurf
+
+-   Umfang & Inhalt
+
+## Seminarbericht
+
+-   Formalia
+
+-   Details
+
+-   Deadline
+
+## Hinweise und offene Frage
+
+-   Understand the importance of effect sizes
+-   How to formulate a smallest effect size of interest
+-   Know when you don't have enough information
+
+## Quellen
+
+-   
+
+# Bis zur nächsten Sitzung!
+
+## 
+
+## Materials
+
+-   Everything is up on: <https://github.com/niklasjohannes/power-workshop>
+-   Just download everything as a zip file (Code -\> Zip)
+-   Rendered to follow along here: <https://niklasjohannes.github.io/power-workshop/>
+-   There, you'll also find instructions on how to download R, RStudio, and GPower
+-   For discussions we use Discord:
+
+## Stealing stuff
+
+I cite all my sources, but relied heavily on the following:
+
+-   Julian Quandt's power simulation [tutorials](https://julianquandt.com/post/power-analysis-by-data-simulation-in-r-part-i/)
+-   Courses by Daniel Lakens ([textbook](https://lakens.github.io/statistical_inferences/))
+-   [Tutorial](https://aosmith.rbind.io/2018/08/29/getting-started-simulating-data/) by Ariel Muldoon
+-   Ben Staton on [Monte Carlo methods](https://bstaton1.github.io/au-r-workshop/ch4.html)
+-   [R for Data Science](https://r4ds.had.co.nz/)
+
+## 

@@ -1,0 +1,342 @@
+---
+title: "Kick-Off"
+subtitle: "Digital behavioral data"
+author: 
+  - name: Christoph Adrian 
+    url: https://twitter.com/chrdrn
+    affiliation: Chair of Communication Science
+    affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
+date: 27 10 2022
+date-format: "DD.MM.YYYY"
+format:
+  revealjs:
+    theme: ../../slidetheme.scss
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: images/FAU_FB_WiSo_Q_RGB_blue.png
+    footer: "[Digital behavioral data - Kick Off](https://niklasjohannes.github.io/power-workshop/)"
+execute:
+  echo: true
+bibliography: references.bib
+csl: ../../apa.csl
+---
+
+## Herzlich willkommen!
+
+#### Vorstellungsrunde
+
+[**Christoph Adrian**]{.smallcaps}
+
+-   seit 2016: Research Assistant / PhD Candidate FAU
+-   M. Sc. Sozialökonomik (FAU)
+-   B.A. Sozialökonomik (FAU)
+
+[**Forschungs- und Lehrschwerpunkte**]{.smallcaps}
+
+-   Computer-assisted and automated (corpus-based) content analysis (with R)
+-   Social media research (Twitter)
+-   Potential influence of media use on attitude changes
+
+## Und nun zu Ihnen!
+
+#### Vorstellungsrunde
+
+-   Wie heißen Sie?
+-   Was und wo haben Sie im Bachelor studiert?
+-   Was studieren Sie aktuell?
+-   Welches soziale Netzwerk/Medium nutzen Sie aktuell am häufigsten?
+-   Welche Erwartungen haben Sie an das Seminar?
+
+## COVID-19 lässt grüßen
+
+#### Corona-Regeln im Wintersemester
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+<br><br>
+
+**Um sich und andere zu schützen bitte wir Sie herzlich:**
+
+**Tragen Sie weiterhin eine FFP2- oder OP-Maske!**
+
+::: {style="text-align: center; margin-top: 1em"}
+[COVID-o-mat](https://covid-o-mat.de/){preview-link="true" style="text-align: center"}
+:::
+:::
+
+::: {.column width="50%"}
+![](images/fau_mask.png){fig-align="center"}
+:::
+:::
+
+# Einführung in das Seminar {background-color="#E6002E"}
+
+Motivation & Grundidee
+
+## Was verstehen Sie unter Digital Behavioral Data?
+
+#### Interaktive Session
+
+::: columns
+::: {.column width="50%"}
+Bitte scannen Sie den **QR-Cod**e oder nutzen Sie folgenden **Link** für die Teilnahme an einer kurzen Umfrage:
+
+-   [**https://www.menti.com/alxiy2f2n6o**]{.smallcaps}**j**
+
+-   Temporary Voting Code: [**49 29 72 5**]{.smallcaps}
+:::
+
+::: {.column width="50%"}
+![](images/mentimeter-qr-dbd.png){fig-align="center" width="300"}
+:::
+:::
+
+## Ergebnis
+
+::: {style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;"}
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/algh3e97r18k5a4wrgt77kcxsm5hermr/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
+
+</iframe>
+:::
+
+## Ein Definitionsversuch von DBD
+
+#### nach @weller2021
+
+::: columns
+::: {.column width="50%"}
+... fasst eine Vielzahl von möglichen **Datenquellen** zusammen, die verschiedene **Arten von Aktivitäten** aufzeichnen
+
+... können dabei helfen, **Meinungen, Verhalten und Merkmale der menschlichen Nutzung** digitaler Technologien zu erkennen
+:::
+
+::: {.column width="50%"}
+![](images/dbd_graph/Slide1.PNG){fig-align="center"}
+:::
+:::
+
+## Beispiel: *COVID-19 Mobility Monitor*
+
+![](images/mobility_monitor.png){fig-align="center"}
+
+## Beispiel: *Datenvolumen einer Internet-Minute*
+
+[![](images/one_minute_internet.jpg)](https://www.statista.com/chart/25443/estimated-amount-of-data-created-on-the-internet-in-one-minute/)
+
+## Kernbereiche von DBD
+
+#### in Anlehnung an Aufteilung der [GESIS](https://www.gesis.org/institut/digitale-verhaltensdaten)
+
+::: columns
+::: {.column width="50%"}
+![](images/dbd_graph/dbd_pillars_3.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+<br>
+
+-   Unterschiedliche Heraus- bzw. Anforderungen (je nach Bereich)
+
+-   Seminar legt **Schwerpunkt auf Datenerhebung**, mit kurzen Ausblick auf die anderen Bereiche
+:::
+:::
+
+# Überblick & Organisation {background-color="#E6002E"}
+
+Seminarplan, Themen, Prüfungsleistungen
+
+## Seminarplan {.smaller}
+
+| Sitzung             | Datum                        | Thema                                          | Referent\*Innen                                    |
+|---------------------|------------------------------|------------------------------------------------|----------------------------------------------------|
+| [**1**]{.smallcaps} | [**26.10.2022**]{.smallcaps} | [**Kick-Off Session**]{.smallcaps}             | Christoph Adrian                                   |
+| 2                   | 02.11.2022                   | DBD: Einführung und Überblick                  | Christoph Adrian                                   |
+| 3                   | 09.11.2022                   | DBD: Datenerhebung                             | Christoph Adrian                                   |
+| 4                   | 16.11.2022                   | API-Access (I): *Twitter*                      |                                                    |
+| 5                   | 23.11.2022                   | API-Access (II): *YouTube*                     |                                                    |
+| 6                   | 30.11.2022                   | API-Access (II): *Reddit*                      |                                                    |
+| 7                   | 07.12.2022                   | Webscraping: *TikTok*                          |                                                    |
+| 8                   | 14.12.2022                   | ESM: *m-path*                                  |                                                    |
+|                     |                              | *WEIHNACHTSPAUSE*                              |                                                    |
+| 9                   | 12.01.2023                   | Data Donations                                 |                                                    |
+| 10                  | 19.01.2023                   | Mock-Up-Virtual Environments                   |                                                    |
+| 11                  | 26.01.2023                   | Open Science                                   |                                                    |
+| 12                  | 02.02.2023                   | ***Guest Lecture: Linking DBD & Survey data*** | [Johannes Breuer](https://www.johannesbreuer.com/) |
+| 13                  | 09.02.2023                   | Semesterabschluss & Evaluation                 | Christoph Adrian                                   |
+
+## Typische Session
+
+#### Erst Präsentation, dann Vertiefung
+
+::: columns
+::: {.column width="50%"}
+**Präsentation (ca. 35-45 Min)**
+
+-   Umfasst Ihre **Präsentation** (inkl. Zeit für Fragen und Diskussionen)
+
+-   Option auf weitere, offenere **Diskussion** im Plenum
+:::
+
+::: {.column width="50%"}
+**Group Activity (ca. 45 - 55 Min)**
+
+-   kleine Gruppenarbeiten zur Vertiefung
+
+-   variiert abhängig vom Thema der jeweiligen Sitzung
+
+-   Beispiele:
+
+    -   Anwendung von Tool/Methode mit anschließender kritschen Diskussion
+
+    -   Erstellung eines einfachen Forschungs- oder Analysedesign
+:::
+:::
+
+## Different tools for different tasks
+
+#### Organisation der Lehre auf einen Blick
+
+-   **MS Teams:** wichtige Ankündigungen, asynchrone Unterhaltungen & Fragen zum Kurs
+
+-   **StudOn**: Kursmaterialien, ggf. Beispieldatensätze und Präsentationsaufnahmen
+
+-   **Email:** persönliche Fragen an Dozent
+
+-   ***Zoom**: ggf. für Sitzung & Sprechstunde*
+
+## What is expected
+
+#### Leistungsanforderungen & Prüfungsleistungen
+
+-   **Regelmäßige Teilnahme** an den Sitzungen (max. 2 unentschuldigtes Fehlen)
+
+-   Eigenständige Auf- und Vorbereitung von **Pflichtlektüre** ("bestehen")
+
+-   **Präsentation** (50%)
+
+-   **Seminarbericht** (50%)
+
+## Präsentation {.smaller}
+
+**Umfang & Inhalt:** max. 30 Min.
+
+-   \~ 25 Min.: Zentrale Begriffe, Definitionen und Merkmale der jeweiligen Plattform, Methode und/oder des Tools inklusive kurzem Überblick über Forschung(-sfeld)
+-   \~ 5 Min: Fragen & Diskussion
+-   Ziel: Vorstellung Tool & Beispiel für Forschung(-sdesign)
+
+**Sprechstunde:**
+
+-   Einreichung vollständiger Präsentationsentwurf mindestens eine Woche + 24 Stunden vor Ihrer Präsentation per E-Mail an christoph.adrian\@fau.de
+-   Ausführliches Feedback und Tipps zur Überarbeitung
+
+**Literatur:**
+
+-   Siehe Syllabus & Teams/StudOn (PDFs werden bereitgestellt)
+
+## Ein kurzer Appell
+
+#### Hinweis zu "Abbruch" bzw. Nicht-Erscheinen
+
+-   Ihre Anmeldung bedeutet üblicherweise eine sehr intensive, **aufwändige** **Betreuung** für uns Lehrende
+
+-   Ärgerlicherweise gibt es **Studierende**, die sich anmelden und betreuen lassen, aber dann einfach irgendwann (teilweise sehr kurzfristig) "**verschwinden**".
+
+⚠️ **Bitte seien Sie sich folgender Dinge bewusst:**
+
+-   Die „**Prüfung**" bzw. die „Prüfungszeit" bei einem Seminar **beginnt** mit der Bearbeitungszeit und damit mit der **Ausgabe des Themas an die Kandidaten.**
+
+-   **24h Bedenkzeit** / Rücktrittsrecht
+
+## Let's spin the wheel
+
+#### Vergabe der Präsentationsthemen
+
+::: columns
+::: {.column width="50%"}
+Bitte scannen Sie den **QR-Cod**e oder nutzen Sie folgenden **Link** und wählen Sie Ihr favorisiertes Thema aus
+
+-   [**https://www.menti.com/alj8fncx1zz4**]{.smallcaps}
+
+-   Temporary Voting Code: **7312 2522**
+:::
+
+::: {.column width="50%"}
+![](images/mentimeter-qr-topics.png){fig-align="center" width="300"}
+:::
+:::
+
+## 
+
+::: {style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;"}
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/alquyidk5k4ckv6dr67qu2pd5ihbikx5/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
+
+</iframe>
+:::
+
+## Let's spin the wheel
+
+| Session | Datum      | Thema                        |
+|---------|------------|------------------------------|
+| 4       | 16.11.2022 | API-Access (I): *Twitter*    |
+| 5       | 23.11.2022 | API-Access (II): *YouTube*   |
+| 6       | 30.11.2022 | API-Access (II): *Reddit*    |
+| 7       | 07.12.2022 | Webscraping: *TikTok*        |
+| 8       | 14.12.2022 | ESM: *m-path*                |
+|         |            | *WEIHNACHTSPAUSE*            |
+| 9       | 12.01.2023 | Data Donations               |
+| 10      | 19.01.2023 | Mock-Up-Virtual Environments |
+| 11      | 26.01.2023 | Open Science                 |
+
+::: {style="text-align: center; margin-top: 1em"}
+[In case of emergency: Wheel of Names](https://wheelofnames.com/){preview-link="true" style="text-align: center"}
+:::
+
+## Lektüre zwischen den Sitzungen {.smaller}
+
+**Pflichtlektüre**
+
+-   pro Woche ein wissenschaftlicher Text als Grundlage für das Thema (Sitzungen 4 - 11)
+
+**Einreichung von Fragen zum Text in Teams** (spätestens Dienstag Abend)
+
+-   gilt für alle Kursteilnehmer\*Innen
+-   mind. 1 Verständnisfrage zum Text
+-   mind. 1 Diskussionsfrage zum Text bzw. Thema insgesamt
+-   Wo? -\> in wöchentlicher Teams-Unterhaltung zur jeweligen Sitzung
+-   Why? -\> wird in der Sitzung genutzt; bereiten Sie Ihre Frage so vor, dass Sie sie in der Sitzung stellen & erklären können
+
+**Literatur:**
+
+-   Siehe Syllabus & Teams/StudOn (PDFs werden bereitgestellt)
+
+## Seminararbeit
+
+**Umfang & Inhalt (ausführliche Infos im Syllabus)**
+
+-   3500 - 4000 Wörter
+-   Anfertigung einer Projektskizze für eine wissenschaftliche Arbeit
+-   Verwendung von mindestens eine der vorgestellten Methoden/Tools
+-   Sozialwissenschaftlicher Fokus
+
+**(vorläufige) Deadline: 03.03.2023; 23:59**
+
+## Before we meet again
+
+#### Hinweise und offene Fragen
+
+-   Generell: ausführliche Informationen im Syllabus!
+
+-   Kursmaterialien: MS Teams vs. StudOn?
+
+-   Why no English?
+
+-   [Ihre Fragen?]{.smallcaps}
+
+# Bis zur nächsten Sitzung! {background-color="#04316a"}
+
+## Literatur
+
+::: {#refs}
+:::

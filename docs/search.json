@@ -1,0 +1,303 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Digital Behavioral Data",
+    "section": "",
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "content/01-kick-off/01-slides.html",
+    "href": "content/01-kick-off/01-slides.html",
+    "title": "Slides",
+    "section": "",
+    "text": "If you want to see the slides in full screen, you can click here. To download them as PDFs, hit the ‘e’ button when you got the presentation open and then Ctrl+P print to PDF. This will work best in Chrome (in Firefox, it didn’t print the headings for me)."
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html",
+    "href": "content/01-kick-off/slides/index.html",
+    "title": "Kick-Off",
+    "section": "",
+    "text": "Christoph Adrian\n\nseit 2016: Research Assistant / PhD Candidate FAU\nM. Sc. Sozialökonomik (FAU)\nB.A. Sozialökonomik (FAU)\n\nForschungs- und Lehrschwerpunkte\n\nComputer-assisted and automated (corpus-based) content analysis (with R)\nSocial media research (Twitter)\nPotential influence of media use on attitude changes"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#und-nun-zu-ihnen",
+    "href": "content/01-kick-off/slides/index.html#und-nun-zu-ihnen",
+    "title": "Kick-Off",
+    "section": "Und nun zu Ihnen!",
+    "text": "Und nun zu Ihnen!\nVorstellungsrunde\n\nWie heißen Sie?\nWas und wo haben Sie im Bachelor studiert?\nWas studieren Sie aktuell?\nWelches soziale Netzwerk/Medium nutzen Sie aktuell am häufigsten?\nWelche Erwartungen haben Sie an das Seminar?"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#covid-19-lässt-grüßen",
+    "href": "content/01-kick-off/slides/index.html#covid-19-lässt-grüßen",
+    "title": "Kick-Off",
+    "section": "COVID-19 lässt grüßen",
+    "text": "COVID-19 lässt grüßen\nCorona-Regeln im Wintersemester\n\n\n\nUm sich und andere zu schützen bitte wir Sie herzlich:\nTragen Sie weiterhin eine FFP2- oder OP-Maske!\n\nCOVID-o-mat"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#was-verstehen-sie-unter-digital-behavioral-data",
+    "href": "content/01-kick-off/slides/index.html#was-verstehen-sie-unter-digital-behavioral-data",
+    "title": "Kick-Off",
+    "section": "Was verstehen Sie unter Digital Behavioral Data?",
+    "text": "Was verstehen Sie unter Digital Behavioral Data?\nInteraktive Session\n\n\nBitte scannen Sie den QR-Code oder nutzen Sie folgenden Link für die Teilnahme an einer kurzen Umfrage:\n\nhttps://www.menti.com/alxiy2f2n6oj\nTemporary Voting Code: 49 29 72 5"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#ergebnis",
+    "href": "content/01-kick-off/slides/index.html#ergebnis",
+    "title": "Kick-Off",
+    "section": "Ergebnis",
+    "text": "Ergebnis"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#ein-definitionsversuch-von-dbd",
+    "href": "content/01-kick-off/slides/index.html#ein-definitionsversuch-von-dbd",
+    "title": "Kick-Off",
+    "section": "Ein Definitionsversuch von DBD",
+    "text": "Ein Definitionsversuch von DBD\nnach Weller (2021)\n\n\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#beispiel-covid-19-mobility-monitor",
+    "href": "content/01-kick-off/slides/index.html#beispiel-covid-19-mobility-monitor",
+    "title": "Kick-Off",
+    "section": "Beispiel: COVID-19 Mobility Monitor",
+    "text": "Beispiel: COVID-19 Mobility Monitor"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#beispiel-datenvolumen-einer-internet-minute",
+    "href": "content/01-kick-off/slides/index.html#beispiel-datenvolumen-einer-internet-minute",
+    "title": "Kick-Off",
+    "section": "Beispiel: Datenvolumen einer Internet-Minute",
+    "text": "Beispiel: Datenvolumen einer Internet-Minute"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#kernbereiche-von-dbd",
+    "href": "content/01-kick-off/slides/index.html#kernbereiche-von-dbd",
+    "title": "Kick-Off",
+    "section": "Kernbereiche von DBD",
+    "text": "Kernbereiche von DBD\nin Anlehnung an Aufteilung der GESIS\n\n\n\n\n\n\n\n\n\n\nUnterschiedliche Heraus- bzw. Anforderungen (je nach Bereich)\nSeminar legt Schwerpunkt auf Datenerhebung, mit kurzen Ausblick auf die anderen Bereiche"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#seminarplan",
+    "href": "content/01-kick-off/slides/index.html#seminarplan",
+    "title": "Kick-Off",
+    "section": "Seminarplan",
+    "text": "Seminarplan\n\n\n\nSitzung\nDatum\nThema\nReferent*Innen\n\n\n\n\n1\n26.10.2022\nKick-Off Session\nChristoph Adrian\n\n\n2\n02.11.2022\nDBD: Einführung und Überblick\nChristoph Adrian\n\n\n3\n09.11.2022\nDBD: Datenerhebung\nChristoph Adrian\n\n\n4\n16.11.2022\nAPI-Access (I): Twitter\n\n\n\n5\n23.11.2022\nAPI-Access (II): YouTube\n\n\n\n6\n30.11.2022\nAPI-Access (II): Reddit\n\n\n\n7\n07.12.2022\nWebscraping: TikTok\n\n\n\n8\n14.12.2022\nESM: m-path\n\n\n\n\n\nWEIHNACHTSPAUSE\n\n\n\n9\n12.01.2023\nData Donations\n\n\n\n10\n19.01.2023\nMock-Up-Virtual Environments\n\n\n\n11\n26.01.2023\nOpen Science\n\n\n\n12\n02.02.2023\nGuest Lecture: Linking DBD & Survey data\nJohannes Breuer\n\n\n13\n09.02.2023\nSemesterabschluss & Evaluation\nChristoph Adrian"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#typische-session",
+    "href": "content/01-kick-off/slides/index.html#typische-session",
+    "title": "Kick-Off",
+    "section": "Typische Session",
+    "text": "Typische Session\nErst Präsentation, dann Vertiefung\n\n\nPräsentation (ca. 35-45 Min)\n\nUmfasst Ihre Präsentation (inkl. Zeit für Fragen und Diskussionen)\nOption auf weitere, offenere Diskussion im Plenum\n\n\nGroup Activity (ca. 45 - 55 Min)\n\nkleine Gruppenarbeiten zur Vertiefung\nvariiert abhängig vom Thema der jeweiligen Sitzung\nBeispiele:\n\nAnwendung von Tool/Methode mit anschließender kritschen Diskussion\nErstellung eines einfachen Forschungs- oder Analysedesign"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#different-tools-for-different-tasks",
+    "href": "content/01-kick-off/slides/index.html#different-tools-for-different-tasks",
+    "title": "Kick-Off",
+    "section": "Different tools for different tasks",
+    "text": "Different tools for different tasks\nOrganisation der Lehre auf einen Blick\n\nMS Teams: wichtige Ankündigungen, asynchrone Unterhaltungen & Fragen zum Kurs\nStudOn: Kursmaterialien, ggf. Beispieldatensätze und Präsentationsaufnahmen\nEmail: persönliche Fragen an Dozent\nZoom: ggf. für Sitzung & Sprechstunde"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#what-is-expected",
+    "href": "content/01-kick-off/slides/index.html#what-is-expected",
+    "title": "Kick-Off",
+    "section": "What is expected",
+    "text": "What is expected\nLeistungsanforderungen & Prüfungsleistungen\n\nRegelmäßige Teilnahme an den Sitzungen (max. 2 unentschuldigtes Fehlen)\nEigenständige Auf- und Vorbereitung von Pflichtlektüre (“bestehen”)\nPräsentation (50%)\nSeminarbericht (50%)"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#präsentation",
+    "href": "content/01-kick-off/slides/index.html#präsentation",
+    "title": "Kick-Off",
+    "section": "Präsentation",
+    "text": "Präsentation\nUmfang & Inhalt: max. 30 Min.\n\n~ 25 Min.: Zentrale Begriffe, Definitionen und Merkmale der jeweiligen Plattform, Methode und/oder des Tools inklusive kurzem Überblick über Forschung(-sfeld)\n~ 5 Min: Fragen & Diskussion\nZiel: Vorstellung Tool & Beispiel für Forschung(-sdesign)\n\nSprechstunde:\n\nEinreichung vollständiger Präsentationsentwurf mindestens eine Woche + 24 Stunden vor Ihrer Präsentation per E-Mail an christoph.adrian@fau.de\nAusführliches Feedback und Tipps zur Überarbeitung\n\nLiteratur:\n\nSiehe Syllabus & Teams/StudOn (PDFs werden bereitgestellt)"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#ein-kurzer-appell",
+    "href": "content/01-kick-off/slides/index.html#ein-kurzer-appell",
+    "title": "Kick-Off",
+    "section": "Ein kurzer Appell",
+    "text": "Ein kurzer Appell\nHinweis zu “Abbruch” bzw. Nicht-Erscheinen\n\nIhre Anmeldung bedeutet üblicherweise eine sehr intensive, aufwändige Betreuung für uns Lehrende\nÄrgerlicherweise gibt es Studierende, die sich anmelden und betreuen lassen, aber dann einfach irgendwann (teilweise sehr kurzfristig) “verschwinden”.\n\n⚠️ Bitte seien Sie sich folgender Dinge bewusst:\n\nDie „Prüfung” bzw. die „Prüfungszeit” bei einem Seminar beginnt mit der Bearbeitungszeit und damit mit der Ausgabe des Themas an die Kandidaten.\n24h Bedenkzeit / Rücktrittsrecht"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#lets-spin-the-wheel",
+    "href": "content/01-kick-off/slides/index.html#lets-spin-the-wheel",
+    "title": "Kick-Off",
+    "section": "Let’s spin the wheel",
+    "text": "Let’s spin the wheel\nVergabe der Präsentationsthemen\n\n\nBitte scannen Sie den QR-Code oder nutzen Sie folgenden Link und wählen Sie Ihr favorisiertes Thema aus\n\nhttps://www.menti.com/alj8fncx1zz4\nTemporary Voting Code: 7312 2522"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#lets-spin-the-wheel-1",
+    "href": "content/01-kick-off/slides/index.html#lets-spin-the-wheel-1",
+    "title": "Kick-Off",
+    "section": "Let’s spin the wheel",
+    "text": "Let’s spin the wheel\n\n\n\nSession\nDatum\nThema\n\n\n\n\n4\n16.11.2022\nAPI-Access (I): Twitter\n\n\n5\n23.11.2022\nAPI-Access (II): YouTube\n\n\n6\n30.11.2022\nAPI-Access (II): Reddit\n\n\n7\n07.12.2022\nWebscraping: TikTok\n\n\n8\n14.12.2022\nESM: m-path\n\n\n\n\nWEIHNACHTSPAUSE\n\n\n9\n12.01.2023\nData Donations\n\n\n10\n19.01.2023\nMock-Up-Virtual Environments\n\n\n11\n26.01.2023\nOpen Science\n\n\n\n\nIn case of emergency: Wheel of Names"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#lektüre-zwischen-den-sitzungen",
+    "href": "content/01-kick-off/slides/index.html#lektüre-zwischen-den-sitzungen",
+    "title": "Kick-Off",
+    "section": "Lektüre zwischen den Sitzungen",
+    "text": "Lektüre zwischen den Sitzungen\nPflichtlektüre\n\npro Woche ein wissenschaftlicher Text als Grundlage für das Thema (Sitzungen 4 - 11)\n\nEinreichung von Fragen zum Text in Teams (spätestens Dienstag Abend)\n\ngilt für alle Kursteilnehmer*Innen\nmind. 1 Verständnisfrage zum Text\nmind. 1 Diskussionsfrage zum Text bzw. Thema insgesamt\nWo? -> in wöchentlicher Teams-Unterhaltung zur jeweligen Sitzung\nWhy? -> wird in der Sitzung genutzt; bereiten Sie Ihre Frage so vor, dass Sie sie in der Sitzung stellen & erklären können\n\nLiteratur:\n\nSiehe Syllabus & Teams/StudOn (PDFs werden bereitgestellt)"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#seminararbeit",
+    "href": "content/01-kick-off/slides/index.html#seminararbeit",
+    "title": "Kick-Off",
+    "section": "Seminararbeit",
+    "text": "Seminararbeit\nUmfang & Inhalt (ausführliche Infos im Syllabus)\n\n3500 - 4000 Wörter\nAnfertigung einer Projektskizze für eine wissenschaftliche Arbeit\nVerwendung von mindestens eine der vorgestellten Methoden/Tools\nSozialwissenschaftlicher Fokus\n\n(vorläufige) Deadline: 03.03.2023; 23:59"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#before-we-meet-again",
+    "href": "content/01-kick-off/slides/index.html#before-we-meet-again",
+    "title": "Kick-Off",
+    "section": "Before we meet again",
+    "text": "Before we meet again\nHinweise und offene Fragen\n\nGenerell: ausführliche Informationen im Syllabus!\nKursmaterialien: MS Teams vs. StudOn?\nWhy no English?\nIhre Fragen?"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html",
+    "href": "content/02-dbb-introduction_overview/index.html",
+    "title": "Einführung und Überblick",
+    "section": "",
+    "text": "seit 2016: Research Assistant / PhD Candidate FAU\nM. Sc. Sozialökonomik (FAU)\nB.A. Sozialökonomik (FAU)\n\n\n\n\n\nComputer-assisted and automated (corpus-based) content analysis (with R)\nSocial media research (Twitter)\nPotential influence of media use on attitude changes"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#und-nun-zu-ihnen",
+    "href": "content/02-dbb-introduction_overview/index.html#und-nun-zu-ihnen",
+    "title": "Einführung und Überblick",
+    "section": "Und nun zu Ihnen!",
+    "text": "Und nun zu Ihnen!\n\nVorstellungsrunde\n\nWie heißen Sie?\nWas und wo haben Sie im Bachelor studiert?\nWelches soziale Netzwerk/Medium nutzen Sie aktuell am häufigsten?\nWelche Erwartungen haben Sie an das Seminar?"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#computation-social-science",
+    "href": "content/02-dbb-introduction_overview/index.html#computation-social-science",
+    "title": "Einführung und Überblick",
+    "section": "Computation Social Science",
+    "text": "Computation Social Science\n\n\n\nSie sind gefragt!\nWas verstehen Sie unter Computation Social Science?\nScannen Sie bitten den QR-Code oder besuchen Sie den Link\n\n\n\nLink: https://www.menti.com/alv6himtf4x7"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#alles-beginnt-mit-css",
+    "href": "content/02-dbb-introduction_overview/index.html#alles-beginnt-mit-css",
+    "title": "Einführung und Überblick",
+    "section": "Alles beginnt mit CSS",
+    "text": "Alles beginnt mit CSS"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#inwiefern-hilft-uns-css",
+    "href": "content/02-dbb-introduction_overview/index.html#inwiefern-hilft-uns-css",
+    "title": "Einführung und Überblick",
+    "section": "Inwiefern hilft uns CSS?",
+    "text": "Inwiefern hilft uns CSS?\nBeispiel: Typische Fragebogenitems in Surveys\n\nWie häufig sprechen Sie mit Ihren Freund*Innen am Smartphone?\nWie viele Stunden verbringen Sie außerhalb Ihrer Wohnung?\nWie häufig haben Sie sich in den letzten 14 Tage mit Freund*Innen getroffen\n\n\nProblem:\n\n🍀 Bestenfalls gute Schätzung\n💩Schlechtestenfalls falsche Erinnerung"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#digital-behavioral-data-als-teil-der-antwort",
+    "href": "content/02-dbb-introduction_overview/index.html#digital-behavioral-data-als-teil-der-antwort",
+    "title": "Einführung und Überblick",
+    "section": "Digital Behavioral Data als (Teil) der Antwort",
+    "text": "Digital Behavioral Data als (Teil) der Antwort\nDigitale (smarte) Geräte und Sensoren können sich besser an bestimmte Fakten “erinnern” als das menschliche Gedächnis\nBeispiel: Socio Patterns - RFID Sensoren zu Messung von Face-to-Face Interaktionen"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#digital-behavioral-data-als-teil-der-antwort-1",
+    "href": "content/02-dbb-introduction_overview/index.html#digital-behavioral-data-als-teil-der-antwort-1",
+    "title": "Einführung und Überblick",
+    "section": "Digital Behavioral Data als (Teil) der Antwort",
+    "text": "Digital Behavioral Data als (Teil) der Antwort\nHäufig sind Sensoren bereits in alltägliche Technologie eingebaut und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”.\nBeispiel: COVID-19 Mobiliy Monitor"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#digital-behavioral-data",
+    "href": "content/02-dbb-introduction_overview/index.html#digital-behavioral-data",
+    "title": "Einführung und Überblick",
+    "section": "Digital Behavioral Data",
+    "text": "Digital Behavioral Data\n\nDefinition\nGESIS -Schema"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#grundidee-des-seminars",
+    "href": "content/02-dbb-introduction_overview/index.html#grundidee-des-seminars",
+    "title": "Einführung und Überblick",
+    "section": "Grundidee des Seminars",
+    "text": "Grundidee des Seminars\n\nFokus auf Konzeption & Datenerhebung\nAusblick auf Datenverarbeitung und -analyse\nLernziele"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#seminarplan",
+    "href": "content/02-dbb-introduction_overview/index.html#seminarplan",
+    "title": "Einführung und Überblick",
+    "section": "Seminarplan",
+    "text": "Seminarplan\n\n\n\n\n\n\n\n\n\nSitzung\nDatum\nThema\nReferent*Innen\n\n\n\n\n1\n20.10.2022\nPlanspielwoche\n\n\n\n2\n27.10.2022\nKick-Off Session\nC. Adrian\n\n\n3\n03.11.2022\nDBD: Einführung und Überblick\nC. Adrian\n\n\n4\n10.11.2022\nDBD: Datenerhebung\nC. Adrian\n\n\n5\n17.11.2022\nAPI-Access (I): Twitter\n\n\n\n6\n24.11.2022\nAPI-Access (II): YouTube\n\n\n\n7\n01.12.2022\nAPI-Access (II): Reddit\n\n\n\n8\n08.12.2022\nWebscraping: TikTok\n\n\n\n9\n15.12.2022\nESM: m-path\n\n\n\n\n\nWeihnachtspause\n\n\n\n10\n12.01.2023\nData Donations\n\n\n\n11\n19.01.2023\nMock-Up-Virtual Environments\n\n\n\n12\n26.01.2023\nOpen Science\n\n\n\n13\n02.02.2023\nGuest Lecture\n\n\n\n14\n09.02.2023\nSemesterabschluss & Evaluation\nC. Adrian"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#organisation-der-lehre-auf-einen-blick",
+    "href": "content/02-dbb-introduction_overview/index.html#organisation-der-lehre-auf-einen-blick",
+    "title": "Einführung und Überblick",
+    "section": "Organisation der Lehre auf einen Blick",
+    "text": "Organisation der Lehre auf einen Blick\n\nStudOn: Kursmaterialien\nMail: wichtige Ankündigungen durch Dozent & persönliche Fragen an Dozenten"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#leistungsanforderungen-prüfungsleistungen",
+    "href": "content/02-dbb-introduction_overview/index.html#leistungsanforderungen-prüfungsleistungen",
+    "title": "Einführung und Überblick",
+    "section": "Leistungsanforderungen & Prüfungsleistungen",
+    "text": "Leistungsanforderungen & Prüfungsleistungen\n\nRegelmäßige Teilnahme an den Sitzungen\nPräsentation\nDiskussionbeitrag\nSeminarbericht"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#aufteilung-präsentationsthemen",
+    "href": "content/02-dbb-introduction_overview/index.html#aufteilung-präsentationsthemen",
+    "title": "Einführung und Überblick",
+    "section": "Aufteilung Präsentationsthemen",
+    "text": "Aufteilung Präsentationsthemen"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#präsentationsvorbereitung",
+    "href": "content/02-dbb-introduction_overview/index.html#präsentationsvorbereitung",
+    "title": "Einführung und Überblick",
+    "section": "Präsentationsvorbereitung",
+    "text": "Präsentationsvorbereitung\n\nLiteratur\nSprechstunde\nEinreichung vollständiger Präsentationsentwurf\nUmfang & Inhalt"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#seminarbericht",
+    "href": "content/02-dbb-introduction_overview/index.html#seminarbericht",
+    "title": "Einführung und Überblick",
+    "section": "Seminarbericht",
+    "text": "Seminarbericht\n\nFormalia\nDetails\nDeadline"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#hinweise-und-offene-frage",
+    "href": "content/02-dbb-introduction_overview/index.html#hinweise-und-offene-frage",
+    "title": "Einführung und Überblick",
+    "section": "Hinweise und offene Frage",
+    "text": "Hinweise und offene Frage\n\nUnderstand the importance of effect sizes\nHow to formulate a smallest effect size of interest\nKnow when you don’t have enough information"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#quellen",
+    "href": "content/02-dbb-introduction_overview/index.html#quellen",
+    "title": "Einführung und Überblick",
+    "section": "Quellen",
+    "text": "Quellen"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#materials",
+    "href": "content/02-dbb-introduction_overview/index.html#materials",
+    "title": "Einführung und Überblick",
+    "section": "Materials",
+    "text": "Materials\n\nEverything is up on: https://github.com/niklasjohannes/power-workshop\nJust download everything as a zip file (Code -> Zip)\nRendered to follow along here: https://niklasjohannes.github.io/power-workshop/\nThere, you’ll also find instructions on how to download R, RStudio, and GPower\nFor discussions we use Discord:"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/index.html#stealing-stuff",
+    "href": "content/02-dbb-introduction_overview/index.html#stealing-stuff",
+    "title": "Einführung und Überblick",
+    "section": "Stealing stuff",
+    "text": "Stealing stuff\nI cite all my sources, but relied heavily on the following:\n\nJulian Quandt’s power simulation tutorials\nCourses by Daniel Lakens (textbook)\nTutorial by Ariel Muldoon\nBen Staton on Monte Carlo methods\nR for Data Science"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#herzlich-willkommen",
+    "href": "content/01-kick-off/slides/index.html#herzlich-willkommen",
+    "title": "Kick-Off",
+    "section": "Herzlich willkommen!",
+    "text": "Herzlich willkommen!\nVorstellungsrunde\nChristoph Adrian\n\nseit 2016: Research Assistant / PhD Candidate FAU\nM. Sc. Sozialökonomik (FAU)\nB.A. Sozialökonomik (FAU)\n\nForschungs- und Lehrschwerpunkte\n\nComputer-assisted and automated (corpus-based) content analysis (with R)\nSocial media research (Twitter)\nPotential influence of media use on attitude changes"
+  },
+  {
+    "objectID": "content/01-kick-off/slides/index.html#literatur",
+    "href": "content/01-kick-off/slides/index.html#literatur",
+    "title": "Kick-Off",
+    "section": "Literatur",
+    "text": "Literatur\n\n\nWeller, K. (2021). A short introduction to computational social science and digital behavioral data. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf\n\n\n\n\n\nDigital behavioral data - Kick Off"
+  }
+]

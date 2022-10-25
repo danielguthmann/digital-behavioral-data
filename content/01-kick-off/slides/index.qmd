@@ -6,7 +6,7 @@ author:
     url: https://twitter.com/chrdrn
     affiliation: Chair of Communication Science
     affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
-date: 27 10 2022
+date: 26 10 2022
 date-format: "DD.MM.YYYY"
 format:
   revealjs:
@@ -16,7 +16,7 @@ format:
       buttons: false
     preview-links: auto
     logo: images/FAU_FB_WiSo_Q_RGB_blue.png
-    footer: "[Digital behavioral data - Kick Off](https://niklasjohannes.github.io/power-workshop/)"
+    footer: "[Digital behavioral data - Kick Off](https://chrdrn.github.io/digital-behavioral-data/)"
 execute:
   echo: true
 bibliography: references.bib

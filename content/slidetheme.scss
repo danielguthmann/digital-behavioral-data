@@ -6,19 +6,29 @@
 // fonts
 $font-family-sans-serif: Lato, sans-serif !default;
 $presentation-font-size-root: 30px !default;
-$presentation-heading-color: #E6002E;
+$presentation-heading-color: #e6002e;
 
 // colors
 $body-bg: #fff !default;
 $body-color: #04316a !default;
 $link-color: #971B2F !default;
-$selection-bg: rgba(0, 0, 0, 0.99);
+$selection-bg: rgba(230, 0, 46, 0.99);
 
 // headings
 $presentation-heading-font: "News Cycle", sans-serif !default;
 
 
 /*-- scss:rules --*/
+.title {
+  size: 100px !important;
+  color: #e6002e !important;
+}
+
+.subtitle {
+  color: #e6002e !important;
+}
+
+
 .slide-logo {
   display: block !important;
   position: fixed !important;

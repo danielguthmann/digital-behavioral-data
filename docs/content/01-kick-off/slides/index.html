@@ -7,7 +7,7 @@
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.1.189">
+  <meta name="generator" content="quarto-1.2.242">
 
   <meta name="author" content="Christoph Adrian">
   <title>Kick-Off</title>
@@ -55,6 +55,12 @@
   <link href="../../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <script type="application/json" class="js-hypothesis-config">
+  {
+    "theme": "clean"
+  }
+  </script>
+  <script async="" src="https://hypothes.is/embed.js"></script>
   <style type="text/css">
 
   .callout {
@@ -344,13 +350,25 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="center">
+<section id="title-slide" data-background-color="#04316a" class="quarto-title-block center">
   <h1 class="title">Kick-Off</h1>
   <p class="subtitle">Digital behavioral data</p>
-  <p class="author">Christoph Adrian</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+<a href="https://twitter.com/chrdrn">Christoph Adrian</a> 
+</div>
+        <p class="quarto-title-affiliation">
+            <a href="https://www.kowi.rw.fau.de/person/christoph-adrian/">
+            Lehrstuhl für Kommunikationswissenschaft
+            </a>
+          </p>
+    </div>
+</div>
+
   <p class="date">26.10.2022</p>
 </section>
-
 <section id="herzlich-willkommen" class="slide level2">
 <h2>Herzlich willkommen!</h2>
 <h4 id="vorstellungsrunde">Vorstellungsrunde</h4>
@@ -630,7 +648,7 @@
 </ul>
 <p><strong>Sprechstunde:</strong></p>
 <ul>
-<li>Einreichung vollständiger Präsentationsentwurf mindestens eine Woche + 24 Stunden vor Ihrer Präsentation per E-Mail an christoph.adrian@fau.de</li>
+<li>Einreichung <strong>vollständiger Präsentationsentwurf mindestens eine Woche + 24 Stunden vor Ihrer Präsentation</strong> per E-Mail an christoph.adrian@fau.de</li>
 <li>Ausführliches Feedback und Tipps zur Überarbeitung</li>
 </ul>
 <p><strong>Literatur:</strong></p>
@@ -651,8 +669,8 @@
 <li><p><strong>24h Bedenkzeit</strong> / Rücktrittsrecht</p></li>
 </ul>
 </section>
-<section id="lets-spin-the-wheel" class="slide level2">
-<h2>Let’s spin the wheel</h2>
+<section id="please-state-your-preference" class="slide level2">
+<h2>Please state your preference</h2>
 <h4 id="vergabe-der-präsentationsthemen">Vergabe der Präsentationsthemen</h4>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -677,7 +695,7 @@
 </iframe>
 </div>
 </section>
-<section id="lets-spin-the-wheel-1" class="slide level2">
+<section id="lets-spin-the-wheel" class="slide level2">
 <h2>Let’s spin the wheel</h2>
 <table>
 <thead>
@@ -793,8 +811,8 @@ Weller, K. (2021). <em>A short introduction to computational social science and 
 </div>
 
 
-<img src="images/FAU_FB_WiSo_Q_RGB_blue.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p><a href="https://chrdrn.github.io/digital-behavioral-data/">Digital behavioral data - Kick Off</a></p>
+<img src="../../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><a href="https://chrdrn.github.io/digital-behavioral-data/">Digital Behavioral Data</a></p>
 </div>
 </section></section>
     </div>
@@ -1048,7 +1066,24 @@ Weller, K. (2021). <em>A short introduction to computational social science and 
         button.classList.add('code-copy-button-checked');
         var currentTitle = button.getAttribute("title");
         button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
         setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
           button.setAttribute("title", currentTitle);
           button.classList.remove('code-copy-button-checked');
         }, 1000);
@@ -1086,24 +1121,42 @@ Weller, K. (2021). <em>A short introduction to computational social science and 
           return note.innerHTML;
         });
       }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
       var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
       for (var i=0; i<bibliorefs.length; i++) {
         const ref = bibliorefs[i];
-        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-        tippyHover(ref, function() {
-          var popup = window.document.createElement('div');
-          cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
           });
-          return popup.innerHTML;
-        });
+        }
       }
     });
     </script>

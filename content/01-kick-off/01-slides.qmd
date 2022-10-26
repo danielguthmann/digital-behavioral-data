@@ -2,7 +2,7 @@
 title: "Slides"
 ---
 
-Below you can find the slides for the intro session:
+Below you  find the slides for the kick-off session:
 
 <div>
 
@@ -12,4 +12,4 @@ Below you can find the slides for the intro session:
 
 </div>
 
-If you want to see the slides in full screen, you can click [here](slides/){target="_blank"}. To download them as PDFs, hit the 'e' button when you got the presentation open and then Ctrl+P print to PDF. This will work best in Chrome (in Firefox, it didn't print the headings for me).
+If you want to see the slides in full screen, you can click [here](slides/){target="_blank"}. To download them as PDFs, hit the 'e' button when you got the presentation open and then Ctrl+P print to PDF. This will work best in Chrome.

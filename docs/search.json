@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Digital Behavioral Data",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "In this seminar, students will be introduced to working with digital behavioral data (DBD). DBD refers to digital traces of human behavior that are knowingly or unknowingly left in online environments (e.g., social media, messengers, entertainment media, or digital collaboration tools). These rich data are increasingly available to social scientific research in the public interest but can also be used to derive strategic insights for business decisions. Students will learn how to work with DBD alongside the entire research process, from data collection, preprocessing and analysis, to reporting and provision (e.g., via open science tools). Students will first get a comprehensive overview of the ways in which DBD can be collected (e.g., API scraping, usage logging, mock-up virtual environments, or data donations), as well as the requirements for data protection, research ethics, and data quality. Afterwards, students will practice and apply their newly gained knowledge in small projects on use cases from media and communication research. In doing so, they learn about key computational methods via which large digital behavioral datasets (e.g., texts, images, usage behavior logs) can be processed and analyzed. By completing this module, participants will get an up-to-date overview and practical insights into how to harness the potential of observational data traces to better understand media users’ behavior in digital environments."
   },
   {
     "objectID": "content/01-kick-off/01-slides.html",
     "href": "content/01-kick-off/01-slides.html",
     "title": "Slides",
     "section": "",
-    "text": "If you want to see the slides in full screen, you can click here. To download them as PDFs, hit the ‘e’ button when you got the presentation open and then Ctrl+P print to PDF. This will work best in Chrome (in Firefox, it didn’t print the headings for me)."
+    "text": "If you want to see the slides in full screen, you can click here. To download them as PDFs, hit the ‘e’ button when you got the presentation open and then Ctrl+P print to PDF. This will work best in Chrome."
   },
   {
     "objectID": "content/01-kick-off/slides/index.html",
@@ -25,21 +25,21 @@
     "href": "content/01-kick-off/slides/index.html#und-nun-zu-ihnen",
     "title": "Kick-Off",
     "section": "Und nun zu Ihnen!",
-    "text": "Und nun zu Ihnen!\nVorstellungsrunde\n\nWie heißen Sie?\nWas und wo haben Sie im Bachelor studiert?\nWas studieren Sie aktuell?\nWelches soziale Netzwerk/Medium nutzen Sie aktuell am häufigsten?\nWelche Erwartungen haben Sie an das Seminar?"
+    "text": "Und nun zu Ihnen!\n\nVorstellungsrunde\n\nWie heißen Sie?\nWas und wo haben Sie im Bachelor studiert?\nWas studieren Sie aktuell?\nWelches soziale Netzwerk/Medium nutzen Sie aktuell am häufigsten?\nWelche Erwartungen haben Sie an das Seminar?"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#covid-19-lässt-grüßen",
     "href": "content/01-kick-off/slides/index.html#covid-19-lässt-grüßen",
     "title": "Kick-Off",
     "section": "COVID-19 lässt grüßen",
-    "text": "COVID-19 lässt grüßen\nCorona-Regeln im Wintersemester\n\n\n\nUm sich und andere zu schützen bitte wir Sie herzlich:\nTragen Sie weiterhin eine FFP2- oder OP-Maske!\n\nCOVID-o-mat"
+    "text": "COVID-19 lässt grüßen\n\nCorona-Regeln im Wintersemester\n\n\n\nUm sich und andere zu schützen bitte wir Sie herzlich:\nTragen Sie weiterhin eine FFP2- oder OP-Maske!\n\nCOVID-o-mat"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#was-verstehen-sie-unter-digital-behavioral-data",
     "href": "content/01-kick-off/slides/index.html#was-verstehen-sie-unter-digital-behavioral-data",
     "title": "Kick-Off",
     "section": "Was verstehen Sie unter Digital Behavioral Data?",
-    "text": "Was verstehen Sie unter Digital Behavioral Data?\nInteraktive Session\n\n\nBitte scannen Sie den QR-Code oder nutzen Sie folgenden Link für die Teilnahme an einer kurzen Umfrage:\n\nhttps://www.menti.com/alxiy2f2n6oj\nTemporary Voting Code: 49 29 72 5"
+    "text": "Was verstehen Sie unter Digital Behavioral Data?\n\nInteraktive Session\n\n\nBitte scannen Sie den QR-Code oder nutzen Sie folgenden Link für die Teilnahme an einer kurzen Umfrage:\n\nhttps://www.menti.com/alxiy2f2n6oj\nTemporary Voting Code: 49 29 72 5"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#ergebnis",
@@ -53,7 +53,7 @@
     "href": "content/01-kick-off/slides/index.html#ein-definitionsversuch-von-dbd",
     "title": "Kick-Off",
     "section": "Ein Definitionsversuch von DBD",
-    "text": "Ein Definitionsversuch von DBD\nnach Weller (2021)\n\n\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen"
+    "text": "Ein Definitionsversuch von DBD\n\nnach Weller (2021)\n\n\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#beispiel-covid-19-mobility-monitor",
@@ -74,7 +74,7 @@
     "href": "content/01-kick-off/slides/index.html#kernbereiche-von-dbd",
     "title": "Kick-Off",
     "section": "Kernbereiche von DBD",
-    "text": "Kernbereiche von DBD\nin Anlehnung an Aufteilung der GESIS\n\n\n\n\n\n\n\n\n\n\nUnterschiedliche Heraus- bzw. Anforderungen (je nach Bereich)\nSeminar legt Schwerpunkt auf Datenerhebung, mit kurzen Ausblick auf die anderen Bereiche"
+    "text": "Kernbereiche von DBD\n\nin Anlehnung an Aufteilung der GESIS\n\n\n\n\n\n\n\n\n\n\nUnterschiedliche Heraus- bzw. Anforderungen (je nach Bereich)\nSeminar legt Schwerpunkt auf Datenerhebung, mit kurzen Ausblick auf die anderen Bereiche"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#seminarplan",
@@ -88,21 +88,21 @@
     "href": "content/01-kick-off/slides/index.html#typische-session",
     "title": "Kick-Off",
     "section": "Typische Session",
-    "text": "Typische Session\nErst Präsentation, dann Vertiefung\n\n\nPräsentation (ca. 35-45 Min)\n\nUmfasst Ihre Präsentation (inkl. Zeit für Fragen und Diskussionen)\nOption auf weitere, offenere Diskussion im Plenum\n\n\nGroup Activity (ca. 45 - 55 Min)\n\nkleine Gruppenarbeiten zur Vertiefung\nvariiert abhängig vom Thema der jeweiligen Sitzung\nBeispiele:\n\nAnwendung von Tool/Methode mit anschließender kritschen Diskussion\nErstellung eines einfachen Forschungs- oder Analysedesign"
+    "text": "Typische Session\n\nErst Präsentation, dann Vertiefung\n\n\nPräsentation (ca. 35-45 Min)\n\nUmfasst Ihre Präsentation (inkl. Zeit für Fragen und Diskussionen)\nOption auf weitere, offenere Diskussion im Plenum\n\n\nGroup Activity (ca. 45 - 55 Min)\n\nkleine Gruppenarbeiten zur Vertiefung\nvariiert abhängig vom Thema der jeweiligen Sitzung\nBeispiele:\n\nAnwendung von Tool/Methode mit anschließender kritschen Diskussion\nErstellung eines einfachen Forschungs- oder Analysedesign"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#different-tools-for-different-tasks",
     "href": "content/01-kick-off/slides/index.html#different-tools-for-different-tasks",
     "title": "Kick-Off",
     "section": "Different tools for different tasks",
-    "text": "Different tools for different tasks\nOrganisation der Lehre auf einen Blick\n\nMS Teams: wichtige Ankündigungen, asynchrone Unterhaltungen & Fragen zum Kurs\nStudOn: Kursmaterialien, ggf. Beispieldatensätze und Präsentationsaufnahmen\nEmail: persönliche Fragen an Dozent\nZoom: ggf. für Sitzung & Sprechstunde"
+    "text": "Different tools for different tasks\n\nOrganisation der Lehre auf einen Blick\n\nMS Teams: wichtige Ankündigungen, asynchrone Unterhaltungen & Fragen zum Kurs\nStudOn: Kursmaterialien, ggf. Beispieldatensätze und Präsentationsaufnahmen\nEmail: persönliche Fragen an Dozent\nZoom: ggf. für Sitzung & Sprechstunde"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#what-is-expected",
     "href": "content/01-kick-off/slides/index.html#what-is-expected",
     "title": "Kick-Off",
     "section": "What is expected",
-    "text": "What is expected\nLeistungsanforderungen & Prüfungsleistungen\n\nRegelmäßige Teilnahme an den Sitzungen (max. 2 unentschuldigtes Fehlen)\nEigenständige Auf- und Vorbereitung von Pflichtlektüre (“bestehen”)\nPräsentation (50%)\nSeminarbericht (50%)"
+    "text": "What is expected\n\nLeistungsanforderungen & Prüfungsleistungen\n\nRegelmäßige Teilnahme an den Sitzungen (max. 2 unentschuldigtes Fehlen)\nEigenständige Auf- und Vorbereitung von Pflichtlektüre (“bestehen”)\nPräsentation (50%)\nSeminarbericht (50%)"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#präsentation",
@@ -116,7 +116,7 @@
     "href": "content/01-kick-off/slides/index.html#ein-kurzer-appell",
     "title": "Kick-Off",
     "section": "Ein kurzer Appell",
-    "text": "Ein kurzer Appell\nHinweis zu “Abbruch” bzw. Nicht-Erscheinen\n\nIhre Anmeldung bedeutet üblicherweise eine sehr intensive, aufwändige Betreuung für uns Lehrende\nÄrgerlicherweise gibt es Studierende, die sich anmelden und betreuen lassen, aber dann einfach irgendwann (teilweise sehr kurzfristig) “verschwinden”.\n\n⚠️ Bitte seien Sie sich folgender Dinge bewusst:\n\nDie „Prüfung” bzw. die „Prüfungszeit” bei einem Seminar beginnt mit der Bearbeitungszeit und damit mit der Ausgabe des Themas an die Kandidaten.\n24h Bedenkzeit / Rücktrittsrecht"
+    "text": "Ein kurzer Appell\n\nHinweis zu “Abbruch” bzw. Nicht-Erscheinen\n\nIhre Anmeldung bedeutet üblicherweise eine sehr intensive, aufwändige Betreuung für uns Lehrende\nÄrgerlicherweise gibt es Studierende, die sich anmelden und betreuen lassen, aber dann einfach irgendwann (teilweise sehr kurzfristig) “verschwinden”.\n\n⚠️ Bitte seien Sie sich folgender Dinge bewusst:\n\nDie „Prüfung” bzw. die „Prüfungszeit” bei einem Seminar beginnt mit der Bearbeitungszeit und damit mit der Ausgabe des Themas an die Kandidaten.\n24h Bedenkzeit / Rücktrittsrecht"
   },
   {
     "objectID": "content/01-kick-off/slides/index.html#lets-spin-the-wheel",
@@ -151,7 +151,7 @@
     "href": "content/01-kick-off/slides/index.html#before-we-meet-again",
     "title": "Kick-Off",
     "section": "Before we meet again",
-    "text": "Before we meet again\nHinweise und offene Fragen\n\nGenerell: ausführliche Informationen im Syllabus!\nKursmaterialien: MS Teams vs. StudOn?\nWhy no English?\nIhre Fragen?"
+    "text": "Before we meet again\n\nHinweise und offene Fragen\n\nGenerell: ausführliche Informationen im Syllabus!\nKursmaterialien: MS Teams vs. StudOn?\nWhy no English?\nIhre Fragen?"
   },
   {
     "objectID": "content/02-dbb-introduction_overview/index.html",
@@ -305,6 +305,34 @@
     "href": "content/01-kick-off/slides/index.html#please-state-your-preference",
     "title": "Kick-Off",
     "section": "Please state your preference",
-    "text": "Please state your preference\nVergabe der Präsentationsthemen\n\n\nBitte scannen Sie den QR-Code oder nutzen Sie folgenden Link und wählen Sie Ihr favorisiertes Thema aus\n\nhttps://www.menti.com/alj8fncx1zz4\nTemporary Voting Code: 7312 2522"
+    "text": "Please state your preference\n\nVergabe der Präsentationsthemen\n\n\nBitte scannen Sie den QR-Code oder nutzen Sie folgenden Link und wählen Sie Ihr favorisiertes Thema aus\n\nhttps://www.menti.com/alj8fncx1zz4\nTemporary Voting Code: 7312 2522"
+  },
+  {
+    "objectID": "index.html#students-will",
+    "href": "index.html#students-will",
+    "title": "Digital Behavioral Data",
+    "section": "Students will",
+    "text": "Students will\n\noverview and understand central opportunities of DBD and accompanying challenges for data collection and preprocessing\nevaluate the strengths and weaknesses of different ways of collecting DBD\nget to know and understand central requirements for data protection, research ethics, and data quality\nget to know and overview key computational social science methods to analyze DBD\npractice and apply knowledge on DBD, statistics, and data analysis in small projects of their own"
+  },
+  {
+    "objectID": "index.html#recommended-prerequisites",
+    "href": "index.html#recommended-prerequisites",
+    "title": "Digital Behavioral Data",
+    "section": "Recommended prerequisites",
+    "text": "Recommended prerequisites\n\nInterest in social scientific perspectives on media, communication, and digital technologies.\nBasic knowledge of working with statistical software such as Stata, R, Python, or SPSS is required.\nStudents are recommended, but not required, to also visit the lecture Data Science: Foundations, Tools, Applications in Socio-Economics and Marketing."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Digital Behavioral Data",
+    "section": "Schedule",
+    "text": "Schedule\nBelow is the scheudle for the current semester.\n\n\n\n\n\n\n\n\nSession\nDatum\nTopic\n\n\n\n\n1\n26.10.2022\nKick-Off Session\n\n\n2\n02.11.2022\nDBD: Introduction & Overview\n\n\n3\n09.11.2022\nDBD: Data collection process in focus\n\n\n4\n16.11.2022\nAPI-Access (I): Twitter\n\n\n5\n23.11.2022\nAPI-Access (II): YouTube\n\n\n6\n30.11.2022\nAPI-Access (II): Reddit\n\n\n7\n07.12.2022\nWebscraping: TikTok\n\n\n8\n14.12.2022\nESM: m-path\n\n\n-\n-\nCHRISTMAS BREAK\n\n\n9\n12.01.2023\nData Donations\n\n\n10\n19.01.2023\nMock-Up-Virtual Environments\n\n\n11\n26.01.2023\nOpen Science\n\n\n12\n02.02.2023\nGuest Lecture: Linking DBD & Survey data\n\n\n13\n09.02.2023\nClosing Session: Recap, Evaluation & Discussion"
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Digital Behavioral Data",
+    "section": "Copyright",
+    "text": "Copyright\nThis content is licensed under a GPL-3.0 License."
   }
 ]

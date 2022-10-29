@@ -334,5 +334,68 @@
     "title": "Digital Behavioral Data",
     "section": "Copyright",
     "text": "Copyright\nThis content is licensed under a GPL-3.0 License."
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#seminarplan",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#seminarplan",
+    "title": "Einführung & Überblick",
+    "section": "Seminarplan",
+    "text": "Seminarplan\n\n\n\nSitzung\nDatum\nThema\nReferent*Innen\n\n\n\n\n1\n26.10.2022\nKick-Off Session\nChristoph Adrian\n\n\n2\n02.11.2022\nDBD: Einführung und Überblick\nChristoph Adrian\n\n\n3\n09.11.2022\nDBD: Datenerhebung\nChristoph Adrian\n\n\n4\n16.11.2022\nAPI-Access (I): Twitter\nFalk\n\n\n5\n23.11.2022\nAPI-Access (II): YouTube\nDenisov\n\n\n6\n30.11.2022\nAPI-Access (II): Reddit\nLandauer\n\n\n7\n07.12.2022\nWebscraping: TikTok\nBrand & Kocher\n\n\n8\n14.12.2022\nESM: m-path\nDörr\n\n\n\n\nWEIHNACHTSPAUSE\n\n\n\n9\n12.01.2023\nData Donations\n\n\n\n10\n19.01.2023\nMock-Up-Virtual Environments\n\n\n\n11\n26.01.2023\nOpen Science\n\n\n\n12\n02.02.2023\nGuest Lecture: Linking DBD & Survey data\nJohannes Breuer\n\n\n13\n09.02.2023\nSemesterabschluss & Evaluation\nChristoph Adrian"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#alternativer-seminarplan",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#alternativer-seminarplan",
+    "title": "Einführung & Überblick",
+    "section": "“Alternativer” Seminarplan",
+    "text": "“Alternativer” Seminarplan\n\n\n\nSitzung\nDatum\nThema\nReferent*Innen\n\n\n\n\n1\n26.10.2022\nKick-Off Session\nChristoph Adrian\n\n\n2\n02.11.2022\nDBD: Einführung und Überblick\nChristoph Adrian\n\n\n3\n09.11.2022\nDBD: Datenerhebung\nChristoph Adrian\n\n\n4\n16.11.2022\nAPI-Access (I): Twitter\nFalk\n\n\n5\n23.11.2022\nAPI-Access (II): YouTube\nDenisov\n\n\n6\n30.11.2022\nAPI-Access (II): Reddit\nLandauer\n\n\n7\n07.12.2022\nWebscraping: TikTok\nBrand & Kocher\n\n\n8\n14.12.2022\nExkurs: DBD Analyse mit R\nChristoph Adrian\n\n\n\n\nWEIHNACHTSPAUSE\n\n\n\n9\n12.01.2023\nESM: m-path\nDörr\n\n\n10\n19.01.2023\nTBD\nHofmann & Wierzbicki\n\n\n11\n26.01.2023\nPuffer\n\n\n\n12\n02.02.2023\nGuest Lecture: Linking DBD & Survey data\nJohannes Breuer\n\n\n13\n09.02.2023\nSemesterabschluss & Evaluation\nChristoph Adrian"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#und-nun-zu-ihnen",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#und-nun-zu-ihnen",
+    "title": "Einführung & Überblick",
+    "section": "Und nun zu Ihnen!",
+    "text": "Und nun zu Ihnen!\n\n\n\nDigital Behavioral Data\n\n\n\nWeller, Katrin. 2021. “A Short Introduction to Computational Social Science and Digital Behavioral Data,” June. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf."
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#test",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#test",
+    "title": "Einführung & Überblick",
+    "section": "Test",
+    "text": "Test\nChristoph Adrian\n\nseit 2016: Research Assistant / PhD Candidate FAU\nM. Sc. Sozialökonomik (FAU)\nB.A. Sozialökonomik (FAU)\n\nForschungs- und Lehrschwerpunkte\n\nComputer-assisted and automated (corpus-based) content analysis (with R)\nSocial media research (Twitter)\nPotential influence of media use on attitude changes"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#kurze-rekapitulation-der-letzten-sitzung",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#kurze-rekapitulation-der-letzten-sitzung",
+    "title": "Einführung & Überblick",
+    "section": "Kurze Rekapitulation der letzten Sitzung",
+    "text": "Kurze Rekapitulation der letzten Sitzung\nWas sind Digital behavior data?\n\n\n\n\n\n\n\n\nWeller (2021)\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#seminarplan-alternative",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#seminarplan-alternative",
+    "title": "Einführung & Überblick",
+    "section": "Seminarplan Alternative",
+    "text": "Seminarplan Alternative\n\n\n\nSitzung\nDatum\nThema\nReferent*Innen\n\n\n\n\n1\n26.10.2022\nKick-Off Session\nChristoph Adrian\n\n\n2\n02.11.2022\nDBD: Einführung und Überblick\nChristoph Adrian\n\n\n3\n09.11.2022\nDBD: Datenerhebung\nChristoph Adrian\n\n\n4\n16.11.2022\nAPI-Access (I): Twitter\nFalk\n\n\n5\n23.11.2022\nAPI-Access (II): YouTube\nDenisov\n\n\n6\n30.11.2022\nAPI-Access (II): Reddit\nLandauer\n\n\n7\n07.12.2022\nWebscraping: TikTok\nBrand & Kocher\n\n\n8\n14.12.2022\nExkurs: DBD Analyse mit R\nChristoph Adrian\n\n\n\n\nWEIHNACHTSPAUSE\n\n\n\n9\n12.01.2023\nESM: m-path\nDörr\n\n\n10\n19.01.2023\nTBD\nHofmann & Wierzbicki\n\n\n11\n26.01.2023\nPuffer\n\n\n\n12\n02.02.2023\nGuest Lecture: Linking DBD & Survey data\nJohannes Breuer\n\n\n13\n09.02.2023\nSemesterabschluss & Evaluation\nChristoph Adrian"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#warum-digital-behavioral-data",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#warum-digital-behavioral-data",
+    "title": "Einführung & Überblick",
+    "section": "Warum Digital behavioral data?",
+    "text": "Warum Digital behavioral data?\n\nDigitale Geräte oder Sensoren können sich besser an bestimmte Fakten besser erinnern als das menschliche Gedächtnis. (Beispiel: SocioPatterns.org)\nUnd oft sind Sensoren bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”. (Beispiel: Mobility Monitor)\nDie Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)\nManchmal können digitale Verhaltensdaten die Untersuchung von Themen ermöglichen, für die es schwierig wäre, Studienteilnehmer zu rekrutieren sonst nicht möglich wäre. Sie werden oft ohne Anregung eines Forschers eines Forschers. (z.B. Messung des subjektiven Wohlbefindens)\nDigitale Verhaltensdaten können auch mit Umfragedaten kombiniert werden. (BeispieL Breuer)"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#keine-dbd-ohne-css",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#keine-dbd-ohne-css",
+    "title": "Einführung & Überblick",
+    "section": "Keine DBD ohne CSS",
+    "text": "Keine DBD ohne CSS\nCSS als Grundlage für DBD"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#was-kann-untersucht-werden",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#was-kann-untersucht-werden",
+    "title": "Einführung & Überblick",
+    "section": "Was kann untersucht werden?",
+    "text": "Was kann untersucht werden?\nDBD Phänomene"
   }
 ]

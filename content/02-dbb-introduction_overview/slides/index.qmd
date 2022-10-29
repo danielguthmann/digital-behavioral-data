@@ -1,0 +1,118 @@
+---
+title: "Einführung & Überblick"
+title-slide-attributes:
+  # data-background-image: ../../background_title-dimmed_red_light.png
+  data-background-color: "#04316a"
+subtitle: "Digital behavioral data"
+author: 
+  - name: Christoph Adrian 
+    url: https://twitter.com/chrdrn
+    affiliation: Lehrstuhl für Kommunikationswissenschaft
+    affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
+date: 03 11 2022
+date-format: "DD.MM.YYYY"
+format:
+  revealjs:
+    theme: ../../slidetheme.scss
+    template-partials:
+      - title-slide.html
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: ../../logo.png
+    footer: "[Digital Behavioral Data](https://chrdrn.github.io/digital-behavioral-data/)"
+comments:
+  hypothesis: 
+    theme: clean
+execute:
+  echo: true
+bibliography: references.bib
+---
+
+## Seminarplan {.smaller}
+
+| Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
+|-----------------|-----------------|-------------------|---------------------|
+| ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
+| [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
+| 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
+| 4                   | 16.11.2022                   | API-Access (I): *Twitter*                       | Falk                                               |
+| 5                   | 23.11.2022                   | API-Access (II): *YouTube*                      | Denisov                                            |
+| 6                   | 30.11.2022                   | API-Access (II): *Reddit*                       | Landauer                                           |
+| 7                   | 07.12.2022                   | Webscraping: *TikTok*                           | Brand & Kocher                                     |
+| 8                   | 14.12.2022                   | ESM: *m-path*                                   | Dörr                                               |
+|                     |                              | *WEIHNACHTSPAUSE*                               |                                                    |
+| 9                   | 12.01.2023                   | Data Donations                                  |                                                    |
+| 10                  | 19.01.2023                   | Mock-Up-Virtual Environments                    |                                                    |
+| 11                  | 26.01.2023                   | Open Science                                    |                                                    |
+| 12                  | 02.02.2023                   | ***Guest Lecture: Linking DBD & Survey data***  | [Johannes Breuer](https://www.johannesbreuer.com/) |
+| 13                  | 09.02.2023                   | Semesterabschluss & Evaluation                  | Christoph Adrian                                   |
+
+## Seminarplan Alternative {.smaller}
+
+| Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
+|-----------------|-----------------|-------------------|---------------------|
+| ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
+| [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
+| 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
+| 4                   | 16.11.2022                   | API-Access (I): *Twitter*                       | Falk                                               |
+| 5                   | 23.11.2022                   | API-Access (II): *YouTube*                      | Denisov                                            |
+| 6                   | 30.11.2022                   | API-Access (II): *Reddit*                       | Landauer                                           |
+| 7                   | 07.12.2022                   | Webscraping: *TikTok*                           | Brand & Kocher                                     |
+| ***8***             | ***14.12.2022***             | ***Exkurs: DBD Analyse mit R***                 | ***Christoph Adrian***                             |
+|                     |                              | *WEIHNACHTSPAUSE*                               |                                                    |
+| ***9***             | ***12.01.2023***             | ***ESM: m-path***                               | ***Dörr***                                         |
+| ***10***            | ***19.01.2023***             | ***TBD***                                       | ***Hofmann & Wierzbicki***                         |
+| 11                  | 26.01.2023                   | Puffer                                          |                                                    |
+| 12                  | 02.02.2023                   | ***Guest Lecture: Linking DBD & Survey data***  | [Johannes Breuer](https://www.johannesbreuer.com/) |
+| 13                  | 09.02.2023                   | Semesterabschluss & Evaluation                  | Christoph Adrian                                   |
+
+# Digital behavioral data {background-color="#E6002E"}
+
+Recap, Hintergrund, Definition , Verwendung
+
+## Kurze Rekapitulation der letzten Sitzung
+
+#### Was sind Digital behavior data?
+
+::: columns
+::: {.column width="50%"}
+![](/content/01-kick-off/slides/images/dbd_graph/dbd_pillars_3.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+@weller2021
+
+... fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen
+
+... können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen
+:::
+:::
+
+## Warum Digital behavioral data?
+
+-   Digitale Geräte oder Sensoren können sich besser an bestimmte Fakten besser erinnern als das menschliche Gedächtnis. (Beispiel: SocioPatterns.org)
+
+-   Und oft sind Sensoren bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein "Nebenprodukt". (Beispiel: Mobility Monitor)
+
+-   Die Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)
+
+-   Manchmal können digitale Verhaltensdaten die Untersuchung von Themen ermöglichen, für die es schwierig wäre, Studienteilnehmer zu rekrutieren sonst nicht möglich wäre. Sie werden oft ohne Anregung eines Forschers eines Forschers. (z.B. Messung des subjektiven Wohlbefindens)
+
+-   Digitale Verhaltensdaten können auch mit Umfragedaten kombiniert werden. (BeispieL Breuer)
+
+## Keine DBD ohne CSS
+
+#### CSS als Grundlage für DBD
+
+## Was kann untersucht werden?
+
+#### DBD Phänomene
+
+# Bis zur nächsten Sitzung! {background-color="#04316a"}
+
+## Literatur
+
+::: {#refs}
+:::

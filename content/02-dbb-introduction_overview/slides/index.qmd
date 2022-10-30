@@ -28,12 +28,13 @@ comments:
 execute:
   echo: true
 bibliography: references.bib
+csl: ../../apa.csl
 ---
 
 ## Seminarplan {.smaller}
 
 | Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
-|-----------------|-----------------|-------------------|---------------------|
+|------------------|------------------|------------------|--------------------|
 | ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
 | [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
 | 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
@@ -49,10 +50,14 @@ bibliography: references.bib
 | 12                  | 02.02.2023                   | ***Guest Lecture: Linking DBD & Survey data***  | [Johannes Breuer](https://www.johannesbreuer.com/) |
 | 13                  | 09.02.2023                   | Semesterabschluss & Evaluation                  | Christoph Adrian                                   |
 
+# Organisation & Koordination {background-color="#E6002E"}
+
+Alternativer Seminarplan & MS Teams
+
 ## Seminarplan Alternative {.smaller}
 
 | Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
-|-----------------|-----------------|-------------------|---------------------|
+|------------------|------------------|------------------|--------------------|
 | ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
 | [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
 | 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
@@ -68,11 +73,11 @@ bibliography: references.bib
 | 12                  | 02.02.2023                   | ***Guest Lecture: Linking DBD & Survey data***  | [Johannes Breuer](https://www.johannesbreuer.com/) |
 | 13                  | 09.02.2023                   | Semesterabschluss & Evaluation                  | Christoph Adrian                                   |
 
-# Digital behavioral data {background-color="#E6002E"}
+# Was kann mit DBD untersucht werden? {background-color="#E6002E"}
 
-Recap, Hintergrund, Definition , Verwendung
+Meinungen, Verhalten und Nutzung digitaler Technologien
 
-## Kurze Rekapitulation der letzten Sitzung
+## Kurzer Rückblick
 
 #### Was sind Digital behavior data?
 
@@ -89,6 +94,48 @@ Recap, Hintergrund, Definition , Verwendung
 ... können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen
 :::
 :::
+
+## Untersuchung von Verhaltensweisen
+
+#### Kategorisierung verschiedener Verhaltensweisen
+
+::: columns
+::: {.column width="65%"}
+![](images/dbd_matrix.png){fig-align="center"}
+:::
+
+::: {.column width="35%"}
+<br>
+
+**Einschränkungen**
+
+-   Kategorisierung ist **Momentaufnahme** und erlaubt Überschneidungen der Kategorien
+
+-   **Selektive Nutzung** von bestimmten digitalen Geräten
+:::
+:::
+
+::: notes
+-   Kategorien: Digital/Analog individual/social behavior
+
+-   Einige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)
+
+-   Fehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte.
+:::
+
+## Verfügbarkeit durch Fortschritt
+
+#### Am Beispiel der wachsenden Anzahl eingebauter Smartphone-Sensoren
+
+![Aus @struminskaya2020](images/dbd_smartphone_development.jpeg){fig-align="center"}
+
+## Der Vorteil der Unaufdringlichkeit 
+
+Untersuchung von Meinungen
+
+-   Die Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)
+
+#### 
 
 ## Warum Digital behavioral data?
 
@@ -108,7 +155,7 @@ Recap, Hintergrund, Definition , Verwendung
 
 ## Was kann untersucht werden?
 
-#### DBD Phänomene
+#### Verschiede Phänoemene
 
 # Bis zur nächsten Sitzung! {background-color="#04316a"}
 

@@ -396,6 +396,62 @@
     "href": "content/02-dbb-introduction_overview/slides/index.html#was-kann-untersucht-werden",
     "title": "Einführung & Überblick",
     "section": "Was kann untersucht werden?",
-    "text": "Was kann untersucht werden?\nDBD Phänomene"
+    "text": "Was kann untersucht werden?\nVerschiede Phänoemene"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#literatur",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#literatur",
+    "title": "Einführung & Überblick",
+    "section": "Literatur",
+    "text": "Literatur\n\n\nStruminskaya, B., Lugtig, P., Keusch, F., & Höhne, J. K. (2020). Augmenting Surveys With Data From Sensors and Apps: Opportunities and Challenges. Social Science Computer Review, 089443932097995. https://doi.org/10.1177/0894439320979951\n\n\nWeller, K. (2021). A short introduction to computational social science and digital behavioral data. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf\n\n\n\n\n\nDigital Behavioral Data"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#was-kann-untersucht-werden-1",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#was-kann-untersucht-werden-1",
+    "title": "Einführung & Überblick",
+    "section": "Was kann untersucht werden?",
+    "text": "Was kann untersucht werden?\nVerschiede Phänoemene"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#zunehmende-verfügbarkeit-durch-technologischen-fortschritt",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#zunehmende-verfügbarkeit-durch-technologischen-fortschritt",
+    "title": "Einführung & Überblick",
+    "section": "Zunehmende Verfügbarkeit durch technologischen Fortschritt",
+    "text": "Zunehmende Verfügbarkeit durch technologischen Fortschritt\nQUelle"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#verfügbarkeit-durch-fortschritt",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#verfügbarkeit-durch-fortschritt",
+    "title": "Einführung & Überblick",
+    "section": "Verfügbarkeit durch Fortschritt",
+    "text": "Verfügbarkeit durch Fortschritt\nAm Beispiel der wachsenden Anzahl eingebauter Smartphone-Sensoren\n\nAus Struminskaya et al. (2020)"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#ver",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#ver",
+    "title": "Einführung & Überblick",
+    "section": "Ver",
+    "text": "Ver\nKategorisierung verschiedener Verhaltensweisen\n\n\n\n\n\n\n\n\n\nEinschränkungen\n\nKategorisierung ist Momentaufnahme und erlaubt Überschneidungen der Kategorien\nSelektive Nutzung von bestimmten digitalen Geräten\n\n\n\n\n\nKategorien: Digital/Analog individual/social behavior\nEinige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)\nFehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte."
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#der-vorteil-der-unaufdringlichkeit",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#der-vorteil-der-unaufdringlichkeit",
+    "title": "Einführung & Überblick",
+    "section": "Der Vorteil der Unaufdringlichkeit",
+    "text": "Der Vorteil der Unaufdringlichkeit"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#kurzer-rückblick",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#kurzer-rückblick",
+    "title": "Einführung & Überblick",
+    "section": "Kurzer Rückblick",
+    "text": "Kurzer Rückblick\nWas sind Digital behavior data?\n\n\n\n\n\n\n\n\nWeller (2021)\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#untersuchung-von-verhaltensweisen",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#untersuchung-von-verhaltensweisen",
+    "title": "Einführung & Überblick",
+    "section": "Untersuchung von Verhaltensweisen",
+    "text": "Untersuchung von Verhaltensweisen\nKategorisierung verschiedener Verhaltensweisen\n\n\n\n\n\n\n\n\n\nEinschränkungen\n\nKategorisierung ist Momentaufnahme und erlaubt Überschneidungen der Kategorien\nSelektive Nutzung von bestimmten digitalen Geräten\n\n\n\n\n\nKategorien: Digital/Analog individual/social behavior\nEinige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)\nFehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte."
   }
 ]

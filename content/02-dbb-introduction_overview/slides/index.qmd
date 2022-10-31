@@ -252,12 +252,13 @@ Problem:
 term "bias" is used in its more statistical sense to refer to biases in social data and social data analyses
 :::
 
-## Ein Framework zur Fehlervermeidung
+## Ein Framework zur Minimierung von Bias
 
-#### von @olteanu2019
+#### @olteanu2019
 
 ![](images/bias_framework_without_legend.png){fig-align="center"}
 
+::: notes
 Description:
 
 -   Social data analysis starts with certain goals (section 2.1), such as understanding or influencing phenomena specific to social platforms (Type I) and/or phenomena beyond social platforms (Type II).
@@ -268,7 +269,6 @@ Description:
 
 -   These challenges may depend on the characteristics of each data platform (section 4)---which are often not under the control of the researcher---and on the research designs choices made along a data processing pipeline (from sections 5 to 8)--which are often under the researcher control.
 
-::: notes
 Pfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere auswirken
 
 -   Erreichen bestimmter Ziele (Type I & II) bei der Analyse von Sozialdaten (Abschnitt 2.1) voraussetzt, dass die Forschung bestimmte Validitätskriterien erfüllt (Abschnitt 2.2),
@@ -278,19 +278,52 @@ Pfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere a
 -   Diese Verzerrungen und Probleme können an der Quelle der Daten auftreten (Abschnitt 4), oder sie können im Verlauf der Datenanalyse eingeführt werden (Abschnitte 5-8).
 :::
 
-## Was wird vom Bias beeinflusst?
+## Worauf wirkt die Verzerrung? {.smaller}
 
-### Validität als Grundlage für "Aussagekraft"
+#### Beispiele für Forschung von Typ I & II [@olteanu2019]
 
-![](images/bias_framework_upper_box.png){fig-align="center"}
+![](images/bias_framework_upper_box.png){fig-align="center" width="923"}
 
--   Type I: research on maximizing the spread of "memes," on making social software more engaging, and on improving the search engine or the recommendation system of a platform.
+<br>
 
--   Type II: seek to use social data to answer questions and identify interventions relevant to media, governments, non-governmental organizations, and business, or to work on problems from domains such as health, economics, and education.
+::: columns
+::: {.column width="50%"}
+##### Typ I:
+
+-   Dynamik der Verbreitung von "Memes"
+-   Steigerung der Attraktivität bzw. besonders Features
+-   Verbesserung der Suchfunktion oder des Empfehlungssystems
+:::
+
+::: {.column width="50%"}
+##### Typ II
+
+-   Beschreibung des Einflusses sozialer Medien auf eine politische Wahl.
+
+-   Nutzung sozialer Daten zur Verfolgung der Entwicklung ansteckender Krankheiten durch Analyse der von Social-Media-Nutzern online gemeldeten Symptomen
+:::
+:::
+
+## Validität als Grundlage für "Aussagekraft" {.smaller}
+
+#### Die verschiedenen Formen von Validität
+
+**Interne Validität**
+
+-   Does our analysis correctly lead from the measurements to the conclusions of the study?
+
+**Externe Validität**
+
+-   To what extent can research findings be generalized to other situations?
+
+**Konstruktvaldität**
+
+-   Do our measurements over our data measure what we think they measure?
+
+::: notes
+-   Type II: Nutzung sozialer Daten zur Beantwortung von Fragen und zur Ermittlung von Maßnahmen, die für Medien, Regierungen, Nichtregierungsorganisationen und Unternehmen relevant sind, oder zur Bearbeitung von Problemen aus Bereichen wie Gesundheit, Wirtschaft und Bildung..
 
 -   Construct validity:
-
-    -   Do our measurements over our data measure what we think they measure?
 
     -   Beispiel: If a hypothesis states that "self-esteem" increases with age, research tracking self-esteem over time from social media postings must ask whether its assessment of selfesteem from the postings actually measures self-esteem, or if instead it measures some other related or unrelated construct. In other words, we need to know whether the observed behaviors (such as words or phrases used in postings) are driven primarily by users' self-esteem vs. by community norms (section 4.2), system functionalities (section 4.1), or other reasons (section 3.3). Construct validity is specially important when the construct (self-esteem) is unobservable/latent and has to be operationalized via some observed attributes (words or phrases used)
 
@@ -309,60 +342,89 @@ Pfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere a
     -   For example, effects observed on a social platform may manifest differently on other platforms due to different functionalities, communities, or cultural norms (Wijnhoven and Bloemen, 2014; Malik and Pfeffer, 2016). The concept of external validity includes what is sometimes called ecological validity, which captures to what extent an artificial situation (constrained social media platform) properly reflects a broader real-world phenomenon (Ruths and Pfeffer, 2014). It also includes temporal validity, which captures to what extent constructs change over time (Howison et al., 2011) and may invalidate previous conclusions about societal and/or platform phenomena; e.g., see the case of Google Flu Trends (Lazer et al., 2014).
 
     -   Example: Even after we conclude a successful study of "selfesteem" in a longitudinal social media dataset collected from a given social media platform (section 4), its findings may not generalize to a broader setting as people who chose that particular platform may not be representative of the broader population (section 3.2); or perhaps their behaviors online are not representative of their behaviors in other settings (section 3.3).
+:::
 
 ## Eine Frage der Datenqualität
 
 Verschiedene Kriterien
 
-## HEader 1
+## Im Fokus: Population bias {.smaller}
 
-#### Im Fokus: Population bias
+#### Wie wirken verschiedene Verzerrungen? {.smaller}
 
-::: {.callout-tip appearance="minimal"}
-## Definition
-
+::: {.callout-important appearance="minimal"}
 Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.
 :::
 
 ##### Auswirkungen:
 
--   may affect the representativeness of a data sample and, as a result, may compromise the ecological/external validity of research.
--   particularly problematic for research of type II (section 2.1), where conclusions about society are sought from social data, such as studies of public opinion.
--   can also impact the performance of algorithms that make inferences about users (Johnson et al., 2017), further compromising the internal validity of both type I and type II research.
+-   kann die (Stichproben)-Repräsentativität beeinträchtigen\
+    ➥ ⚠️externe Validität
+-   besonders problematisch für Forschungsarbeiten des Typs II
+-   kann sich auch auf die Leistung von Algorithmen auswirken, die Rückschlüsse auf die Nutzer ziehen\
+    ➥ ⚠️interne Validität (Typ-I & Typ II)
 
-##### Allgemeine Probleme: 
+##### Allgemeine Probleme:
 
--   Different user demographics tend to be drawn to different social platforms.
+-   Unterschiedliche Demographien (z.B. Geschlechts-, Alters- & Bildungsgruppen) neigen zu unterschiedlichen sozialen Plattformen und nutzen deren Mechanismen unterschiedlich
 
--   Different user demographics use platform mechanisms differently
+-   Proxies für Eigenschaften oder demografische Kriterien der Nutzenden sind unterschiedlich verlässlich
 
--   Proxies for user traits or demographic criteria vary in reliabity
+::: notes
+Häufig ist der Zusammenhang von Untersuchungspopulation (z.B. in Deutschland lebende Erwachsene) zu Zielpopulation (Erwachsene auf Twitter, die angeben, in DE zu leben) unbekannt.
 
-## HEader 2
+Beispiel "Auswirkungen"
 
-#### Im Fokus: Behavioral bias
+-   Algorithmen: Schätzung der Geo-Location im Stadt-Land-Spektrum (z.B Johnson et al., 2017)
 
-::: {.callout-tip appearance="minimal"}
-## Definition
+Beispiele "Probleme":
 
-Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.
+-   Signifikant mehr Twitter Nutzer (Mislove et al. ,2011), bei Pinterest tendenziell Frauen überrepräsentiert (Ottoni et al., 2013)
+
+-   Unterschiedliche Twitter-Nutzung in DE (Fokus auf Hashtags) und KOR (Fokus auf Konversationen) (Hong et al., 2011).
+
+-   Angabe von Geo-Location oder Profilinformationen in sozialen Netzwerken
+:::
+
+## Im Fokus: Behavioral bias {.smaller}
+
+#### Wie wirken verschiedene Verzerrungen?
+
+::: {.callout-important appearance="minimal"}
+Systematic distortions in user behavior across platforms or contexts, or across users represented in different datasets.
 :::
 
 ##### Auswirkungen:
 
--   Behavioral biases affect the ecological/external validity of research, as they may condition the results of a study on the chosen platform or context. They are not entirely dependent on population biases, and when (explicit or implicit) assumptions are made about the users' behavioral patterns, they
+-   Ergebnisse einer Studie von der gewählten Plattform oder dem Kontext abhängig\
+    ➤ ⚠️externe Validität
 
-    can affect both type I and II research (section 2.1) that, e.g., looks into users' needs or interests, among others.
+-   nur Teilweise von population bias abhängig
 
-##### Allgemeine Probleme: 
+-   bei (expliziten oder impliziten) Annahmen über die Verhaltensmuster der Nutzenden\
+    ➤ ⚠️potentielle Effekte auf Untersuchung von Typ-I & Typ II
 
--   Interaction biases affect how users interact with each other
+##### Allgemeine Probleme:
 
--   Content consumption biases affect how users find and interact with content, due to differences in their interests, expertise, and information needs
+-   beeinflussen die Art und Weise, wie Nutzer miteinander interagieren
 
--   Self-selection and response bias may occur due to behavioral biases
+-   Auftreten von Selbstselektion und Reaktionsverzerrungen
 
-## 
+-   Verzerrungen beim Konsumieren von Inhalten beeinflussen die Art und Weise, wie Nutzer Inhalte finden und mit ihnen interagieren, aufgrund von Unterschieden in ihren Interessen, ihrem Fachwissen und ihrem Informationsbedarfes
+
+::: notes
+Unterschiede in Bezug auf Nutzerpersönlichkeiten (Hughes et al., 2012), die Verbreitung von Nachrichten (Lerman und Ghosh, 2010) oder den Austausch von Inhalten (Ottoni et al., 2014)
+
+Beispiel "Auswirkungen":
+
+-   B. die Untersuchung der Bedürfnisse oder Interessen der Nutzenden
+
+Beispiel "Probleme":
+
+-   Gesonderte Diskussion von Verhalten, die sich auf die Erstellung von Inhalten durch die Nutzer auswirken ("content production bias") und solche, die sich auf die Verknüpfungsmuster zwischen Nutzern auswirken ("linking bias").
+
+-   Drei weitere häufige Klassen von Verhaltensverzerrungen betreffen die Interaktionen zwischen Nutzern, die Interaktionen zwischen Nutzern und Inhalten und die Verzerrungen, die dazu führen, dass Nutzer in eine Studienpopulation aufgenommen oder von ihr ausgeschlossen werden.
+:::
 
 # Group Activity
 

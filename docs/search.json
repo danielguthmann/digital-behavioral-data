@@ -382,7 +382,7 @@
     "href": "content/02-dbb-introduction_overview/slides/index.html#warum-digital-behavioral-data",
     "title": "Einführung & Überblick",
     "section": "Warum Digital behavioral data?",
-    "text": "Warum Digital behavioral data?\n\nDigitale Geräte oder Sensoren können sich besser an bestimmte Fakten besser erinnern als das menschliche Gedächtnis. (Beispiel: SocioPatterns.org)\nUnd oft sind Sensoren bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”. (Beispiel: Mobility Monitor)\nDie Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)\nManchmal können digitale Verhaltensdaten die Untersuchung von Themen ermöglichen, für die es schwierig wäre, Studienteilnehmer zu rekrutieren sonst nicht möglich wäre. Sie werden oft ohne Anregung eines Forschers eines Forschers. (z.B. Messung des subjektiven Wohlbefindens)\nDigitale Verhaltensdaten können auch mit Umfragedaten kombiniert werden. (BeispieL Breuer)"
+    "text": "Warum Digital behavioral data?\n\nDigitale Geräte oder Sensoren können sich besser an bestimmte Fakten besser erinnern als das menschliche Gedächtnis. (Beispiel: SocioPatterns.org)\nUnd oft sind Sensoren bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”. (Beispiel: Mobility Monitor)\nManchmal können digitale Verhaltensdaten die Untersuchung von Themen ermöglichen, für die es schwierig wäre, Studienteilnehmer zu rekrutieren sonst nicht möglich wäre. Sie werden oft ohne Anregung eines Forschers eines Forschers. (z.B. Messung des subjektiven Wohlbefindens)\nDigitale Verhaltensdaten können auch mit Umfragedaten kombiniert werden. (BeispieL Breuer)"
   },
   {
     "objectID": "content/02-dbb-introduction_overview/slides/index.html#keine-dbd-ohne-css",
@@ -403,7 +403,7 @@
     "href": "content/02-dbb-introduction_overview/slides/index.html#literatur",
     "title": "Einführung & Überblick",
     "section": "Literatur",
-    "text": "Literatur\n\n\nStruminskaya, B., Lugtig, P., Keusch, F., & Höhne, J. K. (2020). Augmenting Surveys With Data From Sensors and Apps: Opportunities and Challenges. Social Science Computer Review, 089443932097995. https://doi.org/10.1177/0894439320979951\n\n\nWeller, K. (2021). A short introduction to computational social science and digital behavioral data. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf\n\n\n\n\n\nDigital Behavioral Data"
+    "text": "Literatur\n\n\nAnderson, C. (2008). The end of theory: The data deluge makes the scientific method obsolete. Wired. https://www.wired.com/2008/06/pb-theory/\n\n\nboyd, danah m., & Ellison, N. B. (2007). Social Network Sites: Definition, History, and Scholarship. Journal of Computer-Mediated Communication, 13(1), 210–230. https://doi.org/10.1111/j.1083-6101.2007.00393.x\n\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://doi.org/10.4324/9781003024583-8\n\n\nHarford, T. (2014). Big data: A big mistake? Significance, 11(5), 14–19. https://doi.org/10.1111/j.1740-9713.2014.00778.x\n\n\nLazer, D. M. J., Pentland, A., Watts, D. J., Aral, S., Athey, S., Contractor, N., Freelon, D., Gonzalez-Bailon, S., King, G., Margetts, H., Nelson, A., Salganik, M. J., Strohmaier, M., Vespignani, A., & Wagner, C. (2020). Computational social science: Obstacles and opportunities. Science, 369(6507), 1060–1062. https://doi.org/10.1126/science.aaz8170\n\n\nOlteanu, A., Castillo, C., Diaz, F., & Kıcıman, E. (2019). Social data: Biases, methodological pitfalls, and ethical boundaries. Frontiers in Big Data, 2, 13. https://doi.org/10.3389/fdata.2019.00013\n\n\nStruminskaya, B., Lugtig, P., Keusch, F., & Höhne, J. K. (2020). Augmenting Surveys With Data From Sensors and Apps: Opportunities and Challenges. Social Science Computer Review, 089443932097995. https://doi.org/10.1177/0894439320979951\n\n\nWeller, K. (2021). A short introduction to computational social science and digital behavioral data. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf\n\n\n\n\n\nDigital Behavioral Data"
   },
   {
     "objectID": "content/02-dbb-introduction_overview/slides/index.html#was-kann-untersucht-werden-1",
@@ -424,7 +424,7 @@
     "href": "content/02-dbb-introduction_overview/slides/index.html#verfügbarkeit-durch-fortschritt",
     "title": "Einführung & Überblick",
     "section": "Verfügbarkeit durch Fortschritt",
-    "text": "Verfügbarkeit durch Fortschritt\nAm Beispiel der wachsenden Anzahl eingebauter Smartphone-Sensoren\n\nAus Struminskaya et al. (2020)"
+    "text": "Verfügbarkeit durch Fortschritt\nAm Beispiel der wachsenden Anzahl eingebauter Smartphone-Sensoren\n\nGraphik aus Struminskaya et al. (2020)"
   },
   {
     "objectID": "content/02-dbb-introduction_overview/slides/index.html#ver",
@@ -438,7 +438,7 @@
     "href": "content/02-dbb-introduction_overview/slides/index.html#der-vorteil-der-unaufdringlichkeit",
     "title": "Einführung & Überblick",
     "section": "Der Vorteil der Unaufdringlichkeit",
-    "text": "Der Vorteil der Unaufdringlichkeit"
+    "text": "Der Vorteil der Unaufdringlichkeit\nUntersuchung von Meinungen\n\nDie Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)"
   },
   {
     "objectID": "content/02-dbb-introduction_overview/slides/index.html#kurzer-rückblick",
@@ -453,5 +453,159 @@
     "title": "Einführung & Überblick",
     "section": "Untersuchung von Verhaltensweisen",
     "text": "Untersuchung von Verhaltensweisen\nKategorisierung verschiedener Verhaltensweisen\n\n\n\n\n\n\n\n\n\nEinschränkungen\n\nKategorisierung ist Momentaufnahme und erlaubt Überschneidungen der Kategorien\nSelektive Nutzung von bestimmten digitalen Geräten\n\n\n\n\n\nKategorien: Digital/Analog individual/social behavior\nEinige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)\nFehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte."
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#kursmaterialien-etc.",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#kursmaterialien-etc.",
+    "title": "Einführung & Überblick",
+    "section": "Kursmaterialien etc.",
+    "text": "Kursmaterialien etc.\nKurze Einführung in Teams"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#vorschlag-alternativer-seminarplan",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#vorschlag-alternativer-seminarplan",
+    "title": "Einführung & Überblick",
+    "section": "Vorschlag: Alternativer Seminarplan",
+    "text": "Vorschlag: Alternativer Seminarplan\n\n\n\nSitzung\nDatum\nThema\nReferent*Innen\n\n\n\n\n1\n26.10.2022\nKick-Off Session\nChristoph Adrian\n\n\n2\n02.11.2022\nDBD: Einführung und Überblick\nChristoph Adrian\n\n\n3\n09.11.2022\nDBD: Datenerhebung\nChristoph Adrian\n\n\n4\n16.11.2022\nAPI-Access (I): Twitter\nFalk\n\n\n5\n23.11.2022\nAPI-Access (II): YouTube\nDenisov\n\n\n6\n30.11.2022\nAPI-Access (II): Reddit\nLandauer\n\n\n7\n07.12.2022\nWebscraping: TikTok\nBrand & Kocher\n\n\n8\n14.12.2022\nExkurs: DBD Analyse mit R\nChristoph Adrian\n\n\n\n\nWEIHNACHTSPAUSE\n\n\n\n9\n12.01.2023\nESM: m-path\nDörr\n\n\n10\n19.01.2023\nTBD\nHofmann & Wierzbicki\n\n\n11\n26.01.2023\nPuffer\n\n\n\n12\n02.02.2023\nGuest Lecture: Linking DBD & Survey data\nJohannes Breuer\n\n\n13\n09.02.2023\nSemesterabschluss & Evaluation\nChristoph Adrian"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#dbd---was-ist-das-eigentlich",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#dbd---was-ist-das-eigentlich",
+    "title": "Einführung & Überblick",
+    "section": "DBD - Was ist das eigentlich?",
+    "text": "DBD - Was ist das eigentlich?\nRückblick auf Definition nach Weller (2021)\n\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen\n\n\n\n\nIm Kontext dieses Seminars:\n\nSchwerpunkt Soziale Medien und Mediennutzung\nComputational Social Science [CSS] zur Erhebung (& Auswertung)"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#was-ist-das-eigentlich",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#was-ist-das-eigentlich",
+    "title": "Einführung & Überblick",
+    "section": "Was ist das eigentlich?",
+    "text": "Was ist das eigentlich?\nRückblick auf Definition (nach Weller (2021))\nDigital behavioral data …\n\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen\n\nIm Kontext dieses Seminars:\n\nSchwerpunkt “Soziale Medien”"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#fokus-auf-die-rahmenbedingungen",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#fokus-auf-die-rahmenbedingungen",
+    "title": "Einführung & Überblick",
+    "section": "Fokus auf die Rahmenbedingungen",
+    "text": "Fokus auf die Rahmenbedingungen\nDBD-Kernbereiche in Anlehnung an Aufteilung der GESIS\n\n\n\n\n\n\n\n\nHeute Schwerpunkt:"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#kein-dbd-ohne-css",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#kein-dbd-ohne-css",
+    "title": "Einführung & Überblick",
+    "section": "Kein DBD ohne CSS",
+    "text": "Kein DBD ohne CSS\nExkurs: Computational Social Science\n\n\n\nDefinition von CSS\n\n\nWe define CSS as the development and application of computational methods to complex, typically large-scale, human (sometimes simulated) behavioral data.” Lazer et al. (2020)\n\n\n\nist ein Forschungsfeld, das\n\nrechnergestützte Methoden einsetzt\num Daten zu sammeln und zu analysieren, insbesondere große und digitale Verhaltensdaten,\num gesellschaftlich relevante Phänomene zu untersuchen.\n\nhilft dabei …\n\nechte digitale Phänomene zu untersuchen\ndigitale Verhaltensdaten zu sammeln und vorzuverarbeiten\nneue Methoden zur Analyse von großen Datensätzen\n\n\nCSS = neues Teilgebiet der Sozialwissenschaften oder neuer “Werkzeugkasten” zur Ergänzung der traditionellen sozialwissenschaftlichen Ansätze"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#untersuchung-von-meinungen",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#untersuchung-von-meinungen",
+    "title": "Einführung & Überblick",
+    "section": "Untersuchung von Meinungen",
+    "text": "Untersuchung von Meinungen\nBeispiel: Twitter Screenshots/Mining\n\nDie Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)\n\nTODO: Beispiel hier"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#ambivalenz-der-unaufdringlichkeit",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#ambivalenz-der-unaufdringlichkeit",
+    "title": "Einführung & Überblick",
+    "section": "Ambivalenz der Unaufdringlichkeit",
+    "text": "Ambivalenz der Unaufdringlichkeit\nbasierend auf Engel et al. (2021)\n\nUnterscheidung zwischen aufdringlichen (z.B. spezielle Research-App & Befragungen) & unaufdringlichen (z.B. Cookie & APIs) erhobenen Daten\nBewertung und Erwartung an Datensammlung ist abhängig vom Kontext (Amazon vs. Researchgate)\nDilema: Einerseits bereitwillige (oft unwissende) Abgabe der Daten an Konzerne, andererseits häufig Bedenken bezüglich Datenschutz & Privatsphäre bei wissenschaftlichen Studien\n\n\nQ: Gründe für Ablehnung: Nutzenorientierung?"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#choose-your-bias",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#choose-your-bias",
+    "title": "Einführung & Überblick",
+    "section": "Choose your bias",
+    "text": "Choose your bias\nDBD-Kernbereiche in Anlehnung an Aufteilung der GESIS\n\n\n\n\n\n\n\n\nHeute Schwerpunkt:\n\nKonzeptuelle Herangehensweise\nBias"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#verfügbarkeit-vor-interesse",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#verfügbarkeit-vor-interesse",
+    "title": "Einführung & Überblick",
+    "section": "Verfügbarkeit vor Interesse",
+    "text": "Verfügbarkeit vor Interesse\nZur Wichtigkeit von konzipierte Messungen & Designs\n\nDBB sind häufig organische Daten, die zufällig gesammelt und dann von der Wissenschaft “recycelt” werden\n\nZentrale Frage: Ist das ein Problem? Wenn ja, warum?\n\nRepräsentativität vs. Stichprobenziehung\nKausalität vs. Korrelation"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#the-end-of-theory",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#the-end-of-theory",
+    "title": "Einführung & Überblick",
+    "section": "The End of Theory?",
+    "text": "The End of Theory?\nZur Wichtigkeit von konzipierte Messungen & Designs\n\n“Who knows why people do what they do? The point is they do it, and we can track and measure it with unprecedented fidelity. With enough data, the numbers speak for themselves.”\n(Anderson, 2008)\n\nAber:\n\n“Size alone does not necessarily make the data better” (boyd & Ellison, 2007)\n“there are a lot of small data problems that occur in big data [which] don’t disappear because you’ve got lots of the stuff. They get worse” (Harford, 2014)\n\nProblem:\n\n(Big) Data zunehmend Grundlage für politische Maßnahmen, die Gestaltung von Produkten und Dienstleistungen und für die automatisierte Entscheidungsfindung"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#lets-talk-about-bias",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#lets-talk-about-bias",
+    "title": "Einführung & Überblick",
+    "section": "Let’s talk about bias",
+    "text": "Let’s talk about bias\nProblem:\n\nthere is not enough agreement on a vocabulary or taxonomy of biases, methodological issues, and pitfalls of this type of research.\n\n\n\nthe evidence of bias and of broader implications about potential threats to the validity of social data research is often implicit in the findings of prior work, rather than a primary focus of it.\nOftentimes, however, it is difficult to draw clear boundaries between the more normative connotations and the statistical sense of the term —see Campolo et al. (2017) for a discussion on some of the competing meanings of the term “bias.”\n\n\nterm “bias” is used in its more statistical sense to refer to biases in social data and social data analyses"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#ein-framework-zur-fehlervermeidung",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#ein-framework-zur-fehlervermeidung",
+    "title": "Einführung & Überblick",
+    "section": "Ein Framework zur Fehlervermeidung",
+    "text": "Ein Framework zur Fehlervermeidung\nvon Olteanu et al. (2019)\n\nDescription:\n\nSocial data analysis starts with certain goals (section 2.1), such as understanding or influencing phenomena specific to social platforms (Type I) and/or phenomena beyond social platforms (Type II).\nThese goals require that research satisfies certain validity criteria, described earlier (section 2.2).\nThese criteria, in turn, can be compromised by a series of general biases and issues (section 3).\nThese challenges may depend on the characteristics of each data platform (section 4)—which are often not under the control of the researcher—and on the research designs choices made along a data processing pipeline (from sections 5 to 8)–which are often under the researcher control.\n\n\nPfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere auswirken\n\nErreichen bestimmter Ziele (Type I & II) bei der Analyse von Sozialdaten (Abschnitt 2.1) voraussetzt, dass die Forschung bestimmte Validitätskriterien erfüllt (Abschnitt 2.2),\ndie durch Verzerrungen und andere Probleme mit Sozialdaten beeinträchtigt werden können (Abschnitt 3)\nDiese Verzerrungen und Probleme können an der Quelle der Daten auftreten (Abschnitt 4), oder sie können im Verlauf der Datenanalyse eingeführt werden (Abschnitte 5-8)."
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#was-wird-vom-bias-beeinflusst",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#was-wird-vom-bias-beeinflusst",
+    "title": "Einführung & Überblick",
+    "section": "Was wird vom Bias beeinflusst?",
+    "text": "Was wird vom Bias beeinflusst?\nValidität als Grundlage für “Aussagekraft”\n\n\nType I: research on maximizing the spread of “memes,” on making social software more engaging, and on improving the search engine or the recommendation system of a platform.\nType II: seek to use social data to answer questions and identify interventions relevant to media, governments, non-governmental organizations, and business, or to work on problems from domains such as health, economics, and education.\nConstruct validity:\n\nDo our measurements over our data measure what we think they measure?\nBeispiel: If a hypothesis states that “self-esteem” increases with age, research tracking self-esteem over time from social media postings must ask whether its assessment of selfesteem from the postings actually measures self-esteem, or if instead it measures some other related or unrelated construct. In other words, we need to know whether the observed behaviors (such as words or phrases used in postings) are driven primarily by users’ self-esteem vs. by community norms (section 4.2), system functionalities (section 4.1), or other reasons (section 3.3). Construct validity is specially important when the construct (self-esteem) is unobservable/latent and has to be operationalized via some observed attributes (words or phrases used)\n\nInternal validity\n\nDoes our analysis correctly lead from the measurements to the conclusions of the study?\nThis survey covers subtle errors of this kind, such as biases that can be introduced through data cleaning procedures (section 6), the use of machine learned classifiers, mistaken assumptions about data distributions, and other inadvertent biases introduced through common analyses of social media (section 7).\nExample: An analysis of whether “self-esteem” increases with age may not be internally valid if text filtering operations accidentally remove terms expressing confidence (section 5.3); or if machine learned classifiers were inadvertently trained to recognize self-esteem only in younger people (section 7). Of course, while we do not dwell on them, researchers should also be aware of more blatant logical errors—e.g., comparing the self-esteem of today’s younger population to the self-esteem of today’s older population would not actually prove that selfesteem increases with age (section 3.6).\n\nExternal validity:\n\nTo what extent can research findings be generalized to other situations?\nFor example, effects observed on a social platform may manifest differently on other platforms due to different functionalities, communities, or cultural norms (Wijnhoven and Bloemen, 2014; Malik and Pfeffer, 2016). The concept of external validity includes what is sometimes called ecological validity, which captures to what extent an artificial situation (constrained social media platform) properly reflects a broader real-world phenomenon (Ruths and Pfeffer, 2014). It also includes temporal validity, which captures to what extent constructs change over time (Howison et al., 2011) and may invalidate previous conclusions about societal and/or platform phenomena; e.g., see the case of Google Flu Trends (Lazer et al., 2014).\nExample: Even after we conclude a successful study of “selfesteem” in a longitudinal social media dataset collected from a given social media platform (section 4), its findings may not generalize to a broader setting as people who chose that particular platform may not be representative of the broader population (section 3.2); or perhaps their behaviors online are not representative of their behaviors in other settings (section 3.3)."
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#eine-frage-der-datenqualität",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#eine-frage-der-datenqualität",
+    "title": "Einführung & Überblick",
+    "section": "Eine Frage der Datenqualität",
+    "text": "Eine Frage der Datenqualität\nVerschiedene Kriterien"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick",
+    "title": "Einführung & Überblick",
+    "section": "Verschiedene Biases im Überblick",
+    "text": "Verschiedene Biases im Überblick\n\n\nPopulation bias\nContent bias\nLinking bias\nTemporal bias\nRedundancy\n\n\n\n\n\nDefinition\n\n\nA systematic distortion in the sampled data that compromises its representativeness\n\n\n\nHerausforderungen:\n\nRepräsentativität"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick-test-1",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick-test-1",
+    "title": "Einführung & Überblick",
+    "section": "Verschiedene Biases im Überblick (TEST 1)",
+    "text": "Verschiedene Biases im Überblick (TEST 1)\n\n\nData bias\nPopulation bias\nContent bias\nLinking bias\nTemporal bias\nRedundancy\n\n\n\n\n\nDefinition\n\n\nA systematic distortion in the sampled data that compromises its representativeness\n\n\n\nIssues:\n\nSampling"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick-test-2",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick-test-2",
+    "title": "Einführung & Überblick",
+    "section": "Verschiedene Biases im Überblick (TEST 2)",
+    "text": "Verschiedene Biases im Überblick (TEST 2)\n\n\nTyp:\n\nData\nPopulation\nContent\nLinking\nTemporal\nRedundancy\n\n\n\n\n\nDefinition “data bias”\n\n\nA systematic distortion in the sampled data that compromises its representativeness\n\n\n\nIssues:\n\nSampling"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#data-bias",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#data-bias",
+    "title": "Einführung & Überblick",
+    "section": "Data bias",
+    "text": "Data bias\nPopulation bias\nContent bias\nLinking bias\nTemporal bias\nRedundancy bias"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick-1",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#verschiedene-biases-im-überblick-1",
+    "title": "Einführung & Überblick",
+    "section": "Verschiedene Biases im Überblick",
+    "text": "Verschiedene Biases im Überblick\n\n\nData bias\nPopulation bias\nContent bias\nLinking bias\nTemporal bias\nRedundancy\n\n\n\n\n\nDefinition\n\n\nSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.\n\n\n\nAuswirkungen:\n\nmay affect the representativeness of a data sample and, as a result, may compromise the ecological/external validity of research.\nparticularly problematic for research of type II (section 2.1), where conclusions about society are sought from social data, such as studies of public opinion.\ncan also impact the performance of algorithms that make inferences about users (Johnson et al., 2017), further compromising the internal validity of both type I and type II research.\n\nAllgemeine Probleme:\n\nDifferent user demographics tend to be drawn to different social platforms.\nDifferent user demographics use platform mechanisms differently\nProxies for user traits or demographic criteria vary in reliabi"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#header-1",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#header-1",
+    "title": "Einführung & Überblick",
+    "section": "HEader 1",
+    "text": "HEader 1\nIm Fokus: Population bias\n\n\n\nDefinition\n\n\nSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.\n\n\n\nAuswirkungen:\n\nmay affect the representativeness of a data sample and, as a result, may compromise the ecological/external validity of research.\nparticularly problematic for research of type II (section 2.1), where conclusions about society are sought from social data, such as studies of public opinion.\ncan also impact the performance of algorithms that make inferences about users (Johnson et al., 2017), further compromising the internal validity of both type I and type II research.\n\nAllgemeine Probleme:\n\nDifferent user demographics tend to be drawn to different social platforms.\nDifferent user demographics use platform mechanisms differently\nProxies for user traits or demographic criteria vary in reliabity"
+  },
+  {
+    "objectID": "content/02-dbb-introduction_overview/slides/index.html#header-2",
+    "href": "content/02-dbb-introduction_overview/slides/index.html#header-2",
+    "title": "Einführung & Überblick",
+    "section": "HEader 2",
+    "text": "HEader 2\nIm Fokus: Behavioral bias\n\n\n\nDefinition\n\n\nSystematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.\n\n\n\nAuswirkungen:\n\nBehavioral biases affect the ecological/external validity of research, as they may condition the results of a study on the chosen platform or context. They are not entirely dependent on population biases, and when (explicit or implicit) assumptions are made about the users’ behavioral patterns, they\ncan affect both type I and II research (section 2.1) that, e.g., looks into users’ needs or interests, among others.\n\nAllgemeine Probleme:\n\nInteraction biases affect how users interact with each other\nContent consumption biases affect how users find and interact with content, due to differences in their interests, expertise, and information needs\nSelf-selection and response bias may occur due to behavioral biases"
   }
 ]

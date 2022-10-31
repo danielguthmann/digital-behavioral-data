@@ -34,7 +34,7 @@ csl: ../../apa.csl
 ## Seminarplan {.smaller}
 
 | Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
-|------------------|------------------|------------------|--------------------|
+|------------------|------------------|------------------|-------------------|
 | ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
 | [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
 | 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
@@ -52,12 +52,18 @@ csl: ../../apa.csl
 
 # Organisation & Koordination {background-color="#E6002E"}
 
-Alternativer Seminarplan & MS Teams
+Fragen, MS Teams & alternativer Seminarplan
 
-## Seminarplan Alternative {.smaller}
+## Kursmaterialien etc.
+
+#### Kurze Einführung in Teams
+
+![](images/ms_teams.png){fig-align="center"}
+
+## Vorschlag: Alternativer Seminarplan {.smaller}
 
 | Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
-|------------------|------------------|------------------|--------------------|
+|------------------|------------------|------------------|-------------------|
 | ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
 | [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
 | 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
@@ -77,22 +83,51 @@ Alternativer Seminarplan & MS Teams
 
 Meinungen, Verhalten und Nutzung digitaler Technologien
 
-## Kurzer Rückblick
+## DBD - Was ist das eigentlich?
 
-#### Was sind Digital behavior data?
+#### Rückblick auf Definition nach @weller2021
 
-::: columns
-::: {.column width="50%"}
-![](/content/01-kick-off/slides/images/dbd_graph/dbd_pillars_3.png){fig-align="center"}
+-   ... fasst eine **Vielzahl von möglichen Datenquellen** zusammen, die verschiedene Arten von **Aktivitäten aufzeichnen**
+
+-   ... können dabei helfen, **Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien** zu erkennen
+
+<br>
+
+::: fragment
+#### **Im Kontext dieses Seminars:**
+
+-   Schwerpunkt **Soziale Medien** und **Mediennutzung**
+-   **Computational Social Science** \[CSS\] zur Erhebung (& Auswertung)
 :::
 
-::: {.column width="50%"}
-@weller2021
+## Kein DBD ohne CSS {.smaller}
 
-... fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen
+#### Exkurs: Computational Social Science
 
-... können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen
+::: {.callout-tip appearance="minimal"}
+## Definition von CSS
+
+We define CSS as the development and application of computational methods to complex, typically large-scale, human (sometimes simulated) behavioral data." @lazer2020
 :::
+
+**ist ein Forschungsfeld, das**
+
+-   rechnergestützte Methoden einsetzt
+
+-   um Daten zu sammeln und zu analysieren, insbesondere große und digitale Verhaltensdaten,
+
+-   um gesellschaftlich relevante Phänomene zu untersuchen.
+
+**hilft dabei ...**
+
+-   echte digitale Phänomene zu untersuchen
+
+-   digitale Verhaltensdaten zu sammeln und vorzuverarbeiten
+
+-   neue Methoden zur Analyse von großen Datensätzen
+
+::: notes
+CSS = neues Teilgebiet der Sozialwissenschaften oder neuer "Werkzeugkasten" zur Ergänzung der traditionellen sozialwissenschaftlichen Ansätze
 :::
 
 ## Untersuchung von Verhaltensweisen
@@ -123,19 +158,19 @@ Meinungen, Verhalten und Nutzung digitaler Technologien
 -   Fehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte.
 :::
 
+## Untersuchung von Meinungen
+
+Beispiel: Twitter Screenshots/Mining
+
+-   Die Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)
+
+TODO: Beispiel hier
+
 ## Verfügbarkeit durch Fortschritt
 
 #### Am Beispiel der wachsenden Anzahl eingebauter Smartphone-Sensoren
 
-![Aus @struminskaya2020](images/dbd_smartphone_development.jpeg){fig-align="center"}
-
-## Der Vorteil der Unaufdringlichkeit 
-
-Untersuchung von Meinungen
-
--   Die Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)
-
-#### 
+![Graphik aus @struminskaya2020](images/dbd_smartphone_development.jpeg){alt="Aus @struminskaya2020" fig-align="center"}
 
 ## Warum Digital behavioral data?
 
@@ -143,19 +178,207 @@ Untersuchung von Meinungen
 
 -   Und oft sind Sensoren bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein "Nebenprodukt". (Beispiel: Mobility Monitor)
 
--   Die Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)
-
 -   Manchmal können digitale Verhaltensdaten die Untersuchung von Themen ermöglichen, für die es schwierig wäre, Studienteilnehmer zu rekrutieren sonst nicht möglich wäre. Sie werden oft ohne Anregung eines Forschers eines Forschers. (z.B. Messung des subjektiven Wohlbefindens)
 
 -   Digitale Verhaltensdaten können auch mit Umfragedaten kombiniert werden. (BeispieL Breuer)
 
-## Keine DBD ohne CSS
+# DBD Rahmenbedingungen
 
-#### CSS als Grundlage für DBD
+Biases, methodologische Tücken und ethische Grenzen
 
-## Was kann untersucht werden?
+## Choose your bias
 
-#### Verschiede Phänoemene
+#### DBD-Kernbereiche in Anlehnung an Aufteilung der [GESIS](https://www.gesis.org/institut/digitale-verhaltensdaten)
+
+::: columns
+::: {.column width="50%"}
+![](/content/01-kick-off/slides/images/dbd_graph/dbd_pillars_3.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+Heute Schwerpunkt:
+
+-   Konzeptuelle Herangehensweise
+
+-   Bias
+:::
+:::
+
+## Ambivalenz der Unaufdringlichkeit
+
+#### basierend auf @keusch2021
+
+-   Unterscheidung zwischen aufdringlichen (z.B. spezielle Research-App & Befragungen) & unaufdringlichen (z.B. Cookie & APIs) erhobenen Daten
+
+-   Bewertung und Erwartung an Datensammlung ist abhängig vom Kontext (Amazon vs. Researchgate)
+
+-   Dilema: Einerseits bereitwillige (oft unwissende) Abgabe der Daten an Konzerne, andererseits häufig Bedenken bezüglich Datenschutz & Privatsphäre bei wissenschaftlichen Studien
+
+::: notes
+Q: Gründe für Ablehnung: Nutzenorientierung?
+:::
+
+## The End of Theory?
+
+#### Zur Wichtigkeit von konzipierte Messungen & Designs
+
+> "Who knows why people do what they do? The point is they do it, and we can track and measure it with unprecedented fidelity. With enough data, the numbers speak for themselves."
+>
+> [@anderson2008]
+
+Aber:
+
+-   "Size alone does not necessarily make the data better" [@boyd2007]
+
+-   "there are a lot of small data problems that occur in big data \[which\] don't disappear because you've got lots of the stuff. They get worse" [@harford2014]
+
+Problem:
+
+-   (Big) Data zunehmend Grundlage für politische Maßnahmen, die Gestaltung von Produkten und Dienstleistungen und für die automatisierte Entscheidungsfindung
+
+## Let's talk about bias
+
+Problem:
+
+-   there is not enough agreement on a vocabulary or taxonomy of biases, methodological issues, and pitfalls of this type of research.
+
+<!-- -->
+
+-   the evidence of bias and of broader implications about potential threats to the validity of social data research is often implicit in the findings of prior work, rather than a primary focus of it.
+
+-   Oftentimes, however, it is difficult to draw clear boundaries between the more normative connotations and the statistical sense of the term ---see Campolo et al. (2017) for a discussion on some of the competing meanings of the term "bias."
+
+::: notes
+term "bias" is used in its more statistical sense to refer to biases in social data and social data analyses
+:::
+
+## Ein Framework zur Fehlervermeidung
+
+#### von @olteanu2019
+
+![](images/bias_framework_without_legend.png){fig-align="center"}
+
+Description:
+
+-   Social data analysis starts with certain goals (section 2.1), such as understanding or influencing phenomena specific to social platforms (Type I) and/or phenomena beyond social platforms (Type II).
+
+-   These goals require that research satisfies certain validity criteria, described earlier (section 2.2).
+
+-   These criteria, in turn, can be compromised by a series of general biases and issues (section 3).
+
+-   These challenges may depend on the characteristics of each data platform (section 4)---which are often not under the control of the researcher---and on the research designs choices made along a data processing pipeline (from sections 5 to 8)--which are often under the researcher control.
+
+::: notes
+Pfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere auswirken
+
+-   Erreichen bestimmter Ziele (Type I & II) bei der Analyse von Sozialdaten (Abschnitt 2.1) voraussetzt, dass die Forschung bestimmte Validitätskriterien erfüllt (Abschnitt 2.2),
+
+-   die durch Verzerrungen und andere Probleme mit Sozialdaten beeinträchtigt werden können (Abschnitt 3)
+
+-   Diese Verzerrungen und Probleme können an der Quelle der Daten auftreten (Abschnitt 4), oder sie können im Verlauf der Datenanalyse eingeführt werden (Abschnitte 5-8).
+:::
+
+## Was wird vom Bias beeinflusst?
+
+### Validität als Grundlage für "Aussagekraft"
+
+![](images/bias_framework_upper_box.png){fig-align="center"}
+
+-   Type I: research on maximizing the spread of "memes," on making social software more engaging, and on improving the search engine or the recommendation system of a platform.
+
+-   Type II: seek to use social data to answer questions and identify interventions relevant to media, governments, non-governmental organizations, and business, or to work on problems from domains such as health, economics, and education.
+
+-   Construct validity:
+
+    -   Do our measurements over our data measure what we think they measure?
+
+    -   Beispiel: If a hypothesis states that "self-esteem" increases with age, research tracking self-esteem over time from social media postings must ask whether its assessment of selfesteem from the postings actually measures self-esteem, or if instead it measures some other related or unrelated construct. In other words, we need to know whether the observed behaviors (such as words or phrases used in postings) are driven primarily by users' self-esteem vs. by community norms (section 4.2), system functionalities (section 4.1), or other reasons (section 3.3). Construct validity is specially important when the construct (self-esteem) is unobservable/latent and has to be operationalized via some observed attributes (words or phrases used)
+
+-   Internal validity
+
+    -   Does our analysis correctly lead from the measurements to the conclusions of the study?
+
+    -   This survey covers subtle errors of this kind, such as biases that can be introduced through data cleaning procedures (section 6), the use of machine learned classifiers, mistaken assumptions about data distributions, and other inadvertent biases introduced through common analyses of social media (section 7).
+
+    -   Example: An analysis of whether "self-esteem" increases with age may not be internally valid if text filtering operations accidentally remove terms expressing confidence (section 5.3); or if machine learned classifiers were inadvertently trained to recognize self-esteem only in younger people (section 7). Of course, while we do not dwell on them, researchers should also be aware of more blatant logical errors---e.g., comparing the self-esteem of today's younger population to the self-esteem of today's older population would not actually prove that selfesteem increases with age (section 3.6).
+
+-   External validity:
+
+    -   To what extent can research findings be generalized to other situations?
+
+    -   For example, effects observed on a social platform may manifest differently on other platforms due to different functionalities, communities, or cultural norms (Wijnhoven and Bloemen, 2014; Malik and Pfeffer, 2016). The concept of external validity includes what is sometimes called ecological validity, which captures to what extent an artificial situation (constrained social media platform) properly reflects a broader real-world phenomenon (Ruths and Pfeffer, 2014). It also includes temporal validity, which captures to what extent constructs change over time (Howison et al., 2011) and may invalidate previous conclusions about societal and/or platform phenomena; e.g., see the case of Google Flu Trends (Lazer et al., 2014).
+
+    -   Example: Even after we conclude a successful study of "selfesteem" in a longitudinal social media dataset collected from a given social media platform (section 4), its findings may not generalize to a broader setting as people who chose that particular platform may not be representative of the broader population (section 3.2); or perhaps their behaviors online are not representative of their behaviors in other settings (section 3.3).
+
+## Eine Frage der Datenqualität
+
+Verschiedene Kriterien
+
+## HEader 1
+
+#### Im Fokus: Population bias
+
+::: {.callout-tip appearance="minimal"}
+## Definition
+
+Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.
+:::
+
+##### Auswirkungen:
+
+-   may affect the representativeness of a data sample and, as a result, may compromise the ecological/external validity of research.
+-   particularly problematic for research of type II (section 2.1), where conclusions about society are sought from social data, such as studies of public opinion.
+-   can also impact the performance of algorithms that make inferences about users (Johnson et al., 2017), further compromising the internal validity of both type I and type II research.
+
+##### Allgemeine Probleme: 
+
+-   Different user demographics tend to be drawn to different social platforms.
+
+-   Different user demographics use platform mechanisms differently
+
+-   Proxies for user traits or demographic criteria vary in reliabity
+
+## HEader 2
+
+#### Im Fokus: Behavioral bias
+
+::: {.callout-tip appearance="minimal"}
+## Definition
+
+Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.
+:::
+
+##### Auswirkungen:
+
+-   Behavioral biases affect the ecological/external validity of research, as they may condition the results of a study on the chosen platform or context. They are not entirely dependent on population biases, and when (explicit or implicit) assumptions are made about the users' behavioral patterns, they
+
+    can affect both type I and II research (section 2.1) that, e.g., looks into users' needs or interests, among others.
+
+##### Allgemeine Probleme: 
+
+-   Interaction biases affect how users interact with each other
+
+-   Content consumption biases affect how users find and interact with content, due to differences in their interests, expertise, and information needs
+
+-   Self-selection and response bias may occur due to behavioral biases
+
+## 
+
+# Group Activity
+
+Gruppendiskussion
+
+## Verfügbarkeit vor Interesse
+
+#### Zur Wichtigkeit von konzipierte Messungen & Designs
+
+-   DBB sind häufig organische Daten, die zufällig gesammelt und dann von der Wissenschaft "recycelt" werden
+
+    -   Zentrale Frage: Ist das ein Problem? Wenn ja, warum?
+
+-   Repräsentativität vs. Stichprobenziehung
+
+-   Kausalität vs. Korrelation
 
 # Bis zur nächsten Sitzung! {background-color="#04316a"}
 

@@ -468,6 +468,16 @@
 </tbody>
 </table>
 </section>
+<section id="agenda" class="title-slide slide level1 center">
+<h1>Agenda</h1>
+<ol type="1">
+<li><p>Organisation und Koordination</p></li>
+<li><p>A short (re-)introduction to DBD</p></li>
+<li><p>Herausforderungen von DBD</p></li>
+</ol>
+<!--# TODO: Folie überarbeiten -->
+</section>
+
 <section>
 <section id="organisation-koordination" class="title-slide slide level1 center" data-background-color="#E6002E">
 <h1>Organisation &amp; Koordination</h1>
@@ -578,15 +588,16 @@
 </table>
 </section></section>
 <section>
-<section id="was-kann-mit-dbd-untersucht-werden" class="title-slide slide level1 center" data-background-color="#E6002E">
-<h1>Was kann mit DBD untersucht werden?</h1>
-<p>Meinungen, Verhalten und Nutzung digitaler Technologien</p>
+<section id="a-short-re-introduction" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>A short (re-)introduction</h1>
+<p>Was sind <em>digital behavior data</em>?</p>
+<p>Und was können wir mit Ihnen untersuchen?</p>
 </section>
-<section id="dbd---was-ist-das-eigentlich" class="slide level2">
-<h2>DBD - Was ist das eigentlich?</h2>
+<section id="dbd-was-ist-das-eigentlich" class="slide level2">
+<h2>DBD – Was ist das eigentlich?</h2>
 <h4 id="rückblick-auf-definition-nach-weller2021">Rückblick auf Definition nach <span class="citation" data-cites="weller2021">Weller (<a href="#/literatur" role="doc-biblioref" onclick="">2021</a>)</span></h4>
 <ul>
-<li><p>… fasst eine <strong>Vielzahl von möglichen Datenquellen</strong> zusammen, die verschiedene Arten von <strong>Aktivitäten aufzeichnen</strong></p></li>
+<li><p>… fasst eine <strong>Vielzahl von möglichen Datenquellen</strong> zusammen, die verschiedene Arten von <strong>Aktivitäten aufzeichnen</strong> (<em>häufig sogar “nur” als Nebenprodukt</em><strong>)</strong></p></li>
 <li><p>… können dabei helfen, <strong>Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien</strong> zu erkennen</p></li>
 </ul>
 <p><br></p>
@@ -594,14 +605,14 @@
 <!-- -->
 <h4 id="im-kontext-dieses-seminars"><strong>Im Kontext dieses Seminars:</strong></h4>
 <ul>
-<li>Schwerpunkt <strong>Soziale Medien</strong> und <strong>Mediennutzung</strong></li>
-<li><strong>Computational Social Science</strong> [CSS] zur Erhebung (&amp; Auswertung)</li>
+<li>Schwerpunkt: <strong>Nutzung und Inhalte</strong> von <strong>soziale Medien</strong></li>
+<li><strong>Computational Social Science</strong> [CSS] <strong>Verfahren</strong>, z.B. zur Erhebung, Verarbeitung, Auswertung und Präsentation</li>
 </ul>
 </div>
 </section>
-<section id="kein-dbd-ohne-css" class="slide level2 smaller">
-<h2>Kein DBD ohne CSS</h2>
-<h4 id="exkurs-computational-social-science">Exkurs: Computational Social Science</h4>
+<section id="ohne-css-keine-dbd" class="slide level2">
+<h2>Ohne CSS keine DBD</h2>
+<h4 id="zur-bedeutung-von-computational-social-science">Zur Bedeutung von Computational Social Science</h4>
 <div class="callout callout-tip no-icon callout-captioned callout-style-simple">
 <div class="callout-body">
 <div class="callout-caption">
@@ -612,17 +623,11 @@
 </div>
 </div>
 </div>
-<p><strong>ist ein Forschungsfeld, das</strong></p>
-<ul>
-<li><p>rechnergestützte Methoden einsetzt</p></li>
-<li><p>um Daten zu sammeln und zu analysieren, insbesondere große und digitale Verhaltensdaten,</p></li>
-<li><p>um gesellschaftlich relevante Phänomene zu untersuchen.</p></li>
-</ul>
 <p><strong>hilft dabei …</strong></p>
 <ul>
 <li><p>echte digitale Phänomene zu untersuchen</p></li>
 <li><p>digitale Verhaltensdaten zu sammeln und vorzuverarbeiten</p></li>
-<li><p>neue Methoden zur Analyse von großen Datensätzen</p></li>
+<li><p>neue Methoden zur Analyse von großen Datensätzen anzuwenden</p></li>
 </ul>
 <aside class="notes">
 <p>CSS = neues Teilgebiet der Sozialwissenschaften oder neuer “Werkzeugkasten” zur Ergänzung der traditionellen sozialwissenschaftlichen Ansätze</p>
@@ -638,21 +643,21 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="untersuchung-von-verhaltensweisen" class="slide level2">
-<h2>Untersuchung von Verhaltensweisen</h2>
+<section id="und-was-können-wir-damit-untersuchen" class="slide level2">
+<h2>Und was können wir damit untersuchen?</h2>
 <h4 id="kategorisierung-verschiedener-verhaltensweisen">Kategorisierung verschiedener Verhaltensweisen</h4>
 <div class="columns">
-<div class="column" style="width:65%;">
+<div class="column" style="width:70%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/dbd_matrix.png"></p>
 </figure>
 </div>
-</div><div class="column" style="width:35%;">
+</div><div class="column" style="width:30%;">
 <p><br></p>
-<p><strong>Einschränkungen</strong></p>
+<h5 id="einschränkungen"><strong>Einschränkungen</strong></h5>
 <ul>
-<li><p>Kategorisierung ist <strong>Momentaufnahme</strong> und erlaubt Überschneidungen der Kategorien</p></li>
+<li><p>Kategorisierung ist <strong>Momentaufnahme</strong> und nicht überschneidungsfrei</p></li>
 <li><p><strong>Selektive Nutzung</strong> von bestimmten digitalen Geräten</p></li>
 </ul>
 </div>
@@ -674,56 +679,49 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<!--# TODO: Animieren? Bilde slidet raus, Einschränkungen erscheinen -->
 </section>
-<section id="untersuchung-von-meinungen" class="slide level2">
-<h2>Untersuchung von Meinungen</h2>
-<p>Beispiel: Twitter Screenshots/Mining</p>
+<section id="verfügbarkeit-als-pluspunkt" class="slide level2">
+<h2>Verfügbarkeit als Pluspunkt</h2>
+<h4 id="wertvolle-quelle-bei-sensiblen-und-unvorhersehbaren-themen">Wertvolle Quelle bei sensiblen und unvorhersehbaren Themen</h4>
 <ul>
-<li>Die Auswertung von Meinungen aus bestehenden digitalen Kommunikationsströmen kann zeitnaher sein als die Erstellung einer Umfrage. Sie sind eine wertvolle Quelle, insbesondere bei unvorhersehbaren Ereignissen. (z.B. Maßnahmen zu COVID-19)</li>
+<li>Mining von Meinungen aus bestehenden digitalen Kommunikationsströmen (z.B. Inhalte sozialer Medien) als wertvolle Quelle
+<ul>
+<li>teilweise zeitnaher als die Erstellung einer Umfrage</li>
+<li>zusätzlicher Nutzen als “Archiv” bei unvorhersehbaren Ereignissen</li>
+</ul></li>
+<li>Einsatz bei Themen bzw. Untersuchungen,
+<ul>
+<li>für die es schwierig ist, Studienteilnehmer*innen zu rekrutieren</li>
+<li>bei denen Beobachtungen vorteilhafter sind als Befragungen</li>
+</ul></li>
 </ul>
-<p>TODO: Beispiel hier</p>
+<!--# TODO: Hier Einsatz von Markierungen (revealjs) -->
 </section>
-<section id="verfügbarkeit-durch-fortschritt" class="slide level2">
-<h2>Verfügbarkeit durch Fortschritt</h2>
-<h4 id="am-beispiel-der-wachsenden-anzahl-eingebauter-smartphone-sensoren">Am Beispiel der wachsenden Anzahl eingebauter Smartphone-Sensoren</h4>
+<section id="mehr-daten-durch-technologischen-fortschritt" class="slide level2">
+<h2>Mehr Daten durch technologischen Fortschritt</h2>
+<h4 id="beispiel-wachsenden-anzahl-eingebauter-smartphone-sensoren">Beispiel: Wachsenden Anzahl eingebauter Smartphone-Sensoren</h4>
 
+<!--# TODO: Bedeutung/Funktion der einzelnen Sensoren -->
 <img data-src="images/dbd_smartphone_development.jpeg" alt="Aus @struminskaya2020" class="r-stretch quarto-figure-center"><p class="caption">Graphik aus <span class="citation" data-cites="struminskaya2020">Struminskaya et al. (<a href="#/literatur" role="doc-biblioref" onclick="">2020</a>)</span></p></section>
-<section id="warum-digital-behavioral-data" class="slide level2">
-<h2>Warum Digital behavioral data?</h2>
+<section id="ein-plädoyer-für-dbd" class="slide level2">
+<h2>Ein Plädoyer für DBD</h2>
+<h4 id="kurzes-zwischenfazit">Kurzes Zwischenfazit</h4>
 <ul>
-<li><p>Digitale Geräte oder Sensoren können sich besser an bestimmte Fakten besser erinnern als das menschliche Gedächtnis. (Beispiel: SocioPatterns.org)</p></li>
-<li><p>Und oft sind Sensoren bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”. (Beispiel: Mobility Monitor)</p></li>
-<li><p>Manchmal können digitale Verhaltensdaten die Untersuchung von Themen ermöglichen, für die es schwierig wäre, Studienteilnehmer zu rekrutieren sonst nicht möglich wäre. Sie werden oft ohne Anregung eines Forschers eines Forschers. (z.B. Messung des subjektiven Wohlbefindens)</p></li>
-<li><p>Digitale Verhaltensdaten können auch mit Umfragedaten kombiniert werden. (BeispieL Breuer)</p></li>
+<li><p>Digitale Geräte oder Sensoren können sich besser an bestimmte Fakten besser “erinnern” als das menschliche Gedächtnis.</p></li>
+<li><p>Sensoren sind oft bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”.</p></li>
+<li><p>Unaufdringliche Erfassung als potentieller Vorteil bzw. Entlastung für Teilnehmer*Innen</p></li>
+<li><p>Kombination mit Umfragedaten möglich (und bereichernd!)</p></li>
 </ul>
 </section></section>
 <section>
-<section id="dbd-rahmenbedingungen" class="title-slide slide level1 center">
-<h1>DBD Rahmenbedingungen</h1>
-<p>Biases, methodologische Tücken und ethische Grenzen</p>
+<section id="herausforderungen-von-dbd" class="title-slide slide level1 center">
+<h1>Herausforderungen von DBD</h1>
+<p>Der Umgang mit Biases, methodischen Tücken und ethischen Einschränkungen</p>
 </section>
-<section id="choose-your-bias" class="slide level2">
-<h2>Choose your bias</h2>
-<h4 id="dbd-kernbereiche-in-anlehnung-an-aufteilung-der-gesis">DBD-Kernbereiche in Anlehnung an Aufteilung der <a href="https://www.gesis.org/institut/digitale-verhaltensdaten">GESIS</a></h4>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../../..\content/01-kick-off/slides/images/dbd_graph/dbd_pillars_3.png"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<p>Heute Schwerpunkt:</p>
-<ul>
-<li><p>Konzeptuelle Herangehensweise</p></li>
-<li><p>Bias</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="ambivalenz-der-unaufdringlichkeit" class="slide level2">
-<h2>Ambivalenz der Unaufdringlichkeit</h2>
-<h4 id="basierend-auf-keusch2021">basierend auf <span class="citation" data-cites="keusch2021">Engel et al. (<a href="#/literatur" role="doc-biblioref" onclick="">2021</a>)</span></h4>
+<section id="wenn-der-vorteil-zum-nachteil-wird" class="slide level2">
+<h2>Wenn der Vorteil zum Nachteil wird</h2>
+<h4 id="ambivalenz-der-unaufdringlichkeit-keusch2021">Ambivalenz der Unaufdringlichkeit <span class="citation" data-cites="keusch2021">Engel et al. (<a href="#/literatur" role="doc-biblioref" onclick="">2021</a>)</span></h4>
 <ul>
 <li><p>Unterscheidung zwischen aufdringlichen (z.B. spezielle Research-App &amp; Befragungen) &amp; unaufdringlichen (z.B. Cookie &amp; APIs) erhobenen Daten</p></li>
 <li><p>Bewertung und Erwartung an Datensammlung ist abhängig vom Kontext (Amazon vs.&nbsp;Researchgate)</p></li>
@@ -743,36 +741,64 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-end-of-theory" class="slide level2">
-<h2>The End of Theory?</h2>
+<section id="the-end-of-theory" class="slide level2 smaller">
+<h2>The End of Theory</h2>
 <h4 id="zur-wichtigkeit-von-konzipierte-messungen-designs">Zur Wichtigkeit von konzipierte Messungen &amp; Designs</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
 <blockquote>
-<p>“Who knows why people do what they do? The point is they do it, and we can track and measure it with unprecedented fidelity. With enough data, the numbers speak for themselves.”</p>
-<p><span class="citation" data-cites="anderson2008">(<a href="#/literatur" role="doc-biblioref" onclick="">Anderson, 2008</a>)</span></p>
+<p>“Who knows why people do what they do? The point is they do it, and we can track and measure it with unprecedented fidelity. With enough data, the numbers speak for themselves.” <span class="citation" data-cites="anderson2008">(<a href="#/literatur" role="doc-biblioref" onclick="">Anderson, 2008</a>)</span></p>
 </blockquote>
-<p>Aber:</p>
-<ul>
-<li><p>“Size alone does not necessarily make the data better” <span class="citation" data-cites="boyd2007">(<a href="#/literatur" role="doc-biblioref" onclick="">boyd &amp; Ellison, 2007</a>)</span></p></li>
-<li><p>“there are a lot of small data problems that occur in big data [which] don’t disappear because you’ve got lots of the stuff. They get worse” <span class="citation" data-cites="harford2014">(<a href="#/literatur" role="doc-biblioref" onclick="">Harford, 2014</a>)</span></p></li>
-</ul>
-<p>Problem:</p>
+</div><div class="column" style="width:50%;">
+<blockquote>
+<p>“Size alone does not necessarily make the data better” <span class="citation" data-cites="boyd2007">(<a href="#/literatur" role="doc-biblioref" onclick="">boyd &amp; Ellison, 2007</a>)</span></p>
+</blockquote>
+<blockquote>
+<p>“there are a lot of small data problems that occur in big data [which] don’t disappear because you’ve got lots of the stuff. They get worse” <span class="citation" data-cites="harford2014">(<a href="#/literatur" role="doc-biblioref" onclick="">Harford, 2014</a>)</span></p>
+</blockquote>
+</div>
+</div>
+<h5 id="problem">Problem</h5>
 <ul>
 <li>(Big) Data zunehmend Grundlage für politische Maßnahmen, die Gestaltung von Produkten und Dienstleistungen und für die automatisierte Entscheidungsfindung</li>
 </ul>
+<!--# Animieren mit fragments -->
 </section>
-<section id="lets-talk-about-bias" class="slide level2">
-<h2>Let’s talk about bias</h2>
-<p>Problem:</p>
+<section id="we-need-to-talk-about-biases" class="slide level2">
+<h2>We need to talk about <span class="smallcaps">biases</span></h2>
+<h4 id="spezifische-und-allgemeine-herausfoderungen">Spezifische und allgemeine Herausfoderungen</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Herausforderungen in Bezug auf DBD-Forschung</strong></p>
 <ul>
-<li>there is not enough agreement on a vocabulary or taxonomy of biases, methodological issues, and pitfalls of this type of research.</li>
+<li><p>fehlender Konsens über ein Vokabular oder eine Taxonomie</p></li>
+<li><p>häufig nur impliziter der Bezug</p></li>
 </ul>
-<!-- -->
+</div><div class="column" style="width:50%;">
+<p><strong>Generelle Herausforderung:</strong> <code>bias</code> <strong>ist einweit gefasster Begriff</strong></p>
 <ul>
-<li><p>the evidence of bias and of broader implications about potential threats to the validity of social data research is often implicit in the findings of prior work, rather than a primary focus of it.</p></li>
-<li><p>Oftentimes, however, it is difficult to draw clear boundaries between the more normative connotations and the statistical sense of the term —see Campolo et al.&nbsp;(2017) for a discussion on some of the competing meanings of the term “bias.”</p></li>
+<li><p><em>conformation bias</em> und andere kognitive Voreingenommenheiten (Croskerry, 2002)</p></li>
+<li><p>systemische, diskriminierende Ergebnisse (Friedman und Nissenbaum, 1996)</p></li>
+<li><p>systemische Schäden (Barocas et al., 2017)</p></li>
 </ul>
+</div>
+</div>
 <aside class="notes">
 <p>term “bias” is used in its more statistical sense to refer to biases in social data and social data analyses</p>
+<p>Herausforderungen in Bezug auf DBD-Forschung</p>
+<ul>
+<li><p>fehlender Konsenz über ein Vokabular oder eine Taxonomie von möglichen biases sowie methodischen Probleme und Fallstricke</p></li>
+<li><p>häufig nur impliziter der Bezug zu potentiellen Quellen und/oder Auswirkungen von Verzerrung</p></li>
+</ul>
+<p>Generelle Herausforderung</p>
+<ul>
+<li><p>“bias” ist einweit gefasster Begriff ist, der in vielen Disziplinen untersucht wurde und verschiedene Phänomene abbildet</p>
+<ul>
+<li><p><em>onformation bias</em> und andere kognitive Voreingenommenheiten (Croskerry, 2002)</p></li>
+<li><p>systemische, diskriminierende Ergebnisse (Friedman und Nissenbaum, 1996)</p></li>
+<li><p>systemische Schäden (Barocas et al., 2017)</p></li>
+</ul></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -784,10 +810,11 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<!--# Was bedeuten hier "systematische Schäde"-->
 </section>
-<section id="ein-framework-zur-minimierung-von-bias" class="slide level2">
-<h2>Ein Framework zur Minimierung von Bias</h2>
-<h4 id="olteanu2019"><span class="citation" data-cites="olteanu2019">Olteanu et al. (<a href="#/literatur" role="doc-biblioref" onclick="">2019</a>)</span></h4>
+<section id="know-your-bias" class="slide level2">
+<h2>Know your bias!</h2>
+<h4 id="ein-framework-zur-minimierung-von-bias-olteanu2019">Ein Framework zur Minimierung von Bias <span class="citation" data-cites="olteanu2019">(<a href="#/literatur" role="doc-biblioref" onclick="">Olteanu et al., 2019</a>)</span></h4>
 
 <img data-src="images/bias_framework_without_legend.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>Description:</p>
@@ -815,27 +842,512 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="worauf-wirkt-die-verzerrung" class="slide level2 smaller">
+<section id="worauf-wirkt-die-verzerrung" class="slide level2">
 <h2>Worauf wirkt die Verzerrung?</h2>
 <h4 id="beispiele-für-forschung-von-typ-i-ii-olteanu2019">Beispiele für Forschung von Typ I &amp; II <span class="citation" data-cites="olteanu2019">(<a href="#/literatur" role="doc-biblioref" onclick="">Olteanu et al., 2019</a>)</span></h4>
 
-<img data-src="images/bias_framework_upper_box.png" width="923" class="r-stretch quarto-figure-center"><p><br></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h5 id="typ-i">Typ I:</h5>
+<img data-src="images/bias_framework_without_legend.png" class="r-stretch quarto-figure-center"><aside class="notes">
+<p><strong>Typ I: understand/influence phenomena <u>specific</u> to social platforms</strong></p>
 <ul>
 <li>Dynamik der Verbreitung von “Memes”</li>
 <li>Steigerung der Attraktivität bzw. besonders Features</li>
 <li>Verbesserung der Suchfunktion oder des Empfehlungssystems</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<h5 id="typ-ii">Typ II</h5>
+<p><strong>Typ II: understand/influence phenomena <u>beyond</u> social platforms</strong></p>
 <ul>
 <li><p>Beschreibung des Einflusses sozialer Medien auf eine politische Wahl.</p></li>
 <li><p>Nutzung sozialer Daten zur Verfolgung der Entwicklung ansteckender Krankheiten durch Analyse der von Social-Media-Nutzern online gemeldeten Symptomen</p></li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!--# Obere Box markieren/hervorheben! -->
+</section>
+<section id="zu-welchen-problemen-führen-verschiedene-biases" class="slide level2">
+<h2>Zu welchen Problemen führen verschiedene Biases?</h2>
+<h4 id="einflüsse-von-biases-auf-datenqualität">Einflüsse von Biases auf Datenqualität</h4>
+
+<img data-src="images/bias_framework_without_legend.png" class="r-stretch quarto-figure-center"><aside class="notes">
+<ul>
+<li><p>Um diese Probleme in das umfassendere Konzept der Datenqualität einzuordnen, geben wir zunächst einen kurzen Überblick über bekannte Probleme der Datenqualität.</p></li>
+<li><p><strong>Datenqualität</strong> ist ein vielschichtiges Konzept, typische Elemente sind <em>Genauigkeit, Vollständigkeit, Konsistenz, Aktualität</em> und <em>Zugänglichkeit.</em></p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!--# Obere Box markieren/hervorheben! -->
+</section>
+<section id="datenqualität-data-bias" class="slide level2 smaller">
+<h2>Datenqualität &amp; <em>data bias</em></h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Definition (Data bias).</strong> A systematic distortion in the sampled data that compromises its representativeness<strong>.</strong></p>
 </div>
 </div>
+</div>
+<h5 id="potentielle-probleme"><strong>Potentielle Probleme</strong></h5>
+<ul>
+<li><p><strong><em>Sparsity:</em></strong> Häufig <em>Heavy-Tail</em>-Verteilung, was Analyse am “Kopf” (in Bezug auf häufige Elemente oder Phänomene) erleichtert, am “Schwanz” (wie seltene Elemente oder Phänomene) jedoch erschwert (Baeza-Yates, 2013<strong><em>).</em></strong></p></li>
+<li><p><strong><em>Noise:</em></strong> Unvollständige, beschädigte, unzuverlässige oder unglaubwürdige Inhalte (Naveed et al., 2011; Boyd und Crawford, 2012). ABER: Unterscheidung von “Noise” und “Signal” ist oft unklar und hängt von der Forschungsfrage ab (Salganik, 2017)</p></li>
+<li><p><strong><em>Organische vs gemessene Daten:</em></strong> Fragen zur Repräsentativität (vs.&nbsp;Stichprobenbeschreibung), Kausalität (vs.&nbsp;Korrelation) und Vorhersagegüte</p></li>
+</ul>
+</section>
+<section id="im-fokus-population-bias" class="slide level2 smaller">
+<h2>Im Fokus: Population Bias</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Definition (Population biases).</strong> Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.</p>
+</div>
+</div>
+</div>
+<h5 id="potentielle-probleme-1">Potentielle Probleme</h5>
+<p><strong>Unterschiedliche Demographien (z.B. Geschlechts-, Alters- &amp; Bildungsgruppen) neigen zu unterschiedlichen sozialen Plattformen und nutzen deren Mechanismen unterschiedlich</strong></p>
+<ul>
+<li><p>Signifikant mehr Twitter Nutzer (Mislove et al.&nbsp;,2011), bei Pinterest tendenziell Frauen überrepräsentiert (Ottoni et al., 2013)</p></li>
+<li><p>Unterschiedliche Twitter-Nutzung in DE (Fokus auf Hashtags) und KOR (Fokus auf Konversationen) (Hong et al., 2011).</p></li>
+</ul>
+<p><strong>Proxies für Eigenschaften oder demografische Kriterien der Nutzenden sind unterschiedlich verlässlich</strong></p>
+<ul>
+<li>Angabe über Alumni-Status einer bestimmten Gruppe von Universitäten als Quelle für Verzerrung bei Meinung junger Hochschulabsolvent*innen zu einem neuen Gesetz (Ruths und Pfeffer, 2014).</li>
+</ul>
+<aside class="notes">
+<p>Häufig ist der Zusammenhang von Untersuchungspopulation (z.B. in Deutschland lebende Erwachsene) zu Zielpopulation (Erwachsene auf Twitter, die angeben, in DE zu leben) unbekannt.</p>
+<p>Beispiel “Auswirkungen”</p>
+<ul>
+<li>kann die (Stichproben)-Repräsentativität beeinträchtigen<br>
+➥ ⚠️externe Validität</li>
+<li>besonders problematisch für Forschungsarbeiten des Typs II</li>
+<li>kann sich auch auf die Leistung von Algorithmen auswirken, die Rückschlüsse auf die Nutzer ziehen<br>
+➥ ⚠️interne Validität (Typ-I &amp; Typ II)
+<ul>
+<li>Schätzung der Geo-Location im Stadt-Land-Spektrum (z.B Johnson et al., 2017)</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="im-fokus-behavioral-biases" class="slide level2 smaller">
+<h2>Im Fokus: Behavioral Biases</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Definition (Behavioral biases).</strong> Systematic distortions in user behavior across platforms or contexts, or across users represented in different datasets.</p>
+</div>
+</div>
+</div>
+<h5 id="potentielle-probleme-2">Potentielle Probleme</h5>
+<p><strong>Beeinflussung der Art und Weise, wie Nutzer*Innen miteinander interagieren</strong></p>
+<ul>
+<li><p>Wilson et al.&nbsp;(2009) zeigten, dass die Interaktionsmuster viel spärlicher sind als explizit erstellte soziale Verbindungen (20 % der Verbindungen 80 % der Interaktionen)</p></li>
+<li><p>Backstrom et al.&nbsp;(2011): einige Nutzer je nach ihrer Demografie stärker fokussiert sind als andere (z. B. neigen Frauen dazu, sich stärker auf ihre besten Freunde zu konzentrieren), während andere darauf hinweisen, dass die Interaktion der Nutzer von der Art der Beziehung, die sie teilen (Burke et al., 2013), und von gemeinsamen Eigenschaften (d.&nbsp;h. Homophilie) abhängt (McPherson et al., 2001).</p></li>
+</ul>
+<p><strong>Auftreten von Selbstselektion und Reaktionsverzerrungen</strong></p>
+<ul>
+<li><p>Gong et al.&nbsp;(2016) zeigen, dass viele Nutzer trotz ihres Interesses an einem bestimmten Thema still bleiben. Dies kann entweder daran liegen, dass ihre Aktivitäten nicht sichtbar sind (z. B. kann ein Datensatz keine Personen enthalten, die Inhalte nur lesen, aber nicht schreiben), oder an einer Selbstzensur (z. B. Nichtteilen oder Löschen eines Beitrags) infolge von Faktoren wie Online-Belästigung, Bedenken hinsichtlich der Privatsphäre oder einer Art sozialer Auswirkungen (Wang et al., 2011; Das und Kramer, 2013; Matias et al., 2015).</p></li>
+<li><p>Nutzer*Innen eher über extreme oder positive Erfahrungen als über gewöhnliche oder negative Erfahrungen (Kícíman, 2012; Guerra et al., 2014). (response bias)</p></li>
+<li><p>Zhang et al.&nbsp;(2013) fanden heraus, dass etwa 75 % der Foursquare-Check-ins nicht mit der tatsächlichen Mobilität der Nutzer übereinstimmen, was auf die wettbewerbsorientierten, spielähnlichen Mechanismen von Foursquare zurückzuführen ist (Wang et al., 2016a).</p></li>
+<li><p>Tasse et al.&nbsp;(2017) zeigen, dass einige Nutzer zwar nicht wissen, dass sie ihre Social-Media-Beiträge mit Geotags versehen, dass aber viele Nutzer Geotags bewusst verwenden, um z. B. zu zeigen, wo sie gewesen sind.<br>
+</p></li>
+</ul>
+<aside class="notes">
+<p>Unterschiede in Bezug auf Nutzerpersönlichkeiten (Hughes et al., 2012), die Verbreitung von Nachrichten (Lerman und Ghosh, 2010) oder den Austausch von Inhalten (Ottoni et al., 2014)</p>
+<h5 id="auswirkungen">Auswirkungen:</h5>
+<ul>
+<li><p>Ergebnisse einer Studie von der gewählten Plattform oder dem Kontext abhängig<br>
+➤ ⚠️externe Validität</p></li>
+<li><p>nur Teilweise von population bias abhängig</p></li>
+<li><p>bei (expliziten oder impliziten) Annahmen über die Verhaltensmuster der Nutzenden<br>
+➤ ⚠️potentielle Effekte auf Untersuchung von Typ-I &amp; Typ II (z.B. Untersuchung der Bedürfnisse oder Interessen der Nutzenden)</p></li>
+</ul>
+<p>Beispiel “Probleme”:</p>
+<ul>
+<li><p>Gesonderte Diskussion von Verhalten, die sich auf die Erstellung von Inhalten durch die Nutzer auswirken (“content production bias”) und solche, die sich auf die Verknüpfungsmuster zwischen Nutzern auswirken (“linking bias”).</p></li>
+<li><p>Drei weitere häufige Klassen von Verhaltensverzerrungen betreffen die Interaktionen zwischen Nutzern, die Interaktionen zwischen Nutzern und Inhalten und die Verzerrungen, die dazu führen, dass Nutzer in eine Studienpopulation aufgenommen oder von ihr ausgeschlossen werden.</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="im-fokus-content-production-biases" class="slide level2 smaller">
+<h2>Im Fokus: Content Production Biases</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Behavioral biases that are expressed as lexical, syntactic, semantic, and structural differences in the content generated by users.</p>
+</div>
+</div>
+</div>
+<h5 id="potentielle-probleme-3">Potentielle Probleme:</h5>
+<p><strong>Der Gebrauch der Sprache(n) variiert zwischen und innerhalb von Ländern und Bevölkerungsgruppen</strong></p>
+<ul>
+<li><p>Mocanu et al.&nbsp;(2013): saisonale Schwankungen in der sprachlichen Zusammensetzung zwischen verschiedenen Gebiete (Länder, Regionen, Nachbarschaften etc.)</p></li>
+<li><p>Sprachgebrauchsvariationen je nach Geschlecht, Alter, regionaler Herkunft und politischer Orientierung auf Twitter (Rao et al.&nbsp;(2010)), sowie zwischen ethnischen Gruppen (Blodgett et al., 2016).</p></li>
+</ul>
+<p><strong>Kontextbedingte Faktoren (z.B. zwischenmenschliche Beziehungen) beeinflussen die Art und Weise, wie Benutzer sprechen.</strong></p>
+<ul>
+<li><p>Burke et al.&nbsp;(2013) zeigen, wie Mütter und Väter die Sprache unterschiedlich verwenden, wenn sie mit ihren Töchtern und Söhnen sprechen, und umgekehrt.</p></li>
+<li><p>Außerdem zeigen Schwartz et al.&nbsp;(2015), dass die zeitliche Ausrichtung von Botschaften (Betonung der Vergangenheit, Gegenwart oder Zukunft) von Faktoren wie Offenheit für neue Erfahrungen, Anzahl der Freunde, Lebenszufriedenheit oder Depression beeinflusst werden kann.</p></li>
+</ul>
+<p><strong>Die Inhalte von bekannten oder “erfahrenen” Nutzern unterscheiden sich von denen der normalen Nutzer.</strong></p>
+<ul>
+<li><p>Bhattacharya et al.&nbsp;(2014) fanden beispielsweise heraus, dass “Experten”-Nutzer auf Twitter dazu neigen, hauptsächlich Inhalte zu ihrem Fachgebiet zu erstellen,</p></li>
+<li><p>Zafar et al.&nbsp;(2015) zeigen, wie die Konzentration der Stichprobe von Inhalten auf “Experten”-Nutzer die resultierende Stichprobe in Richtung vertrauenswürdigerer und hochwertigerer Inhalte verzerrt.</p></li>
+</ul>
+<p><strong>Unterschiedliche Bevölkerungsgruppen haben unterschiedliche Neigungen, über bestimmte Themen zu sprechen.</strong></p>
+<ul>
+<li>So stellten Diaz et al.&nbsp;(2016) bei der Auswahl politischer Tweets während der US-Wahlen 2012 fest, dass die Nutzerpopulation eher auf Washington, DC, ausgerichtet war, während Olteanu et al.&nbsp;(2016) feststellten, dass Afroamerikaner eher den Twitter-Hashtag #BlackLivesMatter (über eine große Bewegung zur Rassengleichheit in den USA) verwendeten.</li>
+</ul>
+<aside class="notes">
+<p>Unterschiede bei nutzergenerierten Inhalten, insbesondere bei Texten, zwischen und innerhalb von demografischen Gruppen</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="im-fokus-linking-bias" class="slide level2 smaller">
+<h2>Im Fokus: Linking Bias</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Behavioral biases that are expressed as differences in the attributes of networks obtained from user connections, interactions or activity.</p>
+</div>
+</div>
+</div>
+<h5 id="allgemeine-probleme">Allgemeine Probleme:</h5>
+<p>Netzattribute beeinflussen das Verhalten und die Wahrnehmung der Nutzer und umgekehrt.</p>
+<ul>
+<li><p>Kıcıman (2010) fand Unterschiede im Verhalten, die mit der Anzahl der Follower der Nutzer korrelieren, während Dong et al.&nbsp;(2016) altersspezifische Distanzen in sozialen Netzwerken (“Grad der Trennung”) feststellten, wobei jüngere Menschen besser vernetzt sind als ältere Generationen.</p></li>
+<li><p>Darüber hinaus kann Homophilie - die Tendenz ähnlicher Menschen, miteinander zu interagieren und sich zu verbinden (McPherson et al., 2001) - die Wahrnehmung der vernetzten Nutzer systematisch verzerren, was zu einer Unter- oder Überschätzung der Prävalenz von Nutzereigenschaften innerhalb einer Population führt (Lerman et al., 2016).</p></li>
+<li><p>In sozialen Datensätzen können Verzerrungen bei der Verknüpfung durch die Art der Datenerhebung und -erfassung sowie durch die Definition von Verknüpfungen noch verstärkt werden, was sich auf die beobachteten Eigenschaften einer Vielzahl netzwerkbasierter Nutzerattribute auswirkt, wie z. B. ihre Zentralität innerhalb eines sozialen Netzwerks (Choudhury et al., 2010; González-Bailón et al., 2014b)</p></li>
+</ul>
+<p>Verhaltensbasierte und verbindungsbasierte soziale Verbindungen sind unterschiedlich.</p>
+<ul>
+<li><p>Unterschiedliche Graphenkonstruktionsmethoden können zu unterschiedlichen strukturellen Grapheneigenschaften in den verschiedenen Arten von Netzwerken führen, die aus sozialen Daten konstruiert werden können (Cha et al., 2010).</p></li>
+<li><p>Wilson et al.&nbsp;(2009) untersuchten die Unterschiede zwischen sozialen Netzwerken, die auf expliziten und impliziten Verbindungen zwischen Nutzern basieren, und zeigten, dass das auf expliziten Verbindungen basierende Netzwerk deutlich dichter war als das auf Nutzerinteraktionen basierende.<br>
+</p></li>
+</ul>
+<p>Die Bildung sozialer Online-Netzwerke hängt auch von Faktoren außerhalb der sozialen Plattformen ab</p>
+<ul>
+<li><p>Die Geografie wurde mit den Eigenschaften sozialer Online-Netzwerke in Verbindung gebracht (Poblete et al., 2011; Scellato et al., 2011), wobei die Wahrscheinlichkeit einer sozialen Verbindung mit der Entfernung zwischen den Nutzern abnimmt, was Auswirkungen auf die Informationsverbreitung hat (Volkovich et al., 2012).</p></li>
+<li><p>Darüber hinaus beeinflussen die Art und die Dynamik der Offline-Beziehungen die Neigung der Nutzer, soziale Bindungen einzugehen und online zu interagieren (Subrahmanyam et al., 2008; Gilbert und Karahalios, 2009).</p></li>
+</ul>
+<aside class="notes">
+<ul>
+<li><p>Sozialen Netzwerke, die aus beobachteten Mustern in Datensätzen (re)konstruiert werden, können sich grundlegend von den zugrunde liegenden (Offline-)Netzwerken unterscheiden (Schoenebeck, 2013a)<br>
+➤ ⚠️externe Validität ➤ ⚠️ Typ-II &amp; teilweise Typ-I (Fälle, in denen die Interaktions- oder Verknüpfungsmuster der Nutzer mit der Zeit oder dem Kontext variieren)</p></li>
+<li><p>wirken sich beispielsweise auf die Untersuchung der Struktur und Entwicklung sozialer Netzwerke, des sozialen Einflusses und von Phänomenen der Informationsverbreitung aus (Wilson et al., 2009; Cha et al., 2010; Bakshy et al., 2012)</p></li>
+<li><p>Auf sozialen Plattformen können sie auch zu systematisch verzerrten Wahrnehmungen über Nutzer oder Inhalte führen (Lerman et al., 2016).</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="im-fokus-temporal-biases" class="slide level2 smaller">
+<h2>Im Fokus: Temporal Biases</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Systematic distortions across user populations or behaviors over time.</p>
+</div>
+</div>
+</div>
+<h5 id="allgemeine-probleme-1">Allgemeine Probleme:</h5>
+<p>Bevölkerungsgruppen, Verhaltensweisen und Systeme verändern sich mit der Zeit.</p>
+<ul>
+<li><p>Salganik (2017) beschreibt drei Arten von zeitlichen Schwankungen (die er als Drifts bezeichnet): Populationsdrift, Verhaltensdrift und Systemdrift. Studien sowohl zu Facebook (Lampe et al., 2008) als auch zu Twitter (Liu et al., 2014) haben Hinweise auf solche Schwankungen gefunden.</p></li>
+<li><p>Selbst die demografische Zusammensetzung der Nutzer und ihre Beteiligung an einem bestimmten Thema (Guerra et al., 2014; Diaz et al., 2016) oder ihre Interaktionsmuster (Viswanath et al., 2009) sind häufig nicht stationär.</p></li>
+<li><p>Oft gibt es komplexe Wechselwirkungen zwischen Verhaltenstrends auf einer Plattform (z. B. bei der Verwendung von Sprache) und der Zusammensetzung von Online-Communities und den Lebenszyklen der Nutzer (Danescu-Niculescu-Mizil et al., 2013), was bedeutet, dass Veränderungen manchmal auf mehreren Ebenen stattfinden.</p></li>
+<li><p>So gibt es beispielsweise Schwankungen in Bezug darauf, wann und wie lange sich die Nutzer auf bestimmte Themen konzentrieren, was durch aktuelle Trends, saisonale oder periodische Aktivitäten oder sogar durch Lärm ausgelöst werden kann (Radinsky et al., 2012).</p></li>
+</ul>
+<p>Saisonale und periodische Phänomene.</p>
+<ul>
+<li><p>Bei der Analyse geografisch verorteter Tweets fanden Kıcıman et al.&nbsp;(2014) heraus, dass unterschiedliche zeitliche Kontexte (Tag vs.&nbsp;Nacht, Wochentag vs.&nbsp;Wochenende) die Form der abgeleiteten Nachbarschaftsgrenzen verändern.</p></li>
+<li><p>Grinberg et al.&nbsp;(2013) fanden heraus, dass Foursquare-Check-Ins für mehrere Kategorien klare wöchentliche Muster aufweisen, während Golder und Macy (2011) Zusammenhänge zwischen der Stimmung von Tweets und Schlafzyklen und Saisonalität beobachteten.</p></li>
+</ul>
+<p>Plötzlich auftretende Phänomene wirken sich auf Populationen, Verhaltensweisen und Plattformen aus.</p>
+<ul>
+<li><p>Beispiele hierfür sind plötzlich auftretende Datenmuster (z. B. ein Anstieg oder Rückgang der Aktivität) aufgrund externer Ereignisse (z. B. ein Erdbeben oder ein Unfall) oder Plattformänderungen.</p></li>
+<li><p>Malik und Pfeffer (2016) zeigen, wie die Einführung einer neuen Plattformfunktion zu einem plötzlichen Anstieg der Aktivität führte,</p></li>
+<li><p>Während reale Ereignisse wie Krisensituationen zu kurzzeitigen Aktivitätsspitzen führen können (Crawford und Finn, 2014).</p></li>
+</ul>
+<p>Die zeitliche Granularität kann zu feinkörnig sein, um langfristige Phänomene zu beobachten.</p>
+<ul>
+<li>Beispiele sind Phänomene, die relativ konstante Muster aufweisen oder sich über lange Zeiträume entwickeln (Richardson, 2008; Crawford und Finn, 2014). Während soziale Datensätze, die sich auf reale Ereignisse beziehen, oft um Aktivitätsspitzen herum definiert werden, können verschiedene Ereignisse unterschiedliche zeitliche Fingerabdrücke haben, die in solchen Datensätzen möglicherweise nicht erfasst werden (z. B. können Katastrophen längerfristige Auswirkungen haben als Sportereignisse). Die zeitlichen Fingerabdrücke von langwierigen Situationen wie Kriegen können auch durch mehrere Spitzen gekennzeichnet sein. Andere haben festgestellt, dass langfristige Suchprotokolle (im Gegensatz zu kurzfristigen, zeitlich begrenzten Suchinformationen) einen besseren Einblick in die Entwicklung der Interessen und Bedürfnisse der Nutzer oder in die Entwicklung ihrer Erfahrungen bieten (Richardson, 2008; Fourney et al., 2015).</li>
+</ul>
+<p>Die zeitliche Granularität kann zu grobkörnig sein, um kurzlebige Phänomene zu beobachten.</p>
+<ul>
+<li>Dies ist wichtig, wenn es darum geht, kurzzeitige Auswirkungen einer Erfahrung oder kleinere Phänomene auf einer Granularität von z. B. Stunden oder Minuten zu erfassen. Fourney et al.&nbsp;(2015) heben die sich verändernden Bedürfnisse und Erfahrungen schwangerer Nutzerinnen hervor und zeigen, dass die Art und Weise, wie die Zeitleisten der Nutzerinnen ausgerichtet und abgeschnitten werden, die von ihnen erfassten Muster beeinflussen kann. Außerdem können sich einige der in sozialen Daten beobachteten Muster und Korrelationen weiterentwickeln oder nur von kurzer Dauer sein (Starnini et al., 2016).</li>
+</ul>
+<p>Datensätze verfallen und verlieren mit der Zeit an Nutzen.</p>
+<ul>
+<li><p>Soziale Daten verfallen mit der Zeit, da Nutzer ihre Inhalte und Konten löschen (Liu et al., 2014; Gillespie, 2015), und die Nutzungsbedingungen der APIs von Plattformen verhindern die Freigabe von Datensätzen, während sie gesammelt werden. Dies macht es oft unpraktisch, Datensätze im Laufe der Zeit vollständig zu rekonstruieren, was erhebliche Lücken hinterlässt (“Swiss Cheese”-Verfall) (Bagdouri und Oard, 2015). Maddock et al.&nbsp;(2015) fanden heraus, dass von den Tweets, die während der Bombenanschläge in Boston 2013 gesammelt wurden, mehr als 13 % später nicht mehr verfügbar waren, während Almuhimedi et al.&nbsp;(2013) feststellten, dass etwa 2,4 % der Tweets, die während einer Woche im Jahr 2013 von etwa 300 Millionen Nutzern gepostet wurden, später gelöscht wurden (wobei etwa die Hälfte der Nutzer mindestens einen Tweet aus diesem Zeitraum löschte).</p></li>
+<li><p>Es gibt mehrere Mechanismen, die dazu führen, dass eine Nachricht später nicht mehr verfügbar ist (Liu et al., 2014): Sie wurde vom Nutzer ausdrücklich gelöscht; der Nutzer hat sein Konto auf “geschützt” oder privat gestellt; das Konto des Nutzers wurde von der Plattform gesperrt; oder der Nutzer hat sein gesamtes Konto deaktiviert. Oftmals ist jedoch unklar, warum bestimmte Beiträge entfernt wurden, und es kann schwierig sein, ihre Auswirkungen auf die Analyseergebnisse zu beurteilen.</p></li>
+</ul>
+<aside class="notes">
+<p>Auswirkunge:</p>
+<ul>
+<li><p>➤ ⚠️ eterne Validität</p></li>
+<li><p>Beeinträchtigen Verallgemeinerbarkeit von Beobachtungen im Laufe der Zeit ➤ ⚠️ Typ-I &amp; Typ-II-Forschung problematisch</p></li>
+</ul>
+<p>Probleme:</p>
+<ul>
+<li>Die Art und Weise, wie man Datensätze entlang der zeitlichen Achsen aggregiert und abschneidet, wirkt sich darauf aus, welche Art von Mustern beobachtet werden und welche Forschungsfragen beantwortet werden können.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="im-fokus-redundancy" class="slide level2 smaller">
+<h2>Im Fokus: Redundancy</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Single data items that appear in the data in multiple copies, which can be identical (duplicates), or almost identical (near duplicates).</p>
+</div>
+</div>
+</div>
+<h5 id="allgemeine-probleme-2">Allgemeine Probleme:</h5>
+<ul>
+<li>Lexikalische (z. B. Duplikate, erneute Tweets, erneut geteilte Inhalte) und semantische (z. B. Beinahe-Duplikate oder dieselbe Bedeutung, aber anders geschrieben) Redundanz macht oft einen erheblichen Teil der Inhalte aus (Baeza-Yates, 2013) und kann sowohl innerhalb als auch zwischen sozialen Datensätzen auftreten. Weitere Quellen für inhaltliche Redundanz sind häufig nicht-menschliche Konten (Abschnitt 4.4), wie z. B. ein und dieselbe Person, die von mehreren Konten oder Plattformen aus postet (z. B. Spam), mehrere Nutzer, die vom selben Konto aus posten (z. B. Konten von Organisationen), oder mehrere Personen, die denselben Inhalt posten oder erneut posten (z. B. das Posten von Zitaten, Memes oder anderen Arten von Inhalten). Dies kann manchmal die Ergebnisse verzerren, aber Redundanz kann auch ein Signal an sich sein, z. B. kann das erneute Posten ein Signal für Wichtigkeit sein.</li>
+</ul>
+<aside class="notes">
+<p>Auswirkunge:</p>
+<ul>
+<li>Redundanz kann, wenn sie nicht berücksichtigt wird, sowohl die interne als auch die ökologische/externe Validität der Forschung beeinträchtigen, und zwar sowohl in der Forschung vom Typ I als auch vom Typ II (Abschnitt 2.1). Sie kann sich negativ auf den Nutzen von Instrumenten auswirken (Radlinski et al., 2011) und die Quantifizierung von Phänomenen in den Daten verzerren.</li>
+</ul>
+<p>Probleme:</p>
+<ul>
+<li>Die Art und Weise, wie man Datensätze entlang der zeitlichen Achsen aggregiert und abschneidet, wirkt sich darauf aus, welche Art von Mustern beobachtet werden und welche Forschungsfragen beantwortet werden können.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sneak-preview" class="slide level2">
+<h2>Sneak Preview</h2>
+<h4 id="datenerhebung-im-fokus">Datenerhebung im Fokus</h4>
+
+<img data-src="images/bias_framework_without_legend.png" class="r-stretch quarto-figure-center"><aside class="notes">
+<ul>
+<li><p>Um diese Probleme in das umfassendere Konzept der Datenqualität einzuordnen, geben wir zunächst einen kurzen Überblick über bekannte Probleme der Datenqualität.</p></li>
+<li><p><strong>Datenqualität</strong> ist ein vielschichtiges Konzept, typische Elemente sind <em>Genauigkeit, Vollständigkeit, Konsistenz, Aktualität</em> und <em>Zugänglichkeit.</em></p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!--# Obere Box markieren/hervorheben! -->
+</section></section>
+<section>
+<section id="ethik-recht" class="title-slide slide level1 center">
+<h1>Ethik &amp; Recht</h1>
+<p>Kurze Betrachtung der erweiterten Rahmenbedingungen</p>
+</section>
+<section id="ein-schritt-heraus-zum-blick-aufs-gesamte" class="slide level2 smaller">
+<h2>Ein Schritt heraus zum Blick aufs Gesamte</h2>
+<h4 id="ethische-erwägungen-bei-dbd-forschung">Ethische Erwägungen bei DBD-Forschung</h4>
+<p><strong>Aus öffentlicher Zugänglich- bzw. Verfügbarkeit von Daten leitet sich nicht automatisch ethische Verwertbarkeit ab (Zimmer, 2010; Boyd und Crawford, 2012)</strong></p>
+<ul>
+<li><p>Verletzung der Privatsphäre der Nutzer (Goroff, 2015)</p></li>
+<li><p>Ermöglichung von rassischem, sozioökonomischem oder geschlechtsspezifischem Profiling (Barocas und Selbst, 2016).</p></li>
+</ul>
+<p><strong>Negative Beispiele</strong></p>
+<ul>
+<li><p><strong>Facebook contagion experiment (</strong>2012-2014): Feeds von Nutzer*Innen so manipulierten, dass sie je nach den geäußerten Emotionen mehr oder weniger von bestimmten Inhalten enthielten (Kramer et al., 2014)</p></li>
+<li><p>Encore-Forschungsprojekt: Messung der Internetzensur auf der ganzen Welt, bei der Webbrowser angewiesen wurden, zu versuchen, sensible Webinhalte ohne das Wissen oder die Zustimmung der Nutzer herunterzuladen (Burnett und Feamster, 2015)</p></li>
+</ul>
+<aside class="notes">
+<p>Hintergrund:</p>
+<ul>
+<li>Ethische Fragen bisher epistemische Bedenken (Verwendung von nicht schlüssigen oder fehlgeleiteten Beweisen), jetzt normativ Bedenken (Folgen der Forschung)</li>
+</ul>
+<!-- -->
+<ul>
+<li>Forschung grundsätzlich in vielen Ländern gesetztlich geregelt</li>
+</ul>
+<p>Negativbeispiele:</p>
+<ul>
+<li><p>Facebook contagion experiment: Das Experiment wurde als ein Eingriff kritisiert, der den emotionalen Zustand von ahnungslosen Nutzern beeinflusste, die keine Zustimmung zur Teilnahme an der Studie gegeben hatten (Hutton und Henderson, 2015a).</p></li>
+<li><p>Encore-Forschngsprojekt: Menschen in einigen Ländern durch diese Zugriffsversuche möglicherweise gefährdet wurden</p></li>
+</ul>
+<p>Folgende Abschnitte:</p>
+<ul>
+<li><p>zentrales Spannungsverhältnis in der Forschungsethik digitaler Daten dargestellt.</p></li>
+<li><p>Anschließend wird die Diskussion spezifischer ethischer Probleme in der Sozialdatenforschung im Hinblick auf drei grundlegende Kriterien gegliedert, die im Belmont-Bericht (Ryan et al., 1978), einem grundlegenden Werk zur Forschungsethik, vorgebracht wurden: Autonomie (Abschnitt 9.2), Wohltätigkeit (Abschnitt 9.3) und Gerechtigkeit (Abschnitt 9.4).</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ein-schmaler-grat" class="slide level2">
+<h2>Ein schmaler Grat</h2>
+<h4 id="forschungethik-bei-digitalen-daten">Forschungethik bei digitalen Daten</h4>
+<p>Kombination zwei extremer Sichtweisen: Betrachtung der Forschung mit sozialen Daten als “klinische” Forschung oder als Computerforschung</p>
+<ul>
+<li><p>Die Sozialdatenforschung unterscheidet sich von klinischen Versuchen.</p></li>
+<li><p>Ethische Entscheidungen in der Sozialdatenforschung müssen gut überlegt sein, da oft sind mehrere Werte betroffen, die miteinander in Konflikt stehen können</p></li>
+</ul>
+<aside class="notes">
+<p>Hintergrund:</p>
+<ol type="1">
+<li><p>Die Sozialdatenforschung ähnelt klinischen Versuchen und anderen Experimenten am Menschen in ihrer Fähigkeit, Menschen zu schaden, und sollte daher auch als solche reguliert werden</p></li>
+<li><p>die Sozialdatenforschung ähnelt der sonstigen Computerforschung, die sich traditionell auf Methoden, Algorithmen und den Aufbau von Systemen konzentriert, mit minimalen direkten Auswirkungen auf Menschen.</p></li>
+</ol>
+<p>Punkt 2: Schäden, die die üblichen Arten der Sozialdatenforschung ( z. B. die Verletzung der Privatsphäre oder der Anblick verstörender Bilder)verursachen können, oft nicht mit Schäden von klinischen Versuchen gleichzusetzen</p>
+<p>Punkt 3: Datenanalyse beispielsweise erforderlich sein, um wichtige Dienste bereitzustellen, und es sollten Lösungen erwogen werden, die ein Gleichgewicht zwischen Datenschutz und Genauigkeit herstellen (Goroff, 2015).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="achtung-der-individuellen-autonomie" class="slide level2">
+<h2>Achtung der individuellen Autonomie</h2>
+<p>Der Respekt vor der Fähigkeit des Einzelnen, autonome Entscheidungen zu treffen, wird in der Forschung häufig durch die informierte Zustimmung zum Ausdruck gebracht. Die Einwilligung nach Aufklärung setzt voraus, dass (i) die Forscher den potenziellen Teilnehmern alle relevanten Informationen offenlegen; (ii) die potenziellen Teilnehmer in der Lage sind, diese Informationen zu bewerten; (iii) die potenziellen Teilnehmer freiwillig entscheiden können, ob sie teilnehmen wollen oder nicht; (iv) die Teilnehmer den Forschern ihre ausdrückliche Erlaubnis erteilen, häufig in schriftlicher Form; und (i) die Teilnehmer die Möglichkeit haben, ihre Einwilligung jederzeit zurückzuziehen.</p>
+<h6 id="häufige-probleme">Häufige Probleme</h6>
+<ul>
+<li><p>Die Zustimmung von Millionen von Nutzern einzuholen ist unpraktisch.</p></li>
+<li><p>Das öffentliche Teilen von Inhalten im Internet bedeutet nicht unbedingt eine Zustimmung zur Forschung.</p></li>
+<li><p>Die Nutzungsbedingungen sozialer Plattformen stellen möglicherweise keine informierte Zustimmung zur Forschung dar.</p></li>
+</ul>
+</section>
+<section id="wohltätigkeit-und-nicht-malefizierung" class="slide level2">
+<h2>Wohltätigkeit und Nicht-Malefizierung</h2>
+<p>Ein weiteres wichtiges ethisches Kriterium betrifft die Bewertung von Risiken und Nutzen; insbesondere sollte die Forschung von Nutzen sein und keinen Schaden verursachen (Non-Maleficence). Die Forscher sollten nicht nur über den Nutzen der Forschung nachdenken, sondern auch über die möglichen Arten von Schäden (Barocas et al., 2017), die betroffenen Gruppen und die Art und Weise, wie nachteilige Auswirkungen getestet werden können (Sweeney, 2013).</p>
+<h6 id="häufige-probleme-1">Häufige Probleme</h6>
+<ul>
+<li><p>Die Forschung zu sozialen Daten wird mit bestimmten Arten von Schäden in Verbindung gebracht, von denen die Verletzung der Privatsphäre vielleicht die offensichtlichste ist (Zimmer, 2010; Crawford und Finn, 2014).</p></li>
+<li><p>Daten über Einzelpersonen können ihnen schaden, wenn sie offengelegt werden.</p></li>
+<li><p>Forschungsergebnisse können verwendet werden, um Schaden anzurichten.</p></li>
+<li><p>“Dual-Use”- und Sekundäranalysen sind in der Sozialdatenforschung immer häufiger anzutreffen.</p></li>
+</ul>
+</section>
+<section id="recht" class="slide level2">
+<h2>Recht</h2>
+<p>Ein Ideal der Gerechtigkeit in der Forschung besteht darin, dass Risiken und Nutzen gerecht verteilt werden, was voraussetzt, dass von Anfang an bekannt ist, wer durch die Forschung belastet wird und wer von den Ergebnissen profitieren wird.</p>
+<h6 id="häufige-probleme-2">Häufige Probleme</h6>
+<ul>
+<li><p>Die digitale Kluft kann das Forschungsdesign beeinflussen.</p></li>
+<li><p>Algorithmen und Forschungsergebnisse können zu Diskriminierung führen.</p></li>
+<li><p>Forschungsergebnisse sind möglicherweise nicht allgemein zugänglich.</p></li>
+<li><p>Nicht alle Interessengruppen werden über die Verwendung von Forschungsergebnissen konsultiert.</p></li>
+</ul>
+</section>
+<section id="zusammenfassung-und-ausblick" class="slide level2">
+<h2>Zusammenfassung und Ausblick</h2>
+<ul>
+<li><p>Eine zunehmende Skepsis gegenüber einfachen Antworten</p></li>
+<li><p>Vom Aufwerfen von Bedenken über soziale Daten zum Umgang mit ihnen. 4 Empfehlungen:</p></li>
+<li><p>Unsere erste Empfehlung besteht darin, den Prozess, mit dem Datensätze und Modelle erstellt werden, detailliert zu dokumentieren und kritisch zu prüfen, wobei auch die von uns beschriebenen Verzerrungen berücksichtigt werden sollten.</p></li>
+<li><p>Unsere zweite Empfehlung besteht darin, Studien zu sozialen Daten auf verschiedene Plattformen, Themen, Zeitpunkte und Teilpopulationen auszuweiten, um festzustellen, wie sich die Ergebnisse beispielsweise in verschiedenen kulturellen, demografischen und verhaltensbezogenen Kontexten unterscheiden.Sandvig et al.&nbsp;(2014) argumentieren, dass eine genaue Prüfung auch dann erforderlich ist, wenn ein Social-Software-System die Bedürfnisse der Nutzer zu erfüllen scheint, da es “subtile Muster problematischen Verhaltens” geben kann, die schwer zu erkennen sind. So stellen Kulshrestha et al.&nbsp;(2017) einen Rahmen für die Prüfung von Suchsystemen auf Social-Media-Plattformen vor, indem sie zwischen verschiedenen Quellen von Verzerrungen (z. B. aufgrund von Inhalten oder Ranking-Algorithmen) unterscheiden. Für Audits ist manchmal der Zugang zu proprietären Systemen erforderlich, was eine ausdrückliche Genehmigung für solche Systeme erfordert, die wahrscheinlich verweigert wird, wenn das Ziel darin besteht, ihre Fehler aufzudecken oder zu veröffentlichen. Ein Reverse-Engineering dieser Systeme oder die Nutzung dieser Systeme in einer unvorhergesehenen Weise, um ihre Voreingenommenheit aufzudecken, kann in den USA nach dem Computer Fraud and Abuse Act (CFAA) illegal sein, was von einer Gruppe von Forschern vor Gericht angefochten wurde.</p></li>
+<li><p>Daher lautet unsere dritte Empfehlung, Transparenzmechanismen zu schaffen, die es ermöglichen, soziale Software zu überprüfen und Verzerrungen in sozialen Daten an der Quelle zu evaluieren (Abschnitt 4). Darüber hinaus gibt es auch immer mehr Bemühungen, die Grenzen sozialer Daten in Form von Leitlinien, Standards und neuen methodischen Ansätzen zu überwinden. Zu diesen Bemühungen gehört die Anwendung von Techniken aus der Kausalschlussliteratur, die zu robusteren Forschungsergebnissen führen können (Landeiro und Culotta, 2016; Proserpio et al., 2016), oder die Kalibrierung nicht repräsentativer Sozialdatenstichproben (Zagheni und Weber, 2015). Eine weitere Möglichkeit ist die Verwendung standardisierter Bewertungsprotokolle beim Testen neuer Instrumente oder Methoden (Diaz, 2014; Jurgens et al., 2015b).</p></li>
+<li><p>Unsere vierte Empfehlung lautet, die Forschung zu diesen Leitlinien, Standards, Methoden und Protokollen auszuweiten und ihre Übernahme zu fördern.</p></li>
+<li><p>Schließlich gibt es angesichts der Komplexität der inhärent kontextabhängigen, anwendungs- und bereichsabhängigen Verzerrungen und Probleme in sozialen Daten und Analysepipelines, die in diesem Papier behandelt werden, keine Einheitslösungen - bei der Bewertung und Bekämpfung von Verzerrungen ist Nuancierung entscheidend.</p></li>
+</ul>
+</section></section>
+<section>
+<section id="group-activity" class="title-slide slide level1 center">
+<h1>Group Activity</h1>
+<p>Gruppendiskussion</p>
+</section>
+<section id="verfügbarkeit-vor-interesse" class="slide level2">
+<h2>Verfügbarkeit vor Interesse</h2>
+<h4 id="zur-wichtigkeit-von-konzipierte-messungen-designs-1">Zur Wichtigkeit von konzipierte Messungen &amp; Designs</h4>
+<ul>
+<li><p>DBB sind häufig organische Daten, die zufällig gesammelt und dann von der Wissenschaft “recycelt” werden</p>
+<ul>
+<li>Zentrale Frage: Ist das ein Problem? Wenn ja, warum?</li>
+</ul></li>
+<li><p>Repräsentativität vs.&nbsp;Stichprobenziehung</p></li>
+<li><p>Kausalität vs.&nbsp;Korrelation</p></li>
+</ul>
 </section>
 <section id="validität-als-grundlage-für-aussagekraft" class="slide level2 smaller">
 <h2>Validität als Grundlage für “Aussagekraft”</h2>
@@ -852,7 +1364,7 @@
 <ul>
 <li>Do our measurements over our data measure what we think they measure?</li>
 </ul>
-<aside class="notes">
+<!-- -->
 <ul>
 <li><p>Type II: Nutzung sozialer Daten zur Beantwortung von Fragen und zur Ermittlung von Maßnahmen, die für Medien, Regierungen, Nichtregierungsorganisationen und Unternehmen relevant sind, oder zur Bearbeitung von Problemen aus Bereichen wie Gesundheit, Wirtschaft und Bildung..</p></li>
 <li><p>Construct validity:</p>
@@ -871,132 +1383,6 @@
 <li><p>For example, effects observed on a social platform may manifest differently on other platforms due to different functionalities, communities, or cultural norms (Wijnhoven and Bloemen, 2014; Malik and Pfeffer, 2016). The concept of external validity includes what is sometimes called ecological validity, which captures to what extent an artificial situation (constrained social media platform) properly reflects a broader real-world phenomenon (Ruths and Pfeffer, 2014). It also includes temporal validity, which captures to what extent constructs change over time (Howison et al., 2011) and may invalidate previous conclusions about societal and/or platform phenomena; e.g., see the case of Google Flu Trends (Lazer et al., 2014).</p></li>
 <li><p>Example: Even after we conclude a successful study of “selfesteem” in a longitudinal social media dataset collected from a given social media platform (section 4), its findings may not generalize to a broader setting as people who chose that particular platform may not be representative of the broader population (section 3.2); or perhaps their behaviors online are not representative of their behaviors in other settings (section 3.3).</p></li>
 </ul></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="eine-frage-der-datenqualität" class="slide level2">
-<h2>Eine Frage der Datenqualität</h2>
-<p>Verschiedene Kriterien</p>
-</section>
-<section id="im-fokus-population-bias" class="slide level2 smaller">
-<h2>Im Fokus: Population bias</h2>
-<h4 class="smaller" id="wie-wirken-verschiedene-verzerrungen">Wie wirken verschiedene Verzerrungen?</h4>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.</p>
-</div>
-</div>
-</div>
-<h5 id="auswirkungen">Auswirkungen:</h5>
-<ul>
-<li>kann die (Stichproben)-Repräsentativität beeinträchtigen<br>
-➥ ⚠️externe Validität</li>
-<li>besonders problematisch für Forschungsarbeiten des Typs II</li>
-<li>kann sich auch auf die Leistung von Algorithmen auswirken, die Rückschlüsse auf die Nutzer ziehen<br>
-➥ ⚠️interne Validität (Typ-I &amp; Typ II)</li>
-</ul>
-<h5 id="allgemeine-probleme">Allgemeine Probleme:</h5>
-<ul>
-<li><p>Unterschiedliche Demographien (z.B. Geschlechts-, Alters- &amp; Bildungsgruppen) neigen zu unterschiedlichen sozialen Plattformen und nutzen deren Mechanismen unterschiedlich</p></li>
-<li><p>Proxies für Eigenschaften oder demografische Kriterien der Nutzenden sind unterschiedlich verlässlich</p></li>
-</ul>
-<aside class="notes">
-<p>Häufig ist der Zusammenhang von Untersuchungspopulation (z.B. in Deutschland lebende Erwachsene) zu Zielpopulation (Erwachsene auf Twitter, die angeben, in DE zu leben) unbekannt.</p>
-<p>Beispiel “Auswirkungen”</p>
-<ul>
-<li>Algorithmen: Schätzung der Geo-Location im Stadt-Land-Spektrum (z.B Johnson et al., 2017)</li>
-</ul>
-<p>Beispiele “Probleme”:</p>
-<ul>
-<li><p>Signifikant mehr Twitter Nutzer (Mislove et al.&nbsp;,2011), bei Pinterest tendenziell Frauen überrepräsentiert (Ottoni et al., 2013)</p></li>
-<li><p>Unterschiedliche Twitter-Nutzung in DE (Fokus auf Hashtags) und KOR (Fokus auf Konversationen) (Hong et al., 2011).</p></li>
-<li><p>Angabe von Geo-Location oder Profilinformationen in sozialen Netzwerken</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-behavioral-bias" class="slide level2 smaller">
-<h2>Im Fokus: Behavioral bias</h2>
-<h4 id="wie-wirken-verschiedene-verzerrungen-1">Wie wirken verschiedene Verzerrungen?</h4>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Systematic distortions in user behavior across platforms or contexts, or across users represented in different datasets.</p>
-</div>
-</div>
-</div>
-<h5 id="auswirkungen-1">Auswirkungen:</h5>
-<ul>
-<li><p>Ergebnisse einer Studie von der gewählten Plattform oder dem Kontext abhängig<br>
-➤ ⚠️externe Validität</p></li>
-<li><p>nur Teilweise von population bias abhängig</p></li>
-<li><p>bei (expliziten oder impliziten) Annahmen über die Verhaltensmuster der Nutzenden<br>
-➤ ⚠️potentielle Effekte auf Untersuchung von Typ-I &amp; Typ II</p></li>
-</ul>
-<h5 id="allgemeine-probleme-1">Allgemeine Probleme:</h5>
-<ul>
-<li><p>beeinflussen die Art und Weise, wie Nutzer miteinander interagieren</p></li>
-<li><p>Auftreten von Selbstselektion und Reaktionsverzerrungen</p></li>
-<li><p>Verzerrungen beim Konsumieren von Inhalten beeinflussen die Art und Weise, wie Nutzer Inhalte finden und mit ihnen interagieren, aufgrund von Unterschieden in ihren Interessen, ihrem Fachwissen und ihrem Informationsbedarfes</p></li>
-</ul>
-<aside class="notes">
-<p>Unterschiede in Bezug auf Nutzerpersönlichkeiten (Hughes et al., 2012), die Verbreitung von Nachrichten (Lerman und Ghosh, 2010) oder den Austausch von Inhalten (Ottoni et al., 2014)</p>
-<p>Beispiel “Auswirkungen”:</p>
-<ul>
-<li>B. die Untersuchung der Bedürfnisse oder Interessen der Nutzenden</li>
-</ul>
-<p>Beispiel “Probleme”:</p>
-<ul>
-<li><p>Gesonderte Diskussion von Verhalten, die sich auf die Erstellung von Inhalten durch die Nutzer auswirken (“content production bias”) und solche, die sich auf die Verknüpfungsmuster zwischen Nutzern auswirken (“linking bias”).</p></li>
-<li><p>Drei weitere häufige Klassen von Verhaltensverzerrungen betreffen die Interaktionen zwischen Nutzern, die Interaktionen zwischen Nutzern und Inhalten und die Verzerrungen, die dazu führen, dass Nutzer in eine Studienpopulation aufgenommen oder von ihr ausgeschlossen werden.</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="group-activity" class="title-slide slide level1 center">
-<h1>Group Activity</h1>
-<p>Gruppendiskussion</p>
-</section>
-<section id="verfügbarkeit-vor-interesse" class="slide level2">
-<h2>Verfügbarkeit vor Interesse</h2>
-<h4 id="zur-wichtigkeit-von-konzipierte-messungen-designs-1">Zur Wichtigkeit von konzipierte Messungen &amp; Designs</h4>
-<ul>
-<li><p>DBB sind häufig organische Daten, die zufällig gesammelt und dann von der Wissenschaft “recycelt” werden</p>
-<ul>
-<li>Zentrale Frage: Ist das ein Problem? Wenn ja, warum?</li>
-</ul></li>
-<li><p>Repräsentativität vs.&nbsp;Stichprobenziehung</p></li>
-<li><p>Kausalität vs.&nbsp;Korrelation</p></li>
 </ul>
 </section></section>
 <section>

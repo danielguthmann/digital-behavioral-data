@@ -25,9 +25,10 @@ format:
 comments:
   hypothesis: 
     theme: clean
+filters:
+  - roughnotation
 execute:
   echo: true
-bibliography: references.bib
 csl: ../../apa.csl
 ---
 

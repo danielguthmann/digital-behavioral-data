@@ -68,7 +68,13 @@ csl: ../../apa.csl
 
 5.  **Group Activity**
 
-<!--# TODO: Folie überarbeiten/Agenda aktualisieren -->
+::: notes
+-   Basistext als Einführung, zusätzliche Inhalte im Seminar
+
+-   Idee der Sitzung: Sensibilisierung für Problemstellungen --\> Nützlich für Ihre eigenen Sitzungen!
+
+-   Feedback zu Fragen in Group Activity
+:::
 
 # Organisation & Koordination {background-color="#E6002E"}
 
@@ -286,9 +292,9 @@ Einerseits bereitwillige (oft unwissende) [Abgabe]{.rn rn-type="highlight"} der 
 
 ## We need to talk about [biases]{.smallcaps}
 
-#### Spezifische und allgemeine Herausfoderungen für die Forschung mit DBD
+#### Spezifische und allgemeine Herausforderungen für die Forschung mit DBD
 
-**Hintergrund**: (*Big) Data ist zunehmend Grundlage für politische Maßnahmen, die Gestaltung von Produkten und Dienstleistungen und für die automatisierte Entscheidungsfindungr*
+**Hintergrund**: (*Big) Data ist zunehmend Grundlage für politische Maßnahmen, die Gestaltung von Produkten und Dienstleistungen und für die automatisierte Entscheidungsfindung*
 
 -   **Herausforderungen in Bezug auf DBD-Forschung:** fehlender Konsens über ein Vokabular oder eine Taxonomie, häufig nur impliziter Bezug in der Forschung
 
@@ -372,11 +378,11 @@ A systematic distortion in the sampled data that compromises its representativen
 
 ##### **Potentielle Probleme**
 
--   ***Sparsity:*** Häufig *Heavy-Tail*-Verteilung, was Analyse am "Kopf" (in Bezug auf häufige Elemente oder Phänomene) erleichtert, am "Schwanz" (wie seltene Elemente oder Phänomene) jedoch erschwert (Baeza-Yates, 2013***).***
+-   ***Sparsity:*** Häufig *Heavy-Tail*-Verteilung, was Analyse am "Kopf" (in Bezug auf häufige Elemente oder Phänomene) erleichtert, am "Schwanz" (wie seltene Elemente oder Phänomene) jedoch erschwert [@baeza-yates2013]
 
--   ***Noise:*** Unvollständige, beschädigte, unzuverlässige oder unglaubwürdige Inhalte (Naveed et al., 2011; Boyd und Crawford, 2012).
+-   ***Noise:*** Unvollständige, beschädigte, unzuverlässige oder unglaubwürdige Inhalte [@boyd2012; @naveed2011]
 
-    -   Unterscheidung von "Noise" und "Signal" ist oft unklar und hängt von der Forschungsfrage ab (Salganik, 2017)
+    -   Unterscheidung von "Noise" und "Signal" ist oft unklar und hängt von der Forschungsfrage ab [@salganik2018]
 
 -   ***Organische vs gemessene Daten:*** Fragen zur Repräsentativität (vs. Stichprobenbeschreibung), Kausalität (vs. Korrelation) und Vorhersagegüte
 
@@ -752,13 +758,13 @@ Beispiel 1: Einige prominente Beispiele sind die Datenpanne bei Ashley Madison i
 
 -   **Algorithmen** und Forschungsergebnisse können zu **Diskriminierung** führen.
 
--   **Forschungsergebnisse** sind möglicherweise **nicht** allgemein **zugänglich[^30]**.
+-   **Forschungsergebnisse** sind möglicherweise **nicht** allgemein **zugänglich**[^30].
 
 -   Nicht alle **Interessengruppen** werden über die Verwendung von Forschungsergebnissen konsultiert[^31].
 
 [^29]: Data divide: mangelnde Verfügbarkeit von hochwertigen Daten über Entwicklungsländer und unterprivilegierte Gemeinschaften (Cinnamon und Schuurman, 2013).
 
-[^30]: Idealerweise sollten die Menschen Zugang zu den Forschungsergebnissen und Artefakten haben, die aus der Untersuchung ihrer persönlichen Daten entstanden sind (Gross und Acquisti, 2005; Crawford und Finn, 2014).
+[^30]: **Idealerweise sollten die Menschen Zugang zu den Forschungsergebnissen und Artefakten haben, die aus der Untersuchung ihrer persönlichen Daten entstanden sind (Gross und Acquisti, 2005; Crawford und Finn, 2014).**
 
 [^31]: In die Überlegungen darüber, wie, für wen und wann Forschungsergebnisse umgesetzt werden, sollten diejenigen einbezogen werden, die möglicherweise betroffen sind oder deren Daten verwendet werden (Costanza-Chock, 2018; Design Justice, 2018; Green, 2018)
 
@@ -796,9 +802,53 @@ Beispiel 1: Einige prominente Beispiele sind die Datenpanne bei Ashley Madison i
 
 # Group Activity
 
-Gruppendiskussion
+Offene Fragen und Diskussion
 
 ## Vielen Dank für Ihre Fragen!
+
+> Wie wird mit ungenauen, verzerrten und/oder unvollständigen digitalen Verhaltensdaten umgegangen? Was passiert mit ihnen?
+
+-   Bereinigen --\> Validieren --\> Bereinigen --\> Validieren ...
+
+<br>
+
+> Was versteht man unter der Herausforderung des Privacy-Utility-Trade-Off und wie kann dieses "Problem" bewältigt werden?
+
+-   Leider kein Zugang zur Quelle, Antwort "verschoben"
+
+::: notes
+We consider a privacy-utility trade-off **encountered by users who wish to disclose some information to an analyst, that is correlated with their private data, in the hope of receiving some utility**.
+:::
+
+## Was denken Sie?
+
+::: {.fragment .shrink .semi-fade-out fragment-index="1"}
+> Nutzer sind sich oftmals nicht bewusst, dass ihre Posts/Tweets zu Forschungszwecken verwendet werden.
+>
+> Sollten im Sinne der Transparenz von Vornherein mehr Informationen zur Verwendung von Daten gegeben werden? Würde dieses tatsächliche Wissen etwas am Verhalten/Akzeptanz der Datenerhebung der Nutzer ändern?
+:::
+
+::: {.fragment fragment-index="1"}
+> Da die Daten der Nutzer meist ohne Ihr aktives Wissen darüber erhoben werden ist ihr Verhalten sehr nah an der Realität. Würde eine bessere Information und Transparenz über das mitschreiben der Daten Ihr Verhalten beeinflussen und verfälschen? Kann dies bereits durch Benachrichtigungen wie "Coockies" der Fall sein?
+:::
+
+## Let's discuss!
+
+> Es gibt Individuen, die sich nicht im digitalen Raum bewegen und somit in den Daten nicht erfasst werden können. Dadurch können bestimmte Gruppen nicht untersucht werden, was zu verzerrten Daten führt. Welche Möglichkeiten hat man dieses Problem zu umgehen.
+
+-   Wie würden Sie (methodisch) vorgehen?
+
+::: fragment
+-   Ist es das eine Frage der Methodik oder des Forschungsdesigns?
+:::
+
+## Let's discuss!
+
+> Wenn Unternehmen bei der Verwendung unserer Verhaltensdaten Profit erwirtschaften, sollten wir dann nicht auch etwas daran verdienen?
+
+-   Was denken Sie?
+
+-   Wie könnten/sollte ein potentielles Bezahlungssystem aussehen?
 
 # Bis zur nächsten Sitzung! {background-color="#04316a"}
 

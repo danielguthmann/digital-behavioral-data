@@ -1,15 +1,15 @@
 ---
-title: "Einführung & Überblick"
+title: "Datenerhebung im Fokus"
 title-slide-attributes:
   # data-background-image: ../../background_title-dimmed_red_light.png
   data-background-color: "#04316a"
-subtitle: "Digital behavioral data"
+subtitle: "Digital behavioral data - Session 03"
 author: 
   - name: Christoph Adrian 
     url: https://twitter.com/chrdrn
     affiliation: Lehrstuhl für Kommunikationswissenschaft
     affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
-date: 03 11 2022
+date: 10 11 2022
 date-format: "DD.MM.YYYY"
 format:
   revealjs:
@@ -34,22 +34,26 @@ csl: ../../apa.csl
 
 ## Seminarplan {.smaller}
 
-| Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
-|------------------|------------------|------------------|-------------------|
-| ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
-| [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
-| 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
-| 4                   | 16.11.2022                   | API-Access (I): *Twitter*                       | Falk                                               |
-| 5                   | 23.11.2022                   | API-Access (II): *YouTube*                      | Denisov                                            |
-| 6                   | 30.11.2022                   | API-Access (II): *Reddit*                       | Landauer                                           |
-| 7                   | 07.12.2022                   | Webscraping: *TikTok*                           | Brand & Kocher                                     |
-| 8                   | 14.12.2022                   | ESM: *m-path*                                   | Dörr                                               |
-|                     |                              | *WEIHNACHTSPAUSE*                               |                                                    |
-| 9                   | 12.01.2023                   | Data Donations                                  |                                                    |
-| 10                  | 19.01.2023                   | Mock-Up-Virtual Environments                    |                                                    |
-| 11                  | 26.01.2023                   | Open Science                                    |                                                    |
-| 12                  | 02.02.2023                   | ***Guest Lecture: Linking DBD & Survey data***  | [Johannes Breuer](https://www.johannesbreuer.com/) |
-| 13                  | 09.02.2023                   | Semesterabschluss & Evaluation                  | Christoph Adrian                                   |
+| Sitzung                                              | Datum                                                         | Thema                                                                            | Referent\*Innen                                                     |
+|------------------|------------------|-------------------|-------------------|
+| [1]{.rn rn-type="strike-through" rn-color="#E6002E"} | [26.10.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Kick-Off Session]{.rn rn-type="strike-through" rn-color="#E6002E"}              | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
+| [2]{.rn rn-type="strike-through" rn-color="#E6002E"} | [02.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Einführung und Überblick]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Christoph Adrian]{.rn rn-type="highlight"}                         |
+| [**3**]{.rn rn-type="highlight"}                     | [**09.11.2022**]{.rn rn-type="highlight"}                     | [**DBD: Datenerhebung**]{.rn rn-type="highlight"}                                | [**Christoph Adrian**]{.rn rn-type="highlight"}                     |
+| 4                                                    | 16.11.2022                                                    | API-Access (I): *Twitter*                                                        | Falk                                                                |
+| 5                                                    | 23.11.2022                                                    | API-Access (II): *YouTube*                                                       | Denisov                                                             |
+| 6                                                    | 30.11.2022                                                    | API-Access (II): *Reddit*                                                        | Landauer                                                            |
+| 7                                                    | 07.12.2022                                                    | Webscraping: *TikTok*                                                            | Brand & Kocher                                                      |
+| 8                                                    | 14.12.2022                                                    | ESM: *m-path*                                                                    | Dörr                                                                |
+|                                                      |                                                               | *WEIHNACHTSPAUSE*                                                                |                                                                     |
+| 9                                                    | 12.01.2023                                                    | Data Donations                                                                   |                                                                     |
+| 10                                                   | 19.01.2023                                                    | Mock-Up-Virtual Environments                                                     |                                                                     |
+| 11                                                   | 26.01.2023                                                    | Open Science                                                                     |                                                                     |
+| 12                                                   | 02.02.2023                                                    | ***Guest Lecture: Linking DBD & Survey data***                                   | [Johannes Breuer](https://www.johannesbreuer.com/)                  |
+| 13                                                   | 09.02.2023                                                    | Semesterabschluss & Evaluation                                                   | Christoph Adrian                                                    |
+
+::: notes
+▶️
+:::
 
 # Agenda
 
@@ -61,142 +65,124 @@ csl: ../../apa.csl
 
 <!--# TODO: Folie überarbeiten -->
 
-# Organisation & Koordination {background-color="#E6002E"}
 
-Fragen, MS Teams & alternativer Seminarplan
+# Wie kommen wir an Daten?
 
-## Kursmaterialien etc.
+## Traditionelle Datenquellen
 
-#### Kurze Einführung in Teams
+## Test
+```{r}
+library(tidyverse)
 
-![](images/ms_teams.png){fig-align="center"}
+graph_1 <- svgtools::read_svg("graphs.svg")
+graph_1_string <- graph_1 %>% 
+  toString() %>% 
+  stringr::str_replace("label_box_1", "Population") %>% 
+  stringr::str_replace("User", "") %>% 
+  # delete lines
+  stringr::str_replace('style="fill:#ff0000;stroke:#ff0000"', 'style="fill:#ffffff00;stroke:#ffffff00"')
 
-## Vorschlag: Alternativer Seminarplan {.smaller}
 
-| Sitzung             | Datum                        | Thema                                           | Referent\*Innen                                    |
-|------------------|------------------|------------------|-------------------|
-| ~~1~~               | ~~26.10.2022~~               | ~~Kick-Off Session~~                            | ~~Christoph Adrian~~                               |
-| [**2**]{.smallcaps} | [**02.11.2022**]{.smallcaps} | [**DBD: Einführung und Überblick**]{.smallcaps} | [**Christoph Adrian**]{.smallcaps}                 |
-| 3                   | 09.11.2022                   | DBD: Datenerhebung                              | Christoph Adrian                                   |
-| 4                   | 16.11.2022                   | API-Access (I): *Twitter*                       | Falk                                               |
-| 5                   | 23.11.2022                   | API-Access (II): *YouTube*                      | Denisov                                            |
-| 6                   | 30.11.2022                   | API-Access (II): *Reddit*                       | Landauer                                           |
-| 7                   | 07.12.2022                   | Webscraping: *TikTok*                           | Brand & Kocher                                     |
-| ***8***             | ***14.12.2022***             | ***Exkurs: DBD Analyse mit R***                 | ***Christoph Adrian***                             |
-|                     |                              | *WEIHNACHTSPAUSE*                               |                                                    |
-| ***9***             | ***12.01.2023***             | ***ESM: m-path***                               | ***Dörr***                                         |
-| ***10***            | ***19.01.2023***             | ***TBD***                                       | ***Hofmann & Wierzbicki***                         |
-| 11                  | 26.01.2023                   | Puffer                                          |                                                    |
-| 12                  | 02.02.2023                   | ***Guest Lecture: Linking DBD & Survey data***  | [Johannes Breuer](https://www.johannesbreuer.com/) |
-| 13                  | 09.02.2023                   | Semesterabschluss & Evaluation                  | Christoph Adrian                                   |
+# Farbe Kopf: 00ff00ff
+# Farbe kontur Box: ffffffff
+# Farbe bulletpoint: d4aa00ff
 
-# A short (re-)introduction {background-color="#E6002E"}
 
-Was sind *digital behavior data*?
 
-Und was können wir mit Ihnen untersuchen?
+output1 <- svgtools::read_svg(graph_1_string)
+svgtools::display_svg(output1)
+```
 
-## DBD -- Was ist das eigentlich?
 
-#### Rückblick auf Definition nach @weller2021
+```{r}
+library(tidyverse)
 
--   ... fasst eine **Vielzahl von möglichen Datenquellen** zusammen, die verschiedene Arten von **Aktivitäten aufzeichnen** (*häufig sogar "nur" als Nebenprodukt***)**
+graph_base <- svgtools::read_svg("graph_base.svg")
+graph_test <- graph_base %>% 
+  toString() %>%
+  # test transformation
+  stringr::str_replace("label_box_1", "Population") %>% 
+  # Group: Construct (HIDDEN)
+  stringr::str_replace_all('"#FFFF00"', '"#FFFF0000"') %>% # Symbol
+  stringr::str_replace_all('label_box_2', '') %>%  # Text
+  # Group: Survey
+  stringr::str_replace_all('"#70AD47"', '"#70AD4700"') %>% # Symbol %>% # Symbol & Lines
+  stringr::str_replace_all('label_box_3', '') %>%   # Text
+  # Group: SNS Fields
+  stringr::str_replace_all('"#C55A11"', '"#C55A1100"') %>% # Stroke boxes
+  stringr::str_replace_all('"#7F7F7F"', '"#7F7F7F00"') %>% # Cirlces filling
+  stringr::str_replace_all('stroke="#04316A"',
+                           'stroke="#04316A00"') %>% # Circles Strokes
+  stringr::str_replace_all('field', '') %>%  # Text
+  # Group: SNS Fields Textboxes
+  stringr::str_replace_all('"#7030A0"', '"#7030A000"') %>% # Strokes & Filling boxes
+  ## Box 1: Texts
+  stringr::str_replace_all('style="fill:#ff00ff"', 'style="fill:#ff00ff00"') %>% # Bulletpoints 
+  stringr::str_replace_all('box_1_h1', '') 
 
--   ... können dabei helfen, **Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien** zu erkennen
 
-<br>
+       
 
-::: fragment
-#### **Im Kontext dieses Seminars:**
 
--   Schwerpunkt: **Nutzung und Inhalte** von **soziale Medien**
--   **Computational Social Science** \[CSS\] **Verfahren**, z.B. zur Erhebung, Verarbeitung, Auswertung und Präsentation
-:::
 
-## Ohne CSS keine DBD
+graph_test %>% 
+  svgtools::read_svg(.) %>% 
+  svgtools::display_svg(.)
 
-#### Zur Bedeutung von Computational Social Science
+  ## Text
+  str
+  # symbol & lines survey
+  # # hide logo 
+  # stringr::str_replace('fill=\"#04316A\" id=\"path257\" inkscape:label=\"logo_twitter\"/>',
+  #                      'fill=\"#04316A00\" id=\"path257\" inkscape:label=\"logo_twitter\"/>')
 
-::: {.callout-tip appearance="minimal"}
-## Definition von CSS
 
-We define CSS as the development and application of computational methods to complex, typically large-scale, human (sometimes simulated) behavioral data." @lazer2020
-:::
 
-**hilft dabei ...**
 
--   echte digitale Phänomene zu untersuchen
+graph_base %>% svgtools::display_svg()
 
--   digitale Verhaltensdaten zu sammeln und vorzuverarbeiten
+string <- graph_base %>% 
+  toString() 
 
--   neue Methoden zur Analyse von großen Datensätzen anzuwenden
 
-::: notes
-CSS = neues Teilgebiet der Sozialwissenschaften oder neuer "Werkzeugkasten" zur Ergänzung der traditionellen sozialwissenschaftlichen Ansätze
-:::
 
-## Und was können wir damit untersuchen?
+graph_3 <- svgtools::read_svg("graphs3.svg")
+graph_3_string <- graph_3 %>% 
+  toString() %>% 
+  stringr::str_replace('style="display:inline;fill:#00ff00" inkscape:label="symbol_head_container"',
+                       'style="display:inline;fill:#e6002e" inkscape:label="symbol_head_container"')
 
-#### Kategorisierung verschiedener Verhaltensweisen
+graph_3_stringb <- graph_3 %>% 
+  toString() %>% 
+  stringr::str_replace('style=\"display:inline;fill:#00ff00\" inkscape:label=\"symbol_head_container\""',
+                       'style=\"display:inline;fill:#e6002e\" inkscape:label=\"symbol_head_container\"')
 
-::: columns
-::: {.column width="70%"}
-![](images/dbd_matrix.png){fig-align="center"}
-:::
+graph_3_stringc <- graph_3 %>% 
+  toString() %>% 
+  stringr::str_replace("label_box_1", "Population") %>% 
+  stringr::str_replace('style="stroke:#ff6600;fill:#ff6600', 'style="stroke:#ff660000;fill:#ff660000')
 
-::: {.column width="30%"}
-<br>
+graph_3_stringd <- graph_3 %>% 
+  toString() %>% 
+  stringr::str_replace("label_box_1", "Population") %>% 
+  stringr::str_replace('#ff6600"','#ff660000"')
 
-##### **Einschränkungen**
 
--   Kategorisierung ist **Momentaufnahme** und nicht überschneidungsfrei
 
--   **Selektive Nutzung** von bestimmten digitalen Geräten
-:::
-:::
 
-::: notes
--   Kategorien: Digital/Analog individual/social behavior
+# Farbe Kopf: 00ff00ff
+# Farbe kontur Box: ffffffff
+# Farbe bulletpoint: d4aa00ff
 
--   Einige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)
 
--   Fehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte.
-:::
 
-<!--# TODO: Animieren? Bilde slidet raus, Einschränkungen erscheinen -->
+output3 <- svgtools::read_svg(graph_3_stringc)
+svgtools::display_svg(output3)
+```
 
-## Verfügbarkeit als Pluspunkt
 
-#### Wertvolle Quelle bei sensiblen und unvorhersehbaren Themen
 
--   Mining von Meinungen aus bestehenden digitalen Kommunikationsströmen (z.B. Inhalte sozialer Medien) als wertvolle Quelle
-    -   teilweise zeitnaher als die Erstellung einer Umfrage
-    -   zusätzlicher Nutzen als "Archiv" bei unvorhersehbaren Ereignissen
--   Einsatz bei Themen bzw. Untersuchungen,
-    -   für die es schwierig ist, Studienteilnehmer\*innen zu rekrutieren
-    -   bei denen Beobachtungen vorteilhafter sind als Befragungen
 
-<!--# TODO: Hier Einsatz von Markierungen (revealjs) -->
-
-## Mehr Daten durch technologischen Fortschritt
-
-#### Beispiel: Wachsenden Anzahl eingebauter Smartphone-Sensoren
-
-![Graphik aus @struminskaya2020](images/dbd_smartphone_development.jpeg){alt="Aus @struminskaya2020" fig-align="center"}
-
-<!--# TODO: Bedeutung/Funktion der einzelnen Sensoren -->
-
-## Ein Plädoyer für DBD
-
-#### Kurze Zusammenfassung
-
--   Digitale Geräte oder Sensoren können sich besser an bestimmte Fakten besser "erinnern" als das menschliche Gedächtnis.
-
--   Sensoren sind oft bereits in alltägliche Technik eingebaut Technologie eingebaut und produzieren digitale Verhaltensdaten als ein "Nebenprodukt".
-
--   Unaufdringliche Erfassung als potentieller Vorteil bzw. Entlastung für Teilnehmer\*Innen
-
--   Kombination mit Umfragedaten möglich (und bereichernd!)
 
 # Herausforderungen von DBD
 

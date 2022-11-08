@@ -433,7 +433,7 @@
     </div>
 </div>
 
-  <p class="date">10.11.2022</p>
+  <p class="date">09.11.2022</p>
 </section>
 <section id="seminarplan" class="slide level2 smaller">
 <h2>Seminarplan</h2>
@@ -457,7 +457,7 @@
 <td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">2</span></td>
 <td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">02.11.2022</span></td>
 <td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">DBD: Einführung und Überblick</span></td>
-<td><span class="rn" data-rn-type="highlight">Christoph Adrian</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Christoph Adrian</span></td>
 </tr>
 <tr class="odd">
 <td><span class="rn" data-rn-type="highlight"><strong>3</strong></span></td>
@@ -550,59 +550,43 @@
 <section id="agenda" class="title-slide slide level1 center">
 <h1>Agenda</h1>
 <ol type="1">
-<li><p>Organisation und Koordination</p></li>
-<li><p>A short (re-)introduction to DBD</p></li>
-<li><p>Herausforderungen von DBD</p></li>
+<li><strong>Organisation &amp; Koordination</strong></li>
+<li><strong>Warum Digital Behavioral Data?</strong></li>
+<li><strong>Wie kommen wir an DBD?</strong></li>
+<li><strong>Mehr Daten, mehr Probleme</strong></li>
+<li><strong>Group Activity</strong></li>
 </ol>
-<!--# TODO: Folie überarbeiten -->
 </section>
 
 <section>
-<section id="wie-kommen-wir-an-daten" class="title-slide slide level1 center">
-<h1>Wie kommen wir an Daten?</h1>
-
+<section id="organisation-koordination" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>Organisation &amp; Koordination</h1>
+<p>Hinweis zu den Präsentationen</p>
 </section>
-<section id="traditionelle-datenquellen" class="slide level2">
-<h2>Traditionelle Datenquellen</h2>
-</section>
-<section id="test" class="slide level2">
-<h2>Test</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>graph_1 <span class="ot">&lt;-</span> svgtools<span class="sc">::</span><span class="fu">read_svg</span>(<span class="st">"graphs.svg"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4"></a>graph_1_string <span class="ot">&lt;-</span> graph_1 <span class="sc">%&gt;%</span> </span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="fu">toString</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb1-6"><a href="#cb1-6"></a>  stringr<span class="sc">::</span><span class="fu">str_replace</span>(<span class="st">"label_box_1"</span>, <span class="st">"Population"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-7"><a href="#cb1-7"></a>  stringr<span class="sc">::</span><span class="fu">str_replace</span>(<span class="st">"User"</span>, <span class="st">""</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-8"><a href="#cb1-8"></a>  <span class="co"># delete lines</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>  stringr<span class="sc">::</span><span class="fu">str_replace</span>(<span class="st">'style="fill:#ff0000;stroke:#ff0000"'</span>, <span class="st">'style="fill:#ffffffff;stroke:#ffffffff"'</span>)</span>
-<span id="cb1-10"><a href="#cb1-10"></a>output1 <span class="ot">&lt;-</span> svgtools<span class="sc">::</span><span class="fu">read_svg</span>(graph_1_string)</span>
-<span id="cb1-11"><a href="#cb1-11"></a>svgtools<span class="sc">::</span><span class="fu">display_svg</span>(output1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 7
-  format width height colorspace matte filesize density
-  &lt;chr&gt;  &lt;int&gt;  &lt;int&gt; &lt;chr&gt;      &lt;lgl&gt;    &lt;int&gt; &lt;chr&gt;  
-1 PNG     1280    720 sRGB       TRUE         0 72x72  </code></pre>
+<section id="brace-yourself-presentations-are-coming" class="slide level2">
+<h2>Brace yourself, presentations are coming!</h2>
+<h4 id="allgemeine-hinweise-rund-um-die-präsentation">Allgemeine Hinweise rund um die Präsentation</h4>
+<p><br></p>
+<p><strong>📑</strong> Denken Sie bitte an die Fragen zur Pflichtlektüre!</p>
+<p><br></p>
+<p><strong>🕦</strong> Office Hours bzw. Feedbackgespräch nach dem Kurs</p>
+<p><br></p>
+<p><strong>🔍</strong> Info zu den Evaluationskriterien</p>
+<p><br></p>
+<div class="fragment">
+<p><strong>❓</strong> <span class="rn" data-rn-type="underline" data-rn-color="#E6002E"><strong>Fragen</strong></span></p>
 </div>
-
-</div>
-<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="640" class="r-stretch"></section></section>
-<section>
-<section id="herausforderungen-von-dbd" class="title-slide slide level1 center">
-<h1>Herausforderungen von DBD</h1>
-<p>Der Umgang mit Biases, methodischen Tücken und ethischen Einschränkungen</p>
-</section>
-<section id="wenn-der-vorteil-zum-nachteil-wird" class="slide level2">
-<h2>Wenn der Vorteil zum Nachteil wird</h2>
-<h4 id="ambivalenz-der-unaufdringlichkeit-keusch2021">Ambivalenz der Unaufdringlichkeit <span class="citation" data-cites="keusch2021">@keusch2021</span></h4>
-<ul>
-<li><p>Unterscheidung zwischen aufdringlichen (z.B. spezielle Research-App &amp; Befragungen) &amp; unaufdringlichen (z.B. Cookie &amp; APIs) erhobenen Daten</p></li>
-<li><p>Bewertung und Erwartung an Datensammlung ist abhängig vom Kontext (Amazon vs.&nbsp;Researchgate)</p></li>
-<li><p>Dilema: Einerseits bereitwillige (oft unwissende) Abgabe der Daten an Konzerne, andererseits häufig Bedenken bezüglich Datenschutz &amp; Privatsphäre bei wissenschaftlichen Studien</p></li>
-</ul>
 <aside class="notes">
-<p>Q: Gründe für Ablehnung: Nutzenorientierung?</p>
+<p>▶️</p>
+<p>Kriterien:</p>
+<ul>
+<li><p>Präsentationsstil (Roter Faden) –&gt; Verständlichkeit &amp; Konsistenz</p></li>
+<li><p>Präsentationsfolien (Funktionalität über Design)</p></li>
+<li><p>Bearbeitung des Arbeitsauftrages</p></li>
+<li><p>Selbstständigkeit &amp; Tiefer der Bearbeitung</p></li>
+<li><p>Einleitung, Abschluss &amp; Diskussion</p></li>
+<li><p>Extra: Bezug zur Kommunikationswissenschaft</p></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -614,65 +598,96 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section></section>
+<section>
+<section id="warum-digital-behavior-data" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>Warum Digital Behavior Data?</h1>
+<p>Beispielhafte Nutzungsszenarien</p>
 </section>
-<section id="the-end-of-theory" class="slide level2 smaller">
-<h2>The End of Theory</h2>
-<h4 id="zur-wichtigkeit-von-konzipierte-messungen-designs">Zur Wichtigkeit von konzipierte Messungen &amp; Designs</h4>
-<div class="columns">
-<div class="column" style="width:50%;">
-<blockquote>
-<p>“Who knows why people do what they do? The point is they do it, and we can track and measure it with unprecedented fidelity. With enough data, the numbers speak for themselves.” <span class="citation" data-cites="anderson2008">[@anderson2008]</span></p>
-</blockquote>
-</div><div class="column" style="width:50%;">
-<blockquote>
-<p>“Size alone does not necessarily make the data better” <span class="citation" data-cites="boyd2007">[@boyd2007]</span></p>
-</blockquote>
-<blockquote>
-<p>“there are a lot of small data problems that occur in big data [which] don’t disappear because you’ve got lots of the stuff. They get worse” <span class="citation" data-cites="harford2014">[@harford2014]</span></p>
-</blockquote>
+<section id="die-power-von-social-sensing" class="slide level2">
+<h2>Die Power von Social Sensing</h2>
+<h4 id="forschungsdesign-zur-erhebung-digitaler-verhaltensdaten-flöck2022">Forschungsdesign zur Erhebung digitaler Verhaltensdaten <span class="citation" data-cites="flöck2022">(<a href="#/literatur" role="doc-biblioref" onclick="">Flöck &amp; Sen, 2022</a>)</span></h4>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_01.svg"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_02.svg" class="fragment" data-fragment-index="1"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_03.svg" class="fragment" data-fragment-index="2"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_04.svg" class="fragment" data-fragment-index="3"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_05.svg" class="fragment" data-fragment-index="4"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_07.svg" class="fragment" data-fragment-index="5"></p>
+</figure>
 </div>
 </div>
-<h5 id="problem">Problem</h5>
-<ul>
-<li>(Big) Data zunehmend Grundlage für politische Maßnahmen, die Gestaltung von Produkten und Dienstleistungen und für die automatisierte Entscheidungsfindung</li>
-</ul>
-<!--# Animieren mit fragments -->
 </section>
-<section id="we-need-to-talk-about-biases" class="slide level2">
-<h2>We need to talk about <span class="smallcaps">biases</span></h2>
-<h4 id="spezifische-und-allgemeine-herausfoderungen">Spezifische und allgemeine Herausfoderungen</h4>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Herausforderungen in Bezug auf DBD-Forschung</strong></p>
-<ul>
-<li><p>fehlender Konsens über ein Vokabular oder eine Taxonomie</p></li>
-<li><p>häufig nur impliziter der Bezug</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Generelle Herausforderung:</strong> <code>bias</code> <strong>ist einweit gefasster Begriff</strong></p>
-<ul>
-<li><p><em>conformation bias</em> und andere kognitive Voreingenommenheiten (Croskerry, 2002)</p></li>
-<li><p>systemische, diskriminierende Ergebnisse (Friedman und Nissenbaum, 1996)</p></li>
-<li><p>systemische Schäden (Barocas et al., 2017)</p></li>
-</ul>
+<section id="mit-fokus-auf-die-platform" class="slide level2">
+<h2>Mit Fokus auf die Platform</h2>
+<h4 id="forschungsdesign-zur-erhebung-digitaler-verhaltensdaten-flöck2022-1">Forschungsdesign zur Erhebung digitaler Verhaltensdaten <span class="citation" data-cites="flöck2022">(<a href="#/literatur" role="doc-biblioref" onclick="">Flöck &amp; Sen, 2022</a>)</span></h4>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_08.svg"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_dbd_09.svg" class="fragment" data-fragment-index="2"></p>
+</figure>
 </div>
 </div>
-<aside class="notes">
-<p>term “bias” is used in its more statistical sense to refer to biases in social data and social data analyses</p>
-<p>Herausforderungen in Bezug auf DBD-Forschung</p>
+</section>
+<section id="online-plattformen-prägen-die-gesellschaft" class="slide level2">
+<h2>Online-Plattformen prägen die Gesellschaft</h2>
+<h4 id="gründe-für-den-fokus-auf-onlineplattformen-ulloa2021">Gründe für den Fokus auf Onlineplattformen <span class="citation" data-cites="ulloa2021">(<a href="#/literatur" role="doc-biblioref" onclick="">Ulloa, 2021</a>)</span></h4>
+<p><br></p>
 <ul>
-<li><p>fehlender Konsenz über ein Vokabular oder eine Taxonomie von möglichen biases sowie methodischen Probleme und Fallstricke</p></li>
-<li><p>häufig nur impliziter der Bezug zu potentiellen Quellen und/oder Auswirkungen von Verzerrung</p></li>
+<li><p>vermitteln &amp; formen menschliche Kommunikation (<em>z.B. Tweet mit 280 Zeichen</em>)</p></li>
+<li><p>politische (Miss-)Nutzung</p></li>
+<li><p>Gatekeeper für Informationen (<em>z.B. “Dr.Google”</em>)</p></li>
+<li><p>tägliche algorithmische Empfehlungen und Werbung: <em>Nachrichten, Produkte, Jobangebote, Bewerbungen, Versicherungen, Hotels, …</em></p></li>
 </ul>
-<p>Generelle Herausforderung</p>
+</section>
+<section id="aber-welche-und-warum" class="slide level2">
+<h2>Aber welche? Und warum?</h2>
+<h4 id="denken-sie-über-ihre-forschungsfrage-nach-ulloa2021">Denken Sie über Ihre Forschungsfrage nach… <span class="citation" data-cites="ulloa2021">(<a href="#/literatur" role="doc-biblioref" onclick="">Ulloa, 2021</a>)</span></h4>
 <ul>
-<li><p>“bias” ist einweit gefasster Begriff ist, der in vielen Disziplinen untersucht wurde und verschiedene Phänomene abbildet</p>
+<li>welche <strong>Population</strong> ist vertreten?</li>
+<li>welche <strong>Arten von Interaktionen</strong> sind wichtig? (<em>z. B.: eins zu eins oder eins zu vielen</em>)</li>
+<li>Welche <strong>Interaktionsregeln</strong> sind wichtig?</li>
+<li>Bietet die Plattform <strong>Zugang</strong> zu den benötigten Daten?
 <ul>
-<li><p><em>onformation bias</em> und andere kognitive Voreingenommenheiten (Croskerry, 2002)</p></li>
-<li><p>systemische, diskriminierende Ergebnisse (Friedman und Nissenbaum, 1996)</p></li>
-<li><p>systemische Schäden (Barocas et al., 2017)</p></li>
+<li>Wenn nicht, gibt es <strong>alternative Weg</strong> um an die Daten zu gelangen?</li>
+<li>Wenn ja, ist dies <strong>legal/ethisch</strong>?</li>
 </ul></li>
 </ul>
+<div class="fragment">
+<div class="rn" data-rn-type="box" data-rn-color="#E6002E">
+<p><span class="rn" data-rn-type="underline" data-rn-color="#E6002E"><strong>ABER:</strong></span></p>
+<p>Seien Sie vorsichtig mit der <span class="rn" data-rn-type="highlight">Art und Weise</span>, wie Sie die Daten sammeln!</p>
+</div>
+</div>
+<aside class="notes">
+<p>▶ ▶️</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -684,13 +699,282 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!--# Was bedeuten hier "systematische Schäde"-->
+</section></section>
+<section>
+<section id="wie-kommen-wir-an-dbd" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>Wie kommen wir an DBD?</h1>
+<p>Web Scraping &amp; Web APIs</p>
+</section>
+<section id="possibilities-over-possibilities" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Possibilities over possibilities</h2>
+<h4 id="beispiele-für-verschiedene-datenquellen">Beispiele für verschiedene Datenquellen</h4>
+<div class="fragment semi-fade-out" data-fragment-index="1">
+<p>Automatisiertes Browsing</p>
+<p>Daten-Spenden</p>
+<p>Direkter Zugang</p>
+<p>Repositories</p>
+</div>
+<div class="fragment highlight-red" data-fragment-index="1">
+<p>Web-APIs</p>
+<p>Web Scraping / Crawling</p>
+</div>
+<div class="fragment semi-fade-out" data-fragment-index="1">
+<p>Web-Tracking</p>
+<p>…</p>
+</div>
+</section>
+<section id="bedeutung-ist-eine-frage-der-disziplin" class="slide level2">
+<h2>Bedeutung ist eine Frage der Disziplin</h2>
+<h4 id="application-programming-interfaces-apis-im-fokus">Application Programming Interfaces <span class="rn" data-rn-type="highlight">[APIs]</span> im Fokus</h4>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><em>Informatik</em>:</p>
+<ul>
+<li>z.B. Routinen, die <strong>Maschineninteraktionen</strong> strukturieren.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><em>Sozialwissenschaften:</em></p>
+<ul>
+<li><strong>Client-Server-Interaktionen</strong> (Web-APIs), zur Abfrage von Daten aus einem Dienst</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<div class="rn" data-rn-type="box" data-rn-color="#E6002E">
+<p><span class="rn" data-rn-type="underline" data-rn-color="#E6002E"><strong>Merke:</strong></span></p>
+<p>In dieser Präsentation bezieht sich der Begriff API in der Regel bzw. wenn nicht anders erwähnt auf die sehr <span class="rn" data-rn-type="highlight">enge Teilmenge von (spezifischen) Web-APIs</span>.</p>
+</div>
+</div>
+<aside class="notes">
+<p>Aber selbst innerhalb der Untergruppe der Web-APIs beschränkt sich das sozialwissenschaftliche Interesse in der Regel auf diejenigen APIs, die die Abfrage von Daten aus einem Dienst ermöglichen, während Web-APIs in der modernen Web-Entwicklung wesentlich breitere Anwendungen haben</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="api-endet-wo-scraping-beginnt" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">API endet, wo Scraping beginnt</h2>
+<h4 id="zentrale-unterschiede-in-der-vorgehensweise">Zentrale Unterschiede in der Vorgehensweise</h4>
+<p><br></p>
+<p>Typische Vorgehen beim <strong>Web-Scraping</strong> als zweistufiger Prozess:</p>
+<ol type="1">
+<li><p><strong>Abfrage</strong> an Server <strong>senden</strong>, um eine bestimmte <strong>Ressource</strong>, häufig ein HTML-Dokument, <strong>anzufordern</strong></p></li>
+<li><p>(Häufig sehr aufwändigere) <strong>Extraktion</strong> der relevanten <strong>Information</strong> aus dem HTML-Dokument</p></li>
+</ol>
+<div class="fragment" data-fragment-index="1">
+<p><strong>API</strong> im Vergleich:</p>
+<ul>
+<li>Erster Schritt ähnlich wie beim Web-Scraping, aber <strong>API legen fest, welche Art von Informationen angefordert werden können</strong> und wie das Format einer gültigen Abfrage aussieht</li>
+</ul>
+</div>
+</section>
+<section id="api-endet-wo-scraping-beginnt-1" class="slide level2" data-auto-animate="true" data-visibility="uncounted">
+<h2 data-id="quarto-animate-title">API endet, wo Scraping beginnt</h2>
+<h4 id="zentrale-unterschiede-in-der-vorgehensweise-1">Zentrale Unterschiede in der Vorgehensweise</h4>
+<div style="font-size: x-small; color: gray">
+<p>Typische Vorgehen beim <strong>Web-Scraping</strong> als zweistufiger Prozess:</p>
+<ol type="1">
+<li><p><strong>Abfrage</strong> an Server <strong>senden</strong>, um eine bestimmte <strong>Ressource</strong>, häufig ein HTML-Dokument, <strong>anzufordern</strong></p></li>
+<li><p>(Häufig sehr aufwändigere) <strong>Extraktion</strong> der relevanten <strong>Information</strong> aus dem HTML-Dokument</p></li>
+</ol>
+<p>API im Vergleich:</p>
+<ul>
+<li>Erster Schritt ähnlich wie beim Web-Scraping, aber API legen fest, welche Art von Informationen angefordert werden können und wie das Format einer gültigen Abfrage aussieht</li>
+</ul>
+</div>
+<div class="rn" data-rn-type="box" data-rn-color="#E6002E">
+<p><span class="rn" data-rn-type="underline" data-rn-color="#E6002E"><strong>Zusammengefasst:</strong></span></p>
+<ul>
+<li><p><span class="rn" data-rn-type="highlight">API-Zugriff = kontrolliertes Scraping</span></p></li>
+<li><p>Hauptunterschied liegt in der <span class="rn" data-rn-type="highlight">“Antwort” des Server</span> (“Einfaches” Datenformat bei API, statt komplettes HTML-Dokument beim Scraping)</p></li>
+</ul>
+</div>
+<!--# ANIMATE -->
+</section>
+<section id="kurze-einführung" class="slide level2">
+<h2>Kurze Einführung</h2>
+<h4 id="web-application-programming-interface-api">(Web) Application Programming Interface (API)</h4>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_api_01.svg" class="fragment" data-fragment-index="1"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_api_02.svg" class="fragment" data-fragment-index="2"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_api_03.svg" class="fragment" data-fragment-index="3"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_api_04.svg" class="fragment" data-fragment-index="4"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_api_05.svg" class="fragment" data-fragment-index="5"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/graph_api_06.svg" class="fragment" data-fragment-index="6"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="scraping-oder-api" class="slide level2">
+<h2>Scraping oder API?</h2>
+<h4 id="vor--und-nachteile">Vor- und Nachteile</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Web scraping</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p>👍 WYSIWYG-Prinzip</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>👎 viel Programmierung</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>👎 Verstößt häufig gegen die AGBs</p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>APIs</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p>👎 Platform bestimmt Inhalte &amp; Limits</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>👍 wenig Programmierung</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>👍 API selbst verhindert Verstöße gegen AGBs</p>
+</div>
+</div>
+</div>
+</section>
+<section id="schlüsseltechnologie-für-übertragung-der-nachrichten" class="slide level2">
+<h2>Schlüsseltechnologie für Übertragung der Nachrichten</h2>
+<h4 id="hypertext-transfer-protocol-http">Hypertext transfer protocol (HTTP)</h4>
+<p><strong>Zwei für die API-Abfrage wichtige Aspekte dieser Nachrichten:</strong></p>
+<ul>
+<li><p><strong>Uniform Resource Locator (<code>URL</code>)</strong>, bestehend aus dem <span class="rn" data-rn-color="#FBC8D4"><em>Protokoll</em></span>, der <span class="rn" data-rn-color="#D596A6"><em>Domain</em></span> und dem Pfad zu einer spezifischen <span class="rn" data-rn-color="#EBCCB7"><em>Ort der “Ressource”</em></span></p>
+<div style="font-size: smaller; color: black">
+<p>Beispiel: <span class="rn" data-rn-color="#FBC8D4">https</span>://<span class="rn" data-rn-color="#D596A6">en.wikipedia.org</span>/<span class="rn" data-rn-color="#EBCCB7">wiki/API</span></p>
+</div>
+<p><br></p></li>
+<li><p><strong>Austausch</strong> der Nachrichten hauptsächlich über <strong><code>GET</code>- und <code>POST</code>-Methode.</strong> Bei <strong><code>GET</code></strong>-Methode werden die <em>Abfrageparameter</em> an die URL angehängt, bei der <strong><code>POST</code></strong>-Methode <em>in den Textkörper</em> der Nachricht aufgenommen</p>
+<div style="font-size: smaller; color: black">
+<p>Beispiel: https://en.wikipedia.org/w/index.php?search=API&amp;fulltext=1<br>
+</p>
+</div></li>
+</ul>
+<aside class="notes">
+<p>Schlüsseltechnologie für die Übertragung von Nachrichten zwischen Client und Server</p>
+<p>Eine einzige Benutzeranfrage resultiert i.d.R. in einer Reihe von Nachrichten zwischen Client und Server, die alle dem HTTP-Protokoll entsprechen</p>
+<p>Eine sehr kurze Einführung in Webtechnologien und Datenformate</p>
+<p>Hauptunterschied der Methoden (GET-/POST) ist, wie sie Abfrageparameter einbeziehen</p>
+<p>Beispiel:</p>
+<ul>
+<li><p>Protokoll &amp; Domaine unverändert, aber Pfad zur Ressource verändert</p></li>
+<li><p>Die spezifische Abfrage wird mit einem Fragezeichen (?) eingeleitet, und die Parameter liegen immer in Form von Schlüssel-Wert-Paaren vor, die durch Gleichheitszeichen (=) getrennt sind. Die möglichen Schlüssel werden von jeder Seite beliebig festgelegt. Im allgemeinen Fall von mehreren Parametern werden sie durch ein kaufmännisches Und (&amp;) getrennt, wie im folgenden Beispiel, in dem wir Wikipedia bitten, eine Liste von Artikeln zu liefern, die den Suchbegriff enthalten</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!--# ANIMATE-->
+</section>
+<section id="xml-json" class="slide level2">
+<h2><strong>XML</strong> &amp; <strong>JSON</strong></h2>
+<h4 id="beispiele-für-prominente-formate-von-api-exporten">Beispiele für prominente Formate von API-Exporten</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>XML (HTML ähnlich)</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource xml number-lines code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1"></a>&lt;<span class="kw">dataformats</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2"></a>  &lt;<span class="kw">formats</span>&gt;</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    &lt;<span class="kw">names</span>&gt;XML&lt;/<span class="kw">names</span>&gt;</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    &lt;<span class="kw">file_extension</span>&gt;.xml&lt;/<span class="kw">file_extension</span>&gt;</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  &lt;/<span class="kw">format</span>&gt;</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  &lt;<span class="kw">formats</span>&gt;</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    &lt;<span class="kw">names</span>&gt;JSON&lt;/<span class="kw">names</span>&gt;</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    &lt;<span class="kw">file_extension</span>&gt;.json&lt;/<span class="kw">file_extension</span>&gt;</span>
+<span id="cb1-9"><a href="#cb1-9"></a>  &lt;/<span class="kw">format</span>&gt;</span>
+<span id="cb1-10"><a href="#cb1-10"></a>&lt;/<span class="kw">dataformats</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>XML (Alternative)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource xml number-lines code-with-copy"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1"></a>&lt;<span class="kw">dataformats</span>&gt;</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  &lt;<span class="kw">formats</span><span class="ot"> name=</span><span class="st">"XML"</span><span class="ot"> file_extension=</span><span class="st">".xml"</span>/&gt;</span>
+<span id="cb2-3"><a href="#cb2-3"></a>  &lt;<span class="kw">formats</span><span class="ot"> name=</span><span class="st">"JSON"</span><span class="ot"> file_extension=</span><span class="st">".json"</span>/&gt;</span>
+<span id="cb2-4"><a href="#cb2-4"></a>&lt;/<span class="kw">dataformats</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>JSON</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">{</span><span class="dt">"dataformats"</span><span class="fu">:</span><span class="ot">[</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">{</span><span class="dt">"name"</span><span class="fu">:</span><span class="st">"XML"</span><span class="fu">,</span> <span class="dt">"file_extension"</span><span class="fu">:</span><span class="st">".xml"</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">{</span><span class="dt">"name"</span><span class="fu">:</span><span class="st">"JSON"</span><span class="fu">,</span> <span class="dt">"file_extension"</span><span class="fu">:</span><span class="st">".JSON"</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="ot">]</span><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="koordination-nicht-bereitstellung" class="slide level2">
+<h2>Koordination, nicht Bereitstellung</h2>
+<h4 id="implikationen-der-nutzen-von-apis">Implikationen der Nutzen von APIs</h4>
+<ul>
+<li><p>Query- bzw. Abfragesystem (<em>basierend auf Parametern)</em></p></li>
+<li><p>Programmierung notwendig (<em>API scraping</em>)</p></li>
+<li><p>Daten nicht im Tabellenformat, sondern in <em>JSON/XML</em></p></li>
+<li><p>Ergebnisse werden in “Chunks” geliefert (z.B. 100 “Reihen”)</p></li>
+<li><p>Limit: Anfragen/MB pro Minuten</p></li>
+</ul>
+<div class="rn" data-rn-type="box" data-rn-color="#E6002E">
+<p><span class="rn" data-rn-type="underline" data-rn-color="#E6002E"><strong>ABER:</strong></span></p>
+<p>Immer häufiger auch für die gezielte <span class="rn" data-rn-type="highlight">Bereitstellung von Daten</span> genutzt</p>
+</div>
+<aside class="notes">
+<p>Der Zweck von APIs ist die Kommunikation zwischen Programmen zu koordinieren, nicht die Bereitstellung von Daten für Wissenschaft.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="mehr-daten-mehr-probleme" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>Mehr Daten, mehr Probleme</h1>
+<p>Daten, Datenquellen und Erhebungsdesigns als Quelle von Bias</p>
 </section>
 <section id="know-your-bias" class="slide level2">
 <h2>Know your bias!</h2>
-<h4 id="ein-framework-zur-minimierung-von-bias-olteanu2019">Ein Framework zur Minimierung von Bias <span class="citation" data-cites="olteanu2019">[@olteanu2019]</span></h4>
+<h4 id="ein-framework-zur-minimierung-von-bias-olteanu2019">Ein Framework zur Minimierung von Bias <span class="citation" data-cites="olteanu2019">(<a href="#/literatur" role="doc-biblioref" onclick="">Olteanu et al., 2019</a>)</span></h4>
 
-<img data-src="images/bias_framework_without_legend.png" class="r-stretch quarto-figure-center"><aside class="notes">
+<img data-src="../../..\content/02-dbb-introduction_overview/slides/images/bias_framework_without_legend.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>Description:</p>
 <ul>
 <li><p>Social data analysis starts with certain goals (section 2.1), such as understanding or influencing phenomena specific to social platforms (Type I) and/or phenomena beyond social platforms (Type II).</p></li>
@@ -716,416 +1000,26 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="worauf-wirkt-die-verzerrung" class="slide level2">
-<h2>Worauf wirkt die Verzerrung?</h2>
-<h4 id="beispiele-für-forschung-von-typ-i-ii-olteanu2019">Beispiele für Forschung von Typ I &amp; II <span class="citation" data-cites="olteanu2019">[@olteanu2019]</span></h4>
-<p><strong>Typ I: understand/influence phenomena <u>specific</u> to social platforms</strong></p>
+<section id="bias-at-the-source" class="slide level2">
+<h2>Bias at the source</h2>
+<h4 id="potentielle-probleme-mit-der-datenquelle-oder--herkunft">Potentielle Probleme mit der Datenquelle oder -herkunft</h4>
 <ul>
-<li>Dynamik der Verbreitung von “Memes”</li>
-<li>Steigerung der Attraktivität bzw. besonders Features</li>
-<li>Verbesserung der Suchfunktion oder des Empfehlungssystems</li>
-</ul>
-<p><strong>Typ II: understand/influence phenomena <u>beyond</u> social platforms</strong></p>
-<ul>
-<li><p>Beschreibung des Einflusses sozialer Medien auf eine politische Wahl.</p></li>
-<li><p>Nutzung sozialer Daten zur Verfolgung der Entwicklung ansteckender Krankheiten durch Analyse der von Social-Media-Nutzern online gemeldeten Symptomen</p></li>
+<li><p>Biases, die auf das <strong>Design und die Möglichkeiten der Plattformen</strong> zurückzuführen sind (<em>functional biases</em>).</p></li>
+<li><p><strong>Verhaltensnormen</strong>, die auf den <strong>einzelnen Plattformen</strong> bestehen oder sich herausbilden (<em>normative biases</em>).</p></li>
+<li><p>Faktoren, die <strong>außerhalb der sozialen Plattformen</strong> liegen, aber das Nutzerverhalten beeinflussen können (<em>external biases</em>)</p></li>
+<li><p>Vorhandensein von <strong>nicht-individuellen Konten</strong> ein <em>(non-individuals</em>).</p></li>
 </ul>
 </section>
-<section id="eine-frage-der-datenqualität" class="slide level2">
-<h2>Eine Frage der Datenqualität</h2>
-<p>Verschiedene Kriterien</p>
-</section>
-<section id="im-fokus-population-bias" class="slide level2 smaller">
-<h2>Im Fokus: Population Bias</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.</p>
-</div>
-</div>
-</div>
-<h5 id="auswirkungen">Auswirkungen:</h5>
-<ul>
-<li>kann die (Stichproben)-Repräsentativität beeinträchtigen<br>
-➥ ⚠️externe Validität</li>
-<li>besonders problematisch für Forschungsarbeiten des Typs II</li>
-<li>kann sich auch auf die Leistung von Algorithmen auswirken, die Rückschlüsse auf die Nutzer ziehen<br>
-➥ ⚠️interne Validität (Typ-I &amp; Typ II)</li>
-</ul>
-<h5 id="allgemeine-probleme">Allgemeine Probleme:</h5>
-<ul>
-<li><p>Unterschiedliche Demographien (z.B. Geschlechts-, Alters- &amp; Bildungsgruppen) neigen zu unterschiedlichen sozialen Plattformen und nutzen deren Mechanismen unterschiedlich</p></li>
-<li><p>Proxies für Eigenschaften oder demografische Kriterien der Nutzenden sind unterschiedlich verlässlich</p></li>
-</ul>
-<aside class="notes">
-<p>Häufig ist der Zusammenhang von Untersuchungspopulation (z.B. in Deutschland lebende Erwachsene) zu Zielpopulation (Erwachsene auf Twitter, die angeben, in DE zu leben) unbekannt.</p>
-<p>Beispiel “Auswirkungen”</p>
-<ul>
-<li>Algorithmen: Schätzung der Geo-Location im Stadt-Land-Spektrum (z.B Johnson et al., 2017)</li>
-</ul>
-<p>Beispiele “Probleme”:</p>
-<ul>
-<li><p>Signifikant mehr Twitter Nutzer (Mislove et al.&nbsp;,2011), bei Pinterest tendenziell Frauen überrepräsentiert (Ottoni et al., 2013)</p></li>
-<li><p>Unterschiedliche Twitter-Nutzung in DE (Fokus auf Hashtags) und KOR (Fokus auf Konversationen) (Hong et al., 2011).</p></li>
-<li><p>Angabe von Geo-Location oder Profilinformationen in sozialen Netzwerken</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section" class="slide level2 smaller">
-<h2></h2>
-</section>
-<section id="im-fokus-behavioral-bias" class="slide level2 smaller">
-<h2>Im Fokus: Behavioral Bias</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Systematic distortions in user behavior across platforms or contexts, or across users represented in different datasets.</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-1">Allgemeine Probleme:</h5>
-<ul>
-<li><p>beeinflussen die Art und Weise, wie Nutzer miteinander interagieren</p></li>
-<li><p>Auftreten von Selbstselektion und Reaktionsverzerrungen</p>
-<ul>
-<li>Response Bias</li>
-</ul></li>
-<li><p>Verzerrungen beim Konsumieren von Inhalten beeinflussen die Art und Weise, wie Nutzer Inhalte finden und mit ihnen interagieren, aufgrund von Unterschieden in ihren Interessen, ihrem Fachwissen und ihrem Informationsbedarfes</p></li>
-</ul>
-<aside class="notes">
-<p>Unterschiede in Bezug auf Nutzerpersönlichkeiten (Hughes et al., 2012), die Verbreitung von Nachrichten (Lerman und Ghosh, 2010) oder den Austausch von Inhalten (Ottoni et al., 2014)</p>
-<h5 id="auswirkungen-1">Auswirkungen:</h5>
-<ul>
-<li><p>Ergebnisse einer Studie von der gewählten Plattform oder dem Kontext abhängig<br>
-➤ ⚠️externe Validität</p></li>
-<li><p>nur Teilweise von population bias abhängig</p></li>
-<li><p>bei (expliziten oder impliziten) Annahmen über die Verhaltensmuster der Nutzenden<br>
-➤ ⚠️potentielle Effekte auf Untersuchung von Typ-I &amp; Typ II (z.B. Untersuchung der Bedürfnisse oder Interessen der Nutzenden)</p></li>
-</ul>
-<p>Beispiel “Probleme”:</p>
-<ul>
-<li><p>Gesonderte Diskussion von Verhalten, die sich auf die Erstellung von Inhalten durch die Nutzer auswirken (“content production bias”) und solche, die sich auf die Verknüpfungsmuster zwischen Nutzern auswirken (“linking bias”).</p></li>
-<li><p>Drei weitere häufige Klassen von Verhaltensverzerrungen betreffen die Interaktionen zwischen Nutzern, die Interaktionen zwischen Nutzern und Inhalten und die Verzerrungen, die dazu führen, dass Nutzer in eine Studienpopulation aufgenommen oder von ihr ausgeschlossen werden.</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-content-production-biases" class="slide level2 smaller">
-<h2>Im Fokus: Content Production Biases</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Behavioral biases that are expressed as lexical, syntactic, semantic, and structural differences in the content generated by users.</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-2">Allgemeine Probleme:</h5>
-<ul>
-<li><p>Der Gebrauch der Sprache(n) variiert zwischen und innerhalb von Ländern und Bevölkerungsgruppen</p>
-<ul>
-<li><p>Mocanu et al.&nbsp;(2013): saisonale Schwankungen in der sprachlichen Zusammensetzung zwischen verschiedenen Gebiete (Länder, Regionen, Nachbarschaften etc.)</p></li>
-<li><p>Sprachgebrauchsvariationen je nach Geschlecht, Alter, regionaler Herkunft und politischer Orientierung auf Twitter (Rao et al.&nbsp;(2010)), sowie zwischen ethnischen Gruppen (Blodgett et al., 2016).</p></li>
-</ul></li>
-<li><p>Kontextbedingte Faktoren beeinflussen die Art und Weise, wie Benutzer sprechen.</p></li>
-<li><p>Die Inhalte von bekannten oder “erfahrenen” Nutzern unterscheiden sich von denen der normalen Nutzer.</p></li>
-<li><p>Unterschiedliche Bevölkerungsgruppen haben unterschiedliche Neigungen, über bestimmte Themen zu sprechen.</p></li>
-</ul>
-<aside class="notes">
-<ul>
-<li>Unterschiede bei nutzergenerierten Inhalten, insbesondere bei Texten, zwischen und innerhalb von demografischen Gruppen</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-linking-bias" class="slide level2 smaller">
-<h2>Im Fokus: Linking Bias</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Behavioral biases that are expressed as differences in the attributes of networks obtained from user connections, interactions or activity.</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-3">Allgemeine Probleme:</h5>
-<ul>
-<li><p>Netzattribute beeinflussen das Verhalten und die Wahrnehmung der Nutzer und umgekehrt.</p></li>
-<li><p>Verhaltensbasierte und verbindungsbasierte soziale Verbindungen sind unterschiedlich.</p></li>
-<li><p>Die Bildung sozialer Online-Netzwerke hängt auch von Faktoren außerhalb der sozialen Plattformen ab</p></li>
-</ul>
-<aside class="notes">
-<ul>
-<li><p>Sozialen Netzwerke, die aus beobachteten Mustern in Datensätzen (re)konstruiert werden, können sich grundlegend von den zugrunde liegenden (Offline-)Netzwerken unterscheiden (Schoenebeck, 2013a)<br>
-➤ ⚠️externe Validität ➤ ⚠️ Typ-II &amp; teilweise Typ-I (Fälle, in denen die Interaktions- oder Verknüpfungsmuster der Nutzer mit der Zeit oder dem Kontext variieren)</p></li>
-<li><p>wirken sich beispielsweise auf die Untersuchung der Struktur und Entwicklung sozialer Netzwerke, des sozialen Einflusses und von Phänomenen der Informationsverbreitung aus (Wilson et al., 2009; Cha et al., 2010; Bakshy et al., 2012)</p></li>
-<li><p>Auf sozialen Plattformen können sie auch zu systematisch verzerrten Wahrnehmungen über Nutzer oder Inhalte führen (Lerman et al., 2016).</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-temporal-biases" class="slide level2 smaller">
-<h2>Im Fokus: Temporal Biases</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Systematic distortions across user populations or behaviors over time.</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-4">Allgemeine Probleme:</h5>
-<ul>
-<li><p>Bevölkerungsgruppen, Verhaltensweisen und Systeme verändern sich mit der Zeit.</p></li>
-<li><p>Saisonale und periodische Phänomene.</p></li>
-<li><p>Plötzlich auftretende Phänomene wirken sich auf Populationen, Verhaltensweisen und Plattformen aus.</p></li>
-<li><p>Die zeitliche Granularität kann zu feinkörnig sein, um langfristige Phänomene zu beobachten.</p></li>
-<li><p>Die zeitliche Granularität kann zu grobkörnig sein, um kurzlebige Phänomene zu beobachten.</p></li>
-<li><p>Datensätze verfallen und verlieren mit der Zeit an Nutzen.</p></li>
-</ul>
-<aside class="notes">
-<p>Auswirkunge:</p>
-<ul>
-<li><p>➤ ⚠️ eterne Validität</p></li>
-<li><p>Beeinträchtigen Verallgemeinerbarkeit von Beobachtungen im Laufe der Zeit ➤ ⚠️ Typ-I &amp; Typ-II-Forschung problematisch</p></li>
-</ul>
-<p>Probleme:</p>
-<ul>
-<li>Die Art und Weise, wie man Datensätze entlang der zeitlichen Achsen aggregiert und abschneidet, wirkt sich darauf aus, welche Art von Mustern beobachtet werden und welche Forschungsfragen beantwortet werden können.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-redundancy" class="slide level2 smaller">
-<h2>Im Fokus: Redundancy</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Single data items that appear in the data in multiple copies, which can be identical (duplicates), or almost identical (near duplicates).</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-5">Allgemeine Probleme:</h5>
-<ul>
-<li>Lexikalische (z. B. Duplikate, erneute Tweets, erneut geteilte Inhalte) und semantische (z. B. Beinahe-Duplikate oder dieselbe Bedeutung, aber anders geschrieben) Redundanz macht oft einen erheblichen Teil der Inhalte aus (Baeza-Yates, 2013) und kann sowohl innerhalb als auch zwischen sozialen Datensätzen auftreten. Weitere Quellen für inhaltliche Redundanz sind häufig nicht-menschliche Konten (Abschnitt 4.4), wie z. B. ein und dieselbe Person, die von mehreren Konten oder Plattformen aus postet (z. B. Spam), mehrere Nutzer, die vom selben Konto aus posten (z. B. Konten von Organisationen), oder mehrere Personen, die denselben Inhalt posten oder erneut posten (z. B. das Posten von Zitaten, Memes oder anderen Arten von Inhalten). Dies kann manchmal die Ergebnisse verzerren, aber Redundanz kann auch ein Signal an sich sein, z. B. kann das erneute Posten ein Signal für Wichtigkeit sein.</li>
-</ul>
-<aside class="notes">
-<p>Auswirkunge:</p>
-<ul>
-<li>Redundanz kann, wenn sie nicht berücksichtigt wird, sowohl die interne als auch die ökologische/externe Validität der Forschung beeinträchtigen, und zwar sowohl in der Forschung vom Typ I als auch vom Typ II (Abschnitt 2.1). Sie kann sich negativ auf den Nutzen von Instrumenten auswirken (Radlinski et al., 2011) und die Quantifizierung von Phänomenen in den Daten verzerren.</li>
-</ul>
-<p>Probleme:</p>
-<ul>
-<li>Die Art und Weise, wie man Datensätze entlang der zeitlichen Achsen aggregiert und abschneidet, wirkt sich darauf aus, welche Art von Mustern beobachtet werden und welche Forschungsfragen beantwortet werden können.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="potentielle-probleme-mit-der-datenquelle-oder--herkunft" class="slide level2">
-<h2>Potentielle Probleme mit der Datenquelle oder -herkunft</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/bias_framework_lower_boxes-left.png"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<p>Überblick</p>
-<ul>
-<li><p>Biases, die auf das Design und die Möglichkeiten der Plattformen zurückzuführen sind (functional biases)</p></li>
-<li><p>Verhaltensnormen, die auf den einzelnen Plattformen bestehen oder sich herausbilden (normative biases).</p></li>
-<li><p>Faktoren, die außerhalb der sozialen Plattformen liegen, aber das Nutzerverhalten beeinflussen können (external biases)</p></li>
-<li><p>Vorhandensein von nicht-individuellen Konten ein (non-individuals).</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="im-fokus-functional-biases" class="slide level2">
-<h2>Im Fokus: Functional Biases</h2>
-<h4 id="probleme-mit-der-datenquelle-oder--herkunft">Probleme mit der Datenquelle oder -herkunft</h4>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Biases that are a result of platform-specific mechanisms or affordances, that is, the possible actions within each system or environment.</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-6">Allgemeine Probleme:</h5>
-<ul>
-<li>Plattformspezifisches Design und Funktionen prägen das Nutzerverhalten.</li>
-<li>Algorithmen, die für die Organisation und das Ranking von Inhalten verwendet werden, beeinflussen das Nutzerverhalten.</li>
-<li>Die Präsentation von Inhalten beeinflusst das Nutzerverhalten.</li>
-</ul>
-<aside class="notes">
-<p>Hintergrund: - Die Möglichkeiten von Plattformen werden häufig von geschäftlichen Erwägungen und Interessen bestimmt (Van Dijck, 2013a; Salganik, 2017) und von der Politik, den Annahmen und den Interessen derjenigen beeinflusst, die diese Plattformen entwickeln und aufbauen (Van Dijck, 2013a; West et al., 2019). Die Möglichkeiten und Funktionen der Plattformen werden manchmal absichtlich eingeführt, um die Nutzer zu bestimmten Verhaltensweisen zu bewegen (Thaler und Sunstein, 2008). Jede Plattform verwendet einzigartige, proprietäre und oft nicht dokumentierte plattformspezifische Algorithmen, um Inhalte (oder Nutzer) zu organisieren und zu fördern, was sich auf das Engagement und Verhalten der Nutzer auswirkt. Idealerweise sollte die Forschung soziale Datenproben von verschiedenen Plattformen verwenden, aber aufgrund der begrenzten Verfügbarkeit von Daten konzentriert sich ein Großteil der Forschung auf Daten von einigen wenigen Plattformen, vor allem Twitter. Die Verwendung von Twitter als eine Art “Modellorganismus” in der Social-Media-Forschung ist kritisiert worden (Tufekci, 2014).</p>
-<p>Auswirkunge: Funktionale Verzerrungen erschweren die Verallgemeinerung oder Übertragung von Schlussfolgerungen aus Forschungsstudien, da jede Plattform ihre eigenen strukturellen Unterschiede aufweist (Tufekci, 2014), was zu plattformspezifischen Phänomenen führen kann (Ruths und Pfeffer, 2014), die häufig übersehen werden. Die Tatsache, dass die meisten Forschungsarbeiten mit Daten von einer Handvoll Plattformen durchgeführt werden, verschärft dieses Problem noch. Funktionale Verzerrungen sind für die Forschung des Typs II (Abschnitt 2.1) problematisch und beeinträchtigen die externe/ökologische Validität der Sozialdatenforschung; und wenn sie sich z. B. im Laufe der Zeit ändern, können sie auch die Forschung des Typs I beeinträchtigen. Ihr Einfluss auf Verhaltens- und Adoptionsmuster ist jedoch oft subtil und lässt sich nur schwer von anderen Faktoren abgrenzen.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-normative-biases" class="slide level2">
-<h2>Im Fokus: Normative Biases</h2>
-<h4 id="probleme-mit-der-datenquelle-oder--herkunft-1">Probleme mit der Datenquelle oder -herkunft</h4>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Biases that are a result of written or unwritten norms and expectations of acceptable patterns of behavior on a given online platform or medium</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-7">Allgemeine Probleme:</h5>
-<ul>
-<li>Normen werden durch die Einstellungen und Verhaltensweisen von Online-Gemeinschaften geprägt, die kontextabhängig sein können.</li>
-<li>Das Bewusstsein, von anderen beobachtet zu werden, wirkt sich auf das Nutzerverhalten aus.</li>
-<li>Soziale Konformität und “Herdentrieb” finden auf sozialen Plattformen statt, und solche Verhaltensmerkmale prägen das Nutzerverhalten.</li>
-</ul>
-<aside class="notes">
-<p>Hintergrund: Plattformen zeichnen sich durch ihre Verhaltensnormen aus, in der Regel in Form von Erwartungen darüber, was eine akzeptable Nutzung darstellt. Diese Normen werden durch Faktoren wie das spezifische Wertversprechen jeder Plattform und die Zusammensetzung ihrer Nutzerbasis geprägt (Boyd und Ellison, 2007; Ruths und Pfeffer, 2014; Newell et al., 2016b). Sukumaran et al.&nbsp;(2011) zeigen beispielsweise, wie die Nutzer von Nachrichten-Websites sich beim Verfassen von Kommentaren an informelle, von anderen gesetzte Standards halten, wie Länge oder Anzahl der behandelten Aspekte.</p>
-<p>Auswirkunge: Wie funktionale Verzerrungen wirken sich auch normative Verzerrungen auf die ökologische/externe Validität der Forschung aus und sind für die Typ-II-Forschung (Abschnitt 2.1) problematisch, da die Forschungsergebnisse von den besonderen Normen der jeweiligen Plattform abhängen können. Sie können auch das Nutzerverhalten verzerren und neigen dazu, mit dem Kontext, der Zeit oder den verschiedenen Untergemeinschaften zu variieren, was ebenfalls die Forschung vom Typ I beeinträchtigt. Das Übersehen der Auswirkungen von Normen kann sich auf jede Sozialdatenanalyse auswirken, die das Nutzerverhalten untersucht oder Annahmen darüber trifft (Tufekci, 2014).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-external-sources-of-bias" class="slide level2">
-<h2>Im Fokus: External Sources of Bias</h2>
-<h4 id="probleme-mit-der-datenquelle-oder--herkunft-2">Probleme mit der Datenquelle oder -herkunft</h4>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Biases resulting from factors outside the social platform, including considerations of socioeconomic status, ideological/religious/political leaning, education, personality, culture, social pressure, privacy concerns, and external events.</p>
-</div>
-</div>
-</div>
-<h5 id="allgemeine-probleme-8">Allgemeine Probleme:</h5>
-<ul>
-<li>Kulturelle Elemente und soziale Kontexte spiegeln sich in sozialen Datensätzen wider.</li>
-<li>Wie andere Medien enthalten auch die sozialen Medien Fehlinformationen und Desinformationen.</li>
-<li>Inhalte zu verschiedenen Themen werden unterschiedlich behandelt.</li>
-<li>Ereignisse von großer Tragweite werden in den sozialen Medien widergespiegelt, unabhängig davon, ob sie vorhergesehen wurden oder nicht.</li>
-</ul>
-<aside class="notes">
-<p>Hintergrund: Soziale Plattformen sind dem Einfluss einer Vielzahl von externen Faktoren ausgesetzt, die sowohl die demografische Zusammensetzung als auch das Verhalten ihrer Nutzer beeinflussen können.</p>
-<p>Auswirkunge: Externe Verzerrungen sind eine weit gefasste Kategorie, die sich auf die Konstrukt-, interne und externe Validität der Forschung auswirken und sowohl für Typ-I- als auch für Typ-II-Forschung problematisch sein können (Abschnitt 2.1). Im Allgemeinen können sich externe Faktoren auf verschiedene Qualitätsdimensionen sozialer Datensätze auswirken, einschließlich Erfassungsgrad und Repräsentativität, doch können sie auch subtil und leicht zu übersehen sein und die Zuverlässigkeit der aus diesen Datensätzen gezogenen Beobachtungen beeinträchtigen (Silvestri, 2010; Kícíman, 2012; Olteanu et al., 2015).</p>
-<p>Probleme: Wir befassen uns mit verschiedenen Arten von externen Faktoren wie dem sozialen und kulturellen Kontext, externen Ereignissen, semantischen Bereichen und Quellen.a</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="im-fokus-non-individual-accounts" class="slide level2">
-<h2>Im Fokus: Non-individual Accounts</h2>
-<h4 id="probleme-mit-der-datenquelle-oder--herkunft-3">Probleme mit der Datenquelle oder -herkunft</h4>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Interactions on social platforms that are produced by organizations or automated agents.</p>
-</div>
-</div>
-</div>
-<h5 id="zwei-typen-von-nicht-individuellen-konten">Zwei Typen von nicht-individuellen Konten:</h5>
-<ul>
-<li>Konten von Organisationen</li>
-<li>Bots</li>
-</ul>
-<aside class="notes">
-<p>Auswirkunge: Forscher gehen oft davon aus, dass jedes Konto ein Individuum ist; wenn dies nicht der Fall ist, kann die interne und externe Validität sowohl in der Typ-I- als auch in der Typ-II-Forschung beeinträchtigt werden (Abschnitt 2.1). Beispielsweise können Studien, die diese Datensätze verwenden, um Rückschlüsse auf die Prävalenz unterschiedlicher Meinungen in der Öffentlichkeit zu ziehen, besonders betroffen sein.</p>
-<p>Probleme: Wir befassen uns mit verschiedenen Arten von externen Faktoren wie dem sozialen und kulturellen Kontext, externen Ereignissen, semantischen Bereichen und Quellen.a</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="datenerfassung" class="slide level2">
-<h2>Datenerfassung</h2>
+<section id="be-aware-when-collecting-data" class="slide level2">
+<h2>Be aware when collecting data</h2>
 <h4 id="potentielle-probleme-bei-der-datenerhebung">Potentielle Probleme bei der Datenerhebung</h4>
-<p>Hintergrund</p>
 <ul>
-<li>Die Erfassung sozialer Daten wird häufig von sozialen Plattformen geregelt und hängt von den Daten ab, die sie erfassen und zur Verfügung stellen, von den Grenzen, die sie für den Zugang setzen können, und von der Art und Weise, wie der Zugang gewährt wird.</li>
+<li><p><strong>Akquisition</strong>: Abhängig von den Daten, die <strong>von Plattformen erfass</strong>t und zur <strong>Verfügung gestellt</strong> werden, den für den <strong>Zugang gesetzten Grenzen</strong> und von der Art und Weise, wie der <strong>Zugang gewährt</strong> wird.</p></li>
+<li><p><strong>Abfrage</strong>: APIs basieren auf <strong>unterschiedlich Dokumentationen</strong> sowie Arten von (unterstüzten) <strong>Abfragen</strong>.</p></li>
+<li><p><strong>Filterung</strong>: In der Regel impliziert die Entscheidung, bestimmte <strong>Daten</strong> zu entfernen, die Annahme, dass sie <strong>für</strong> <strong>eine Studie nicht relevant sind</strong>. Dies ist hilfreich, wenn die Annahme zutrifft, und schädlich, wenn sie nicht zutrifft.</p></li>
 </ul>
-<p>Häufige Probleme:</p>
+<aside class="notes">
+<p>Probleme bei Akquisition:</p>
 <ul>
 <li><p>Viele soziale Plattformen raten von der Datenerfassung durch Dritte ab.</p></li>
 <li><p>Der programmatische Zugang ist oft mit Einschränkungen verbunden.</p></li>
@@ -1133,206 +1027,281 @@
 <li><p>Die Plattformen gewähren möglicherweise keinen Zugang zu allen erfassten Daten.</p></li>
 <li><p>Stichprobenstrategien sind oft undurchsichtig</p></li>
 </ul>
-</section>
-<section id="abfrage-von-daten" class="slide level2">
-<h2>Abfrage von Daten</h2>
-<h4 id="potentielle-probleme-bei-der-datenerhebung-1">Potentielle Probleme bei der Datenerhebung</h4>
-<p>Hintergrund</p>
-<ul>
-<li>Der Datenzugriff über APIs umfasst in der Regel eine Abfrage, die eine Reihe von Kriterien für die Auswahl, Einstufung und Rückgabe der angeforderten Daten angibt. Verschiedene APIs können unterschiedliche Arten von Abfragen unterstützen.</li>
-</ul>
-<p>Häufige Probleme:</p>
+<p>Probleme bei Abfrage:</p>
 <ul>
 <li><p>APIs haben eine begrenzte Aussagekraft in Bezug auf den Informationsbedarf.</p></li>
 <li><p>Der Informationsbedarf kann auf unterschiedliche Weise operationalisiert (formuliert) werden.</p></li>
 <li><p>Die Wahl der Schlüsselwörter in stichwortbasierten Abfragen prägt die resultierenden Datensätze.</p></li>
 </ul>
-</section>
-<section id="filterung-von-daten" class="slide level2">
-<h2>Filterung von Daten</h2>
-<h4 id="potentielle-probleme-bei-der-datenerhebung-2">Potentielle Probleme bei der Datenerhebung</h4>
-<p>Hintergrund</p>
+<p>Filterung: Bei der Datenfilterung werden irrelevante Teile der Daten entfernt, was manchmal während der Datenerfassung aufgrund der begrenzten Ausdruckskraft einer API oder Abfragesprache nicht möglich ist. Der Schritt der Datenfilterung am Ende einer Datenerfassungspipeline wird häufig als Nachfilterung bezeichnet, da er nach der Erfassung oder Abfrage der Daten erfolgt (daher das Präfix “post-”).</p>
 <ul>
-<li>Bei der Datenfilterung werden irrelevante Teile der Daten entfernt, was manchmal während der Datenerfassung aufgrund der begrenzten Ausdruckskraft einer API oder Abfragesprache nicht möglich ist. Der Schritt der Datenfilterung am Ende einer Datenerfassungspipeline wird häufig als Nachfilterung bezeichnet, da er nach der Erfassung oder Abfrage der Daten erfolgt (daher das Präfix “post-”).</li>
-</ul>
-<p>Häufige Probleme</p>
-<ul>
-<li><p>In der Regel impliziert die Entscheidung, bestimmte Daten zu entfernen, die Annahme, dass sie für eine Studie nicht relevant sind. Dies ist hilfreich, wenn die Annahme zutrifft, und schädlich, wenn sie nicht zutrifft.</p>
+<li><p>Probleme</p>
 <ul>
 <li><p>Ausreißer sind manchmal für die Datenanalyse von Bedeutung.</p></li>
 <li><p>Textfilterung kann bestimmte Analysen einschränken.</p></li>
 </ul></li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="potentielle-probleme-bei-der-datenverarbeitung" class="slide level2">
-<h2>Potentielle Probleme bei der Datenverarbeitung</h2>
-<p>Annahmen bei der Gestaltung von Datenverarbeitungspipelines können sich auf Datensätze auswirken und deren Inhalt, Struktur, Organisation oder Darstellung verändern (Barocas und Selbst, 2016; Poirier, 2018). Verzerrungen und Fehler können durch Vorgänge wie Bereinigung (Abschnitt 6.1), Anreicherung durch manuelle oder automatische Verfahren (Abschnitt 6.2) und Aggregation (Abschnitt 6.3) eingeführt werden.</p>
-<p>Auswirkungen: Schlechte Entscheidungen bei der Datenverarbeitung gefährden vor allem die interne Validität der Forschung, können aber auch die ökologische/externe Validität beeinträchtigen. So ist beispielsweise Crowdsourcing einer der vorherrschenden Mechanismen zur Anreicherung von Daten und zur Erstellung von “Ground Truth”- oder “Goldstandard”-Datensätzen, die dann für eine Vielzahl von Modellierungs- oder Lernaufgaben verwendet werden können. Es hat sich jedoch gezeigt, dass einige “Goldstandards” je nachdem, wer die Annotation vornimmt, variieren, was sich wiederum auf die Leistung der Algorithmen auswirken kann (Sen et al., 2015). Folglich können sie sowohl die Forschung des Typs I als auch des Typs II beeinträchtigen (Abschnitt 2.1).</p>
-</section>
-<section id="probleme-bei-der-datenbereinigung" class="slide level2">
-<h2>Probleme bei der Datenbereinigung</h2>
-<h4 id="potentielle-probleme-bei-der-datenverarbeitung-1">Potentielle Probleme bei der Datenverarbeitung</h4>
-<p>Hintergrund</p>
+<section id="handle-with-care" class="slide level2">
+<h2>Handle with care</h2>
+<h4 id="potentielle-probleme-bei-der-datenverarbeitung">Potentielle Probleme bei der Datenverarbeitung</h4>
 <ul>
-<li>Mit der Datenbereinigung soll sichergestellt werden, dass die Daten das untersuchte Phänomen getreu wiedergeben (z. B. um die Konstruktvalidität zu gewährleisten). Sie zielt darauf ab, Fehler und Inkonsistenzen in den Daten zu erkennen und zu korrigieren, bis die “bereinigten” Daten Konsistenz- oder Validierungstests bestehen (Rahm und Do, 2000). Datenbereinigung ist nicht gleichbedeutend mit Datenfilterung: Während die Datenbereinigung die Entfernung bestimmter Datenelemente beinhalten kann, kann sie auch die Normalisierung von Daten durch Korrektur oder Ersetzung unvollständiger oder fehlender Werte umfassen.</li>
+<li><p><strong>Bereinigung</strong>: Können die <strong>Überzeugungen der Wissenschaftler*Innen</strong> über ein Phänomen sowie das System im Allgemeinen in den Datensatz <strong>einbetten</strong> und in <strong>falschen oder irreführenden Datenmustern</strong> resultieren</p></li>
+<li><p><strong>Anreicherung</strong>: Sowohl manuelle als auch <strong>automatische Annotation</strong> ( (z.B. Part-of-Speech Tagging) sind <strong>fehleranfällig</strong> und können sowohl <strong>bestehende Verzerrungen verschärfen</strong> als auch neue <strong>Verzerrungen und Fehler einführen.</strong></p></li>
+<li><p><strong>Aggregation</strong>: Die Art und Weise, wie diese Aggregationen vorgenommen werden, oder welche Informationen sie komprimieren, kann zu unterschiedlichen Schlussfolgerungen führen.</p></li>
 </ul>
-<p>Häufige Probleme</p>
+<aside class="notes">
+<p>Annahmen bei der Gestaltung von Datenverarbeitungspipelines können sich auf Datensätze auswirken und deren Inhalt, Struktur, Organisation oder Darstellung verändern (Barocas und Selbst, 2016; Poirier, 2018).</p>
+<p>Datenbereinigung:</p>
 <ul>
-<li><p>Datenbereinigungsverfahren können die Überzeugungen des Wissenschaftlers über ein Phänomen und das System im Allgemeinen in den Datensatz einbetten. Während gut begründete Änderungen die Validität eines Datensatzes verbessern, kann die Datenbereinigung zum Beispiel auch zu falschen oder irreführenden Datenmustern führen:</p>
+<li><p>nicht gleichbedeutend mit Datenfilterung: Während die Datenbereinigung die Entfernung bestimmter Datenelemente beinhalten kann, kann sie auch die Normalisierung von Daten durch Korrektur oder Ersetzung unvollständiger oder fehlender Werte umfassen.</p></li>
+<li><p>Probleme</p>
 <ul>
 <li><p>Die Wahl der Datendarstellung und der Standardwerte kann zu Verzerrungen führen.</p></li>
 <li><p>Die Normalisierung von Text oder geografischen Referenzen kann zu Verzerrungen führen.</p></li>
 </ul></li>
 </ul>
-</section>
-<section id="probleme-bei-der-datenanreicherung" class="slide level2">
-<h2>Probleme bei der Datenanreicherung</h2>
-<h4 id="potentielle-probleme-bei-der-datenverarbeitung-2">Potentielle Probleme bei der Datenverarbeitung</h4>
-<p>Hintergrund</p>
+<p>Anreicherungen:</p>
 <ul>
-<li>Die Datenanreicherung umfasst das Hinzufügen von Anmerkungen zu Datenelementen, die in der Analysephase verwendet werden können. Annotationen können von einfachen kategorischen Etiketten, die jedem Element zugeordnet sind, bis hin zu komplexeren Verarbeitungen wie Part-of-Speech-Tagging oder Dependency Parsing von Text reichen. Sie können entweder durch eine Form der (halb-)automatischen Klassifizierung oder durch menschliche Anmerkungen (z. B. Crowdsourcing, Umfragen) gewonnen werden.</li>
-</ul>
-<p>Häufige Probleme</p>
-<ul>
-<li><p>Sowohl die manuelle als auch die automatische Annotation sind jedoch fehleranfällig (Cohen und Ruths, 2013) und können sowohl bestehende Verzerrungen verschärfen als auch neue Verzerrungen und Fehler einführen.</p>
+<li><p>umfasst das Hinzufügen von Anmerkungen zu Datenelementen, die in der Analysephase verwendet werden können. Annotationen können von einfachen kategorischen Etiketten, die jedem Element zugeordnet sind, bis hin zu komplexeren Verarbeitungen wie Part-of-Speech-Tagging oder Dependency Parsing von Text reichen. Sie können entweder durch eine Form der (halb-)automatischen Klassifizierung oder durch menschliche Anmerkungen (z. B. Crowdsourcing, Umfragen) gewonnen werden.</p></li>
+<li><p>Probleme</p>
 <ul>
 <li><p>Die manuelle Beschriftung kann zu subjektiven und verrauschten Angaben führen.</p></li>
 <li><p>Die automatische Beschriftung durch statistische oder maschinelle Lernmethoden führt zu Fehlern.</p></li>
 </ul></li>
 </ul>
-</section>
-<section id="probleme-bei-der-datenaggregation" class="slide level2">
-<h2>Probleme bei der Datenaggregation</h2>
-<h4 id="potentielle-probleme-bei-der-datenverarbeitung-3">Potentielle Probleme bei der Datenverarbeitung</h4>
-<p>Hintergrund</p>
+<p>Aggregation:</p>
 <ul>
-<li>Die Datenaggregation wird durchgeführt, um Daten zu strukturieren, zu organisieren, darzustellen oder umzuwandeln; betrachten Sie Vorverarbeitungsheuristiken, die Daten aggregieren, um sie auf Kosten von Informationsverlusten besser handhabbar zu machen. Die Aggregation kann auch die Hervorhebung bestimmter Muster verringern oder verstärken (Olteanu et al., 2014b; Poirier, 2018).</li>
-</ul>
-<p>Häufige Probleme</p>
+<li><p>wird durchgeführt, um Daten zu strukturieren, zu organisieren, darzustellen oder umzuwandeln; betrachten Sie Vorverarbeitungsheuristiken, die Daten aggregieren, um sie auf Kosten von Informationsverlusten besser handhabbar zu machen. Die Aggregation kann auch die Hervorhebung bestimmter Muster verringern oder verstärken (Olteanu et al., 2014b; Poirier, 2018).</p></li>
+<li><p>Probleme</p>
 <ul>
-<li>Die Art und Weise, wie diese Aggregationen vorgenommen werden, oder welche Informationen sie kompromittieren, kann zu unterschiedlichen Schlussfolgerungen führen. Bei der Aggregation nach geografischen Gesichtspunkten kann es tatsächlich zu einer Art “Gerrymandering” kommen, das zu sehr unterschiedlichen Ergebnissen führt.19 Bei der Betrachtung der Gesamthäufigkeit verschiedener Themen unter den Nutzern kann die Aggregation von Inhalten nach Nutzern den Interessen jedes Nutzers das gleiche Gewicht verleihen, während die Aggregation nach Themen den Inhalten hochaktiver Nutzer mehr Gewicht verleihen kann. Wenn die Daten entlang eines bestimmten Attributs organisiert sind (z. B. das Vorhandensein eines Schlüsselworts oder Hashtags) und es mehrere unabhängige Faktoren gibt, die dazu führen, dass das Attribut einen bestimmten Wert annimmt, ist die Analyse von Dateneinträgen mit diesem Wert gleichbedeutend mit einer Konditionierung auf diesen Wert und kann zu falschen Assoziationsmustern zwischen diesen Faktoren führen (Blyth, 1972; Tufekci, 2014).</li>
+<li><p>Bei der Aggregation nach geografischen Gesichtspunkten kann es tatsächlich zu einer Art “Gerrymandering” kommen, das zu sehr unterschiedlichen Ergebnissen führt.</p></li>
+<li><p>Bei der Betrachtung der Gesamthäufigkeit verschiedener Themen unter den Nutzern kann die Aggregation von Inhalten nach Nutzern den Interessen jedes Nutzers das gleiche Gewicht verleihen, während die Aggregation nach Themen den Inhalten hochaktiver Nutzer mehr Gewicht verleihen kann.</p></li>
+<li><p>Wenn die Daten entlang eines bestimmten Attributs organisiert sind (z. B. das Vorhandensein eines Schlüsselworts oder Hashtags) und es mehrere unabhängige Faktoren gibt, die dazu führen, dass das Attribut einen bestimmten Wert annimmt, ist die Analyse von Dateneinträgen mit diesem Wert gleichbedeutend mit einer Konditionierung auf diesen Wert und kann zu falschen Assoziationsmustern zwischen diesen Faktoren führen (Blyth, 1972; Tufekci, 2014).</p></li>
+</ul></li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="methodische-fallstricke-bei-der-analyse-von-daten" class="slide level2">
 <h2>Methodische Fallstricke bei der Analyse von Daten</h2>
-<p>Die Wahl einer Analysemethode spiegelt in der Regel die Erfahrung und den Blickwinkel eines Forschers wider und kann verschiedene Bedenken hervorrufen, wie z. B. (i) die Verwendung von Daten als Quelle für Hypothesen und nicht als Instrument zu deren Prüfung; (ii) die Anpassung der Forschungsagenda an die Datenverfügbarkeit, was zu Verzerrungen bei der Art der gestellten Fragen führen kann; oder (iii) das Testen mehrerer Hypothesen, bis ein signifikantes, positives Ergebnis gefunden wird. Zu Letzterem gehören Praktiken wie das “Feature Hunting” (Ruths und Pfeffer, 2014): das gierige Testen mehrerer Merkmale für Klassifizierungsaufgaben, bis dasjenige gefunden ist, das die besten Verbesserungen liefert, anstatt diese Merkmale auf der Grundlage von A-priori-Hypothesen auszuwählen.</p>
+<p>Die Wahl einer Analysemethode spiegelt in der Regel die Erfahrung und den Blickwinkel der Forschenden wider und kann verschiedene Bedenken hervorrufen, wie z. B.</p>
+<ol type="1">
+<li><p>die Verwendung von <strong>Daten als Quelle für Hypothesen</strong> und nicht als Instrument zu deren Prüfung;</p></li>
+<li><p>die <strong>Anpassung</strong> der <strong>Forschungsagenda</strong> an die <strong>Datenverfügbarkeit</strong>, was zu Verzerrungen bei der Art der gestellten Fragen führen kann; oder</p></li>
+<li><p>das Testen mehrerer Hypothesen, bis ein signifikantes, positives Ergebnis gefunden wird (<em>“feature hunting”</em>)</p></li>
+</ol>
+<aside class="notes">
 <p>Implikationen. Eine wichtige Konsequenz ist die mangelnde Replizierbarkeit. Aufgrund von Unterschieden in der Analysemethodik, Messung und Datenerhebung konnten Liang und Fu (2015) beispielsweise 6 von 10 bekannten Thesen aus Social-Media-Studien nicht wiederholen. Generell kann die interne und externe Validität sowohl der Typ-I- als auch der Typ-II-Forschung durch die Wahl der Methoden beeinflusst werden, die bei der Analyse der Daten angewandt werden, um Nutzerpopulationen und -verhaltensweisen zu charakterisieren (Abschnitte 7.1-7.2), Schlussfolgerungen und Vorhersagen zu treffen (Abschnitt 7.3) und (kausale) Zusammenhänge zu ermitteln (Abschnitt 7.4).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="probleme-bei-der-auswertung-und-interpretation-der-ergebnisse" class="slide level2">
-<h2>Probleme bei der Auswertung und Interpretation der Ergebnisse</h2>
+<section id="offenheit-als-lösung-statt-als-problem" class="slide level2">
+<h2>Offenheit als Lösung statt als Problem</h2>
+<h4 id="probleme-bei-der-auswertung-und-interpretation-der-ergebnisse">Probleme bei der Auswertung und Interpretation der Ergebnisse</h4>
+<ul>
+<li><p><strong>Auswahl der Messgrößen:</strong> Besonders bei latenten Konstrukten ist die <strong>Art der Operationalisierung</strong> (z. B. Sharing-Muster als Näherungswert für Beliebtheit) entscheidend für die Aussagekraft der Studie(n)</p></li>
+<li><p><strong>Bewertung und Interpretation der Ergebnisse:</strong> Abhängig von den <strong>ursprünglichen Annahmen</strong> (z.B. dass soziale Online-Spuren in gewisser Weise quantifizierbare Phänomene der realen Welt</p></li>
+<li><p><strong>Disclaimer und Reproduzierbarkeit:</strong> Um die Reproduzierbarkeit (durch standardisierte experimentelle Methoden) zu födern, ist die Entwicklung von Standardbewertungsverfahren und -metriken notwendig</p></li>
+</ul>
+<aside class="notes">
 <p>Eine letzte Möglichkeit, Verzerrungen zu berücksichtigen und die Zuverlässigkeit der Ergebnisse zu beurteilen, besteht bei der Bewertung und Interpretation der Leistung eines Instruments oder der Ergebnisse einer Studie. Ein guter Ausgangspunkt ist ein angemessenes Verständnis für die Art der verwendeten Daten. Rost et al.&nbsp;(2013) argumentieren beispielsweise, dass Daten, die explizit von Nutzern in sozialen Medien generiert werden, eher als kommunikativ denn als repräsentativ interpretiert werden sollten, da diese Daten oft eine Aufzeichnung der Kommunikation und nicht eine direkte Darstellung anderer (“realer”) Verhaltensweisen sind, was Fragen zur Konstrukt- und internen Validität aufwirft.</p>
-<p>Implikationen. Die Art und Weise, wie die Evaluation in einer Studie durchgeführt wird, kann zu verzerrten Schlussfolgerungen oder Ergebnissen führen, u. a. aufgrund der Auswahl der Messgrößen (Abschnitt 8.1) oder der Bewertung und Interpretation der Ergebnisse (Abschnitt 8.2), die beide die Konstruktvalidität gefährden können. Solche Probleme können auch Bedenken hinsichtlich der Reproduzierbarkeit einer Studie aufkommen lassen; und wenn Verzerrungen nicht berücksichtigt werden, kann das Versäumnis, potenzielle Einschränkungen ordnungsgemäß anzuerkennen (Abschnitt 8.3), wichtige Validitätsprobleme verbergen, die sowohl Typ-I- als auch Typ-II-Forschung betreffen können.</p>
-</section>
-<section id="ethische-erwägungen" class="slide level2">
-<h2>Ethische Erwägungen</h2>
-<p>In den vorangegangenen Abschnitten ging es um ethische Fragen, die Mittelstadt et al.&nbsp;(2016) als epistemische Bedenken bezeichnen (Abschnitte 3-8), wie etwa die Verwendung von nicht schlüssigen oder fehlgeleiteten Beweisen. Im Gegensatz dazu befasst sich dieser Abschnitt mit normativen Bedenken, die sich hauptsächlich auf die Folgen der Forschung beziehen.</p>
-<p>Die Forschung an Menschen ist in vielen Ländern gesetzlich geregelt, und da die Datenelemente in sozialen Datensätzen Menschen oder Gruppen von Menschen repräsentieren (Varshney, 2015; Diaz, 2016), handelt es sich bei der Forschung an sozialen Daten zweifellos um Forschung an Menschen (Metcalf und Crawford, 2016). Die Tatsache, dass soziale Daten häufig öffentlich zugänglich sind, bedeutet nicht, dass die damit durchgeführte Forschung ethisch vertretbar ist (Zimmer, 2010; Boyd und Crawford, 2012). Infolgedessen haben sowohl Wissenschaftler (Dwork und Mulligan, 2013; Barocas und Selbst, 2016) als auch Journalisten (Hill, 2014; Kirchner, 2015) darauf gedrängt, die Nutzung sozialer Daten stärker auf mögliche ethische Fallstricke hin zu überprüfen, wie etwa die Verletzung der Privatsphäre der Nutzer (Goroff, 2015) oder die Ermöglichung von rassischem, sozioökonomischem oder geschlechtsspezifischem Profiling (Barocas und Selbst, 2016).</p>
-<p>Derartige ethische Fragen wurden durch jüngste Fälle noch deutlicher, darunter das Facebook-Experiment zur Ansteckung (Anfang 2012 durchgeführt und Ende 2014 veröffentlicht), bei dem Forscher die sozialen Feeds von Nutzern so manipulierten, dass sie je nach den geäußerten Emotionen mehr oder weniger von bestimmten Inhalten enthielten (Kramer et al., 2014). Das Experiment wurde als ein Eingriff kritisiert, der den emotionalen Zustand von ahnungslosen Nutzern beeinflusste, die keine Zustimmung zur Teilnahme an der Studie gegeben hatten (Hutton und Henderson, 2015a). Ein weiteres Beispiel ist das Encore-Forschungsprojekt und die Messung der Internetzensur auf der ganzen Welt, bei der Webbrowser angewiesen wurden, zu versuchen, sensible Webinhalte ohne das Wissen oder die Zustimmung der Nutzer herunterzuladen (Burnett und Feamster, 2015), wodurch Menschen in einigen Ländern durch diese Zugriffsversuche möglicherweise gefährdet wurden. In einem beispiellosen Schritt beschloss das Programmkomitee (PC) der SIGCOMM 2015, das Encore-Forschungspapier unter der Bedingung zu akzeptieren, dass am Anfang des Papiers ein deutlicher Hinweis auf die ethischen Bedenken des PC platziert wird (Narayanan und Zevenbergen, 2015).</p>
-<p>Im nächsten Abschnitt (Abschnitt 9.1) wird ein zentrales Spannungsverhältnis in der Forschungsethik digitaler Daten dargestellt. Anschließend wird die Diskussion spezifischer ethischer Probleme in der Sozialdatenforschung im Hinblick auf drei grundlegende Kriterien gegliedert, die im Belmont-Bericht (Ryan et al., 1978), einem grundlegenden Werk zur Forschungsethik, vorgebracht wurden: Autonomie (Abschnitt 9.2), Wohltätigkeit (Abschnitt 9.3) und Gerechtigkeit (Abschnitt 9.4).24 Da unsere Behandlung des Themas absichtlich schematisch ist, kann der interessierte Leser weitere Informationen in verwandten Arbeiten von Grimmelmann (2015), Metcalf und Crawford (2016), Bowser und Tsai (2015), Benton et al.&nbsp;(2017) und Mittelstadt et al.</p>
-</section>
-<section id="ein-schmaler-grat-forschungethik-bei-digitalen-daten" class="slide level2">
-<h2>Ein schmaler Grat: Forschungethik bei digitalen Daten</h2>
-<p>Um ethische Fragen im Zusammenhang mit sozialen Daten zu klären, müssen zwei extreme Sichtweisen miteinander in Einklang gebracht werden: 1) Die Sozialdatenforschung ähnelt klinischen Versuchen und anderen Experimenten am Menschen in ihrer Fähigkeit, Menschen zu schaden, und sollte daher auch als solche reguliert werden; und 2) die Sozialdatenforschung ähnelt der sonstigen Computerforschung, die sich traditionell auf Methoden, Algorithmen und den Aufbau von Systemen konzentriert, mit minimalen direkten Auswirkungen auf Menschen.</p>
-<h6 id="die-sozialdatenforschung-unterscheidet-sich-von-klinischen-versuchen.">Die Sozialdatenforschung unterscheidet sich von klinischen Versuchen.</h6>
-<p>Viele der traditionellen Verfahren zur Gewährleistung der Einhaltung ethischer Grundsätze in der Forschung am Menschen wurden im Zusammenhang mit klinischen Versuchen entwickelt, bei denen die Wirkung von Behandlungen an tatsächlichen Patienten getestet wird. Diese können schädliche, manchmal schwerwiegende und unumkehrbare unerwartete Auswirkungen haben. Im Gegensatz dazu sind die Schäden, die die üblichen Arten der Sozialdatenforschung verursachen können, oft anderer Natur, wie z. B. die Verletzung der Privatsphäre oder der Anblick verstörender Bilder. Ein speziell für die Sozialdatenforschung konzipiertes ethisches Genehmigungsverfahren, wie das von Bowser und Tsai (2015) vorgeschlagene, das Fragen enthält, die für soziale Medien spezifisch sind, oder die von Benton et al.&nbsp;(2017) skizzierten Praktiken könnten besser geeignet sein, um zu entscheiden, ob eine Forschungsaktivität stattfinden soll oder nicht und unter welchen Bedingungen.</p>
-<h6 id="ethische-entscheidungen-in-der-sozialdatenforschung-müssen-gut-überlegt-sein.">Ethische Entscheidungen in der Sozialdatenforschung müssen gut überlegt sein.</h6>
-<p>Ethische Entscheidungen sind unter anderem deshalb schwierig, weil sie oft mehrere Werte betreffen, die miteinander in Konflikt stehen können. So kann die Datenanalyse beispielsweise erforderlich sein, um wichtige Dienste bereitzustellen, und es sollten Lösungen erwogen werden, die ein Gleichgewicht zwischen Datenschutz und Genauigkeit herstellen (Goroff, 2015). In anderen Fällen können Experimente erforderlich sein, um festzustellen, welche Maßnahmen oder Behandlungen angemessen sind - Meyer et al.&nbsp;(2019) stellten jedoch eine Abneigung gegen Experimente fest, wobei die Menschen die allgemeine Umsetzung von nicht getesteten Maßnahmen befürworten, aber randomisierte Experimente ablehnen, um zu testen, welche Maßnahme besser ist. Computerfachleute sind unterschiedlich gut darauf vorbereitet, diese Art von Problemen anzugehen. In der Regel lassen sich ethische Fragen am besten durch sachkundige Überlegungen und Gespräche klären. Aus diesem Grund sind die Genehmigung und Überwachung von Forschungsarbeiten durch institutionelle Prüfungsausschüsse (Institutional Review Boards, IRBs) so wichtig. IRBs legen gemeinsame Standards innerhalb einer Institution fest, bieten Forschern einen Rahmen, um kritisch über die Konsequenzen nachzudenken, und zeigen anderen, dass sorgfältige Entscheidungen für eine Studie getroffen wurden.</p>
-</section>
-<section id="achtung-der-individuellen-autonomie" class="slide level2">
-<h2>Achtung der individuellen Autonomie</h2>
-<p>Der Respekt vor der Fähigkeit des Einzelnen, autonome Entscheidungen zu treffen, wird in der Forschung häufig durch die informierte Zustimmung zum Ausdruck gebracht. Die Einwilligung nach Aufklärung setzt voraus, dass (i) die Forscher den potenziellen Teilnehmern alle relevanten Informationen offenlegen; (ii) die potenziellen Teilnehmer in der Lage sind, diese Informationen zu bewerten; (iii) die potenziellen Teilnehmer freiwillig entscheiden können, ob sie teilnehmen wollen oder nicht; (iv) die Teilnehmer den Forschern ihre ausdrückliche Erlaubnis erteilen, häufig in schriftlicher Form; und (i) die Teilnehmer die Möglichkeit haben, ihre Einwilligung jederzeit zurückzuziehen.</p>
-<h6 id="häufige-probleme">Häufige Probleme</h6>
+<p>Probleme bei Auswahl der Messgrößen:</p>
 <ul>
-<li><p>Die Zustimmung von Millionen von Nutzern einzuholen ist unpraktisch.</p></li>
-<li><p>Das öffentliche Teilen von Inhalten im Internet bedeutet nicht unbedingt eine Zustimmung zur Forschung.</p></li>
-<li><p>Die Nutzungsbedingungen sozialer Plattformen stellen möglicherweise keine informierte Zustimmung zur Forschung dar.</p></li>
+<li><p>Die Wahl der Metriken prägt eine Forschungsstudie - Schlussfolgerungen</p></li>
+<li><p>Die Bewertung der Fairness bringt ihre eigenen Herausforderungen mit sich.</p></li>
+<li><p>Kontext- oder bereichsspezifische Leistungsindikatoren werden selten verwendet.</p></li>
 </ul>
-</section>
-<section id="wohltätigkeit-und-nicht-malefizierung" class="slide level2">
-<h2>Wohltätigkeit und Nicht-Malefizierung</h2>
-<p>Ein weiteres wichtiges ethisches Kriterium betrifft die Bewertung von Risiken und Nutzen; insbesondere sollte die Forschung von Nutzen sein und keinen Schaden verursachen (Non-Maleficence). Die Forscher sollten nicht nur über den Nutzen der Forschung nachdenken, sondern auch über die möglichen Arten von Schäden (Barocas et al., 2017), die betroffenen Gruppen und die Art und Weise, wie nachteilige Auswirkungen getestet werden können (Sweeney, 2013).</p>
-<h6 id="häufige-probleme-1">Häufige Probleme</h6>
+<p>Probleme bei der Bewertung und Interpretation der Ergebnisse</p>
 <ul>
-<li><p>Die Forschung zu sozialen Daten wird mit bestimmten Arten von Schäden in Verbindung gebracht, von denen die Verletzung der Privatsphäre vielleicht die offensichtlichste ist (Zimmer, 2010; Crawford und Finn, 2014).</p></li>
-<li><p>Daten über Einzelpersonen können ihnen schaden, wenn sie offengelegt werden.</p></li>
-<li><p>Forschungsergebnisse können verwendet werden, um Schaden anzurichten.</p></li>
-<li><p>“Dual-Use”- und Sekundäranalysen sind in der Sozialdatenforschung immer häufiger anzutreffen.</p></li>
+<li><p>Die Bedeutung sozialer Spuren kann sich je nach Kontext ändern; dies ist jedoch bei der Bewertung schwer zu erkennen</p></li>
+<li><p>Analysen und Bewertungen, die sich auf einen einzigen Datensatz oder eine einzige Methode beschränken, können nicht verallgemeinert werden.</p></li>
+<li><p>Die Interpretation und Bewertung der Ergebnisse wird zu oft von Datenexperten und nicht von Fachleuten vorgenommen.</p></li>
 </ul>
-</section>
-<section id="recht" class="slide level2">
-<h2>Recht</h2>
-<p>Ein Ideal der Gerechtigkeit in der Forschung besteht darin, dass Risiken und Nutzen gerecht verteilt werden, was voraussetzt, dass von Anfang an bekannt ist, wer durch die Forschung belastet wird und wer von den Ergebnissen profitieren wird.</p>
-<h6 id="häufige-probleme-2">Häufige Probleme</h6>
+<p>Disclaimers und Reproduzierbarkeit</p>
 <ul>
-<li><p>Die digitale Kluft kann das Forschungsdesign beeinflussen.</p></li>
-<li><p>Algorithmen und Forschungsergebnisse können zu Diskriminierung führen.</p></li>
-<li><p>Forschungsergebnisse sind möglicherweise nicht allgemein zugänglich.</p></li>
-<li><p>Nicht alle Interessengruppen werden über die Verwendung von Forschungsergebnissen konsultiert.</p></li>
-</ul>
-</section>
-<section id="zusammenfassung-und-ausblick" class="slide level2">
-<h2>Zusammenfassung und Ausblick</h2>
+<li><p>Um die Reproduzierbarkeit zu fördern, müssen Grundlagen und Leitlinien entwickelt werden (Tufekci, 2014; Weller und Kinder-Kurlanda, 2015), eine gemeinsame Basis für methodische Ansätze gefunden werden (Counts et al., 2014) und selbst entwickelte Instrumente und Methoden sowie die Datenherkunft besser dokumentiert werden (Bruns, 2013; Weller und Kinder-Kurlanda, 2015).</p></li>
+<li><p>Probleme:</p>
 <ul>
-<li><p>Eine zunehmende Skepsis gegenüber einfachen Antworten</p></li>
-<li><p>Vom Aufwerfen von Bedenken über soziale Daten zum Umgang mit ihnen. 4 Empfehlungen:</p></li>
-<li><p>Unsere erste Empfehlung besteht darin, den Prozess, mit dem Datensätze und Modelle erstellt werden, detailliert zu dokumentieren und kritisch zu prüfen, wobei auch die von uns beschriebenen Verzerrungen berücksichtigt werden sollten.</p></li>
-<li><p>Unsere zweite Empfehlung besteht darin, Studien zu sozialen Daten auf verschiedene Plattformen, Themen, Zeitpunkte und Teilpopulationen auszuweiten, um festzustellen, wie sich die Ergebnisse beispielsweise in verschiedenen kulturellen, demografischen und verhaltensbezogenen Kontexten unterscheiden.Sandvig et al.&nbsp;(2014) argumentieren, dass eine genaue Prüfung auch dann erforderlich ist, wenn ein Social-Software-System die Bedürfnisse der Nutzer zu erfüllen scheint, da es “subtile Muster problematischen Verhaltens” geben kann, die schwer zu erkennen sind. So stellen Kulshrestha et al.&nbsp;(2017) einen Rahmen für die Prüfung von Suchsystemen auf Social-Media-Plattformen vor, indem sie zwischen verschiedenen Quellen von Verzerrungen (z. B. aufgrund von Inhalten oder Ranking-Algorithmen) unterscheiden. Für Audits ist manchmal der Zugang zu proprietären Systemen erforderlich, was eine ausdrückliche Genehmigung für solche Systeme erfordert, die wahrscheinlich verweigert wird, wenn das Ziel darin besteht, ihre Fehler aufzudecken oder zu veröffentlichen. Ein Reverse-Engineering dieser Systeme oder die Nutzung dieser Systeme in einer unvorhergesehenen Weise, um ihre Voreingenommenheit aufzudecken, kann in den USA nach dem Computer Fraud and Abuse Act (CFAA) illegal sein, was von einer Gruppe von Forschern vor Gericht angefochten wurde.</p></li>
-<li><p>Daher lautet unsere dritte Empfehlung, Transparenzmechanismen zu schaffen, die es ermöglichen, soziale Software zu überprüfen und Verzerrungen in sozialen Daten an der Quelle zu evaluieren (Abschnitt 4). Darüber hinaus gibt es auch immer mehr Bemühungen, die Grenzen sozialer Daten in Form von Leitlinien, Standards und neuen methodischen Ansätzen zu überwinden. Zu diesen Bemühungen gehört die Anwendung von Techniken aus der Kausalschlussliteratur, die zu robusteren Forschungsergebnissen führen können (Landeiro und Culotta, 2016; Proserpio et al., 2016), oder die Kalibrierung nicht repräsentativer Sozialdatenstichproben (Zagheni und Weber, 2015). Eine weitere Möglichkeit ist die Verwendung standardisierter Bewertungsprotokolle beim Testen neuer Instrumente oder Methoden (Diaz, 2014; Jurgens et al., 2015b).</p></li>
-<li><p>Unsere vierte Empfehlung lautet, die Forschung zu diesen Leitlinien, Standards, Methoden und Protokollen auszuweiten und ihre Übernahme zu fördern.</p></li>
-<li><p>Schließlich gibt es angesichts der Komplexität der inhärent kontextabhängigen, anwendungs- und bereichsabhängigen Verzerrungen und Probleme in sozialen Daten und Analysepipelines, die in diesem Papier behandelt werden, keine Einheitslösungen - bei der Bewertung und Bekämpfung von Verzerrungen ist Nuancierung entscheidend.</p></li>
+<li><p>Disclaimers und negative Ergebnisse werden übersehen.</p></li>
+<li><p>Die gemeinsame Nutzung von Daten und Instrumenten muss erleichtert werden.</p></li>
+</ul></li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="final-takeaways" class="slide level2">
+<h2>Final Takeaways</h2>
+<h4 id="abschließende-bewertung-der-arbeit-mit-dbd">Abschließende Bewertung der Arbeit mit DBD</h4>
+<ul>
+<li><p>Viele Möglichkeiten zur Untersuchung verschiedener Forschungsfragen</p></li>
+<li><p>Die (begründete) Auswahl der Plattform, die für die Forschung dienen soll, ist wichtig</p></li>
+<li><p>APIs sind nicht für Forschende gedacht, um auf Daten zuzugreifen.</p></li>
+<li><p>APIs bieten Zugang zu Modellen des maschinellen Lernens:</p>
+<ul>
+<li>Bei “langweilige” Annotationsaufgabe lohnt sich die Suchen nach einer API. Die Chancen stehen gut, dass bereits eine API für diese Aufgabe existiert.</li>
+</ul></li>
+</ul>
+<p>Empfehlungen:</p>
+<p>Know your biases and validate, validate, validate!</p>
 </section></section>
 <section>
 <section id="group-activity" class="title-slide slide level1 center">
 <h1>Group Activity</h1>
-<p>Gruppendiskussion</p>
+<p>5 Minuten Pause, Ihre Fragen und eine kleine Gruppenarbeit</p>
 </section>
-<section id="verfügbarkeit-vor-interesse" class="slide level2">
-<h2>Verfügbarkeit vor Interesse</h2>
-<h4 id="zur-wichtigkeit-von-konzipierte-messungen-designs-1">Zur Wichtigkeit von konzipierte Messungen &amp; Designs</h4>
+<section id="vielen-dank-für-ihre-fragen" class="slide level2">
+<h2>Vielen Dank für Ihre Fragen!</h2>
+<!--# TODO Add questions from TEAMS -->
+</section>
+<section id="welche-apis-kennen-sie" class="slide level2">
+<h2>Welche APIs kennen Sie?</h2>
+<h4 id="verschiedene-social-media-apis">Verschiedene (Social Media) APIs</h4>
 <ul>
-<li><p>DBB sind häufig organische Daten, die zufällig gesammelt und dann von der Wissenschaft “recycelt” werden</p>
-<ul>
-<li>Zentrale Frage: Ist das ein Problem? Wenn ja, warum?</li>
-</ul></li>
-<li><p>Repräsentativität vs.&nbsp;Stichprobenziehung</p></li>
-<li><p>Kausalität vs.&nbsp;Korrelation</p></li>
+<li><p>CrowdTangle</p></li>
+<li><p>Twitter</p></li>
+<li><p>YouTube</p></li>
+<li><p>Reddit</p></li>
+<li><p>pushshift.io</p></li>
+<li><p>Wikipedia</p></li>
+<li><p>Common Crawl</p></li>
+<li><p>Perspective (Annotation API)</p></li>
+<li><p>Amazon Rekognition (Annotation API)</p></li>
 </ul>
 </section>
-<section id="validität-als-grundlage-für-aussagekraft" class="slide level2 smaller">
-<h2>Validität als Grundlage für “Aussagekraft”</h2>
-<h4 id="die-verschiedenen-formen-von-validität">Die verschiedenen Formen von Validität</h4>
-<p><strong>Interne Validität</strong></p>
+<section id="mehr-als-eine-enzyklopädie" class="slide level2 smaller">
+<h2>Mehr als eine Enzyklopädie</h2>
+<h4 id="die-vielfalt-von-wikipedia">Die Vielfalt von Wikipedia</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>… als soziales Netzwerk der Zusammenarbeit</strong></p>
 <ul>
-<li>Does our analysis correctly lead from the measurements to the conclusions of the study?</li>
+<li><p>20K aktive Redakteure pro Monat (englisches Wikipedia)</p></li>
+<li><p>Wikipedia-Seitengespräche (wo Diskussionen über Artikelüberarbeitungen stattfinden)</p></li>
+<li><p>Aufzeichnung aller Überarbeitungen</p></li>
+<li><p>Quellen (Referenzen), die den Inhalt unterstützen <span class="citation" data-cites="zagovora2020">(<a href="#/literatur" role="doc-biblioref" onclick="">Zagovora et al., 2020</a>)</span></p></li>
 </ul>
-<p><strong>Externe Validität</strong></p>
+</div><div class="column" style="width:50%;">
+<p><strong>… als eine Vielzahl von APIs und Tools, die damit verbunden sind, z. B:</strong></p>
 <ul>
-<li>To what extent can research findings be generalized to other situations?</li>
+<li><p>Statistiken: <a href="https://xtools.wmflabs.org" class="uri">https://xtools.wmflabs.org</a></p></li>
+<li><p>Wissensdatenbank: <a href="https://www.wikidata.org" class="uri">https://www.wikidata.org</a></p></li>
+<li><p>Klassifizierungssysteme: <a href="https://ores.wikimedia.org" class="uri">https://ores.wikimedia.org</a></p></li>
+<li><p>Verfolgung von Änderungen: <a href="https://www.wikiwho.net" class="uri">https://www.wikiwho.net</a> <span class="citation" data-cites="flöck2014">(<a href="#/literatur" role="doc-biblioref" onclick="">Flöck &amp; Acosta, 2014</a>)</span></p></li>
+<li><p>Bedeutung von Wikipedia als Korpus für maschinelle Lernsysteme (NLP)</p></li>
+<li><p>Eine kostenlose API (oder direkter Download von Dumps)</p></li>
 </ul>
-<p><strong>Konstruktvaldität</strong></p>
+</div>
+</div>
+</section>
+<section id="im-fokus-wikiwho-whocolor-api" class="slide level2 smaller">
+<h2>Im Fokus: WikiWho &amp; WhoColor API</h2>
+<h4 id="auswertung-von-änderungen-und-interaktionen-auf-überarbeiteten-schreibplattformen.">Auswertung von Änderungen und Interaktionen auf überarbeiteten Schreibplattformen.</h4>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Kernfunktionalität von <a href="https://www.wikiwho.net/">WikiWho</a></p>
 <ul>
-<li>Do our measurements over our data measure what we think they measure?</li>
+<li><p>Bei einem revidierten Textdokument wird der komplette Satz aller historischen Revisionen (Versionen) analysiert, um herauszufinden, wer welchen genauen Text auf Token-Ebene in welcher Revision geschrieben und/oder entfernt und/oder wieder eingefügt hat</p></li>
+<li><p>Das bedeutet, dass für jedes Token (~Wort) seine individuelle Hinzufügungs-/Entfernungs-/Wiedereinfügungsgeschichte verfügbar wird.</p></li>
 </ul>
-<!-- -->
+<p>Kombination mit <a href="https://api.wikiwho.net/#whocolor_api">WhoColor API</a></p>
 <ul>
-<li><p>Type II: Nutzung sozialer Daten zur Beantwortung von Fragen und zur Ermittlung von Maßnahmen, die für Medien, Regierungen, Nichtregierungsorganisationen und Unternehmen relevant sind, oder zur Bearbeitung von Problemen aus Bereichen wie Gesundheit, Wirtschaft und Bildung..</p></li>
-<li><p>Construct validity:</p>
+<li><p>Beim Öffnen eines Wikipedia-Artikels wird eine farbliche Markierung des Textes erstellt, die die ursprünglichen Autoren des Inhalts, eine Autorenliste, geordnet nach dem prozentualen Anteil an der Erstellung des Artikels, und zusätzliche Herkunftsinformationen anzeigt.</p></li>
+<li><p>Es kann auch Konflikte in Bezug auf bestimmte Textteile und die Historie des Hinzufügens/Löschens eines bestimmten Wortes anzeigen.</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p>Beispiel:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/color_history_today.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="and-now-you" class="slide level2 smaller">
+<h2>And now … you!</h2>
+<h4 id="anwendung-von-whocolor-api">Anwendung von WhoColor API</h4>
+<div class="columns">
+<div class="column" style="width:65%;">
+<p><strong>Erster Schritt:</strong></p>
 <ul>
-<li>Beispiel: If a hypothesis states that “self-esteem” increases with age, research tracking self-esteem over time from social media postings must ask whether its assessment of selfesteem from the postings actually measures self-esteem, or if instead it measures some other related or unrelated construct. In other words, we need to know whether the observed behaviors (such as words or phrases used in postings) are driven primarily by users’ self-esteem vs.&nbsp;by community norms (section 4.2), system functionalities (section 4.1), or other reasons (section 3.3). Construct validity is specially important when the construct (self-esteem) is unobservable/latent and has to be operationalized via some observed attributes (words or phrases used)</li>
-</ul></li>
-<li><p>Internal validity</p>
+<li><p>für <strong><em>Google Chrome</em></strong>: Laden und installieren Sie die <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">Tampermonkey-Erweiterung</a>.</p></li>
+<li><p>für <strong><em>Mozilla Firefox</em></strong>: Laden und installieren Sie die <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey-Erweiterung</a>.</p></li>
+</ul>
+<p><strong>Zweiter Schritt:</strong></p>
 <ul>
-<li><p>Does our analysis correctly lead from the measurements to the conclusions of the study?</p></li>
-<li><p>This survey covers subtle errors of this kind, such as biases that can be introduced through data cleaning procedures (section 6), the use of machine learned classifiers, mistaken assumptions about data distributions, and other inadvertent biases introduced through common analyses of social media (section 7).</p></li>
-<li><p>Example: An analysis of whether “self-esteem” increases with age may not be internally valid if text filtering operations accidentally remove terms expressing confidence (section 5.3); or if machine learned classifiers were inadvertently trained to recognize self-esteem only in younger people (section 7). Of course, while we do not dwell on them, researchers should also be aware of more blatant logical errors—e.g., comparing the self-esteem of today’s younger population to the self-esteem of today’s older population would not actually prove that selfesteem increases with age (section 3.6).</p></li>
-</ul></li>
-<li><p>External validity:</p>
+<li><p>Sobald Sie eine der <em>*Monkey-Erweiterungen erfolgreich installiert</em> haben, gehen Sie zu <a href="https://github.com/wikiwho/WhoColor/raw/master/userscript/whocolor.user.js">whocolor.user.js.</a></p></li>
+<li><p>Ihre *monkey-Browsererweiterung sollte Ihnen dann automatisch eine Installationsaufforderung anzeigen, die Sie bestätigen müssen.</p></li>
+</ul>
+<p><strong>Dritter Schritt:</strong></p>
+<p>Öffnen Sie entweder den Wikipedia-Artikel von <a href="https://de.wikipedia.org/wiki/Donald_Trump">Donald Trump</a> oder <a href="https://de.wikipedia.org/wiki/Elon_Musk">Elon Musk</a> und wenden Sie das “WhoColor”-Plugin an.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/whocolor.png"></p>
+</figure>
+</div>
+</div><div class="column" style="width:35%;">
+<p><strong>Vierter Schritt: Explore!</strong></p>
+<p>Was fällt Ihnen auf …</p>
 <ul>
-<li><p>To what extent can research findings be generalized to other situations?</p></li>
-<li><p>For example, effects observed on a social platform may manifest differently on other platforms due to different functionalities, communities, or cultural norms (Wijnhoven and Bloemen, 2014; Malik and Pfeffer, 2016). The concept of external validity includes what is sometimes called ecological validity, which captures to what extent an artificial situation (constrained social media platform) properly reflects a broader real-world phenomenon (Ruths and Pfeffer, 2014). It also includes temporal validity, which captures to what extent constructs change over time (Howison et al., 2011) and may invalidate previous conclusions about societal and/or platform phenomena; e.g., see the case of Google Flu Trends (Lazer et al., 2014).</p></li>
-<li><p>Example: Even after we conclude a successful study of “selfesteem” in a longitudinal social media dataset collected from a given social media platform (section 4), its findings may not generalize to a broader setting as people who chose that particular platform may not be representative of the broader population (section 3.2); or perhaps their behaviors online are not representative of their behaviors in other settings (section 3.3).</p></li>
-</ul></li>
+<li><p>bezüglich der Editors List?</p></li>
+<li><p>mit Blick auf besonders “konfliktreiche” Stellen?</p></li>
+<li><p>mit Blick auf aktuelle Veränderungen?</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="many-more-apis-to-access-data" class="slide level2">
+<h2>Many more APIs to access data</h2>
+<ul>
+<li><p>Suchmaschinen-APIs (Google, Bing)</p></li>
+<li><p>Staatliche Daten (abgeordnetenwatch.de, data.gov, data.gov.uk, open-data.europa.eu)</p></li>
+<li><p>Internationale Agenturen: UN, WHO, die Weltbank</p></li>
+<li><p>Nachrichtenorganisationen: BBC, The New York Times, The Guardian, NPR, USA Today und ZEIT Online</p></li>
+<li><p>Wissenschaftliche Archive und Fachzeitschriften: arXiv, PLoS, Mendeley</p></li>
+<li><p>Metadaten von Daten: Dryad (https://datadryad.org/api/v2/docs/), Figshare (https://docs.figshare.com/)</p></li>
+<li><p>Musik: Spotify, Soundcloud</p></li>
+<li><p>…</p></li>
 </ul>
 </section></section>
 <section>
@@ -1342,15 +1311,40 @@
 </section>
 <section id="literatur" class="slide level2 smaller scrollable">
 <h2>Literatur</h2>
-<div id="refs" role="doc-bibliography">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-flöck2014" class="csl-entry" role="doc-biblioentry">
+Flöck, F., &amp; Acosta, M. (2014). <em>the 23rd international conference</em>. 843–854. <a href="https://doi.org/10.1145/2566486.2568026">https://doi.org/10.1145/2566486.2568026</a>
 </div>
+<div id="ref-flöck2022" class="csl-entry" role="doc-biblioentry">
+Flöck, F., &amp; Sen, I. (2022). <em>Digital traces of human behaviour in online platforms <span></span> research design and error sources</em>. <a href="https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meet_the_experts_Digitaltraces_humanbehaviour.pdf">https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meet_the_experts_Digitaltraces_humanbehaviour.pdf</a>
+</div>
+<div id="ref-olteanu2019" class="csl-entry" role="doc-biblioentry">
+Olteanu, A., Castillo, C., Diaz, F., &amp; Kıcıman, E. (2019). Social data: Biases, methodological pitfalls, and ethical boundaries. <em>Frontiers in Big Data</em>, <em>2</em>, 13. <a href="https://doi.org/10.3389/fdata.2019.00013">https://doi.org/10.3389/fdata.2019.00013</a>
+</div>
+<div id="ref-ulloa2021" class="csl-entry" role="doc-biblioentry">
+Ulloa, R. (2021). <em>Introduction to online data acquisition</em>. <a href="https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf">https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf</a>
+</div>
+<div id="ref-zagovora2020" class="csl-entry" role="doc-biblioentry">
+Zagovora, O., Ulloa, R., Weller, K., &amp; Flöck, F. (2020). <em>’I updated the ’: The evolution of references in the english wikipedia and the implications for altmetrics</em>. <a href="https://doi.org/10.48550/ARXIV.2010.03083">https://doi.org/10.48550/ARXIV.2010.03083</a>
+</div>
+</div>
+</section></section>
+<section>
+
+
+
+
+
+
+<section id="section" class="slide level2">
+<h2></h2>
 
 
 <img src="../../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="https://chrdrn.github.io/digital-behavioral-data/">Digital Behavioral Data</a></p>
 </div>
 </section></section>
+
     </div>
   </div>
 
@@ -1564,44 +1558,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

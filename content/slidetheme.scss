@@ -1,7 +1,7 @@
 /*-- scss:defaults --*/
 
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700); 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic); 
 
 // fonts
 $font-family-sans-serif: Lato, sans-serif !default;
@@ -15,7 +15,7 @@ $link-color: #971B2F !default;
 $selection-bg: rgba(230, 0, 46, 0.99);
 
 // headings
-$presentation-heading-font: "News Cycle", sans-serif !default;
+$presentation-heading-font: News Cycle, sans-serif !default;
 
 
 /*-- scss:rules --*/
@@ -27,6 +27,12 @@ $presentation-heading-font: "News Cycle", sans-serif !default;
 .subtitle {
   color: #e6002e !important;
 }
+
+/*setting size of footnotes*/
+.footer{
+  font-size: 0.5em !important;
+}
+
 
 
 .slide-logo {

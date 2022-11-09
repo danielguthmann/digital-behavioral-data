@@ -130,6 +130,10 @@ Beispielhafte Nutzungsszenarien
 ![](graphs/graph_dbd_07.svg){.fragment fragment-index="5" fig-align="center"}
 :::
 
+::: notes
+Die Zukunft: Linking
+:::
+
 ## Mit Fokus auf die Platform
 
 #### Forschungsdesign zur Erhebung digitaler Verhaltensdaten [@flöck2022]
@@ -156,7 +160,7 @@ Beispielhafte Nutzungsszenarien
 
 ## Aber welche? Und warum?
 
-#### Denken Sie über Ihre Forschungsfrage nach... [@ulloa2021]
+#### Denken Sie über Ihre Forschungsfrage nach ... [@ulloa2021]
 
 -   welche **Population** ist vertreten?
 -   welche **Arten von Interaktionen** sind wichtig? (*z. B.: eins zu eins oder eins zu vielen*)
@@ -169,7 +173,7 @@ Beispielhafte Nutzungsszenarien
 ::: {.rn rn-type="box" rn-color="#E6002E"}
 [**ABER:**]{.rn rn-type="underline" rn-color="#E6002E"}
 
-Seien Sie vorsichtig mit der [Art und Weise]{.rn rn-type="highlight"}, wie Sie die Daten sammeln!
+Beachten Sie die der [Art und Weise]{.rn rn-type="highlight"}, wie Sie die Daten sammeln!
 :::
 :::
 
@@ -251,7 +255,7 @@ Typische Vorgehen beim **Web-Scraping** als zweistufiger Prozess:
 
 1.  **Abfrage** an Server **senden**, um eine bestimmte **Ressource**, häufig ein HTML-Dokument, **anzufordern**
 
-2.  (Häufig sehr aufwändigere) **Extraktion** der relevanten **Information** aus dem HTML-Dokument
+2.  (Häufig sehr aufwändige) **Extraktion** der relevanten **Information** aus dem HTML-Dokument
 
 ::: {.fragment fragment-index="1"}
 **API** im Vergleich:
@@ -349,10 +353,10 @@ API im Vergleich:
 
 **Zwei für die API-Abfrage wichtige Aspekte dieser Nachrichten:**
 
--   **Uniform Resource Locator (`URL`)**, bestehend aus dem [*Protokoll*]{.rn rn-color="#FBC8D4"}, der [*Domain*]{.rn rn-color="#D596A6"} und dem Pfad zu einer spezifischen [*Ort der "Ressource"*]{.rn rn-color="#EBCCB7"}
+-   **Uniform Resource Locator (`URL`)**, bestehend aus dem [*Protokoll*]{.rn rn-color="#FFE6D5"}, der [*Domain*]{.rn rn-color="#FFCCAA"} und dem Pfad zu einer spezifischen [*Ort der "Ressource"*]{.rn rn-color="#FFB380"}
 
     ::: {style="font-size: smaller; color: black"}
-    Beispiel: [https]{.rn rn-color="#FBC8D4"}://[en.wikipedia.org]{.rn rn-color="#D596A6"}/[wiki/API]{.rn rn-color="#EBCCB7"}
+    Beispiel: [https]{.rn rn-color="#FFE6D5"}://[en.wikipedia.org]{.rn rn-color="#FFCCAA"}/[wiki/API]{.rn rn-color="#FFB380"}
     :::
 
     <br>
@@ -360,7 +364,7 @@ API im Vergleich:
 -   **Austausch** der Nachrichten hauptsächlich über **`GET`- und `POST`-Methode.** Bei **`GET`**-Methode werden die *Abfrageparameter* an die URL angehängt, bei der **`POST`**-Methode *in den Textkörper* der Nachricht aufgenommen
 
     ::: {style="font-size: smaller; color: black"}
-    Beispiel: https://en.wikipedia.org/w/index.php?search=API&fulltext=1\
+    Beispiel: https://en.wikipedia.org/[w/index.php]{.rn rn-type="underline" rn-color="#E6002E"}[?]{.rn rn-color="#FFF6d5"}search=API[&]{.rn rn-color="#FFEEAA"}[fulltext=1]{.rn rn-type="underline" rn-color="#E6002E"}\
     :::
 
 ::: notes
@@ -442,13 +446,17 @@ JSON
 
 -   Limit: Anfragen/MB pro Minuten
 
+::: fragment
 ::: {.rn rn-type="box" rn-color="#E6002E"}
 [**ABER:**]{.rn rn-type="underline" rn-color="#E6002E"}
 
 Immer häufiger auch für die gezielte [Bereitstellung von Daten]{.rn rn-type="highlight"} genutzt
 :::
+:::
 
 ::: notes
+▶️
+
 Der Zweck von APIs ist die Kommunikation zwischen Programmen zu koordinieren, nicht die Bereitstellung von Daten für Wissenschaft.
 :::
 
@@ -460,7 +468,7 @@ Daten, Datenquellen und Erhebungsdesigns als Quelle von Bias
 
 #### Ein Framework zur Minimierung von Bias [@olteanu2019]
 
-![](/content/02-dbb-introduction_overview/slides/images/bias_framework_without_legend.png){fig-align="center"}
+![](/content/02-dbb-introduction_overview/slides/images/bias_framework_without_legend_v3.png){fig-align="center"}
 
 ::: notes
 Description:
@@ -484,27 +492,29 @@ Pfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere a
 
 ## Bias at the source
 
-#### Potentielle Probleme mit der Datenquelle oder -herkunft
+#### Potentielle Probleme mit der [Datenquelle oder -herkunft]{.rn rn-type="underline" rn-color="#E6002E"}
 
--   Biases, die auf das **Design und die Möglichkeiten der Plattformen** zurückzuführen sind (*functional biases*).
+-   Biases, die auf das **Design und die Möglichkeiten der Plattformen** zurückzuführen sind ([*functional biases*]{.rn rn-type="highlight"}).
 
--   **Verhaltensnormen**, die auf den **einzelnen Plattformen** bestehen oder sich herausbilden (*normative biases*).
+-   **Verhaltensnormen**, die auf den **einzelnen Plattformen** bestehen oder sich herausbilden ([*normative biases*]{.rn rn-type="highlight"}).
 
--   Faktoren, die **außerhalb der sozialen Plattformen** liegen, aber das Nutzerverhalten beeinflussen können (*external biases*)
+-   Faktoren, die **außerhalb der sozialen Plattformen** liegen, aber das Nutzerverhalten beeinflussen können ([*external biases*]{.rn rn-type="highlight"})
 
--   Vorhandensein von **nicht-individuellen Konten** ein *(non-individuals*).
+-   Vorhandensein von **nicht-individuellen Konten** ein ([*non-individuals*]{.rn rn-type="highlight"}).
 
 ## Be aware when collecting data
 
-#### Potentielle Probleme bei der Datenerhebung
+#### Potentielle Probleme bei der [Datenerhebung]{.rn rn-type="underline" rn-color="#E6002E"}
 
--   **Akquisition**: Abhängig von den Daten, die **von Plattformen erfass**t und zur **Verfügung gestellt** werden, den für den **Zugang gesetzten Grenzen** und von der Art und Weise, wie der **Zugang gewährt** wird.
+-   [**Akquisition**]{.rn rn-type="highlight"}: Abhängig von den Daten, die **von Plattformen erfass**t und zur **Verfügung gestellt** werden, den für den **Zugang gesetzten Grenzen** und von der Art und Weise, wie der **Zugang gewährt** wird.
 
--   **Abfrage**: APIs basieren auf **unterschiedlich Dokumentationen** sowie Arten von (unterstüzten) **Abfragen**.
+-   [**Abfrage**]{.rn rn-type="highlight"}: APIs basieren auf **unterschiedlich Dokumentationen** sowie Arten von (unterstüzten) **Abfragen**.
 
--   **Filterung**: In der Regel impliziert die Entscheidung, bestimmte **Daten** zu entfernen, die Annahme, dass sie **für** **eine Studie nicht relevant sind**. Dies ist hilfreich, wenn die Annahme zutrifft, und schädlich, wenn sie nicht zutrifft.
+-   [**Filterung**]{.rn rn-type="highlight"}: In der Regel impliziert die Entscheidung, bestimmte **Daten** zu entfernen, die Annahme, dass sie **für** **eine Studie nicht relevant sind**. Dies ist hilfreich, wenn die Annahme zutrifft, und schädlich, wenn sie nicht zutrifft.
 
 ::: notes
+▶️
+
 Probleme bei Akquisition:
 
 -   Viele soziale Plattformen raten von der Datenerfassung durch Dritte ab.
@@ -536,15 +546,17 @@ Filterung: Bei der Datenfilterung werden irrelevante Teile der Daten entfernt, w
 
 ## Handle with care
 
-#### Potentielle Probleme bei der Datenverarbeitung
+#### Potentielle Probleme bei der [Datenverarbeitung]{.rn rn-type="underline" rn-color="#E6002E"}
 
--   **Bereinigung**: Können die **Überzeugungen der Wissenschaftler\*Innen** über ein Phänomen sowie das System im Allgemeinen in den Datensatz **einbetten** und in **falschen oder irreführenden Datenmustern** resultieren
+-   [**Bereinigung**]{.rn rn-type="highlight"}: Können die **Überzeugungen der Wissenschaftler\*Innen** über ein Phänomen sowie das System im Allgemeinen in den Datensatz **einbetten** und in **falschen oder irreführenden Datenmustern** resultieren
 
--   **Anreicherung**: Sowohl manuelle als auch **automatische Annotation** ( (z.B. Part-of-Speech Tagging) sind **fehleranfällig** und können sowohl **bestehende Verzerrungen verschärfen** als auch neue **Verzerrungen und Fehler einführen.**
+-   [**Anreicherung**]{.rn rn-type="highlight"}: Sowohl manuelle als auch **automatische Annotation** ( (z.B. Part-of-Speech Tagging) sind **fehleranfällig** und können sowohl **bestehende Verzerrungen verschärfen** als auch neue **Verzerrungen und Fehler einführen.**
 
--   **Aggregation**: Die Art und Weise, wie diese Aggregationen vorgenommen werden, oder welche Informationen sie komprimieren, kann zu unterschiedlichen Schlussfolgerungen führen.
+-   [**Aggregation**]{.rn rn-type="highlight"}: Die Art und Weise, wie diese Aggregationen vorgenommen werden, oder welche Informationen sie komprimieren, kann zu unterschiedlichen Schlussfolgerungen führen.
 
 ::: notes
+▶️
+
 Annahmen bei der Gestaltung von Datenverarbeitungspipelines können sich auf Datensätze auswirken und deren Inhalt, Struktur, Organisation oder Darstellung verändern (Barocas und Selbst, 2016; Poirier, 2018).
 
 Datenbereinigung:
@@ -580,31 +592,39 @@ Aggregation:
     -   Wenn die Daten entlang eines bestimmten Attributs organisiert sind (z. B. das Vorhandensein eines Schlüsselworts oder Hashtags) und es mehrere unabhängige Faktoren gibt, die dazu führen, dass das Attribut einen bestimmten Wert annimmt, ist die Analyse von Dateneinträgen mit diesem Wert gleichbedeutend mit einer Konditionierung auf diesen Wert und kann zu falschen Assoziationsmustern zwischen diesen Faktoren führen (Blyth, 1972; Tufekci, 2014).
 :::
 
-## Methodische Fallstricke bei der Analyse von Daten
+## Pre-Regestrierung statt HARKing
 
-Die Wahl einer Analysemethode spiegelt in der Regel die Erfahrung und den Blickwinkel der Forschenden wider und kann verschiedene Bedenken hervorrufen, wie z. B.
+#### Methodische Fallstricke bei der Analyse von Daten
 
-1.  die Verwendung von **Daten als Quelle für Hypothesen** und nicht als Instrument zu deren Prüfung;
+Die Wahl einer Analysemethode spiegelt in der Regel die **Erfahrung und den Blickwinkel der Forschenden** wider und kann verschiedene **Bedenken** hervorrufen, wie z. B.
 
-2.  die **Anpassung** der **Forschungsagenda** an die **Datenverfügbarkeit**, was zu Verzerrungen bei der Art der gestellten Fragen führen kann; oder
+1.  die Verwendung von [**Daten als Quelle für Hypothesen**]{.rn rn-type="highlight"} und nicht als Instrument zu deren Prüfung;
 
-3.  das Testen mehrerer Hypothesen, bis ein signifikantes, positives Ergebnis gefunden wird (*"feature hunting"*)
+2.  die [**Anpassung** der **Forschungsagenda** an die **Datenverfügbarkeit**]{.rn rn-type="highlight"}, was zu Verzerrungen bei der Art der gestellten Fragen führen kann; oder
+
+3.  das Testen mehrerer Hypothesen, bis ein signifikantes, positives Ergebnis gefunden wird ([***"feature hunting"***]{.rn rn-type="highlight"})
 
 ::: notes
+▶️
+
+"HARKing = hypothesizing after results are known"
+
 Implikationen. Eine wichtige Konsequenz ist die mangelnde Replizierbarkeit. Aufgrund von Unterschieden in der Analysemethodik, Messung und Datenerhebung konnten Liang und Fu (2015) beispielsweise 6 von 10 bekannten Thesen aus Social-Media-Studien nicht wiederholen. Generell kann die interne und externe Validität sowohl der Typ-I- als auch der Typ-II-Forschung durch die Wahl der Methoden beeinflusst werden, die bei der Analyse der Daten angewandt werden, um Nutzerpopulationen und -verhaltensweisen zu charakterisieren (Abschnitte 7.1-7.2), Schlussfolgerungen und Vorhersagen zu treffen (Abschnitt 7.3) und (kausale) Zusammenhänge zu ermitteln (Abschnitt 7.4).
 :::
 
-## Offenheit als Lösung statt als Problem
+## Offenheit und Transparenz als Lösung statt als Problem
 
 #### Probleme bei der Auswertung und Interpretation der Ergebnisse
 
--   **Auswahl der Messgrößen:** Besonders bei latenten Konstrukten ist die **Art der Operationalisierung** (z. B. Sharing-Muster als Näherungswert für Beliebtheit) entscheidend für die Aussagekraft der Studie(n)
+-   [**Auswahl der Messgrößen:**]{.rn rn-type="highlight"} Besonders bei latenten Konstrukten ist die **Art der Operationalisierung** (z. B. Sharing-Muster als Näherungswert für Beliebtheit) entscheidend für die Aussagekraft der Studie(n)
 
--   **Bewertung und Interpretation der Ergebnisse:** Abhängig von den **ursprünglichen Annahmen** (z.B. dass soziale Online-Spuren in gewisser Weise quantifizierbare Phänomene der realen Welt
+-   [**Bewertung und Interpretation der Ergebnisse:**]{.rn rn-type="highlight"} Abhängig von den **ursprünglichen Annahmen** (z.B. dass soziale Online-Spuren in gewisser Weise quantifizierbare Phänomene der realen Welt
 
--   **Disclaimer und Reproduzierbarkeit:** Um die Reproduzierbarkeit (durch standardisierte experimentelle Methoden) zu födern, ist die Entwicklung von Standardbewertungsverfahren und -metriken notwendig
+-   [**Disclaimer und Reproduzierbarkeit:**]{.rn rn-type="highlight"} Um die Reproduzierbarkeit (durch standardisierte experimentelle Methoden) zu fördern, ist die Entwicklung von Standardbewertungsverfahren und -metriken notwendig
 
 ::: notes
+▶️
+
 Eine letzte Möglichkeit, Verzerrungen zu berücksichtigen und die Zuverlässigkeit der Ergebnisse zu beurteilen, besteht bei der Bewertung und Interpretation der Leistung eines Instruments oder der Ergebnisse einer Studie. Ein guter Ausgangspunkt ist ein angemessenes Verständnis für die Art der verwendeten Daten. Rost et al. (2013) argumentieren beispielsweise, dass Daten, die explizit von Nutzern in sozialen Medien generiert werden, eher als kommunikativ denn als repräsentativ interpretiert werden sollten, da diese Daten oft eine Aufzeichnung der Kommunikation und nicht eine direkte Darstellung anderer ("realer") Verhaltensweisen sind, was Fragen zur Konstrukt- und internen Validität aufwirft.
 
 Probleme bei Auswahl der Messgrößen:
@@ -647,44 +667,40 @@ Disclaimers und Reproduzierbarkeit
 -   APIs bieten Zugang zu Modellen des maschinellen Lernens:
 
     -   Bei "langweilige" Annotationsaufgabe lohnt sich die Suchen nach einer API. Die Chancen stehen gut, dass bereits eine API für diese Aufgabe existiert.
-    
-::: {.fragment fragment-index="1"}
-Empfehlungen:
 
-Know your biases and validate, validate, validate!
+::: fragment
+::: {.rn rn-type="box" rn-color="#E6002E"}
+[**Empfehlungen:**]{.rn rn-type="underline" rn-color="#E6002E"}
+
+[Know your biases]{.rn rn-type="highlight"} and [validate, validate, validate!]{.rn rn-type="highlight"}
+:::
 :::
 
-
+::: notes
+▶️
+:::
 
 # Group Activity
 
-5 Minuten Pause, Ihre Fragen und eine kleine Gruppenarbeit
+5 Minuten Pause, Ihre Fragen und eine Gruppenarbeit
 
-## Vielen Dank für Ihre Fragen!
+## Vielen Dank für Ihre Fragen! {.smaller}
 
-<!--# TODO Add questions from TEAMS -->
+::: {.fragment .semi-fade-out fragment-index="1"}
+> Die Vernetzung in unserer Welt nimmt immer mehr zu und Prozesse müssen perfekt aufeinander abgestimmt sein. Es gibt eine riesige Menge an verschiedenen APIs und unsere Abhängigkeit von ihnen wird zunehmend größer. **Aber wie zuverlässig sind APIs eigentlich und wie kann ein API-Missbrauch aussehen?**
+:::
 
-## Welche APIs kennen Sie?
+::: {.fragment .fade-in-then-semi-out fragment-index="1"}
+> Facebook und andere Plattformen haben den Zugang zu Nutzerdaten über ihr API aus Datenschutzgründen stark eingeschränkt. Jedoch kann bislang jede Organisation individuell darüber entscheiden, welche Restriktionen es in dieser Hinsicht geben soll. **Sollte es übergreifende „Regeln" für APIs geben, die von jedem einzuhalten sind? Wenn ja, könnten Verstöße strafrechtlich verfolgt werden?**
+:::
 
-#### Verschiedene (Social Media) APIs
+::: {.fragment .fade-in-then-semi-out fragment-index="2"}
+> Mithilfe von APIs kann man verhältnismäßig einfach an Daten gelangen. Jedoch sind die Algorithmen hinter den Plattformen oft nicht nachvollziehbar (z.B. woher kommen personalisierte Empfehlungen). **Können die extrahierten Daten tatsächlich interpretiert werden, wenn die Entstehung nicht nachvollziehbar ist?**
+:::
 
--   CrowdTangle
-
--   Twitter
-
--   YouTube
-
--   Reddit
-
--   pushshift.io
-
--   Wikipedia
-
--   Common Crawl
-
--   Perspective (Annotation API)
-
--   Amazon Rekognition (Annotation API)
+::: {.fragment .fade-in fragment-index="3"}
+> Web-APIs erfordern grundlegende Programmierkenntnisse, um den Zugang zu ermöglichen. Leider gibt es bislang keine effizienten Alternativen. **Gibt es potentielle Ansätze, um diese Hürde auf eine andere Art und Weise zu überwinden.**
+:::
 
 ## Mehr als eine Enzyklopädie {.smaller}
 
@@ -694,7 +710,7 @@ Know your biases and validate, validate, validate!
 ::: {.column width="50%"}
 **... als soziales Netzwerk der Zusammenarbeit**
 
--   20K aktive Redakteure pro Monat (englisches Wikipedia)
+-   20K aktive Redakteur\*Innen pro Monat (englisches Wikipedia)
 
 -   Wikipedia-Seitengespräche (wo Diskussionen über Artikelüberarbeitungen stattfinden)
 
@@ -712,12 +728,16 @@ Know your biases and validate, validate, validate!
 
 -   Klassifizierungssysteme: <https://ores.wikimedia.org>
 
--   Verfolgung von Änderungen: <https://www.wikiwho.net> [@flöck2014]
+-   [Verfolgung von Änderungen: <https://www.wikiwho.net> [@flöck2014]]{.rn rn-type="highlight"}
 
 -   Bedeutung von Wikipedia als Korpus für maschinelle Lernsysteme (NLP)
 
 -   Eine kostenlose API (oder direkter Download von Dumps)
 :::
+:::
+
+::: notes
+▶️
 :::
 
 ## Im Fokus: WikiWho & WhoColor API {.smaller}
@@ -726,15 +746,15 @@ Know your biases and validate, validate, validate!
 
 ::: columns
 ::: {.column width="60%"}
-Kernfunktionalität von [WikiWho](https://www.wikiwho.net/)
+**Kernfunktionalität von [WikiWho](https://www.wikiwho.net/)**
 
--   Bei einem revidierten Textdokument wird der komplette Satz aller historischen Revisionen (Versionen) analysiert, um herauszufinden, wer welchen genauen Text auf Token-Ebene in welcher Revision geschrieben und/oder entfernt und/oder wieder eingefügt hat
+-   Bei einem revidierten Textdokument werden aller historischen Revisionen (Versionen) analysiert, um herauszufinden, wer welchen genauen Text auf Token-Ebene in welcher Revision geschrieben und/oder entfernt und/oder wieder eingefügt hat
 
--   Das bedeutet, dass für jedes Token (\~Wort) seine individuelle Hinzufügungs-/Entfernungs-/Wiedereinfügungsgeschichte verfügbar wird.
+-   Für jedes Token (\~Wort) ist seine individuelle Hinzufügungs-/Entfernungs-/Wiedereinfügungsgeschichte verfügbar.
 
-Kombination mit [WhoColor API](https://api.wikiwho.net/#whocolor_api)
+**... in Kombination mit [WhoColor API](https://api.wikiwho.net/#whocolor_api)**
 
--   Beim Öffnen eines Wikipedia-Artikels wird eine farbliche Markierung des Textes erstellt, die die ursprünglichen Autoren des Inhalts, eine Autorenliste, geordnet nach dem prozentualen Anteil an der Erstellung des Artikels, und zusätzliche Herkunftsinformationen anzeigt.
+-   Beim Öffnen eines Wikipedia-Artikels wird eine farbliche Markierung des Textes erstellt, die die ursprünglichen Autor:Innen des Inhalts, eine Autor:Innenliste, geordnet nach dem prozentualen Anteil an der Erstellung des Artikels, und zusätzliche Herkunftsinformationen anzeigt.
 
 -   Es kann auch Konflikte in Bezug auf bestimmte Textteile und die Historie des Hinzufügens/Löschens eines bestimmten Wortes anzeigen.
 :::
@@ -772,17 +792,23 @@ Beispiel:
 :::
 
 ::: {.column width="35%"}
-**Vierter Schritt: Explore!**
+<br>
 
-Was fällt Ihnen auf ...
+<br>
 
--   bezüglich der Editors List?
+<br>
 
--   mit Blick auf besonders "konfliktreiche" Stellen?
+##### **Vierter Schritt: Explore!**
 
--   mit Blick auf aktuelle Veränderungen?
+*Was fällt Ihnen auf ...*
 
--   ...
+-   *bezüglich der Editors List?*
+
+-   *mit Blick auf besonders "konfliktreiche" Stellen?*
+
+-   *mit Blick auf aktuelle Veränderungen?*
+
+-   *...*
 :::
 :::
 
@@ -940,4 +966,3 @@ Hintergrund:
 -   Plattformanbieter sind Datenvermittler, die ihre Geschäftsmodelle auf der Datafizierung des Nutzerverhaltens aufbauen (Dorfer, 2016; Cukier & Mayer-Schoenberger, 2013). Daher sind Organisationen wie Facebook, Twitter und Google in eine Ökologie von Akteuren, Erwartungen und Diskursen eingebettet.
 -   Solche "Ökologien der Kommunikation" wurden aus der Perspektive der Medienlogik (Altheide, 2013; van Dijck & Poell, 2013; Klinger & Svensson, 2014), der Mediatisierung (Couldry & Hepp, 2013) und der Mediation (Livingstone, 2009) analysiert
 :::
-

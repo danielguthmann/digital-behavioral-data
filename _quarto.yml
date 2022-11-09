@@ -23,6 +23,9 @@ website:
       - section: "Introduction"
         contents:
           - "content/02-dbb-introduction_overview/02-slides.qmd"
+      - section: "Data Collection"
+        contents:
+          - "content/03-dbd-data_collection/03-slides.qmd"
 
 format:
   html:

@@ -1,285 +1,379 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.242">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Christoph Adrian">
-
-<title>Einführung &amp; Überblick</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
-
-
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<html lang="en"><head>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
-<script src="../../../site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+<script src="../../../site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.2.242">
+
+  <meta name="author" content="Christoph Adrian">
+  <title>Einführung &amp; Überblick</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <script type="application/json" class="js-hypothesis-config">
+  {
+    "theme": "clean"
   }
-}</script>
-<script type="application/json" class="js-hypothesis-config">
-{
-  "theme": "clean"
-}
-</script>
-<script async="" src="https://hypothes.is/embed.js"></script>
+  </script>
+  <script async="" src="https://hypothes.is/embed.js"></script>
+  <style type="text/css">
 
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
 
-<link rel="stylesheet" href="../../../styles.css">
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
 </head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
 
-<body class="nav-sidebar floating">
+<section id="title-slide" data-background-color="#04316a" class="quarto-title-block center">
+  <h1 class="title">Einführung &amp; Überblick</h1>
+  <p class="subtitle">Digital behavioral data – Session 02</p>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Einführung &amp; Überblick</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../../../">Digital behavioral data</a> 
-        <div class="sidebar-tools-main">
-  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+<a href="https://twitter.com/chrdrn">Christoph Adrian</a> 
 </div>
-    </div>
-      </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Kick-Off</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/01-kick-off/01-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/02-dbb-introduction_overview/02-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Collection</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  content/02-dbb-introduction_overview/03-slides.qmd
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#seminarplan" id="toc-seminarplan" class="nav-link active" data-scroll-target="#seminarplan">Seminarplan</a></li>
-  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
-  <li><a href="#organisation-koordination" id="toc-organisation-koordination" class="nav-link" data-scroll-target="#organisation-koordination">Organisation &amp; Koordination</a>
-  <ul class="collapse">
-  <li><a href="#kursmaterialien-literatur-etc." id="toc-kursmaterialien-literatur-etc." class="nav-link" data-scroll-target="#kursmaterialien-literatur-etc.">Kursmaterialien, Literatur etc.</a></li>
-  <li><a href="#vorschlag-alternativer-seminarplan" id="toc-vorschlag-alternativer-seminarplan" class="nav-link" data-scroll-target="#vorschlag-alternativer-seminarplan">Vorschlag: Alternativer Seminarplan</a></li>
-  </ul></li>
-  <li><a href="#a-short-re-introduction" id="toc-a-short-re-introduction" class="nav-link" data-scroll-target="#a-short-re-introduction">A short (re-)introduction</a>
-  <ul class="collapse">
-  <li><a href="#dbd-was-ist-das-eigentlich" id="toc-dbd-was-ist-das-eigentlich" class="nav-link" data-scroll-target="#dbd-was-ist-das-eigentlich">DBD – Was ist das eigentlich?</a></li>
-  <li><a href="#ohne-css-keine-dbd" id="toc-ohne-css-keine-dbd" class="nav-link" data-scroll-target="#ohne-css-keine-dbd">Ohne CSS keine DBD</a></li>
-  <li><a href="#und-was-können-wir-damit-untersuchen" id="toc-und-was-können-wir-damit-untersuchen" class="nav-link" data-scroll-target="#und-was-können-wir-damit-untersuchen">Und was können wir damit untersuchen?</a></li>
-  <li><a href="#verfügbarkeit-als-pluspunkt" id="toc-verfügbarkeit-als-pluspunkt" class="nav-link" data-scroll-target="#verfügbarkeit-als-pluspunkt">Verfügbarkeit als Pluspunkt</a></li>
-  <li><a href="#mehr-daten-durch-technologischen-fortschritt" id="toc-mehr-daten-durch-technologischen-fortschritt" class="nav-link" data-scroll-target="#mehr-daten-durch-technologischen-fortschritt">Mehr Daten durch technologischen Fortschritt</a></li>
-  <li><a href="#eine-kleine-lobeshymne-auf-dbd" id="toc-eine-kleine-lobeshymne-auf-dbd" class="nav-link" data-scroll-target="#eine-kleine-lobeshymne-auf-dbd">Eine kleine Lobeshymne auf DBD</a></li>
-  </ul></li>
-  <li><a href="#herausforderungen-von-dbd" id="toc-herausforderungen-von-dbd" class="nav-link" data-scroll-target="#herausforderungen-von-dbd">Herausforderungen von DBD</a>
-  <ul class="collapse">
-  <li><a href="#wenn-der-vorteil-zum-nachteil-wird" id="toc-wenn-der-vorteil-zum-nachteil-wird" class="nav-link" data-scroll-target="#wenn-der-vorteil-zum-nachteil-wird">Wenn der Vorteil zum Nachteil wird</a></li>
-  <li><a href="#the-end-of-theory" id="toc-the-end-of-theory" class="nav-link" data-scroll-target="#the-end-of-theory">The End of Theory</a></li>
-  <li><a href="#we-need-to-talk-about-biases" id="toc-we-need-to-talk-about-biases" class="nav-link" data-scroll-target="#we-need-to-talk-about-biases">We need to talk about <span class="smallcaps">biases</span></a></li>
-  <li><a href="#know-your-bias" id="toc-know-your-bias" class="nav-link" data-scroll-target="#know-your-bias">Know your bias!</a></li>
-  <li><a href="#worauf-wirkt-die-verzerrung" id="toc-worauf-wirkt-die-verzerrung" class="nav-link" data-scroll-target="#worauf-wirkt-die-verzerrung">Worauf wirkt die Verzerrung?</a></li>
-  <li><a href="#zu-welchen-problemen-führen-verschiedene-biases" id="toc-zu-welchen-problemen-führen-verschiedene-biases" class="nav-link" data-scroll-target="#zu-welchen-problemen-führen-verschiedene-biases">Zu welchen Problemen führen verschiedene Biases?</a></li>
-  <li><a href="#datenqualität-data-bias" id="toc-datenqualität-data-bias" class="nav-link" data-scroll-target="#datenqualität-data-bias">Datenqualität &amp; <em>data bias</em></a></li>
-  <li><a href="#im-fokus-population-bias" id="toc-im-fokus-population-bias" class="nav-link" data-scroll-target="#im-fokus-population-bias">Im Fokus: Population Bias</a></li>
-  <li><a href="#im-fokus-behavioral-biases" id="toc-im-fokus-behavioral-biases" class="nav-link" data-scroll-target="#im-fokus-behavioral-biases">Im Fokus: Behavioral Biases</a></li>
-  <li><a href="#im-fokus-content-production-biases" id="toc-im-fokus-content-production-biases" class="nav-link" data-scroll-target="#im-fokus-content-production-biases">Im Fokus: Content Production Biases</a></li>
-  <li><a href="#im-fokus-linking-bias" id="toc-im-fokus-linking-bias" class="nav-link" data-scroll-target="#im-fokus-linking-bias">Im Fokus: Linking Bias</a></li>
-  <li><a href="#im-fokus-temporal-biases" id="toc-im-fokus-temporal-biases" class="nav-link" data-scroll-target="#im-fokus-temporal-biases">Im Fokus: Temporal Biases</a></li>
-  <li><a href="#im-fokus-redundancy" id="toc-im-fokus-redundancy" class="nav-link" data-scroll-target="#im-fokus-redundancy">Im Fokus: Redundancy</a></li>
-  <li><a href="#sneak-preview-in-die-nächste-sitzung" id="toc-sneak-preview-in-die-nächste-sitzung" class="nav-link" data-scroll-target="#sneak-preview-in-die-nächste-sitzung">Sneak Preview in die nächste Sitzung</a></li>
-  </ul></li>
-  <li><a href="#wichtige-rahmenbedingungen-von-dbd" id="toc-wichtige-rahmenbedingungen-von-dbd" class="nav-link" data-scroll-target="#wichtige-rahmenbedingungen-von-dbd">Wichtige Rahmenbedingungen von DBD</a>
-  <ul class="collapse">
-  <li><a href="#erweiterung-des-blickwinkels" id="toc-erweiterung-des-blickwinkels" class="nav-link" data-scroll-target="#erweiterung-des-blickwinkels">Erweiterung des Blickwinkels</a></li>
-  <li><a href="#ein-schmaler-grat" id="toc-ein-schmaler-grat" class="nav-link" data-scroll-target="#ein-schmaler-grat">Ein schmaler Grat</a></li>
-  <li><a href="#achtung-der-individuellen-autonomie" id="toc-achtung-der-individuellen-autonomie" class="nav-link" data-scroll-target="#achtung-der-individuellen-autonomie">Achtung der individuellen Autonomie</a></li>
-  <li><a href="#wohltätigkeit-und-unschädlichkeit-als-ziel" id="toc-wohltätigkeit-und-unschädlichkeit-als-ziel" class="nav-link" data-scroll-target="#wohltätigkeit-und-unschädlichkeit-als-ziel">Wohltätigkeit und Unschädlichkeit als Ziel</a></li>
-  <li><a href="#faire-verteilung-von-risiken-nutzen" id="toc-faire-verteilung-von-risiken-nutzen" class="nav-link" data-scroll-target="#faire-verteilung-von-risiken-nutzen">Faire Verteilung von Risiken &amp; Nutzen</a></li>
-  <li><a href="#zwei-trends-drei-fragen-vier-empfehlungen" id="toc-zwei-trends-drei-fragen-vier-empfehlungen" class="nav-link" data-scroll-target="#zwei-trends-drei-fragen-vier-empfehlungen">Zwei Trends, Drei Fragen, Vier Empfehlungen</a></li>
-  </ul></li>
-  <li><a href="#group-activity" id="toc-group-activity" class="nav-link" data-scroll-target="#group-activity">Group Activity</a>
-  <ul class="collapse">
-  <li><a href="#vielen-dank-für-ihre-fragen" id="toc-vielen-dank-für-ihre-fragen" class="nav-link" data-scroll-target="#vielen-dank-für-ihre-fragen">Vielen Dank für Ihre Fragen!</a></li>
-  <li><a href="#was-denken-sie-1" id="toc-was-denken-sie-1" class="nav-link" data-scroll-target="#was-denken-sie-1">Was denken Sie?</a></li>
-  <li><a href="#lets-discuss" id="toc-lets-discuss" class="nav-link" data-scroll-target="#lets-discuss">Let’s discuss!</a></li>
-  <li><a href="#lets-discuss-1" id="toc-lets-discuss-1" class="nav-link" data-scroll-target="#lets-discuss-1">Let’s discuss!</a></li>
-  </ul></li>
-  <li><a href="#bis-zur-nächsten-sitzung" id="toc-bis-zur-nächsten-sitzung" class="nav-link" data-scroll-target="#bis-zur-nächsten-sitzung">Bis zur nächsten Sitzung!</a>
-  <ul class="collapse">
-  <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block">Einführung &amp; Überblick</h1>
-<p class="subtitle lead">Digital behavioral data – Session 02</p>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading"></div>
-  
-    <div class="quarto-title-meta-contents">
-    <a href="https://twitter.com/chrdrn">Christoph Adrian</a> 
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
+        <p class="quarto-title-affiliation">
             <a href="https://www.kowi.rw.fau.de/person/christoph-adrian/">
             Lehrstuhl für Kommunikationswissenschaft
             </a>
           </p>
-      </div>
     </div>
+</div>
 
-<div class="quarto-title-meta">
-
-      
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">02.11.2022</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
-
-<section id="seminarplan" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="seminarplan">Seminarplan</h2>
-<table class="table">
+  <p class="date">02.11.2022</p>
+</section>
+<section id="seminarplan" class="slide level2 smaller">
+<h2>Seminarplan</h2>
+<table>
 <thead>
 <tr class="header">
 <th>Sitzung</th>
@@ -375,11 +469,21 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<div class="notes">
+<aside class="notes">
 <p>▶️</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="agenda" class="level1">
+<section id="agenda" class="title-slide slide level1 center">
 <h1>Agenda</h1>
 <ol type="1">
 <li><p><strong>Organisation und Koordination</strong></p></li>
@@ -388,37 +492,54 @@ div.csl-indent {
 <li><p><strong>Wichtige Rahmenbedingungen von DBD</strong></p></li>
 <li><p><strong>Group Activity</strong></p></li>
 </ol>
-<div class="notes">
+<aside class="notes">
 <ul>
 <li><p>Basistext als Einführung, zusätzliche Inhalte im Seminar</p></li>
 <li><p>Idee der Sitzung: Sensibilisierung für Problemstellungen –&gt; Nützlich für Ihre eigenen Sitzungen!</p></li>
 <li><p>Feedback zu Fragen in Group Activity</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="organisation-koordination" class="level1" data-background-color="#E6002E">
-<h1 data-background-color="#E6002E">Organisation &amp; Koordination</h1>
+
+<section>
+<section id="organisation-koordination" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>Organisation &amp; Koordination</h1>
 <p>Fragen, MS Teams &amp; alternativer Seminarplan</p>
-<section id="kursmaterialien-literatur-etc." class="level2">
-<h2 class="anchored" data-anchor-id="kursmaterialien-literatur-etc.">Kursmaterialien, Literatur etc.</h2>
-<section id="kurze-einführung-in-teams" class="level4">
-<h4 class="anchored" data-anchor-id="kurze-einführung-in-teams">Kurze Einführung in Teams</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ms_teams.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<div class="notes">
+</section>
+<section id="kursmaterialien-literatur-etc." class="slide level2">
+<h2>Kursmaterialien, Literatur etc.</h2>
+<h4 id="kurze-einführung-in-teams">Kurze Einführung in Teams</h4>
+
+<img data-src="images/ms_teams.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <ul>
 <li><p>Siehe: Webpage zum Kurs</p></li>
 <li><p>Siehe: Syllabus</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="vorschlag-alternativer-seminarplan" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="vorschlag-alternativer-seminarplan">Vorschlag: Alternativer Seminarplan</h2>
-<table class="table">
+<section id="vorschlag-alternativer-seminarplan" class="slide level2 smaller">
+<h2>Vorschlag: Alternativer Seminarplan</h2>
+<table>
 <thead>
 <tr class="header">
 <th>Sitzung</th>
@@ -514,47 +635,51 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<div class="notes">
+<aside class="notes">
 <p>▶️</p>
-</div>
-</section>
-</section>
-<section id="a-short-re-introduction" class="level1" data-background-color="#E6002E">
-<h1 data-background-color="#E6002E">A short (re-)introduction</h1>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="a-short-re-introduction" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>A short (re-)introduction</h1>
 <p>Was sind <em>digital behavior data</em>?</p>
 <p>Und <em>was</em> können wir mit Ihnen <em>untersuchen</em>?</p>
-<section id="dbd-was-ist-das-eigentlich" class="level2">
-<h2 class="anchored" data-anchor-id="dbd-was-ist-das-eigentlich">DBD – Was ist das eigentlich?</h2>
-<section id="rückblick-auf-definition-nach-weller2021" class="level4">
-<h4 class="anchored" data-anchor-id="rückblick-auf-definition-nach-weller2021">Rückblick auf Definition nach <span class="citation" data-cites="weller2021">Weller (<a href="#ref-weller2021" role="doc-biblioref">2021</a>)</span></h4>
+</section>
+<section id="dbd-was-ist-das-eigentlich" class="slide level2">
+<h2>DBD – Was ist das eigentlich?</h2>
+<h4 id="rückblick-auf-definition-nach-weller2021">Rückblick auf Definition nach <span class="citation" data-cites="weller2021">Weller (<a href="#/literatur" role="doc-biblioref" onclick="">2021</a>)</span></h4>
 <ul>
 <li><p>… fasst eine <strong>Vielzahl von möglichen Datenquellen</strong> zusammen, die verschiedene Arten von <strong>Aktivitäten aufzeichnen</strong> (<em>häufig sogar “nur” als Nebenprodukt</em>)</p></li>
 <li><p>… können dabei helfen, <strong>Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien</strong> zu erkennen</p></li>
 </ul>
 <p><br></p>
-</section>
 <div class="fragment">
-<section id="im-kontext-dieses-seminars" class="level4">
-<h4 class="anchored" data-anchor-id="im-kontext-dieses-seminars"><strong>Im Kontext dieses Seminars:</strong></h4>
+<!-- -->
+<h4 id="im-kontext-dieses-seminars"><strong>Im Kontext dieses Seminars:</strong></h4>
 <ul>
 <li>Schwerpunkt: <strong>Nutzung und Inhalte</strong> von <strong>soziale Medien</strong></li>
 <li><strong>Computational Social Science</strong> [CSS] <strong>Verfahren</strong>, z.B. zur Erhebung, Verarbeitung, Auswertung und Präsentation</li>
 </ul>
-</section>
 </div>
 </section>
-<section id="ohne-css-keine-dbd" class="level2">
-<h2 class="anchored" data-anchor-id="ohne-css-keine-dbd">Ohne CSS keine DBD</h2>
-<section id="kurzer-exkurs-zur-bedeutung-von-computational-social-science" class="level4">
-<h4 class="anchored" data-anchor-id="kurzer-exkurs-zur-bedeutung-von-computational-social-science">Kurzer Exkurs zur Bedeutung von Computational Social Science</h4>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<section id="ohne-css-keine-dbd" class="slide level2">
+<h2>Ohne CSS keine DBD</h2>
+<h4 id="kurzer-exkurs-zur-bedeutung-von-computational-social-science">Kurzer Exkurs zur Bedeutung von Computational Social Science</h4>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Computational Social Science).</strong></p>
-<p>We define CSS as the development and application of computational methods to complex, typically large-scale, human (sometimes simulated) behavioral data.” <span class="citation" data-cites="lazer2020">(<a href="#ref-lazer2020" role="doc-biblioref">Lazer et al., 2020</a>)</span></p>
+<p>We define CSS as the development and application of computational methods to complex, typically large-scale, human (sometimes simulated) behavioral data.” <span class="citation" data-cites="lazer2020">(<a href="#/literatur" role="doc-biblioref" onclick="">Lazer et al., 2020</a>)</span></p>
 </div>
 </div>
 </div>
@@ -564,47 +689,61 @@ div.csl-indent {
 <li><p>digitale Verhaltensdaten zu sammeln und vorzuverarbeiten</p></li>
 <li><p>neue Methoden zur Analyse von großen Datensätzen anzuwenden</p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>CSS = neues Teilgebiet der Sozialwissenschaften oder neuer “Werkzeugkasten” zur Ergänzung der traditionellen sozialwissenschaftlichen Ansätze</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="und-was-können-wir-damit-untersuchen" class="level2">
-<h2 class="anchored" data-anchor-id="und-was-können-wir-damit-untersuchen">Und was können wir damit untersuchen?</h2>
-<section id="beispiele-für-kategorisierung-von-untersuchbaren-verhalten-interaktionen" class="level4">
-<h4 class="anchored" data-anchor-id="beispiele-für-kategorisierung-von-untersuchbaren-verhalten-interaktionen">Beispiele für &amp; Kategorisierung von untersuchbaren Verhalten &amp; Interaktionen</h4>
+<section id="und-was-können-wir-damit-untersuchen" class="slide level2">
+<h2>Und was können wir damit untersuchen?</h2>
+<h4 id="beispiele-für-kategorisierung-von-untersuchbaren-verhalten-interaktionen">Beispiele für &amp; Kategorisierung von untersuchbaren Verhalten &amp; Interaktionen</h4>
 <div class="columns">
 <div class="column" style="width:65%;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/dbd_matrix.png" class="img-fluid figure-img" width="1024"></p>
-<p></p><figcaption class="figure-caption">Quelle: <span class="citation" data-cites="keusch2021">Engel et al. (<a href="#ref-keusch2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
+<figure>
+<p><img data-src="images/dbd_matrix.png" width="1024"></p>
+<p></p><figcaption>Quelle: <span class="citation" data-cites="keusch2021">Engel et al. (<a href="#/literatur" role="doc-biblioref" onclick="">2021</a>)</span></figcaption><p></p>
 </figure>
 </div>
 </div><div class="column" style="width:35%;">
 <p><br></p>
-<section id="einschränkungen" class="level5">
-<h5 class="anchored" data-anchor-id="einschränkungen"><strong>Einschränkungen</strong></h5>
+<h5 id="einschränkungen"><strong>Einschränkungen</strong></h5>
 <ul>
 <li><p>Kategorisierung ist <strong>Momentaufnahme</strong> und nicht überschneidungsfrei</p></li>
 <li><p><strong>Selektive Nutzung</strong> von bestimmten digitalen Geräten bzw. Funktionen</p></li>
 </ul>
-</section>
 </div>
 </div>
-<div class="notes">
+<aside class="notes">
 <ul>
 <li><p>Kategorien: Digital/Analog individual/social behavior</p></li>
 <li><p>Einige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)</p></li>
 <li><p>Fehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte.</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="verfügbarkeit-als-pluspunkt" class="level2">
-<h2 class="anchored" data-anchor-id="verfügbarkeit-als-pluspunkt">Verfügbarkeit als Pluspunkt</h2>
-<section id="dbd-als-wertvolle-quelle-bei-aktuellen-sensiblen-unvorhersehbaren-themen" class="level4">
-<h4 class="anchored" data-anchor-id="dbd-als-wertvolle-quelle-bei-aktuellen-sensiblen-unvorhersehbaren-themen">DBD als wertvolle Quelle bei aktuellen, sensiblen &amp; unvorhersehbaren Themen</h4>
+<section id="verfügbarkeit-als-pluspunkt" class="slide level2">
+<h2>Verfügbarkeit als Pluspunkt</h2>
+<h4 id="dbd-als-wertvolle-quelle-bei-aktuellen-sensiblen-unvorhersehbaren-themen">DBD als wertvolle Quelle bei aktuellen, sensiblen &amp; unvorhersehbaren Themen</h4>
 <p><br></p>
 <p><strong>Einsatz besonders Vorteilhaft bei Themen bzw. Untersuchungen …</strong></p>
 <ul>
@@ -616,32 +755,33 @@ div.csl-indent {
 <li><strong>Zeitnaher</strong> als die Erstellung einer Umfrage</li>
 <li>Zusätzlicher Nutzen als <strong>Archiv</strong> bei <strong>unvorhersehbaren</strong> <strong>Ereignissen</strong></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>🔔 –&gt; Beispiele?</p>
 <ul>
 <li><p>Meinung zu Corona auf Basis von Tweets</p></li>
 <li><p>Well-being auf Basis von Instagram-Bildern &amp; Texten</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="mehr-daten-durch-technologischen-fortschritt" class="level2">
-<h2 class="anchored" data-anchor-id="mehr-daten-durch-technologischen-fortschritt">Mehr Daten durch technologischen Fortschritt</h2>
-<section id="beispiel-wachsenden-anzahl-eingebauter-smartphone-sensoren" class="level4">
-<h4 class="anchored" data-anchor-id="beispiel-wachsenden-anzahl-eingebauter-smartphone-sensoren">Beispiel: Wachsenden Anzahl eingebauter Smartphone-Sensoren</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/dbd_smartphone_development.jpeg" class="img-fluid figure-img" alt="Aus @struminskaya2020"></p>
-<p></p><figcaption class="figure-caption">Graphik aus <span class="citation" data-cites="struminskaya2020">Struminskaya et al. (<a href="#ref-struminskaya2020" role="doc-biblioref">2020</a>)</span></figcaption><p></p>
-</figure>
-</div>
+<section id="mehr-daten-durch-technologischen-fortschritt" class="slide level2">
+<h2>Mehr Daten durch technologischen Fortschritt</h2>
+<h4 id="beispiel-wachsenden-anzahl-eingebauter-smartphone-sensoren">Beispiel: Wachsenden Anzahl eingebauter Smartphone-Sensoren</h4>
+
 <!--# TODO: Bedeutung/Funktion der einzelnen Sensoren -->
-</section>
-</section>
-<section id="eine-kleine-lobeshymne-auf-dbd" class="level2">
-<h2 class="anchored" data-anchor-id="eine-kleine-lobeshymne-auf-dbd">Eine kleine Lobeshymne auf DBD</h2>
-<section id="zwischenfazit" class="level4">
-<h4 class="anchored" data-anchor-id="zwischenfazit">Zwischenfazit</h4>
+<img data-src="images/dbd_smartphone_development.jpeg" alt="Aus @struminskaya2020" class="r-stretch quarto-figure-center"><p class="caption">Graphik aus <span class="citation" data-cites="struminskaya2020">Struminskaya et al. (<a href="#/literatur" role="doc-biblioref" onclick="">2020</a>)</span></p></section>
+<section id="eine-kleine-lobeshymne-auf-dbd" class="slide level2">
+<h2>Eine kleine Lobeshymne auf DBD</h2>
+<h4 id="zwischenfazit">Zwischenfazit</h4>
 <ul>
 <li><p>Digitale Geräte oder <strong>Sensoren</strong> können sich besser an bestimmte Fakten <strong>besser “erinnern”</strong> als das menschliche Gedächtnis.</p></li>
 <li><p>Sensoren sind oft bereits <strong>in alltägliche Technologie eingebaut</strong> und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”.</p></li>
@@ -654,19 +794,28 @@ div.csl-indent {
 <p>Zur erfolgreichen Nutzung müssen <span class="rn" data-rn-type="highlight">Forschungsziele &amp; verfügbare Daten in Einklang</span> gebracht, mögliche <span class="rn" data-rn-type="highlight">Biases und methodische Probleme</span> berücksichttigt sowie die <span class="rn" data-rn-type="highlight">Datenqualität</span> evaluiert werden.</p>
 </div>
 </div>
-<div class="notes">
+<aside class="notes">
 <p>▶️</p>
-</div>
-</section>
-</section>
-</section>
-<section id="herausforderungen-von-dbd" class="level1" data-background-color="#E6002E">
-<h1 data-background-color="#E6002E">Herausforderungen von DBD</h1>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="herausforderungen-von-dbd" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>Herausforderungen von DBD</h1>
 <p>Der Umgang mit Biases, methodischen Tücken und ethischen Einschränkungen</p>
-<section id="wenn-der-vorteil-zum-nachteil-wird" class="level2">
-<h2 class="anchored" data-anchor-id="wenn-der-vorteil-zum-nachteil-wird">Wenn der Vorteil zum Nachteil wird</h2>
-<section id="ambivalenz-der-unaufdringlichkeit-keusch2021" class="level4">
-<h4 class="anchored" data-anchor-id="ambivalenz-der-unaufdringlichkeit-keusch2021">Ambivalenz der Unaufdringlichkeit <span class="citation" data-cites="keusch2021">(<a href="#ref-keusch2021" role="doc-biblioref">Engel et al., 2021</a>)</span></h4>
+</section>
+<section id="wenn-der-vorteil-zum-nachteil-wird" class="slide level2">
+<h2>Wenn der Vorteil zum Nachteil wird</h2>
+<h4 id="ambivalenz-der-unaufdringlichkeit-keusch2021">Ambivalenz der Unaufdringlichkeit <span class="citation" data-cites="keusch2021">(<a href="#/literatur" role="doc-biblioref" onclick="">Engel et al., 2021</a>)</span></h4>
 <ul>
 <li><p>Unterscheidung zwischen <strong>aufdringlichen</strong> <em>(z.B. spezielle Research-App &amp; Befragungen)</em> <strong>&amp; unaufdringlichen</strong> <em>(z.B. Cookies, Browserplugins &amp; APIs)</em> <strong>erhobenen Daten</strong></p></li>
 <li><p><strong>Bewertung</strong> und Erwartung an Datensammlung ist <strong>abhängig vom Kontex</strong>t (<em>z.B. Amazon vs.&nbsp;Researchgate</em>)</p></li>
@@ -677,49 +826,65 @@ div.csl-indent {
 <p>Einerseits bereitwillige (oft unwissende) <span class="rn" data-rn-type="highlight">Abgabe</span> der Daten <span class="rn" data-rn-type="highlight">an Konzerne</span>, andererseits häufig <span class="rn" data-rn-type="highlight">Bedenken</span> bezüglich Datenschutz &amp; Privatsphäre bei <span class="rn" data-rn-type="highlight">wissenschaftlichen Studien</span></p>
 </div>
 </div>
-<div class="notes">
+<aside class="notes">
 <p>▶️ | 🔔 –&gt; Gründe für Ablehnung: Nutzenorientierung?</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="the-end-of-theory" class="level2">
-<h2 class="anchored" data-anchor-id="the-end-of-theory">The End of Theory</h2>
+<section id="the-end-of-theory" class="slide level2">
+<h2>The End of Theory</h2>
 <div class="fragment" data-fragment-index="1">
-<section id="zur-wichtigkeit-von-konzipierte-messungen-designs" class="level4">
-<h4 class="anchored" data-anchor-id="zur-wichtigkeit-von-konzipierte-messungen-designs">Zur Wichtigkeit von konzipierte Messungen &amp; Designs</h4>
-</section>
+<!-- -->
+<h4 id="zur-wichtigkeit-von-konzipierte-messungen-designs">Zur Wichtigkeit von konzipierte Messungen &amp; Designs</h4>
 </div>
-<blockquote class="blockquote">
-<p><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E" data-rn-multiline="true">“Who knows why people do what they do? The point is they do it, and we can track and measure it with unprecedented fidelity. With enough data, the numbers speak for themselves.” <span class="citation" data-cites="anderson2008">(<a href="#ref-anderson2008" role="doc-biblioref">Anderson, 2008</a>)</span></span></p>
+<blockquote>
+<p><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E" data-rn-multiline="true">“Who knows why people do what they do? The point is they do it, and we can track and measure it with unprecedented fidelity. With enough data, the numbers speak for themselves.” <span class="citation" data-cites="anderson2008">(<a href="#/literatur" role="doc-biblioref" onclick="">Anderson, 2008</a>)</span></span></p>
 </blockquote>
 <div class="fragment semi-fade-out" data-fragment-index="1">
-<section id="was-denken-sie" class="level3">
-<h3 class="anchored" data-anchor-id="was-denken-sie">Was denken Sie?</h3>
-</section>
+<!-- -->
+<h3 id="was-denken-sie">Was denken Sie?</h3>
 </div>
 <div class="fragment" data-fragment-index="1">
-<blockquote class="blockquote">
-<p>“Size alone does <span class="rn" data-rn-type="underline" data-rn-color="#E6002E">not</span> necessarily make the data better” <span class="citation" data-cites="boyd2007">(<a href="#ref-boyd2007" role="doc-biblioref">boyd &amp; Ellison, 2007</a>)</span></p>
+<blockquote>
+<p>“Size alone does <span class="rn" data-rn-type="underline" data-rn-color="#E6002E">not</span> necessarily make the data better” <span class="citation" data-cites="boyd2007">(<a href="#/literatur" role="doc-biblioref" onclick="">boyd &amp; Ellison, 2007</a>)</span></p>
 </blockquote>
-<blockquote class="blockquote">
-<p>“There are a lot of small data problems that occur in big data [which] don’t disappear because you’ve got lots of the stuff. <span class="rn" data-rn-type="underline" data-rn-color="#E6002E">They get worse.</span>” <span class="citation" data-cites="harford2014">(<a href="#ref-harford2014" role="doc-biblioref">Harford, 2014</a>)</span></p>
+<blockquote>
+<p>“There are a lot of small data problems that occur in big data [which] don’t disappear because you’ve got lots of the stuff. <span class="rn" data-rn-type="underline" data-rn-color="#E6002E">They get worse.</span>” <span class="citation" data-cites="harford2014">(<a href="#/literatur" role="doc-biblioref" onclick="">Harford, 2014</a>)</span></p>
 </blockquote>
 </div>
-<div class="notes">
+<aside class="notes">
 <p>▶️ | 🔔</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="we-need-to-talk-about-biases" class="level2">
-<h2 class="anchored" data-anchor-id="we-need-to-talk-about-biases">We need to talk about <span class="smallcaps">biases</span></h2>
-<section id="spezifische-und-allgemeine-herausforderungen-für-die-forschung-mit-dbd" class="level4">
-<h4 class="anchored" data-anchor-id="spezifische-und-allgemeine-herausforderungen-für-die-forschung-mit-dbd">Spezifische und allgemeine Herausforderungen für die Forschung mit DBD</h4>
+<section id="we-need-to-talk-about-biases" class="slide level2">
+<h2>We need to talk about <span class="smallcaps">biases</span></h2>
+<h4 id="spezifische-und-allgemeine-herausforderungen-für-die-forschung-mit-dbd">Spezifische und allgemeine Herausforderungen für die Forschung mit DBD</h4>
 <p><strong>Hintergrund</strong>: (<em>Big) Data ist zunehmend Grundlage für politische Maßnahmen, die Gestaltung von Produkten und Dienstleistungen und für die automatisierte Entscheidungsfindung</em></p>
 <ul>
 <li><p><strong>Herausforderungen in Bezug auf DBD-Forschung:</strong> fehlender Konsens über ein Vokabular oder eine Taxonomie, häufig nur impliziter Bezug in der Forschung</p></li>
 <li><p><strong>Generelle Herausforderung:</strong> <span class="rn" data-rn-type="box" data-rn-color="#e6002e">bias</span> ist ein weit gefasster &amp; in unterschiedlichen Disziplinen genutzter Begriff<br>
 </p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>▶️</p>
 <p>“bias” hier im statistischen Sinne</p>
 <p>Punkt2:</p>
@@ -728,20 +893,24 @@ div.csl-indent {
 <li><p>systemische, diskriminierende Ergebnisse (Friedman und Nissenbaum, 1996)</p></li>
 <li><p>systemische Schäden (Barocas et al., 2017)</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <!--# Was bedeuten hier "systematische Schäde"-->
 </section>
-</section>
-<section id="know-your-bias" class="level2">
-<h2 class="anchored" data-anchor-id="know-your-bias">Know your bias!</h2>
-<section id="framework-zur-minimierung-von-fehlern-und-problemen-olteanu2019" class="level4">
-<h4 class="anchored" data-anchor-id="framework-zur-minimierung-von-fehlern-und-problemen-olteanu2019">Framework zur Minimierung von Fehlern und Problemen <span class="citation" data-cites="olteanu2019">(<a href="#ref-olteanu2019" role="doc-biblioref">Olteanu et al., 2019</a>)</span></h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/bias_framework_without_legend.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<div class="notes">
+<section id="know-your-bias" class="slide level2">
+<h2>Know your bias!</h2>
+<h4 id="framework-zur-minimierung-von-fehlern-und-problemen-olteanu2019">Framework zur Minimierung von Fehlern und Problemen <span class="citation" data-cites="olteanu2019">(<a href="#/literatur" role="doc-biblioref" onclick="">Olteanu et al., 2019</a>)</span></h4>
+
+<img data-src="images/bias_framework_without_legend.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>Beschreibung:</p>
 <ul>
 <li><p>Die Analyse sozialer Daten beginnt mit bestimmten Zielen (Abschnitt 2.1), wie dem Verständnis oder der Beeinflussung von Phänomenen, die für soziale Plattformen spezifisch sind (Typ I) und/oder von Phänomenen, die über soziale Plattformen hinausgehen (Typ II).</p></li>
@@ -750,19 +919,23 @@ div.csl-indent {
 <li><p>Diese Herausforderungen können von den Merkmalen der einzelnen Datenplattformen (Abschnitt 4) abhängen - die oft nicht unter der Kontrolle des Forschers stehen - und von den Entscheidungen des Forschungsdesigns entlang einer Datenverarbeitungspipeline (Abschnitte 5 bis 8) - die oft unter der Kontrolle des Forschers stehen.</p></li>
 <li><p>Pfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere auswirken</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="worauf-wirkt-die-verzerrung" class="level2">
-<h2 class="anchored" data-anchor-id="worauf-wirkt-die-verzerrung">Worauf wirkt die Verzerrung?</h2>
-<section id="beispiele-für-forschung-von-typ-i-ii-olteanu2019" class="level4">
-<h4 class="anchored" data-anchor-id="beispiele-für-forschung-von-typ-i-ii-olteanu2019">Beispiele für Forschung von Typ I &amp; II <span class="citation" data-cites="olteanu2019">(<a href="#ref-olteanu2019" role="doc-biblioref">Olteanu et al., 2019</a>)</span></h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/bias_framework_without_legend_v1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<div class="notes">
+<section id="worauf-wirkt-die-verzerrung" class="slide level2">
+<h2>Worauf wirkt die Verzerrung?</h2>
+<h4 id="beispiele-für-forschung-von-typ-i-ii-olteanu2019">Beispiele für Forschung von Typ I &amp; II <span class="citation" data-cites="olteanu2019">(<a href="#/literatur" role="doc-biblioref" onclick="">Olteanu et al., 2019</a>)</span></h4>
+
+<img data-src="images/bias_framework_without_legend_v1.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <p><strong>Typ I: understand/influence phenomena <u>specific</u> to social platforms</strong></p>
 <ul>
 <li>Dynamik der Verbreitung von “Memes”</li>
@@ -774,71 +947,75 @@ div.csl-indent {
 <li><p>Beschreibung des Einflusses sozialer Medien auf eine politische Wahl.</p></li>
 <li><p>Nutzung sozialer Daten zur Verfolgung der Entwicklung ansteckender Krankheiten durch Analyse der von Social-Media-Nutzern online gemeldeten Symptomen</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="zu-welchen-problemen-führen-verschiedene-biases" class="level2">
-<h2 class="anchored" data-anchor-id="zu-welchen-problemen-führen-verschiedene-biases">Zu welchen Problemen führen verschiedene Biases?</h2>
-<section id="einflüsse-von-biases-auf-datenqualität" class="level4">
-<h4 class="anchored" data-anchor-id="einflüsse-von-biases-auf-datenqualität">Einflüsse von Biases auf Datenqualität</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/bias_framework_without_legend_v2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<div class="notes">
+<section id="zu-welchen-problemen-führen-verschiedene-biases" class="slide level2">
+<h2>Zu welchen Problemen führen verschiedene Biases?</h2>
+<h4 id="einflüsse-von-biases-auf-datenqualität">Einflüsse von Biases auf Datenqualität</h4>
+
+<img data-src="images/bias_framework_without_legend_v2.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <ul>
 <li><p>Um diese Probleme in das umfassendere Konzept der Datenqualität einzuordnen, geben wir zunächst einen kurzen Überblick über bekannte Probleme der Datenqualität.</p></li>
 <li><p><strong>Datenqualität</strong> ist ein vielschichtiges Konzept, typische Elemente sind <em>Genauigkeit, Vollständigkeit, Konsistenz, Aktualität</em> und <em>Zugänglichkeit.</em></p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="datenqualität-data-bias" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="datenqualität-data-bias">Datenqualität &amp; <em>data bias</em></h2>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<section id="datenqualität-data-bias" class="slide level2 smaller">
+<h2>Datenqualität &amp; <em>data bias</em></h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Data bias).</strong></p>
 <p>A systematic distortion in the sampled data that compromises its representativeness<strong>.</strong></p>
 </div>
 </div>
 </div>
-<section id="potentielle-probleme" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme"><strong>Potentielle Probleme</strong></h5>
+<h5 id="potentielle-probleme"><strong>Potentielle Probleme</strong></h5>
 <ul>
-<li><p><strong><em>Sparsity:</em></strong> Häufig <em>Heavy-Tail</em>-Verteilung, was Analyse am “Kopf” (in Bezug auf häufige Elemente oder Phänomene) erleichtert, am “Schwanz” (wie seltene Elemente oder Phänomene) jedoch erschwert <span class="citation" data-cites="baeza-yates2013">(<a href="#ref-baeza-yates2013" role="doc-biblioref">Baeza-Yates, 2013</a>)</span></p></li>
-<li><p><strong><em>Noise:</em></strong> Unvollständige, beschädigte, unzuverlässige oder unglaubwürdige Inhalte <span class="citation" data-cites="boyd2012 naveed2011">(<a href="#ref-boyd2012" role="doc-biblioref">boyd &amp; Crawford, 2012</a>; <a href="#ref-naveed2011" role="doc-biblioref">Naveed et al., 2011</a>)</span></p>
+<li><p><strong><em>Sparsity:</em></strong> Häufig <em>Heavy-Tail</em>-Verteilung, was Analyse am “Kopf” (in Bezug auf häufige Elemente oder Phänomene) erleichtert, am “Schwanz” (wie seltene Elemente oder Phänomene) jedoch erschwert <span class="citation" data-cites="baeza-yates2013">(<a href="#/literatur" role="doc-biblioref" onclick="">Baeza-Yates, 2013</a>)</span></p></li>
+<li><p><strong><em>Noise:</em></strong> Unvollständige, beschädigte, unzuverlässige oder unglaubwürdige Inhalte <span class="citation" data-cites="boyd2012 naveed2011">(<a href="#/literatur" role="doc-biblioref" onclick="">boyd &amp; Crawford, 2012</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Naveed et al., 2011</a>)</span></p>
 <ul>
-<li>Unterscheidung von “Noise” und “Signal” ist oft unklar und hängt von der Forschungsfrage ab <span class="citation" data-cites="salganik2018">(<a href="#ref-salganik2018" role="doc-biblioref">Salganik, 2018</a>)</span></li>
+<li>Unterscheidung von “Noise” und “Signal” ist oft unklar und hängt von der Forschungsfrage ab <span class="citation" data-cites="salganik2018">(<a href="#/literatur" role="doc-biblioref" onclick="">Salganik, 2018</a>)</span></li>
 </ul></li>
 <li><p><strong><em>Organische vs gemessene Daten:</em></strong> Fragen zur Repräsentativität (vs.&nbsp;Stichprobenbeschreibung), Kausalität (vs.&nbsp;Korrelation) und Vorhersagegüte</p></li>
 </ul>
 </section>
-</section>
-<section id="im-fokus-population-bias" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="im-fokus-population-bias">Im Fokus: Population Bias</h2>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<section id="im-fokus-population-bias" class="slide level2 smaller">
+<h2>Im Fokus: Population Bias</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Population biases).</strong></p>
 <p>Systematic distortions in demographics or other user characteristics between a population of users represented in a dataset or on a platform and some target population.</p>
 </div>
 </div>
 </div>
-<section id="potentielle-probleme-1" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme-1">Potentielle Probleme</h5>
+<h5 id="potentielle-probleme-1">Potentielle Probleme</h5>
 <ul>
-<li><p><strong>Unterschiedliche Demographien</strong> (z.B. Geschlechts-, Alters- &amp; Bildungsgruppen) neigen zu <strong>unterschiedlichen sozialen Plattformen</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> und nutzen deren <strong>Mechanismen</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> unterschiedlich</p></li>
-<li><p><strong>Proxies</strong> für Eigenschaften oder demografische Kriterien der Nutzenden sind <strong>unterschiedlich</strong> <strong>verlässlich</strong><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
+<li><p><strong>Unterschiedliche Demographien</strong> (z.B. Geschlechts-, Alters- &amp; Bildungsgruppen) neigen zu <strong>unterschiedlichen sozialen Plattformen</strong><sup>1</sup> und nutzen deren <strong>Mechanismen</strong><sup>2</sup> unterschiedlich</p></li>
+<li><p><strong>Proxies</strong> für Eigenschaften oder demografische Kriterien der Nutzenden sind <strong>unterschiedlich</strong> <strong>verlässlich</strong><sup>3</sup></p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Häufig ist der Zusammenhang von Untersuchungspopulation (z.B. in Deutschland lebende Erwachsene) zu Zielpopulation (Erwachsene auf Twitter, die angeben, in DE zu leben) unbekannt.</p>
 <p>Beispiel “Auswirkungen”</p>
 <ul>
@@ -851,32 +1028,36 @@ div.csl-indent {
 <li>Schätzung der Geo-Location im Stadt-Land-Spektrum (z.B Johnson et al., 2017)</li>
 </ul></li>
 </ul>
-</div>
-</section>
-</section>
-<section id="im-fokus-behavioral-biases" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="im-fokus-behavioral-biases">Im Fokus: Behavioral Biases</h2>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><em>Signifikant mehr Twitter-Nutzer (Mislove et al.&nbsp;,2011), bei Pinterest tendenziell Nutzerinnen überrepräsentiert (Ottoni et al., 2013)</em></p></li><li id="fn2"><p><em>Unterschiedliche Twitter-Nutzung in Deutschland (Fokus auf Hashtags) und Korea (Fokus auf Konversationen) (Hong et al., 2011)</em></p></li><li id="fn3"><p><em>Angabe über Alumni-Status einer bestimmten Gruppe von Universitäten als Quelle für Verzerrung bei Meinung junger Hochschulabsolvent*Innen zu einem neuen Gesetz (Ruths und Pfeffer, 2014)</em></p></li></ol></aside></section>
+<section id="im-fokus-behavioral-biases" class="slide level2 smaller">
+<h2>Im Fokus: Behavioral Biases</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Behavioral biases).</strong></p>
 <p>Systematic distortions in user behavior across platforms or contexts, or across users represented in different datasets.</p>
 </div>
 </div>
 </div>
-<section id="potentielle-probleme-2" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme-2">Potentielle Probleme</h5>
+<h5 id="potentielle-probleme-2">Potentielle Probleme</h5>
 <ul>
-<li><p>Beeinflussung der <strong>Art und Weise</strong>, wie Nutzer*Innen miteinander <strong>interagieren</strong><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
-<li><p>Auftreten von <strong>Selbstselektion</strong><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> und <strong>Reaktionsverzerrungen</strong><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a><a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p></li>
+<li><p>Beeinflussung der <strong>Art und Weise</strong>, wie Nutzer*Innen miteinander <strong>interagieren</strong><sup>1</sup></p></li>
+<li><p>Auftreten von <strong>Selbstselektion</strong><sup>2</sup> und <strong>Reaktionsverzerrungen</strong><sup>3</sup><sup>4</sup></p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Unterschiede in Bezug auf Nutzerpersönlichkeiten (Hughes et al., 2012), die Verbreitung von Nachrichten (Lerman und Ghosh, 2010) oder den Austausch von Inhalten (Ottoni et al., 2014)</p>
-<section id="auswirkungen" class="level5">
-<h5 class="anchored" data-anchor-id="auswirkungen">Auswirkungen:</h5>
+<h5 id="auswirkungen">Auswirkungen:</h5>
 <ul>
 <li><p>Ergebnisse einer Studie von der gewählten Plattform oder dem Kontext abhängig<br>
 ➤ ⚠️externe Validität</p></li>
@@ -889,92 +1070,106 @@ div.csl-indent {
 <li><p>Gesonderte Diskussion von Verhalten, die sich auf die Erstellung von Inhalten durch die Nutzer auswirken (“content production bias”) und solche, die sich auf die Verknüpfungsmuster zwischen Nutzern auswirken (“linking bias”).</p></li>
 <li><p>Drei weitere häufige Klassen von Verhaltensverzerrungen betreffen die Interaktionen zwischen Nutzern, die Interaktionen zwischen Nutzern und Inhalten und die Verzerrungen, die dazu führen, dass Nutzer in eine Studienpopulation aufgenommen oder von ihr ausgeschlossen werden.</p></li>
 </ul>
-</section>
-</div>
-</section>
-</section>
-<section id="im-fokus-content-production-biases" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="im-fokus-content-production-biases">Im Fokus: Content Production Biases</h2>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn4"><p><em>Interaktionsmuster viel spärlicher als explizit erstellte soziale Verbindungen (20 % der Verbindungen haben 80 % der Interaktionen) (Wilson et al., 2009)</em></p></li><li id="fn5"><p><em>Passivität trotz Interesse an bestimmten Themen (Gong et al., 2016), aber: Aktivität nicht sichtbar oder Selbstzensur (Wang et al., 2011; Das und Kramer, 2013; Matias et al., 2015)?</em></p></li><li id="fn6"><p><em>Nutzer*Innen reden eher über extreme oder positive Erfahrungen als über gewöhnliche oder negative Erfahrungen (Kícíman, 2012; Guerra et al., 2014). (response bias)</em></p></li><li id="fn7"><p><em>75 % der Foursquare-Check-ins stimmen nicht mit der tatsächlichen Mobilität der Nutzer übereinstimmen (Zhang et al., 2013)</em></p></li></ol></aside></section>
+<section id="im-fokus-content-production-biases" class="slide level2 smaller">
+<h2>Im Fokus: Content Production Biases</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Content Production Biases)</strong></p>
 <p>Behavioral biases that are expressed as lexical, syntactic, semantic, and structural differences in the content generated by users.</p>
 </div>
 </div>
 </div>
-<section id="potentielle-probleme-3" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme-3">Potentielle Probleme:</h5>
+<h5 id="potentielle-probleme-3">Potentielle Probleme:</h5>
 <ul>
-<li><p>Der <strong>Gebrauch der Sprache(n)</strong> variiert zwischen und innerhalb von Ländern und Bevölkerungsgruppen.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p></li>
-<li><p><strong>Kontextbedingte Faktore</strong>n (z.B. zwischenmenschliche Beziehungen) beeinflussen die Art und Weise, wie Benutzer sprechen.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p></li>
-<li><p>Die Inhalte von <strong>bekannten oder “erfahrenen” Nutzer<em>innen</em></strong>unterscheiden sich von denen der normalen Nutzer*innen.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p></li>
-<li><p><strong>Unterschiedliche Bevölkerungsgruppen</strong> haben unterschiedliche <strong>Neigungen</strong>, über bestimmte <strong>Themen</strong> zu sprechen.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p></li>
+<li><p>Der <strong>Gebrauch der Sprache(n)</strong> variiert zwischen und innerhalb von Ländern und Bevölkerungsgruppen.<sup>1</sup></p></li>
+<li><p><strong>Kontextbedingte Faktore</strong>n (z.B. zwischenmenschliche Beziehungen) beeinflussen die Art und Weise, wie Benutzer sprechen.<sup>2</sup></p></li>
+<li><p>Die Inhalte von <strong>bekannten oder “erfahrenen” Nutzer<em>innen</em></strong>unterscheiden sich von denen der normalen Nutzer*innen.<sup>3</sup></p></li>
+<li><p><strong>Unterschiedliche Bevölkerungsgruppen</strong> haben unterschiedliche <strong>Neigungen</strong>, über bestimmte <strong>Themen</strong> zu sprechen.<sup>4</sup></p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Unterschiede bei nutzergenerierten Inhalten, insbesondere bei Texten, zwischen und innerhalb von demografischen Gruppen</p>
 <p>Beispiel 1: Sprachgebrauchsvariationen je nach Geschlecht, Alter, regionaler Herkunft und politischer Orientierung auf Twitter (Rao et al.&nbsp;(2010)), sowie zwischen ethnischen Gruppen (Blodgett et al., 2016).</p>
 <p>Beispiel 2: Außerdem zeigen Schwartz et al.&nbsp;(2015), dass die zeitliche Ausrichtung von Botschaften (Betonung der Vergangenheit, Gegenwart oder Zukunft) von Faktoren wie Offenheit für neue Erfahrungen, Anzahl der Freunde, Lebenszufriedenheit oder Depression beeinflusst werden kann.</p>
 <p>Beispiel 3: Zafar et al.&nbsp;(2015) zeigen, wie die Konzentration der Stichprobe von Inhalten auf “Experten”-Nutzer die resultierende Stichprobe in Richtung vertrauenswürdigerer und hochwertigerer Inhalte verzerrt.</p>
-</div>
-</section>
-</section>
-<section id="im-fokus-linking-bias" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="im-fokus-linking-bias">Im Fokus: Linking Bias</h2>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn8"><p><em>Saisonale Schwankungen in der sprachlichen Zusammensetzung zwischen verschiedenen Gebiete (Länder, Regionen, Nachbarschaften etc.) (Mocanu et al., 2013)</em></p></li><li id="fn9"><p><em>Mütter und Väter verwenden auf Facebook jeweils unterschiedliche Ansprache für Töchter &amp; Söhne, und umgekehrt. (Burke et al., 2013)</em></p></li><li id="fn10"><p><em>“Experten”-Nutzer auf Twitter neigen dazu, hauptsächlich Inhalte zu ihrem Fachgebiet zu erstellen (Bhattacharya et al., 2014)</em></p></li><li id="fn11"><p><em>Diaz et al.&nbsp;(2016) bei der Auswahl politischer Tweets während der US-Wahlen 2012 fest, dass die Nutzerpopulation eher auf Washington, DC, ausgerichtet war, während Olteanu et al.&nbsp;(2016) feststellten, dass Afroamerikaner eher den Twitter-Hashtag #BlackLivesMatter (über eine große Bewegung zur Rassengleichheit in den USA) verwendeten.</em></p></li></ol></aside></section>
+<section id="im-fokus-linking-bias" class="slide level2 smaller">
+<h2>Im Fokus: Linking Bias</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Linking Bias)</strong></p>
 <p>Behavioral biases that are expressed as differences in the attributes of networks obtained from user connections, interactions or activity.</p>
 </div>
 </div>
 </div>
-<section id="potentielle-probleme-4" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme-4">Potentielle Probleme:</h5>
+<h5 id="potentielle-probleme-4">Potentielle Probleme:</h5>
 <ul>
-<li><p><strong>Netzattribute</strong><a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a><a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a><a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> beeinflussen das Verhalten und die Wahrnehmung der Nutzer und umgekehrt</p></li>
-<li><p><strong>Verhaltensbasierte</strong> und <strong>verbindungsbasierte</strong><a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> soziale <strong>Verbindungen</strong> sind <strong>unterschiedlich</strong>.</p></li>
-<li><p>Die Bildung sozialer Online-Netzwerke hängt auch von <strong>Faktoren</strong><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a><a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> außerhalb der sozialen Plattformen ab</p></li>
+<li><p><strong>Netzattribute</strong><sup>1</sup><sup>2</sup><sup>3</sup> beeinflussen das Verhalten und die Wahrnehmung der Nutzer und umgekehrt</p></li>
+<li><p><strong>Verhaltensbasierte</strong> und <strong>verbindungsbasierte</strong><sup>4</sup> soziale <strong>Verbindungen</strong> sind <strong>unterschiedlich</strong>.</p></li>
+<li><p>Die Bildung sozialer Online-Netzwerke hängt auch von <strong>Faktoren</strong><sup>5</sup><sup>6</sup> außerhalb der sozialen Plattformen ab</p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <ul>
 <li><p>Sozialen Netzwerke, die aus beobachteten Mustern in Datensätzen (re)konstruiert werden, können sich grundlegend von den zugrunde liegenden (Offline-)Netzwerken unterscheiden (Schoenebeck, 2013a)<br>
 ➤ ⚠️externe Validität ➤ ⚠️ Typ-II &amp; teilweise Typ-I (Fälle, in denen die Interaktions- oder Verknüpfungsmuster der Nutzer mit der Zeit oder dem Kontext variieren)</p></li>
 <li><p>wirken sich beispielsweise auf die Untersuchung der Struktur und Entwicklung sozialer Netzwerke, des sozialen Einflusses und von Phänomenen der Informationsverbreitung aus (Wilson et al., 2009; Cha et al., 2010; Bakshy et al., 2012)</p></li>
 <li><p>Auf sozialen Plattformen können sie auch zu systematisch verzerrten Wahrnehmungen über Nutzer oder Inhalte führen (Lerman et al., 2016).</p></li>
 </ul>
-</div>
-</section>
-</section>
-<section id="im-fokus-temporal-biases" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="im-fokus-temporal-biases">Im Fokus: Temporal Biases</h2>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn12"><p><em>Anzahl der Follower der Nutzer*Innen (Kıcıman, 2010)</em></p></li><li id="fn13"><p><em>Altersspezifische Distanzen in sozialen Netzwerken (Dong et al., 2016)</em></p></li><li id="fn14"><p><em>Homophilie - die Tendenz ähnlicher Menschen, miteinander zu interagieren und sich zu verbinden (McPherson et al., 2001)</em></p></li><li id="fn15"><p><em>Auf expliziten Verbindungen basierende Netzwerk deutlich dichter war als das auf Nutzerinteraktionen basierende (Wilson et al., 2009)</em></p></li><li id="fn16"><p><em>Geografie (Poblete et al., 2011; Scellato et al., 2011)</em></p></li><li id="fn17"><p><em>Art und die Dynamik der Offline-Beziehungen die Neigung der Nutzer, soziale Bindungen einzugehen und online zu interagieren (Subrahmanyam et al., 2008; Gilbert und Karahalios, 2009).</em></p></li></ol></aside></section>
+<section id="im-fokus-temporal-biases" class="slide level2 smaller">
+<h2>Im Fokus: Temporal Biases</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Temporal Biases)</strong></p>
 <p>Systematic distortions across user populations or behaviors over time.</p>
 </div>
 </div>
 </div>
-<section id="potentielle-probleme-5" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme-5">Potentielle Probleme:</h5>
+<h5 id="potentielle-probleme-5">Potentielle Probleme:</h5>
 <ul>
-<li><p>Bevölkerungsgruppen, Verhaltensweisen<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> und Systeme v<strong>erändern sich mit der Zeit</strong><a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>.</p></li>
-<li><p><strong>Saisonale</strong> und <strong>periodische</strong> <strong>Phänomene</strong><a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a><a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>.</p></li>
-<li><p><strong>Plötzlich</strong> <strong>auftretende Phänomene</strong> <em>(z.B. Anstieg oder Rückgang von besteimmten Aktivitäten</em><a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> oder externe Ereignisse wie z.B. Katastrophen) wirken sich auf Populationen, Verhaltensweisen und Plattformen aus.</p></li>
+<li><p>Bevölkerungsgruppen, Verhaltensweisen<sup>1</sup> und Systeme v<strong>erändern sich mit der Zeit</strong><sup>2</sup>.</p></li>
+<li><p><strong>Saisonale</strong> und <strong>periodische</strong> <strong>Phänomene</strong><sup>3</sup><sup>4</sup>.</p></li>
+<li><p><strong>Plötzlich</strong> <strong>auftretende Phänomene</strong> <em>(z.B. Anstieg oder Rückgang von besteimmten Aktivitäten</em><sup>5</sup> oder externe Ereignisse wie z.B. Katastrophen) wirken sich auf Populationen, Verhaltensweisen und Plattformen aus.</p></li>
 <li><p>Die <strong>zeitliche Granularität</strong> kann zu <strong>feinkörnig</strong> sein, um langfristige Phänomene zu beobachten, und zu <strong>grobkörnig</strong> sein, um kurzlebige Phänomene zu beobachten.</p></li>
-<li><p><strong>Datensätze verfallen</strong> und verlieren mit der Zeit an Nutzen<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a>.</p></li>
+<li><p><strong>Datensätze verfallen</strong> und verlieren mit der Zeit an Nutzen<sup>6</sup>.</p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Auswirkunge:</p>
 <ul>
 <li><p>➤ ⚠️ eterne Validität</p></li>
@@ -984,24 +1179,29 @@ div.csl-indent {
 <ul>
 <li>Die Art und Weise, wie man Datensätze entlang der zeitlichen Achsen aggregiert und abschneidet, wirkt sich darauf aus, welche Art von Mustern beobachtet werden und welche Forschungsfragen beantwortet werden können.</li>
 </ul>
-</div>
-</section>
-</section>
-<section id="im-fokus-redundancy" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="im-fokus-redundancy">Im Fokus: Redundancy</h2>
-<div class="callout-important callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn18"><p><em>Schwankungen in Bezug darauf, wann und wie lange sich die Nutzer*Innen auf bestimmte Themen konzentrieren, was durch aktuelle Trends, saisonale oder periodische Aktivitäten oder sogar durch Lärm ausgelöst werden kann (Radinsky et al., 2012).</em></p></li><li id="fn19"><p><em>Drei Arten von zeitlichen Schwankungen: Populationsdrift, Verhaltensdrift und Systemdrift.(Salganik, 2017)</em></p></li><li id="fn20"><p><em>Unterschiedliche zeitliche Kontexte (Tag vs.&nbsp;Nacht, Wochentag vs.&nbsp;Wochenende) verändert die Form der abgeleiteten Nachbarschaftsgrenzen eografisch verorteter Tweets (Kıcıman et al., 2014).</em></p></li><li id="fn21"><p><em>Zusammenhänge zwischen der Stimmung von Tweets und Schlafzyklen und Saisonalität (Golder und Macy, 2011)</em></p></li><li id="fn22"><p><em>Einführung einer neuen Plattformfunktion resutliert in plötzlichen Anstieg der Aktivität (Malik und Pfeffer, 2016)</em></p></li><li id="fn23"><p><em>Nutzer ihre Inhalte und Konten löschen (Liu et al., 2014; Gillespie, 2015)</em></p></li></ol></aside></section>
+<section id="im-fokus-redundancy" class="slide level2 smaller">
+<h2>Im Fokus: Redundancy</h2>
+<div class="callout callout-important no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <p><strong>Definition (Redundancy)</strong></p>
 <p>Single data items that appear in the data in multiple copies, which can be identical (duplicates), or almost identical (near duplicates).</p>
 </div>
 </div>
 </div>
-<section id="potentielle-probleme-6" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme-6">Potentielle Probleme:</h5>
+<h5 id="potentielle-probleme-6">Potentielle Probleme:</h5>
 <ul>
 <li><strong>Lexikalische</strong> (z. B. Duplikate, erneute Tweets, erneut geteilte Inhalte) und <strong>semantische</strong> (z. B. Beinahe-Duplikate oder dieselbe Bedeutung, aber anders geschrieben) <strong>Redundanz</strong> macht oft einen <strong>erheblichen Teil der Inhalte aus</strong> und kann sowohl <strong>innerhalb als auch zwischen</strong> Datensätzen auftreten.</li>
 <li>Weitere Quellen für inhaltliche Redundanz sind häufig <strong>nicht-menschliche Konten,</strong> wie z.B.
@@ -1011,7 +1211,7 @@ div.csl-indent {
 <li><p><strong>mehrere Personen, die denselben Inhalt posten</strong> oder erneut posten (z. B. das Posten von Zitaten, Memes oder anderen Arten von Inhalten).</p></li>
 </ul></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Auswirkunge:</p>
 <ul>
 <li>Redundanz kann, wenn sie nicht berücksichtigt wird, sowohl die interne als auch die ökologische/externe Validität der Forschung beeinträchtigen, und zwar sowohl in der Forschung vom Typ I als auch vom Typ II (Abschnitt 2.1). Sie kann sich negativ auf den Nutzen von Instrumenten auswirken (Radlinski et al., 2011) und die Quantifizierung von Phänomenen in den Daten verzerren.</li>
@@ -1021,47 +1221,59 @@ div.csl-indent {
 <li>Die Art und Weise, wie man Datensätze entlang der zeitlichen Achsen aggregiert und abschneidet, wirkt sich darauf aus, welche Art von Mustern beobachtet werden und welche Forschungsfragen beantwortet werden können.</li>
 <li>Dies kann manchmal die Ergebnisse verzerren, aber Redundanz kann auch ein Signal an sich sein, z. B. kann das erneute Posten ein Signal für Wichtigkeit sein.</li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="sneak-preview-in-die-nächste-sitzung" class="level2">
-<h2 class="anchored" data-anchor-id="sneak-preview-in-die-nächste-sitzung">Sneak Preview in die nächste Sitzung</h2>
-<section id="datenerhebung-im-fokus" class="level4">
-<h4 class="anchored" data-anchor-id="datenerhebung-im-fokus">Datenerhebung im Fokus</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/bias_framework_without_legend_v3.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<div class="notes">
+<section id="sneak-preview-in-die-nächste-sitzung" class="slide level2">
+<h2>Sneak Preview in die nächste Sitzung</h2>
+<h4 id="datenerhebung-im-fokus">Datenerhebung im Fokus</h4>
+
+<img data-src="images/bias_framework_without_legend_v3.png" class="r-stretch quarto-figure-center"><aside class="notes">
 <ul>
 <li><p>Um diese Probleme in das umfassendere Konzept der Datenqualität einzuordnen, geben wir zunächst einen kurzen Überblick über bekannte Probleme der Datenqualität.</p></li>
 <li><p><strong>Datenqualität</strong> ist ein vielschichtiges Konzept, typische Elemente sind <em>Genauigkeit, Vollständigkeit, Konsistenz, Aktualität</em> und <em>Zugänglichkeit.</em></p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <!--# Obere Box markieren/hervorheben! -->
-</section>
-</section>
-</section>
-<section id="wichtige-rahmenbedingungen-von-dbd" class="level1" data-background-color="#E6002E">
-<h1 data-background-color="#E6002E">Wichtige Rahmenbedingungen von DBD</h1>
+</section></section>
+<section>
+<section id="wichtige-rahmenbedingungen-von-dbd" class="title-slide slide level1 center" data-background-color="#E6002E">
+<h1>Wichtige Rahmenbedingungen von DBD</h1>
 <p>Ethik &amp; Recht im Fokus</p>
-<section id="erweiterung-des-blickwinkels" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="erweiterung-des-blickwinkels">Erweiterung des Blickwinkels</h2>
-<section id="ethische-erwägungen-bei-dbd-forschung" class="level4">
-<h4 class="anchored" data-anchor-id="ethische-erwägungen-bei-dbd-forschung">Ethische Erwägungen bei DBD-Forschung</h4>
-<p><strong>Aus öffentlicher Zugänglich- bzw. Verfügbarkeit von Daten leitet sich nicht automatisch ethische Verwertbarkeit ab</strong> <span class="citation" data-cites="zimmer2010 boyd2012">(<a href="#ref-boyd2012" role="doc-biblioref">boyd &amp; Crawford, 2012</a>; <a href="#ref-zimmer2010" role="doc-biblioref">Zimmer, 2010</a>)</span></p>
+</section>
+<section id="erweiterung-des-blickwinkels" class="slide level2 smaller">
+<h2>Erweiterung des Blickwinkels</h2>
+<h4 id="ethische-erwägungen-bei-dbd-forschung">Ethische Erwägungen bei DBD-Forschung</h4>
+<p><strong>Aus öffentlicher Zugänglich- bzw. Verfügbarkeit von Daten leitet sich nicht automatisch ethische Verwertbarkeit ab</strong> <span class="citation" data-cites="zimmer2010 boyd2012">(<a href="#/literatur" role="doc-biblioref" onclick="">boyd &amp; Crawford, 2012</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Zimmer, 2010</a>)</span></p>
 <ul>
-<li><p>Verletzung der Privatsphäre der Nutzer <span class="citation" data-cites="goroff2015">(<a href="#ref-goroff2015" role="doc-biblioref">Goroff, 2015</a>)</span></p></li>
-<li><p>Ermöglichung von rassischem, sozioökonomischem oder geschlechtsspezifischem Profiling <span class="citation" data-cites="barocas2016">(<a href="#ref-barocas2016" role="doc-biblioref">Barocas &amp; Selbst, 2016</a>)</span></p></li>
+<li><p>Verletzung der Privatsphäre der Nutzer <span class="citation" data-cites="goroff2015">(<a href="#/literatur" role="doc-biblioref" onclick="">Goroff, 2015</a>)</span></p></li>
+<li><p>Ermöglichung von rassischem, sozioökonomischem oder geschlechtsspezifischem Profiling <span class="citation" data-cites="barocas2016">(<a href="#/literatur" role="doc-biblioref" onclick="">Barocas &amp; Selbst, 2016</a>)</span></p></li>
 </ul>
-<section id="negative-beispiele" class="level5">
-<h5 class="anchored" data-anchor-id="negative-beispiele"><strong>Negative Beispiele</strong></h5>
+<h5 id="negative-beispiele"><strong>Negative Beispiele</strong></h5>
 <ul>
-<li><p><strong>Facebook contagion experiment (</strong>2012-2014): Feeds von Nutzer*Innen so manipulierten, dass sie je nach den geäußerten Emotionen mehr oder weniger von bestimmten Inhalten enthielten <span class="citation" data-cites="kramer2014">(<a href="#ref-kramer2014" role="doc-biblioref">Kramer et al., 2014</a>)</span></p></li>
-<li><p><strong>Encore-Forschungsprojekt</strong>: Messung der Internetzensur auf der ganzen Welt, bei der Webbrowser angewiesen wurden, zu versuchen, sensible Webinhalte ohne das Wissen oder die Zustimmung der Nutzer herunterzuladen <span class="citation" data-cites="burnett2014">(<a href="#ref-burnett2014" role="doc-biblioref">Burnett &amp; Feamster, 2014</a>)</span></p></li>
+<li><p><strong>Facebook contagion experiment (</strong>2012-2014): Feeds von Nutzer*Innen so manipulierten, dass sie je nach den geäußerten Emotionen mehr oder weniger von bestimmten Inhalten enthielten <span class="citation" data-cites="kramer2014">(<a href="#/literatur" role="doc-biblioref" onclick="">Kramer et al., 2014</a>)</span></p></li>
+<li><p><strong>Encore-Forschungsprojekt</strong>: Messung der Internetzensur auf der ganzen Welt, bei der Webbrowser angewiesen wurden, zu versuchen, sensible Webinhalte ohne das Wissen oder die Zustimmung der Nutzer herunterzuladen <span class="citation" data-cites="burnett2014">(<a href="#/literatur" role="doc-biblioref" onclick="">Burnett &amp; Feamster, 2014</a>)</span></p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Hintergrund:</p>
 <ul>
 <li>Ethische Fragen bisher epistemische Bedenken (Verwendung von nicht schlüssigen oder fehlgeleiteten Beweisen), jetzt normativ Bedenken (Folgen der Forschung)</li>
@@ -1077,20 +1289,27 @@ div.csl-indent {
 <li><p>zentrales Spannungsverhältnis in der Forschungsethik digitaler Daten dargestellt.</p></li>
 <li><p>Anschließend wird die Diskussion spezifischer ethischer Probleme in der Sozialdatenforschung im Hinblick auf drei grundlegende Kriterien gegliedert, die im Belmont-Bericht (Ryan et al., 1978), einem grundlegenden Werk zur Forschungsethik, vorgebracht wurden: Autonomie (Abschnitt 9.2), Wohltätigkeit (Abschnitt 9.3) und Gerechtigkeit (Abschnitt 9.4).</p></li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-</section>
-<section id="ein-schmaler-grat" class="level2">
-<h2 class="anchored" data-anchor-id="ein-schmaler-grat">Ein schmaler Grat</h2>
-<section id="forschungethik-bei-digitalen-daten" class="level4">
-<h4 class="anchored" data-anchor-id="forschungethik-bei-digitalen-daten">Forschungethik bei digitalen Daten</h4>
+<section id="ein-schmaler-grat" class="slide level2">
+<h2>Ein schmaler Grat</h2>
+<h4 id="forschungethik-bei-digitalen-daten">Forschungethik bei digitalen Daten</h4>
 <p><strong>Hintergrund</strong>: <em>Die Herausforderung besteht in der Kombination von zwei extremen Sichtweisen, der Betrachtung der Forschung mit sozialen Daten als “klinische” Forschung oder als Computerforschung</em></p>
 <ul>
 <li><p>Die Sozialdatenforschung <strong>unterscheidet sich von klinischen Versuchen</strong>.</p></li>
 <li><p><strong>Ethische Entscheidungen</strong> in der Sozialdatenforschung müssen <strong>gut überlegt sein</strong>, da oft sind mehrere Werte betroffen, die miteinander in Konflikt stehen können</p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Hintergrund:</p>
 <ol type="1">
 <li><p>Die Sozialdatenforschung ähnelt klinischen Versuchen und anderen Experimenten am Menschen in ihrer Fähigkeit, Menschen zu schaden, und sollte daher auch als solche reguliert werden</p></li>
@@ -1098,13 +1317,21 @@ div.csl-indent {
 </ol>
 <p>Punkt 2: Schäden, die die üblichen Arten der Sozialdatenforschung ( z. B. die Verletzung der Privatsphäre oder der Anblick verstörender Bilder)verursachen können, oft nicht mit Schäden von klinischen Versuchen gleichzusetzen</p>
 <p>Punkt 3: Datenanalyse beispielsweise erforderlich sein, um wichtige Dienste bereitzustellen, und es sollten Lösungen erwogen werden, die ein Gleichgewicht zwischen Datenschutz und Genauigkeit herstellen (Goroff, 2015).</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-</section>
-<section id="achtung-der-individuellen-autonomie" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="achtung-der-individuellen-autonomie">Achtung der individuellen Autonomie</h2>
-<section id="diskussion-der-informierte-zustimmung-als-indikator-autonomer-entscheidung" class="level4">
-<h4 class="anchored" data-anchor-id="diskussion-der-informierte-zustimmung-als-indikator-autonomer-entscheidung">Diskussion der Informierte Zustimmung als Indikator autonomer Entscheidung</h4>
+<section id="achtung-der-individuellen-autonomie" class="slide level2 smaller">
+<h2>Achtung der individuellen Autonomie</h2>
+<h4 id="diskussion-der-informierte-zustimmung-als-indikator-autonomer-entscheidung">Diskussion der Informierte Zustimmung als Indikator autonomer Entscheidung</h4>
 <p><strong>Die Einwilligung nach Aufklärung setzt voraus, dass</strong></p>
 <ol type="1">
 <li>die Forscher*Innen den potenziellen Teilnehmenden alle <strong>relevanten Informationen offenlegen</strong>;</li>
@@ -1114,67 +1341,85 @@ div.csl-indent {
 <li>die Teilnehmende die Möglichkeit haben, ihre <strong>Einwilligung jederzeit zurückzuziehen</strong>.</li>
 </ol>
 <p><br></p>
-<section id="potentielle-probleme-7" class="level5">
-<h5 class="anchored" data-anchor-id="potentielle-probleme-7"><strong>Potentielle Probleme</strong></h5>
+<h5 id="potentielle-probleme-7"><strong>Potentielle Probleme</strong></h5>
 <ul>
 <li><p>Die <strong>Zustimmung</strong> von <strong>Millionen</strong> von Nutzern einzuholen ist <strong>unpraktisch</strong>.</p></li>
-<li><p>Das <strong>öffentliche Teilen</strong> von Inhalten im Internet <strong>bedeutet nicht</strong> unbedingt eine <strong>Zustimmung</strong> zur Forschung<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a>.</p></li>
+<li><p>Das <strong>öffentliche Teilen</strong> von Inhalten im Internet <strong>bedeutet nicht</strong> unbedingt eine <strong>Zustimmung</strong> zur Forschung<sup>1</sup>.</p></li>
 <li><p>Die <strong>Nutzungsbedingungen</strong> sozialer Plattformen stellen möglicherweise <strong>keine informierte Zustimmung</strong> zur Forschung dar.</p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Beispiel 1:</p>
 <ul>
 <li><p>Häufig keine Zustimmung bei Studien mit Daten von Millionen von Social-Media-Nutzern (Zimmer, 2010; Hutton und Henderson, 2015a)</p></li>
 <li><p>Obwohl die Einholung der Zustimmung oft als unpraktisch angesehen wird (Boyd und Crawford, 2012), gibt es Bemühungen, Methoden zur Einholung der Zustimmung zu entwickeln, die den Aufwand für die Teilnehmer möglichst gering halten (Hutton und Henderson, 2015a).</p></li>
 </ul>
-</div>
-</section>
-</section>
-</section>
-<section id="wohltätigkeit-und-unschädlichkeit-als-ziel" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="wohltätigkeit-und-unschädlichkeit-als-ziel">Wohltätigkeit und Unschädlichkeit als Ziel</h2>
-<section id="bewertung-von-risken-nutzen" class="level4">
-<h4 class="anchored" data-anchor-id="bewertung-von-risken-nutzen">Bewertung von Risken &amp; Nutzen</h4>
-<p><strong>Hintergrund</strong>: <em>Nicht nur Fokus auf den Nutzen der Forschung, sondern auch auf die möglichen Arten von Schäden, die betroffenen Gruppen und die Art und Weise, wie nachteilige Auswirkungen getestet werden können .</em><span class="citation" data-cites="sweeney2013">(<a href="#ref-sweeney2013" role="doc-biblioref">Sweeney, 2013</a>)</span></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn24"><p>Datenschutzpräferenzen hängen häufig von Lebensumständen ab (Crawford und Finn, 2014)</p></li></ol></aside></section>
+<section id="wohltätigkeit-und-unschädlichkeit-als-ziel" class="slide level2 smaller">
+<h2>Wohltätigkeit und Unschädlichkeit als Ziel</h2>
+<h4 id="bewertung-von-risken-nutzen">Bewertung von Risken &amp; Nutzen</h4>
+<p><strong>Hintergrund</strong>: <em>Nicht nur Fokus auf den Nutzen der Forschung, sondern auch auf die möglichen Arten von Schäden, die betroffenen Gruppen und die Art und Weise, wie nachteilige Auswirkungen getestet werden können .</em><span class="citation" data-cites="sweeney2013">(<a href="#/literatur" role="doc-biblioref" onclick="">Sweeney, 2013</a>)</span></p>
 <p><br></p>
-<section id="potentielle-probleme-8" class="level6">
-<h6 class="anchored" data-anchor-id="potentielle-probleme-8">Potentielle Probleme</h6>
+<h6 id="potentielle-probleme-8">Potentielle Probleme</h6>
 <ul>
-<li><p><strong>Daten</strong> über <strong>Einzelpersonen</strong> können ihnen <strong>schaden, wenn</strong> sie <strong>offengelegt</strong> werden<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a><a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a>.</p></li>
-<li><p><strong>Forschungsergebnisse</strong> <strong>können</strong> verwendet werden, um <strong>Schaden</strong> anzurichten<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a>.</p></li>
-<li><p><strong>“Dual-Use”- und Sekundäranalysen</strong> sind in der Sozialdatenforschung <strong>immer</strong> <strong>häufiger</strong> anzutreffen<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a>.</p></li>
+<li><p><strong>Daten</strong> über <strong>Einzelpersonen</strong> können ihnen <strong>schaden, wenn</strong> sie <strong>offengelegt</strong> werden<sup>1</sup><sup>2</sup>.</p></li>
+<li><p><strong>Forschungsergebnisse</strong> <strong>können</strong> verwendet werden, um <strong>Schaden</strong> anzurichten<sup>3</sup>.</p></li>
+<li><p><strong>“Dual-Use”- und Sekundäranalysen</strong> sind in der Sozialdatenforschung <strong>immer</strong> <strong>häufiger</strong> anzutreffen<sup>4</sup>.</p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>Die Forschung zu sozialen Daten wird mit bestimmten Arten von Schäden in Verbindung gebracht, von denen die Verletzung der Privatsphäre vielleicht die offensichtlichste ist (Zimmer, 2010; Crawford und Finn, 2014).</p>
 <p>Beispiel 1: Einige prominente Beispiele sind die Datenpanne bei Ashley Madison im Jahr 2015, bei der einer Website, die sich als Dating-Netzwerk für betrügerische Ehepartner anpreist, Kontoinformationen (einschließlich der vollständigen Namen der Nutzer) gestohlen und online gestellt wurden (Thomsen, 2015), sowie die jüngsten Datenpannen bei Facebook, bei denen Hunderte Millionen von Datensätzen mit Kommentaren, Likes, Reaktionen, Kontonamen, App-Passwörtern und mehr öffentlich gemacht wurden.</p>
-</div>
-</section>
-</section>
-</section>
-<section id="faire-verteilung-von-risiken-nutzen" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="faire-verteilung-von-risiken-nutzen">Faire Verteilung von Risiken &amp; Nutzen</h2>
-<section id="recht-gerechtigkeit" class="level4">
-<h4 class="anchored" data-anchor-id="recht-gerechtigkeit">Recht &amp; Gerechtigkeit</h4>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn25"><p>Stalking, Diskriminierung, Erpressung oder Identitätsdiebstahl (Gross und Acquisti, 2005).</p></li><li id="fn26"><p>Zu lange Archivierung personenbezogener Daten oder die öffentliche Freigabe schlecht anonymisierter Datensätze kann zu Verletzungen der Privatsphäre führen, da diese Daten mit anderen Quellen kombiniert werden können, um Erkenntnisse über Personen ohne deren Wissen zu gewinnen (Crawford und Finn, 2014; Goroff, 2015; Horvitz und Mulligan, 2015)</p></li><li id="fn27"><p>Abgesehen von der Tatsache, dass aus sozialen Daten gezogene Rückschlüsse in vielerlei Hinsicht falsch sein können, wie in dieser Studie hervorgehoben wird, können zu präzise Rückschlüsse dazu führen, dass Menschen in immer kleinere Gruppen eingeteilt werden können (Barocas, 2014).</p></li><li id="fn28"><p>Daten, Instrumente und Schlussfolgerungen, die für einen bestimmten Zweck gewonnen wurden, für einen anderen Zweck verwendet werden (Hovy und Spruit, 2016; Benton et al., 2017)</p></li></ol></aside></section>
+<section id="faire-verteilung-von-risiken-nutzen" class="slide level2 smaller">
+<h2>Faire Verteilung von Risiken &amp; Nutzen</h2>
+<h4 id="recht-gerechtigkeit">Recht &amp; Gerechtigkeit</h4>
 <p><strong>Annahme</strong>: <em>Es ist von Anfang an bekannt, wer durch die Forschung belastet wird und wer von den Ergebnissen profitieren wird.</em></p>
 <p><br></p>
-<section id="potentielle-probleme-9" class="level6">
-<h6 class="anchored" data-anchor-id="potentielle-probleme-9">Potentielle Probleme</h6>
+<h6 id="potentielle-probleme-9">Potentielle Probleme</h6>
 <ul>
-<li><p>Die <strong>digitale Kluft</strong> kann das Forschungsdesign beeinflussen<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> (Stichwort: WEIRD Samples)</p></li>
+<li><p>Die <strong>digitale Kluft</strong> kann das Forschungsdesign beeinflussen<sup>1</sup> (Stichwort: WEIRD Samples)</p></li>
 <li><p><strong>Algorithmen</strong> und Forschungsergebnisse können zu <strong>Diskriminierung</strong> führen.</p></li>
-<li><p><strong>Forschungsergebnisse</strong> sind möglicherweise <strong>nicht</strong> allgemein <strong>zugänglich</strong><a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a>.</p></li>
-<li><p>Nicht alle <strong>Interessengruppen</strong> werden über die Verwendung von Forschungsergebnissen konsultiert<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a>.</p></li>
+<li><p><strong>Forschungsergebnisse</strong> sind möglicherweise <strong>nicht</strong> allgemein <strong>zugänglich</strong><sup>2</sup>.</p></li>
+<li><p>Nicht alle <strong>Interessengruppen</strong> werden über die Verwendung von Forschungsergebnissen konsultiert<sup>3</sup>.</p></li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>🔔-&gt; Plausibilität der Annahme?</p>
-</div>
-</section>
-</section>
-</section>
-<section id="zwei-trends-drei-fragen-vier-empfehlungen" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="zwei-trends-drei-fragen-vier-empfehlungen">Zwei Trends, Drei Fragen, Vier Empfehlungen</h2>
-<section id="zusammenfassung-und-ausblick" class="level4">
-<h4 class="anchored" data-anchor-id="zusammenfassung-und-ausblick">Zusammenfassung und Ausblick</h4>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn29"><p>Data divide: mangelnde Verfügbarkeit von hochwertigen Daten über Entwicklungsländer und unterprivilegierte Gemeinschaften (Cinnamon und Schuurman, 2013).</p></li><li id="fn30"><p><strong>Idealerweise sollten die Menschen Zugang zu den Forschungsergebnissen und Artefakten haben, die aus der Untersuchung ihrer persönlichen Daten entstanden sind (Gross und Acquisti, 2005; Crawford und Finn, 2014).</strong></p></li><li id="fn31"><p>In die Überlegungen darüber, wie, für wen und wann Forschungsergebnisse umgesetzt werden, sollten diejenigen einbezogen werden, die möglicherweise betroffen sind oder deren Daten verwendet werden (Costanza-Chock, 2018; Design Justice, 2018; Green, 2018)</p></li></ol></aside></section>
+<section id="zwei-trends-drei-fragen-vier-empfehlungen" class="slide level2 smaller">
+<h2>Zwei Trends, Drei Fragen, Vier Empfehlungen</h2>
+<h4 id="zusammenfassung-und-ausblick">Zusammenfassung und Ausblick</h4>
 <p><strong>Trend 1: Eine zunehmende Skepsis gegenüber einfachen Antworten</strong></p>
 <ol type="1">
 <li><p>Wie einstehen die Daten, was enthalten sie tatsächlich und wie die Arbeitsdatensätze zusammengestellt?</p></li>
@@ -1188,52 +1433,72 @@ div.csl-indent {
 <li><p>DBD-Studien auf v<strong>erschiedene Plattformen, Themen, Zeitpunkte und Teilpopulationen auszuweiten</strong>, um festzustellen, wie sich die Ergebnisse beispielsweise in verschiedenen kulturellen, demografischen und verhaltensbezogenen Kontexten unterscheiden</p></li>
 <li><p><strong>Transparenzmechanismen</strong> zu schaffen, die es ermöglichen, soziale Software zu überprüfen und Verzerrungen in sozialen Daten an der Quelle zu evaluieren</p></li>
 <li><p><strong>Forschung</strong> zu diesen Leitlinien, Standards, Methoden und Protokollen <strong>auszuweiten</strong> und ihre Übernahme zu fördern.</p>
-<div class="notes">
+<aside class="notes">
 <p>Schließlich gibt es angesichts der Komplexität der inhärent kontextabhängigen, anwendungs- und bereichsabhängigen Verzerrungen und Probleme in sozialen Daten und Analysepipelines, die in diesem Papier behandelt werden, keine Einheitslösungen - bei der Bewertung und Bekämpfung von Verzerrungen ist Nuancierung entscheidend.</p>
-</div></li>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside></li>
 </ol>
-</section>
-</section>
-</section>
-<section id="group-activity" class="level1">
+</section></section>
+<section>
+<section id="group-activity" class="title-slide slide level1 center">
 <h1>Group Activity</h1>
 <p>Offene Fragen und Diskussion</p>
-<section id="vielen-dank-für-ihre-fragen" class="level2">
-<h2 class="anchored" data-anchor-id="vielen-dank-für-ihre-fragen">Vielen Dank für Ihre Fragen!</h2>
-<blockquote class="blockquote">
+</section>
+<section id="vielen-dank-für-ihre-fragen" class="slide level2">
+<h2>Vielen Dank für Ihre Fragen!</h2>
+<blockquote>
 <p>Wie wird mit ungenauen, verzerrten und/oder unvollständigen digitalen Verhaltensdaten umgegangen? Was passiert mit ihnen?</p>
 </blockquote>
 <ul>
 <li>Bereinigen –&gt; Validieren –&gt; Bereinigen –&gt; Validieren …</li>
 </ul>
 <p><br></p>
-<blockquote class="blockquote">
+<blockquote>
 <p>Was versteht man unter der Herausforderung des Privacy-Utility-Trade-Off und wie kann dieses “Problem” bewältigt werden?</p>
 </blockquote>
 <ul>
 <li>Leider kein Zugang zur Quelle, Antwort “verschoben”</li>
 </ul>
-<div class="notes">
+<aside class="notes">
 <p>We consider a privacy-utility trade-off <strong>encountered by users who wish to disclose some information to an analyst, that is correlated with their private data, in the hope of receiving some utility</strong>.</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="was-denken-sie-1" class="level2">
-<h2 class="anchored" data-anchor-id="was-denken-sie-1">Was denken Sie?</h2>
+<section id="was-denken-sie-1" class="slide level2">
+<h2>Was denken Sie?</h2>
 <div class="fragment shrink semi-fade-out" data-fragment-index="1">
-<blockquote class="blockquote">
+<blockquote>
 <p>Nutzer sind sich oftmals nicht bewusst, dass ihre Posts/Tweets zu Forschungszwecken verwendet werden.</p>
 <p>Sollten im Sinne der Transparenz von Vornherein mehr Informationen zur Verwendung von Daten gegeben werden? Würde dieses tatsächliche Wissen etwas am Verhalten/Akzeptanz der Datenerhebung der Nutzer ändern?</p>
 </blockquote>
 </div>
 <div class="fragment" data-fragment-index="1">
-<blockquote class="blockquote">
+<blockquote>
 <p>Da die Daten der Nutzer meist ohne Ihr aktives Wissen darüber erhoben werden ist ihr Verhalten sehr nah an der Realität. Würde eine bessere Information und Transparenz über das mitschreiben der Daten Ihr Verhalten beeinflussen und verfälschen? Kann dies bereits durch Benachrichtigungen wie “Coockies” der Fall sein?</p>
 </blockquote>
 </div>
 </section>
-<section id="lets-discuss" class="level2">
-<h2 class="anchored" data-anchor-id="lets-discuss">Let’s discuss!</h2>
-<blockquote class="blockquote">
+<section id="lets-discuss" class="slide level2">
+<h2>Let’s discuss!</h2>
+<blockquote>
 <p>Es gibt Individuen, die sich nicht im digitalen Raum bewegen und somit in den Daten nicht erfasst werden können. Dadurch können bestimmte Gruppen nicht untersucht werden, was zu verzerrten Daten führt. Welche Möglichkeiten hat man dieses Problem zu umgehen.</p>
 </blockquote>
 <ul>
@@ -1245,21 +1510,23 @@ div.csl-indent {
 </ul>
 </div>
 </section>
-<section id="lets-discuss-1" class="level2">
-<h2 class="anchored" data-anchor-id="lets-discuss-1">Let’s discuss!</h2>
-<blockquote class="blockquote">
+<section id="lets-discuss-1" class="slide level2">
+<h2>Let’s discuss!</h2>
+<blockquote>
 <p>Wenn Unternehmen bei der Verwendung unserer Verhaltensdaten Profit erwirtschaften, sollten wir dann nicht auch etwas daran verdienen?</p>
 </blockquote>
 <ul>
 <li><p>Was denken Sie?</p></li>
 <li><p>Wie könnten/sollte ein potentielles Bezahlungssystem aussehen?</p></li>
 </ul>
+</section></section>
+<section>
+<section id="bis-zur-nächsten-sitzung" class="title-slide slide level1 center" data-background-color="#04316a">
+<h1>Bis zur nächsten Sitzung!</h1>
+
 </section>
-</section>
-<section id="bis-zur-nächsten-sitzung" class="level1" data-background-color="#04316a">
-<h1 data-background-color="#04316a">Bis zur nächsten Sitzung!</h1>
-<section id="literatur" class="level2">
-<h2 class="anchored" data-anchor-id="literatur">Literatur</h2>
+<section id="literatur" class="slide level2 smaller scrollable">
+<h2>Literatur</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
 <div id="ref-anderson2008" class="csl-entry" role="doc-biblioentry">
 Anderson, C. (2008). The end of theory: The data deluge makes the scientific method obsolete. <em>Wired</em>. <a href="https://www.wired.com/2008/06/pb-theory/">https://www.wired.com/2008/06/pb-theory/</a>
@@ -1318,202 +1585,356 @@ Zimmer, M. (2010). <span>“</span>But the data is already public<span>”</span
 </div>
 
 
-</section>
-</section>
+<img src="../../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><a href="https://chrdrn.github.io/digital-behavioral-data/">Digital Behavioral Data</a></p>
+</div>
+</section></section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><em>Signifikant mehr Twitter-Nutzer (Mislove et al.&nbsp;,2011), bei Pinterest tendenziell Nutzerinnen überrepräsentiert (Ottoni et al., 2013)</em><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><em>Unterschiedliche Twitter-Nutzung in Deutschland (Fokus auf Hashtags) und Korea (Fokus auf Konversationen) (Hong et al., 2011)</em><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><em>Angabe über Alumni-Status einer bestimmten Gruppe von Universitäten als Quelle für Verzerrung bei Meinung junger Hochschulabsolvent*Innen zu einem neuen Gesetz (Ruths und Pfeffer, 2014)</em><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p><em>Interaktionsmuster viel spärlicher als explizit erstellte soziale Verbindungen (20 % der Verbindungen haben 80 % der Interaktionen) (Wilson et al., 2009)</em><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p><em>Passivität trotz Interesse an bestimmten Themen (Gong et al., 2016), aber: Aktivität nicht sichtbar oder Selbstzensur (Wang et al., 2011; Das und Kramer, 2013; Matias et al., 2015)?</em><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p><em>Nutzer*Innen reden eher über extreme oder positive Erfahrungen als über gewöhnliche oder negative Erfahrungen (Kícíman, 2012; Guerra et al., 2014). (response bias)</em><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p><em>75 % der Foursquare-Check-ins stimmen nicht mit der tatsächlichen Mobilität der Nutzer übereinstimmen (Zhang et al., 2013)</em><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p><em>Saisonale Schwankungen in der sprachlichen Zusammensetzung zwischen verschiedenen Gebiete (Länder, Regionen, Nachbarschaften etc.) (Mocanu et al., 2013)</em><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p><em>Mütter und Väter verwenden auf Facebook jeweils unterschiedliche Ansprache für Töchter &amp; Söhne, und umgekehrt. (Burke et al., 2013)</em><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p><em>“Experten”-Nutzer auf Twitter neigen dazu, hauptsächlich Inhalte zu ihrem Fachgebiet zu erstellen (Bhattacharya et al., 2014)</em><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p><em>Diaz et al.&nbsp;(2016) bei der Auswahl politischer Tweets während der US-Wahlen 2012 fest, dass die Nutzerpopulation eher auf Washington, DC, ausgerichtet war, während Olteanu et al.&nbsp;(2016) feststellten, dass Afroamerikaner eher den Twitter-Hashtag #BlackLivesMatter (über eine große Bewegung zur Rassengleichheit in den USA) verwendeten.</em><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p><em>Anzahl der Follower der Nutzer*Innen (Kıcıman, 2010)</em><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p><em>Altersspezifische Distanzen in sozialen Netzwerken (Dong et al., 2016)</em><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p><em>Homophilie - die Tendenz ähnlicher Menschen, miteinander zu interagieren und sich zu verbinden (McPherson et al., 2001)</em><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p><em>Auf expliziten Verbindungen basierende Netzwerk deutlich dichter war als das auf Nutzerinteraktionen basierende (Wilson et al., 2009)</em><a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p><em>Geografie (Poblete et al., 2011; Scellato et al., 2011)</em><a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p><em>Art und die Dynamik der Offline-Beziehungen die Neigung der Nutzer, soziale Bindungen einzugehen und online zu interagieren (Subrahmanyam et al., 2008; Gilbert und Karahalios, 2009).</em><a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn18"><p><em>Schwankungen in Bezug darauf, wann und wie lange sich die Nutzer*Innen auf bestimmte Themen konzentrieren, was durch aktuelle Trends, saisonale oder periodische Aktivitäten oder sogar durch Lärm ausgelöst werden kann (Radinsky et al., 2012).</em><a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn19"><p><em>Drei Arten von zeitlichen Schwankungen: Populationsdrift, Verhaltensdrift und Systemdrift.(Salganik, 2017)</em><a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn20"><p><em>Unterschiedliche zeitliche Kontexte (Tag vs.&nbsp;Nacht, Wochentag vs.&nbsp;Wochenende) verändert die Form der abgeleiteten Nachbarschaftsgrenzen eografisch verorteter Tweets (Kıcıman et al., 2014).</em><a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn21"><p><em>Zusammenhänge zwischen der Stimmung von Tweets und Schlafzyklen und Saisonalität (Golder und Macy, 2011)</em><a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn22"><p><em>Einführung einer neuen Plattformfunktion resutliert in plötzlichen Anstieg der Aktivität (Malik und Pfeffer, 2016)</em><a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn23"><p><em>Nutzer ihre Inhalte und Konten löschen (Liu et al., 2014; Gillespie, 2015)</em><a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn24"><p>Datenschutzpräferenzen hängen häufig von Lebensumständen ab (Crawford und Finn, 2014)<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn25"><p>Stalking, Diskriminierung, Erpressung oder Identitätsdiebstahl (Gross und Acquisti, 2005).<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn26"><p>Zu lange Archivierung personenbezogener Daten oder die öffentliche Freigabe schlecht anonymisierter Datensätze kann zu Verletzungen der Privatsphäre führen, da diese Daten mit anderen Quellen kombiniert werden können, um Erkenntnisse über Personen ohne deren Wissen zu gewinnen (Crawford und Finn, 2014; Goroff, 2015; Horvitz und Mulligan, 2015)<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn27"><p>Abgesehen von der Tatsache, dass aus sozialen Daten gezogene Rückschlüsse in vielerlei Hinsicht falsch sein können, wie in dieser Studie hervorgehoben wird, können zu präzise Rückschlüsse dazu führen, dass Menschen in immer kleinere Gruppen eingeteilt werden können (Barocas, 2014).<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn28"><p>Daten, Instrumente und Schlussfolgerungen, die für einen bestimmten Zweck gewonnen wurden, für einen anderen Zweck verwendet werden (Hovy und Spruit, 2016; Benton et al., 2017)<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn29"><p>Data divide: mangelnde Verfügbarkeit von hochwertigen Daten über Entwicklungsländer und unterprivilegierte Gemeinschaften (Cinnamon und Schuurman, 2013).<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn30"><p><strong>Idealerweise sollten die Menschen Zugang zu den Forschungsergebnissen und Artefakten haben, die aus der Untersuchung ihrer persönlichen Daten entstanden sind (Gross und Acquisti, 2005; Crawford und Finn, 2014).</strong><a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn31"><p>In die Überlegungen darüber, wie, für wen und wann Forschungsergebnisse umgesetzt werden, sollten diejenigen einbezogen werden, die möglicherweise betroffen sind oder deren Daten verwendet werden (Costanza-Chock, 2018; Design Justice, 2018; Green, 2018)<a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-  function tippyHover(el, contentFn) {
-    const config = {
-      allowHTML: true,
-      content: contentFn,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start'
-    };
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      return note.innerHTML;
-    });
-  }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
-});
-</script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2022, Christoph Adrian</div>   
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/chrdrn/digital-behavioral-data">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/chrdrn">
-      <i class="bi bi-twitter" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
     </div>
   </div>
-</footer>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
 
+  <script src="../../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
 
 </body></html>

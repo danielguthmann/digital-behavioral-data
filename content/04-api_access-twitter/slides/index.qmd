@@ -1,0 +1,251 @@
+---
+title: "API-Access - Twitter " 
+title-slide-attributes:
+  #data-background-image: ../../background_title-dimmed_red_light.png
+  data-background-color: "#04316a"
+subtitle: "Digital behavioral data - Session 04"
+author: 
+  - name: Christoph Adrian 
+    url: https://twitter.com/chrdrn
+    affiliation: Lehrstuhl für Kommunikationswissenschaft
+    affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
+date: 09 11 2022
+date-format: "DD.MM.YYYY"
+format:
+  revealjs:
+    theme: ../../slidetheme.scss
+    template-partials:
+      - title-slide.html
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: ../../logo.png
+    footer: "[Digital Behavioral Data](https://chrdrn.github.io/digital-behavioral-data/)"
+comments:
+  hypothesis: 
+    theme: clean
+filters:
+  - roughnotation
+execute:
+  echo: true
+csl: ../../apa.csl
+---
+
+## Seminarplan {.smaller}
+
+| Sitzung                                              | Datum                                                         | Thema                                                                            | Referent\*Innen                                                     |
+|------------------|------------------|-------------------|------------------|
+| [1]{.rn rn-type="strike-through" rn-color="#E6002E"} | [26.10.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Kick-Off Session]{.rn rn-type="strike-through" rn-color="#E6002E"}              | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
+| [2]{.rn rn-type="strike-through" rn-color="#E6002E"} | [02.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Einführung und Überblick]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
+| [3]{.rn rn-type="strike-through" rn-color="#E6002E"} | [09.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Datenerhebung]{.rn rn-type="strike-through" rn-color="#E6002E"}            | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
+| [**4**]{.rn rn-type="highlight"}                     | [**16.11.2022**]{.rn rn-type="highlight"}                     | [**API-Access (I): *Twitter***]{.rn rn-type="highlight"}                         | [Falk]{.rn rn-type="highlight"}                                     |
+| 5                                                    | 23.11.2022                                                    | API-Access (II): *YouTube*                                                       | Denisov                                                             |
+| 6                                                    | 30.11.2022                                                    | API-Access (II): *Reddit*                                                        | Landauer                                                            |
+| 7                                                    | 07.12.2022                                                    | Webscraping: *TikTok*                                                            | Brand & Kocher                                                      |
+| 8                                                    | 14.12.2022                                                    | Exkurs: DBD Analyse mit R                                                        | Christoph Adrian                                                    |
+|                                                      |                                                               | *WEIHNACHTSPAUSE*                                                                |                                                                     |
+| 9                                                    | 12.01.2023                                                    | ESM: *m-path*                                                                    | Dörr                                                                |
+| 10                                                   | 19.01.2023                                                    | Data Donations                                                                   | Hofmann & Wierzbicki                                                |
+| 11                                                   | 26.01.2023                                                    | *PUFFER*                                                                         |                                                                     |
+| 12                                                   | 02.02.2023                                                    | ***Guest Lecture: Linking DBD & Survey data***                                   | [Johannes Breuer](https://www.johannesbreuer.com/)                  |
+| 13                                                   | 09.02.2023                                                    | Semesterabschluss & Evaluation                                                   | Christoph Adrian                                                    |
+
+::: notes
+▶️
+:::
+
+# Agenda
+
+1.  **Organisation & Koordination**
+2.  **Group Activity**
+
+# Organisation & Koordination {background-color="#E6002E"}
+
+Hinweis zu den Präsentationen
+
+## Brace yourself, presentations are coming!
+
+#### Allgemeine Hinweise rund um die Präsentation
+
+<br>
+
+**📑** Denken Sie bitte an die Fragen zur Pflichtlektüre!
+
+<br>
+
+**🕦** Office Hours bzw. Feedbackgespräch nach dem Kurs
+
+<br>
+
+**🔍** Info zu den Evaluationskriterien
+
+<br>
+
+::: fragment
+**❓** [**Fragen**]{.rn rn-type="underline" rn-color="#E6002E"}
+:::
+
+::: notes
+▶️
+:::
+
+# Group Activity
+
+5 Minuten Pause, Ihre Fragen und eine kleine Gruppenarbeit
+
+## Vielen Dank für Ihre Fragen!
+
+::: {.fragment .semi-fade-out fragment-index="1"}
+> Die Vernetzung in unserer Welt nimmt immer mehr zu und Prozesse müssen perfekt aufeinander abgestimmt sein. Es gibt eine riesige Menge an verschiedenen APIs und unsere Abhängigkeit von ihnen wird zunehmend größer. **Aber wie zuverlässig sind APIs eigentlich und wie kann ein API-Missbrauch aussehen?**
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="1"}
+> Facebook und andere Plattformen haben den Zugang zu Nutzerdaten über ihr API aus Datenschutzgründen stark eingeschränkt. Jedoch kann bislang jede Organisation individuell darüber entscheiden, welche Restriktionen es in dieser Hinsicht geben soll. **Sollte es übergreifende „Regeln" für APIs geben, die von jedem einzuhalten sind? Wenn ja, könnten Verstöße strafrechtlich verfolgt werden?**
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="2"}
+> Mithilfe von APIs kann man verhältnismäßig einfach an Daten gelangen. Jedoch sind die Algorithmen hinter den Plattformen oft nicht nachvollziehbar (z.B. woher kommen personalisierte Empfehlungen). **Können die extrahierten Daten tatsächlich interpretiert werden, wenn die Entstehung nicht nachvollziehbar ist?**
+:::
+
+::: {.fragment .fade-in fragment-index="3"}
+> Web-APIs erfordern grundlegende Programmierkenntnisse, um den Zugang zu ermöglichen. Leider gibt es bislang keine effizienten Alternativen. **Gibt es potentielle Ansätze, um diese Hürde auf eine andere Art und Weise zu überwinden.**
+:::
+
+## And now ... you
+
+#### Mining Twitter-Daten
+
+1.  Erstellen Sie Ihre eigene Suchanfrage mit dem [Twitter Query Builder](https://developer.twitter.com/apitools/query?query=) von Twitter:
+
+    1.  Alle Tweets eines bestimmten Accounts seit dem 01.10.2022
+
+    2.  Alle Tweets (ohne Retweets) mit dem Hashtag #karneval oder #wokwm am letzten Wochenende
+
+    ... und ziehen sich die Tweets als .csv & .json mit Hilfe des [Tweet Downloader](https://developer.twitter.com/apitools/downloader) (benötigt Chrome, Edge oder Opera)
+
+2.  Inspizieren Sie anschließend die Datensätze und schauen Sie, welche Informationen Ihnen geliefert werden.
+
+<!--# TODO How to share BEARER Token -->
+
+<!--# TODO Add highlights -->
+
+## What do you think?
+
+#### Verschiedene Diskussionfragen
+
+-   Wie unterscheiden sich die Datenformate?
+
+-   Wie würden Sie die Daten analyiseren bzw. welche Aspekte würden Sie sich anschauen?
+
+-   Welche potentielle Fragestellungen könnten Sie auf Basis der Daten spontan entwickeln?
+
+# Beispielhafte Auswertungen
+
+Im Fokus: Karneval & Elon Musk
+
+```{r}
+#| echo: false
+
+# Load packages
+library(academictwitteR) # Collecting the data
+library(tidyverse) # Preparation of the data
+library(quanteda) # Text mining
+library(quanteda.textstats) # Text statistics
+library(quanteda.textplots) # Visualisation of text data
+library(here)
+library(sjmisc)
+library(lubridate)
+library(ggthemes)
+
+# Load data 
+tweets_karneval <- bind_tweets(
+  data_path = here("content/04-api_access-twitter/data/raw_karneval"),
+  # data_path = "data/raw_karneval",
+  output_format = "tidy") %>% 
+    mutate(
+    datetime = ymd_hms(created_at),
+    date = date(datetime),
+    hour = hour(datetime),
+    min  = minute(datetime),
+    hms  = hms::as_hms(datetime),
+    hm   = hms::parse_hm(hms)
+  )
+  
+```
+
+## #karneval I
+
+#### Hintergrund
+
+::: columns
+::: {.column width="50%"}
+-   Alle Tweets herunterladen, die `#Karneval` enthalten und zwischen 00:00 am 11.11.2022 und 12:00 am 13.12.2022 erschienen sind
+
+-   Weiterverarbeitung und Auswertung der Daten mit R
+:::
+
+::: {.column width="50%"}
+Sammlung der Daten mit R:
+
+```{r}
+#| code-line-numbers: "|2|3|4|7"
+#| eval: false
+
+get_all_tweets(
+  query = "#Karneval", 
+  start_tweets = "2022-11-11T00:00:00Z",
+  end_tweets = "2022-11-13T12:00:00Z",
+  file = "karneval",
+  data_path = "data/raw_karneval/",
+  n = 100000
+  )
+```
+:::
+:::
+
+## #karneval II
+
+#### karneval im Fokus
+
+```{r}
+tweets_karneval %>% glimpse()
+
+```
+
+## #karneval II
+
+#### Tweets im Zeitverlauf
+
+```{r}
+#| fig-dpi: 600
+#| fig-align: center
+
+tweets_karneval %>% 
+  ggplot(aes(hour)) +
+  geom_bar() +
+  facet_grid(cols = vars(date)) +
+  theme_fivethirtyeight()
+```
+
+## #karneval II
+
+#### User mit den meisten Tweets
+
+```{r}
+#| layout-align: center
+
+
+tweets_karneval$user_username %>% 
+  frq(sort.frq = "desc", 
+      min.frq = 10)
+```
+
+# Time for questions {background-image="images/background_question.svg"}
+
+# Bis zur nächsten Sitzung! {background-color="#04316a"}
+
+## Literatur
+
+::: {#refs}
+:::

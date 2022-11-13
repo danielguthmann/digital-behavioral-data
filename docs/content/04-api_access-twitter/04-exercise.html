@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Showcase</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Showcase</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Digital behavioral data</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Kick-Off</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/01-kick-off/01-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/02-dbb-introduction_overview/02-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Collection</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/03-dbd-data_collection/03-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">API Access: Twitter</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/04-api_access-twitter/04-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/04-api_access-twitter/04-exercise.html" class="sidebar-item-text sidebar-link active">Showcase</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#load-necessary-packages" id="toc-load-necessary-packages" class="nav-link" data-scroll-target="#load-necessary-packages">Load necessary packages</a></li>
+  <li><a href="#set-personal-bearer-token" id="toc-set-personal-bearer-token" class="nav-link" data-scroll-target="#set-personal-bearer-token">Set personal bearer token</a></li>
+  </ul></li>
+  <li><a href="#mining-tweets-hashtags" id="toc-mining-tweets-hashtags" class="nav-link" data-scroll-target="#mining-tweets-hashtags">Mining tweets: hashtag(s)</a>
+  <ul class="collapse">
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data collection</a>
+  <ul class="collapse">
+  <li><a href="#read-data-from-disc" id="toc-read-data-from-disc" class="nav-link" data-scroll-target="#read-data-from-disc">Read data from disc</a></li>
+  </ul></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#tweets-over-time" id="toc-tweets-over-time" class="nav-link" data-scroll-target="#tweets-over-time">Tweets over time</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#mining-tweets-profiles" id="toc-mining-tweets-profiles" class="nav-link" data-scroll-target="#mining-tweets-profiles">Mining tweets: profile(s)</a>
+  <ul class="collapse">
+  <li><a href="#data-collection-1" id="toc-data-collection-1" class="nav-link" data-scroll-target="#data-collection-1">Data collection</a>
+  <ul class="collapse">
+  <li><a href="#read-data-from-disc-1" id="toc-read-data-from-disc-1" class="nav-link" data-scroll-target="#read-data-from-disc-1">Read data from disc</a></li>
+  </ul></li>
+  <li><a href="#data-analysis-1" id="toc-data-analysis-1" class="nav-link" data-scroll-target="#data-analysis-1">Data analysis</a>
+  <ul class="collapse">
+  <li><a href="#overview-1" id="toc-overview-1" class="nav-link" data-scroll-target="#overview-1">Overview</a></li>
+  <li><a href="#tweets-over-time-1" id="toc-tweets-over-time-1" class="nav-link" data-scroll-target="#tweets-over-time-1">Tweets over time</a></li>
+  <li><a href="#tweets-with-the-most-likes" id="toc-tweets-with-the-most-likes" class="nav-link" data-scroll-target="#tweets-with-the-most-likes">Tweets with the most likes</a></li>
+  <li><a href="#tweets-with-the-most-retweets" id="toc-tweets-with-the-most-retweets" class="nav-link" data-scroll-target="#tweets-with-the-most-retweets">Tweets with the most retweets</a></li>
+  <li><a href="#proportion-of-tweets" id="toc-proportion-of-tweets" class="nav-link" data-scroll-target="#proportion-of-tweets">Proportion of tweets</a></li>
+  <li><a href="#languate-of-tweets" id="toc-languate-of-tweets" class="nav-link" data-scroll-target="#languate-of-tweets">Languate of tweets</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#text-mining" id="toc-text-mining" class="nav-link" data-scroll-target="#text-mining">Text mining</a>
+  <ul class="collapse">
+  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing">Preprocessing</a></li>
+  <li><a href="#top-hashtags" id="toc-top-hashtags" class="nav-link" data-scroll-target="#top-hashtags">Top Hashtags</a></li>
+  <li><a href="#top-mentions" id="toc-top-mentions" class="nav-link" data-scroll-target="#top-mentions">Top Mentions</a></li>
+  <li><a href="#exclude-hashtags-metions" id="toc-exclude-hashtags-metions" class="nav-link" data-scroll-target="#exclude-hashtags-metions">Exclude Hashtags &amp; Metions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Showcase</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<section id="load-necessary-packages" class="level2">
+<h2 class="anchored" data-anchor-id="load-necessary-packages">Load necessary packages</h2>
+<div class="cell" data-hash="04-exercise_cache/html/load packages_fd965f78351b3e14dee7cf7e0217e5df">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(academictwitteR) <span class="co"># Collecting the data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># Preparation of the data</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda) <span class="co"># Text mining</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda.textstats) <span class="co"># Text statistics</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda.textplots) <span class="co"># Visualisation of text data</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sjmisc)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="set-personal-bearer-token" class="level2">
+<h2 class="anchored" data-anchor-id="set-personal-bearer-token">Set personal bearer token</h2>
+<div class="cell" data-hash="04-exercise_cache/html/set bearer_a29815b1220cc5e0e6bf2365b7dc2233">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>personal_bearer_token <span class="ot">&lt;-</span> <span class="st">"INSERT BEARER TOKEN HERE"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="mining-tweets-hashtags" class="level1">
+<h1>Mining tweets: hashtag(s)</h1>
+<section id="data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection">Data collection</h2>
+<div class="cell" data-hash="04-exercise_cache/html/mine tweets hashtag_d1ad7ba4f6a9bdc5eeaf3a9bd6f217fa">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_all_tweets</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">query =</span> <span class="st">"#Karneval"</span>, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">start_tweets =</span> <span class="st">"2022-11-11T00:00:00Z"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">end_tweets =</span> <span class="st">"2022-11-13T12:00:00Z"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">file =</span> <span class="st">"karneval"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">data_path =</span> <span class="st">"data/raw_karneval/"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="dv">100000</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">bearer_token =</span> personal_bearer_token</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="read-data-from-disc" class="level3">
+<h3 class="anchored" data-anchor-id="read-data-from-disc">Read data from disc</h3>
+<div class="cell" data-hash="04-exercise_cache/html/read tweets hashtag_cedb6fc81214193345645b1fd3b7560d">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="ot">&lt;-</span> <span class="fu">bind_tweets</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data_path =</span> <span class="fu">here</span>(<span class="st">"content/04-api_access-twitter/data/raw_karneval"</span>),</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># data_path = "data/raw_karneval",</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">output_format =</span> <span class="st">"tidy"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">datetime =</span> <span class="fu">ymd_hms</span>(created_at),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">date =</span> <span class="fu">date</span>(datetime),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">hour =</span> <span class="fu">hour</span>(datetime),</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">min  =</span> <span class="fu">minute</span>(datetime),</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">hms  =</span> hms<span class="sc">::</span><span class="fu">as_hms</span>(datetime),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">hm   =</span> hms<span class="sc">::</span><span class="fu">parse_hm</span>(hms)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis">Data analysis</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-1_336937b1935303844d3bb5f3f7e978f0">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> glimpse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 2,637
+Columns: 37
+$ tweet_id               &lt;chr&gt; "1590981439457464321", "1590981390123892740", "…
+$ user_username          &lt;chr&gt; "truthonearth3", "Auno94", "HaiAriane", "ElCobr…
+$ text                   &lt;chr&gt; "RT @faqyoutoo: Ab heute 11:11 h dürfen wir uns…
+$ created_at             &lt;chr&gt; "2022-11-11T08:15:08.000Z", "2022-11-11T08:14:5…
+$ lang                   &lt;chr&gt; "de", "de", "de", "und", "und", "und", "und", "…
+$ possibly_sensitive     &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE,…
+$ author_id              &lt;chr&gt; "1486309822832287746", "2745840416", "995739344…
+$ source                 &lt;chr&gt; "Twitter for Android", "Twitter for Android", "…
+$ conversation_id        &lt;chr&gt; "1590981439457464321", "1590981390123892740", "…
+$ in_reply_to_user_id    &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ user_protected         &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ user_description       &lt;chr&gt; "I♥️Trump\nAnd Trump ♥️US.", "Zertifizierter Alma…
+$ user_profile_image_url &lt;chr&gt; "https://pbs.twimg.com/profile_images/158736121…
+$ user_pinned_tweet_id   &lt;chr&gt; "1591132482271080448", "1346065459297267712", N…
+$ user_verified          &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ user_name              &lt;chr&gt; "truthonearth", "Auno", "Pirschelbär", "Michael…
+$ user_created_at        &lt;chr&gt; "2022-01-26T12:07:54.000Z", "2014-08-19T17:42:0…
+$ user_location          &lt;chr&gt; NA, "Köln, Deutschland", NA, "Bonn, Germany", N…
+$ user_url               &lt;chr&gt; NA, "https://t.co/lodH0xUg0C", NA, NA, NA, NA, …
+$ retweet_count          &lt;int&gt; 2, 0, 0, 178, 178, 178, 178, 178, 178, 178, 178…
+$ like_count             &lt;int&gt; 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ quote_count            &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ user_tweet_count       &lt;int&gt; 840, 5851, 495, 110593, 5045, 1351, 932, 29967,…
+$ user_list_count        &lt;int&gt; 0, 0, 0, 77, 0, 1, 1, 0, 0, 1, 1, 5, 3, 73, 18,…
+$ user_followers_count   &lt;int&gt; 268, 197, 18, 1260, 54, 109, 71, 372, 126, 145,…
+$ user_following_count   &lt;int&gt; 1102, 1124, 118, 476, 436, 403, 411, 748, 1339,…
+$ sourcetweet_type       &lt;chr&gt; "retweeted", NA, NA, "retweeted", "retweeted", …
+$ sourcetweet_id         &lt;chr&gt; "1590967777762086912", NA, NA, "159097615399271…
+$ sourcetweet_text       &lt;chr&gt; "Ab heute 11:11 h dürfen wir uns wieder verklei…
+$ sourcetweet_lang       &lt;chr&gt; "de", NA, NA, "und", "und", "und", "und", "und"…
+$ sourcetweet_author_id  &lt;chr&gt; "946619921454247937", NA, NA, "529561909", "529…
+$ datetime               &lt;dttm&gt; 2022-11-11 08:15:08, 2022-11-11 08:14:57, 2022…
+$ date                   &lt;date&gt; 2022-11-11, 2022-11-11, 2022-11-11, 2022-11-11…
+$ hour                   &lt;int&gt; 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,…
+$ min                    &lt;int&gt; 15, 14, 14, 14, 13, 13, 13, 13, 13, 13, 13, 12,…
+$ hms                    &lt;time&gt; 08:15:08, 08:14:57, 08:14:29, 08:14:29, 08:13:…
+$ hm                     &lt;time&gt; 08:15:00, 08:14:00, 08:14:00, 08:14:00, 08:13:…</code></pre>
+</div>
+</div>
+</section>
+<section id="tweets-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="tweets-over-time">Tweets over time</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-2_4016c7153072071c2059673082092113">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(hour)) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(date)) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_fivethirtyeight</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="04-exercise_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="mining-tweets-profiles" class="level1">
+<h1>Mining tweets: profile(s)</h1>
+<section id="data-collection-1" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection-1">Data collection</h2>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-3_468dbb8729710d2d576273b5ef53cd6e">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_all_tweets</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">users =</span> <span class="fu">c</span>(<span class="st">"elonmusk"</span>),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">start_tweets =</span> <span class="st">"2020-11-11T00:00:00Z"</span>,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">end_tweets =</span> <span class="st">"2022-11-13T12:00:00Z"</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">file =</span> <span class="st">"elonmusk"</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">data_path =</span> <span class="fu">here</span>(<span class="st">"content/04-api_access-twitter/data/raw_elonmusk/"</span>),</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="dv">100000</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">bearer_token =</span> personal_bearer_token</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="read-data-from-disc-1" class="level3">
+<h3 class="anchored" data-anchor-id="read-data-from-disc-1">Read data from disc</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-4_58cc82ef0429b7fe1fef4cdb919eb946">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="ot">&lt;-</span> <span class="fu">bind_tweets</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data_path =</span> <span class="fu">here</span>(<span class="st">"content/04-api_access-twitter/data/raw_elonmusk"</span>),</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># data_path = "data/raw_karneval",</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">output_format =</span> <span class="st">"tidy"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">datetime =</span> <span class="fu">ymd_hms</span>(created_at),</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">date =</span> <span class="fu">date</span>(datetime),</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">hour =</span> <span class="fu">hour</span>(datetime),</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">min  =</span> <span class="fu">minute</span>(datetime),</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">hms  =</span> hms<span class="sc">::</span><span class="fu">as_hms</span>(datetime),</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">hm   =</span> hms<span class="sc">::</span><span class="fu">parse_hm</span>(hms)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="data-analysis-1" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-1">Data analysis</h2>
+<section id="overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="overview-1">Overview</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-5_87198061e6a227386b849796e4f864ff">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> glimpse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 7,255
+Columns: 37
+$ tweet_id               &lt;chr&gt; "1336809767574982658", "1336808486022258688", "…
+$ user_username          &lt;chr&gt; "elonmusk", "elonmusk", "elonmusk", "elonmusk",…
+$ text                   &lt;chr&gt; "Fuel header tank pressure was low during landi…
+$ conversation_id        &lt;chr&gt; "1336808486022258688", "1336808486022258688", "…
+$ author_id              &lt;chr&gt; "44196397", "44196397", "44196397", "44196397",…
+$ in_reply_to_user_id    &lt;chr&gt; "44196397", NA, "4914384040", "3101588527", "34…
+$ source                 &lt;chr&gt; "Twitter for iPhone", "Twitter for iPhone", "Tw…
+$ possibly_sensitive     &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ created_at             &lt;chr&gt; "2020-12-09T23:07:39.000Z", "2020-12-09T23:02:3…
+$ lang                   &lt;chr&gt; "en", "en", "und", "en", "en", "en", "en", "en"…
+$ user_created_at        &lt;chr&gt; "2009-06-02T20:12:29.000Z", "2009-06-02T20:12:2…
+$ user_description       &lt;chr&gt; "", "", "", "", "", "", "", "", "", "", "", "",…
+$ user_profile_image_url &lt;chr&gt; "https://pbs.twimg.com/profile_images/159096873…
+$ user_name              &lt;chr&gt; "Elon Musk", "Elon Musk", "Elon Musk", "Elon Mu…
+$ user_protected         &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ user_verified          &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,…
+$ user_location          &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ user_url               &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ user_pinned_tweet_id   &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ retweet_count          &lt;int&gt; 6987, 9775, 349, 348, 1055, 7732, 10719, 324, 5…
+$ like_count             &lt;int&gt; 96961, 106142, 15267, 13204, 22581, 0, 170964, …
+$ quote_count            &lt;int&gt; 2027, 2953, 93, 111, 177, 0, 5106, 92, 143, 12,…
+$ user_tweet_count       &lt;int&gt; 20290, 20290, 20290, 20290, 20290, 20290, 20290…
+$ user_list_count        &lt;int&gt; 102027, 102027, 102027, 102027, 102027, 102027,…
+$ user_followers_count   &lt;int&gt; 115405919, 115405919, 115405919, 115405919, 115…
+$ user_following_count   &lt;int&gt; 130, 130, 130, 130, 130, 130, 130, 130, 130, 13…
+$ sourcetweet_type       &lt;chr&gt; NA, "quoted", NA, NA, NA, "retweeted", NA, NA, …
+$ sourcetweet_id         &lt;chr&gt; NA, "1336777137391456256", NA, NA, NA, "1336349…
+$ sourcetweet_text       &lt;chr&gt; NA, "Watch Starship high-altitude test live → h…
+$ sourcetweet_lang       &lt;chr&gt; NA, "en", NA, NA, NA, "en", NA, NA, NA, NA, "en…
+$ sourcetweet_author_id  &lt;chr&gt; NA, "34743251", NA, NA, NA, "34743251", NA, NA,…
+$ datetime               &lt;dttm&gt; 2020-12-09 23:07:39, 2020-12-09 23:02:34, 2020…
+$ date                   &lt;date&gt; 2020-12-09, 2020-12-09, 2020-12-09, 2020-12-08…
+$ hour                   &lt;int&gt; 23, 23, 18, 18, 16, 16, 16, 2, 2, 0, 22, 20, 18…
+$ min                    &lt;int&gt; 7, 2, 13, 5, 57, 55, 44, 51, 50, 16, 16, 13, 14…
+$ hms                    &lt;time&gt; 23:07:39, 23:02:34, 18:13:21, 18:05:28, 16:57:…
+$ hm                     &lt;time&gt; 23:07:00, 23:02:00, 18:13:00, 18:05:00, 16:57:…</code></pre>
+</div>
+</div>
+</section>
+<section id="tweets-over-time-1" class="level3">
+<h3 class="anchored" data-anchor-id="tweets-over-time-1">Tweets over time</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-6_410cb5935446cc0fd6fabbc09a4b79d5">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(date)) <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_fivethirtyeight</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="04-exercise_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="tweets-with-the-most-likes" class="level3">
+<h3 class="anchored" data-anchor-id="tweets-with-the-most-likes">Tweets with the most likes</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-7_e1529983ad6fdf7bf3e8c3c6133138f2">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(sourcetweet_type)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>like_count) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(text, created_at, like_count) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+   text                                                          creat…¹ like_…²
+   &lt;chr&gt;                                                         &lt;chr&gt;     &lt;int&gt;
+ 1 "Next I’m buying Coca-Cola to put the cocaine back in"        2022-0… 4767770
+ 2 "I hope that even my worst critics remain on Twitter, becaus… 2022-0… 3221746
+ 3 "Let’s make Twitter maximum fun!"                             2022-0… 2641791
+ 4 "\U0001f680\U0001f4ab♥️ Yesss!!! ♥️\U0001f4ab\U0001f680 https:… 2022-0… 2599811
+ 5 "Listen, I can’t do miracles ok https://t.co/z7dvLMUXy8"      2022-0… 2572036
+ 6 "the bird is freed"                                           2022-1… 2497902
+ 7 "Comedy is now legal on Twitter"                              2022-1… 2400045
+ 8 "https://t.co/kGncG7Hs3M"                                     2022-1… 1893281
+ 9 "If I die under mysterious circumstances, it’s been nice kno… 2022-0… 1891028
+10 "The extreme antibody reaction from those who fear free spee… 2022-0… 1647281
+# … with abbreviated variable names ¹​created_at, ²​like_count</code></pre>
+</div>
+</div>
+</section>
+<section id="tweets-with-the-most-retweets" class="level3">
+<h3 class="anchored" data-anchor-id="tweets-with-the-most-retweets">Tweets with the most retweets</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-8_4b3dcc539091245bf8ad77f93298a2e1">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(sourcetweet_type)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>retweet_count) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(text, created_at, retweet_count) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+   text                                                          creat…¹ retwe…²
+   &lt;chr&gt;                                                         &lt;chr&gt;     &lt;int&gt;
+ 1 "Next I’m buying Coca-Cola to put the cocaine back in"        2022-0…  679688
+ 2 "I hope that even my worst critics remain on Twitter, becaus… 2022-0…  366807
+ 3 "the bird is freed"                                           2022-1…  357937
+ 4 "\U0001f680\U0001f4ab♥️ Yesss!!! ♥️\U0001f4ab\U0001f680 https:… 2022-0…  346717
+ 5 "Comedy is now legal on Twitter"                              2022-1…  261224
+ 6 "Listen, I can’t do miracles ok https://t.co/z7dvLMUXy8"      2022-0…  212059
+ 7 "https://t.co/Q9OjlJhi7f"                                     2022-0…  207978
+ 8 "Let’s make Twitter maximum fun!"                             2022-0…  193913
+ 9 "The extreme antibody reaction from those who fear free spee… 2022-0…  191983
+10 "Entering Twitter HQ – let that sink in! https://t.co/D68z4K… 2022-1…  190507
+# … with abbreviated variable names ¹​created_at, ²​retweet_count</code></pre>
+</div>
+</div>
+</section>
+<section id="proportion-of-tweets" class="level3">
+<h3 class="anchored" data-anchor-id="proportion-of-tweets">Proportion of tweets</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-9_5e6aa398e33201686aa90d0de7f55bc0">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(sourcetweet_type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>sourcetweet_type &lt;character&gt; 
+# total N=7255 valid N=489 mean=1.74 sd=0.44
+
+Value     |    N | Raw % | Valid % | Cum. %
+-------------------------------------------
+quoted    |  125 |  1.72 |   25.56 |  25.56
+retweeted |  364 |  5.02 |   74.44 | 100.00
+&lt;NA&gt;      | 6766 | 93.26 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="languate-of-tweets" class="level3">
+<h3 class="anchored" data-anchor-id="languate-of-tweets">Languate of tweets</h3>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-10_dae54d7ee76cbb14314466adfd20928a">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(lang)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lang &lt;character&gt; 
+# total N=7255 valid N=7255 mean=14.37 sd=9.86
+
+Value |    N | Raw % | Valid % | Cum. %
+---------------------------------------
+ar    |    2 |  0.03 |    0.03 |   0.03
+art   |   12 |  0.17 |    0.17 |   0.19
+bg    |    1 |  0.01 |    0.01 |   0.21
+ca    |   10 |  0.14 |    0.14 |   0.34
+cs    |    1 |  0.01 |    0.01 |   0.36
+cy    |    1 |  0.01 |    0.01 |   0.37
+da    |    6 |  0.08 |    0.08 |   0.45
+de    |   24 |  0.33 |    0.33 |   0.79
+el    |    2 |  0.03 |    0.03 |   0.81
+en    | 5915 | 81.53 |   81.53 |  82.34
+es    |   15 |  0.21 |    0.21 |  82.55
+et    |    6 |  0.08 |    0.08 |  82.63
+eu    |    3 |  0.04 |    0.04 |  82.67
+fr    |   20 |  0.28 |    0.28 |  82.95
+hi    |    1 |  0.01 |    0.01 |  82.96
+ht    |    2 |  0.03 |    0.03 |  82.99
+hu    |    2 |  0.03 |    0.03 |  83.02
+in    |    8 |  0.11 |    0.11 |  83.13
+is    |    1 |  0.01 |    0.01 |  83.14
+it    |    6 |  0.08 |    0.08 |  83.23
+ja    |    5 |  0.07 |    0.07 |  83.29
+lt    |    3 |  0.04 |    0.04 |  83.34
+nl    |    4 |  0.06 |    0.06 |  83.39
+no    |    1 |  0.01 |    0.01 |  83.40
+pl    |    5 |  0.07 |    0.07 |  83.47
+pt    |    7 |  0.10 |    0.10 |  83.57
+qam   |   40 |  0.55 |    0.55 |  84.12
+qht   |    1 |  0.01 |    0.01 |  84.14
+qme   |   81 |  1.12 |    1.12 |  85.25
+qst   |    5 |  0.07 |    0.07 |  85.32
+ro    |    3 |  0.04 |    0.04 |  85.36
+ru    |    7 |  0.10 |    0.10 |  85.46
+sl    |    2 |  0.03 |    0.03 |  85.49
+tl    |   59 |  0.81 |    0.81 |  86.30
+tr    |    5 |  0.07 |    0.07 |  86.37
+uk    |    1 |  0.01 |    0.01 |  86.38
+und   |  817 | 11.26 |   11.26 |  97.64
+vi    |    1 |  0.01 |    0.01 |  97.66
+zh    |    1 |  0.01 |    0.01 |  97.67
+zxx   |  169 |  2.33 |    2.33 | 100.00
+&lt;NA&gt;  |    0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="text-mining" class="level1">
+<h1>Text mining</h1>
+<section id="preprocessing" class="level2">
+<h2 class="anchored" data-anchor-id="preprocessing">Preprocessing</h2>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-11_b805901c05baaba63318f4242f9245d6">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>remove_html <span class="ot">&lt;-</span> <span class="st">"&amp;amp;|&amp;lt;|&amp;gt;"</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>tweets_en <span class="ot">&lt;-</span> tweets_musk <span class="sc">%&gt;%</span> </span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(lang <span class="sc">==</span> <span class="st">"en"</span>,</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>         <span class="fu">is.na</span>(sourcetweet_type)) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(tweet_id, text, user_username) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">text =</span> <span class="fu">str_remove_all</span>(text, remove_html))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-12_ea4516130bb1a999b4d5846f7d9c96ed">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>tweets_en_corpus <span class="ot">&lt;-</span> <span class="fu">corpus</span>(tweets_en,</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>                           <span class="at">docid_field =</span> <span class="st">"tweet_id"</span>,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">text_field =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-13_7cda06ac52464404c1c093375dc856e0">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>tweets_en_tokens <span class="ot">&lt;-</span> </span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens</span>(tweets_en_corpus,</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">remove_punct =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">remove_numbers =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">remove_symbols =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">remove_url =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens_tolower</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens_remove</span>(<span class="fu">stopwords</span>(<span class="st">"english"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-14_2388ad66c9f7888a05aeb3dd0fecd223">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>tweets_en_dfm <span class="ot">&lt;-</span> <span class="fu">dfm</span>(tweets_en_tokens)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="top-hashtags" class="level2">
+<h2 class="anchored" data-anchor-id="top-hashtags">Top Hashtags</h2>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-15_59e2155adc51177548b90a7a0fb945ce">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>tag_dfm <span class="ot">&lt;-</span> <span class="fu">dfm_select</span>(tweets_en_dfm, <span class="at">pattern =</span> <span class="st">"#*"</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>toptag <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">topfeatures</span>(tag_dfm, <span class="dv">50</span>))</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(toptag, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "#2"                  "#mars"               "#resistanceisfutile"
+[4] "#1"                  "#freespeech"        </code></pre>
+</div>
+</div>
+</section>
+<section id="top-mentions" class="level2">
+<h2 class="anchored" data-anchor-id="top-mentions">Top Mentions</h2>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-16_24653f2197db9fb65533faf5610117d4">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>user_dfm <span class="ot">&lt;-</span> <span class="fu">dfm_select</span>(tweets_en_dfm, <span class="at">pattern =</span> <span class="st">"@*"</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>topuser <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">topfeatures</span>(user_dfm, <span class="dv">50</span>))</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(topuser, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "@wholemarsblog"  "@spacex"         "@teslaownerssv"  "@ppathole"      
+ [5] "@tesla"          "@erdayastronaut" "@billym2k"       "@teslarati"     
+ [9] "@sawyermerritt"  "@evafoxu"       </code></pre>
+</div>
+</div>
+</section>
+<section id="exclude-hashtags-metions" class="level2">
+<h2 class="anchored" data-anchor-id="exclude-hashtags-metions">Exclude Hashtags &amp; Metions</h2>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-17_84d1a390cfcaee5fe973845fbebf5032">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>tweets_en_clean <span class="ot">&lt;-</span> tweets_en_dfm <span class="sc">%&gt;%</span> </span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm_remove</span>(<span class="at">pattern =</span> <span class="st">"@*"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm_remove</span>(<span class="at">pattern =</span> <span class="st">"#*"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-18_573f0764382b362c551e786570e96c4c">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>term_freq_en <span class="ot">&lt;-</span> <span class="fu">textstat_frequency</span>(tweets_en_clean)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(term_freq_en, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   feature frequency rank docfreq group
+1    tesla       354    1     328   all
+2     just       227    2     225   all
+3     good       215    3     209   all
+4    great       187    4     183   all
+5     much       184    5     180   all
+6     like       172    6     168   all
+7      can       169    7     165   all
+8   people       167    8     156   all
+9  twitter       156    9     147   all
+10     one       146   10     144   all</code></pre>
+</div>
+</div>
+<div class="cell" data-hash="04-exercise_cache/html/unnamed-chunk-19_953864201611dd77b69543afa29548ec">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_wordcloud</span>(tweets_en_clean, <span class="at">max_words =</span> <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="04-exercise_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022, Christoph Adrian</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/chrdrn/digital-behavioral-data">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/chrdrn">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

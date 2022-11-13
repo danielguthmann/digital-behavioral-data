@@ -26,6 +26,10 @@ website:
       - section: "Data Collection"
         contents:
           - "content/03-dbd-data_collection/03-slides.qmd"
+      - section: "API Access: Twitter"
+        contents:
+          - "content/04-api_access-twitter/04-slides.qmd"
+          - "content/04-api_access-twitter/04-exercise.qmd"
 
 format:
   html:

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christoph Adrian">
+
+<title>API-Access - Twitter</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
+<script src="../../../site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">API-Access - Twitter</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../../">Digital behavioral data</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Kick-Off</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/01-kick-off/01-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/02-dbb-introduction_overview/02-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Collection</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/03-dbd-data_collection/03-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">API Access: Twitter</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/04-api_access-twitter/04-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/04-api_access-twitter/04-exercise.html" class="sidebar-item-text sidebar-link">Showcase</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#seminarplan" id="toc-seminarplan" class="nav-link active" data-scroll-target="#seminarplan">Seminarplan</a></li>
+  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
+  <li><a href="#organisation-koordination" id="toc-organisation-koordination" class="nav-link" data-scroll-target="#organisation-koordination">Organisation &amp; Koordination</a>
+  <ul class="collapse">
+  <li><a href="#brace-yourself-presentations-are-coming" id="toc-brace-yourself-presentations-are-coming" class="nav-link" data-scroll-target="#brace-yourself-presentations-are-coming">Brace yourself, presentations are coming!</a></li>
+  </ul></li>
+  <li><a href="#group-activity" id="toc-group-activity" class="nav-link" data-scroll-target="#group-activity">Group Activity</a>
+  <ul class="collapse">
+  <li><a href="#vielen-dank-für-ihre-fragen" id="toc-vielen-dank-für-ihre-fragen" class="nav-link" data-scroll-target="#vielen-dank-für-ihre-fragen">Vielen Dank für Ihre Fragen!</a></li>
+  <li><a href="#and-now-you" id="toc-and-now-you" class="nav-link" data-scroll-target="#and-now-you">And now … you</a></li>
+  <li><a href="#what-do-you-think" id="toc-what-do-you-think" class="nav-link" data-scroll-target="#what-do-you-think">What do you think?</a></li>
+  </ul></li>
+  <li><a href="#beispielhafte-auswertungen" id="toc-beispielhafte-auswertungen" class="nav-link" data-scroll-target="#beispielhafte-auswertungen">Beispielhafte Auswertungen</a>
+  <ul class="collapse">
+  <li><a href="#karneval-i" id="toc-karneval-i" class="nav-link" data-scroll-target="#karneval-i">#karneval I</a></li>
+  <li><a href="#karneval-ii" id="toc-karneval-ii" class="nav-link" data-scroll-target="#karneval-ii">#karneval II</a></li>
+  <li><a href="#karneval-ii-1" id="toc-karneval-ii-1" class="nav-link" data-scroll-target="#karneval-ii-1">#karneval II</a></li>
+  <li><a href="#karneval-ii-2" id="toc-karneval-ii-2" class="nav-link" data-scroll-target="#karneval-ii-2">#karneval II</a></li>
+  </ul></li>
+  <li><a href="#time-for-questions" id="toc-time-for-questions" class="nav-link" data-scroll-target="#time-for-questions">Time for questions</a></li>
+  <li><a href="#bis-zur-nächsten-sitzung" id="toc-bis-zur-nächsten-sitzung" class="nav-link" data-scroll-target="#bis-zur-nächsten-sitzung">Bis zur nächsten Sitzung!</a>
+  <ul class="collapse">
+  <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">API-Access - Twitter</h1>
+<p class="subtitle lead">Digital behavioral data - Session 04</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading"></div>
+  
+    <div class="quarto-title-meta-contents">
+    <a href="https://twitter.com/chrdrn">Christoph Adrian</a> 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.kowi.rw.fau.de/person/christoph-adrian/">
+            Lehrstuhl für Kommunikationswissenschaft
+            </a>
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">09.11.2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="seminarplan" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="seminarplan">Seminarplan</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Sitzung</th>
+<th>Datum</th>
+<th>Thema</th>
+<th>Referent*Innen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">1</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">26.10.2022</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Kick-Off Session</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Christoph Adrian</span></td>
+</tr>
+<tr class="even">
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">2</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">02.11.2022</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">DBD: Einführung und Überblick</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Christoph Adrian</span></td>
+</tr>
+<tr class="odd">
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">3</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">09.11.2022</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">DBD: Datenerhebung</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Christoph Adrian</span></td>
+</tr>
+<tr class="even">
+<td><span class="rn" data-rn-type="highlight"><strong>4</strong></span></td>
+<td><span class="rn" data-rn-type="highlight"><strong>16.11.2022</strong></span></td>
+<td><span class="rn" data-rn-type="highlight"><strong>API-Access (I): <em>Twitter</em></strong></span></td>
+<td><span class="rn" data-rn-type="highlight">Falk</span></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>23.11.2022</td>
+<td>API-Access (II): <em>YouTube</em></td>
+<td>Denisov</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>30.11.2022</td>
+<td>API-Access (II): <em>Reddit</em></td>
+<td>Landauer</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>07.12.2022</td>
+<td>Webscraping: <em>TikTok</em></td>
+<td>Brand &amp; Kocher</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>14.12.2022</td>
+<td>Exkurs: DBD Analyse mit R</td>
+<td>Christoph Adrian</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><em>WEIHNACHTSPAUSE</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>12.01.2023</td>
+<td>ESM: <em>m-path</em></td>
+<td>Dörr</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>19.01.2023</td>
+<td>Data Donations</td>
+<td>Hofmann &amp; Wierzbicki</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>26.01.2023</td>
+<td><em>PUFFER</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>02.02.2023</td>
+<td><strong><em>Guest Lecture: Linking DBD &amp; Survey data</em></strong></td>
+<td><a href="https://www.johannesbreuer.com/">Johannes Breuer</a></td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>09.02.2023</td>
+<td>Semesterabschluss &amp; Evaluation</td>
+<td>Christoph Adrian</td>
+</tr>
+</tbody>
+</table>
+<div class="notes">
+<p>▶️</p>
+</div>
+</section>
+<section id="agenda" class="level1">
+<h1>Agenda</h1>
+<ol type="1">
+<li><strong>Organisation &amp; Koordination</strong></li>
+<li><strong>Group Activity</strong></li>
+</ol>
+</section>
+<section id="organisation-koordination" class="level1" data-background-color="#E6002E">
+<h1 data-background-color="#E6002E">Organisation &amp; Koordination</h1>
+<p>Hinweis zu den Präsentationen</p>
+<section id="brace-yourself-presentations-are-coming" class="level2">
+<h2 class="anchored" data-anchor-id="brace-yourself-presentations-are-coming">Brace yourself, presentations are coming!</h2>
+<section id="allgemeine-hinweise-rund-um-die-präsentation" class="level4">
+<h4 class="anchored" data-anchor-id="allgemeine-hinweise-rund-um-die-präsentation">Allgemeine Hinweise rund um die Präsentation</h4>
+<p><br></p>
+<p><strong>📑</strong> Denken Sie bitte an die Fragen zur Pflichtlektüre!</p>
+<p><br></p>
+<p><strong>🕦</strong> Office Hours bzw. Feedbackgespräch nach dem Kurs</p>
+<p><br></p>
+<p><strong>🔍</strong> Info zu den Evaluationskriterien</p>
+<p><br></p>
+<div class="fragment">
+<p><strong>❓</strong> <span class="rn" data-rn-type="underline" data-rn-color="#E6002E"><strong>Fragen</strong></span></p>
+</div>
+<div class="notes">
+<p>▶️</p>
+</div>
+</section>
+</section>
+</section>
+<section id="group-activity" class="level1">
+<h1>Group Activity</h1>
+<p>5 Minuten Pause, Ihre Fragen und eine kleine Gruppenarbeit</p>
+<section id="vielen-dank-für-ihre-fragen" class="level2">
+<h2 class="anchored" data-anchor-id="vielen-dank-für-ihre-fragen">Vielen Dank für Ihre Fragen!</h2>
+<div class="fragment semi-fade-out" data-fragment-index="1">
+<blockquote class="blockquote">
+<p>Die Vernetzung in unserer Welt nimmt immer mehr zu und Prozesse müssen perfekt aufeinander abgestimmt sein. Es gibt eine riesige Menge an verschiedenen APIs und unsere Abhängigkeit von ihnen wird zunehmend größer. <strong>Aber wie zuverlässig sind APIs eigentlich und wie kann ein API-Missbrauch aussehen?</strong></p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="1">
+<blockquote class="blockquote">
+<p>Facebook und andere Plattformen haben den Zugang zu Nutzerdaten über ihr API aus Datenschutzgründen stark eingeschränkt. Jedoch kann bislang jede Organisation individuell darüber entscheiden, welche Restriktionen es in dieser Hinsicht geben soll. <strong>Sollte es übergreifende „Regeln” für APIs geben, die von jedem einzuhalten sind? Wenn ja, könnten Verstöße strafrechtlich verfolgt werden?</strong></p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<blockquote class="blockquote">
+<p>Mithilfe von APIs kann man verhältnismäßig einfach an Daten gelangen. Jedoch sind die Algorithmen hinter den Plattformen oft nicht nachvollziehbar (z.B. woher kommen personalisierte Empfehlungen). <strong>Können die extrahierten Daten tatsächlich interpretiert werden, wenn die Entstehung nicht nachvollziehbar ist?</strong></p>
+</blockquote>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+<blockquote class="blockquote">
+<p>Web-APIs erfordern grundlegende Programmierkenntnisse, um den Zugang zu ermöglichen. Leider gibt es bislang keine effizienten Alternativen. <strong>Gibt es potentielle Ansätze, um diese Hürde auf eine andere Art und Weise zu überwinden.</strong></p>
+</blockquote>
+</div>
+</section>
+<section id="and-now-you" class="level2">
+<h2 class="anchored" data-anchor-id="and-now-you">And now … you</h2>
+<section id="mining-twitter-daten" class="level4">
+<h4 class="anchored" data-anchor-id="mining-twitter-daten">Mining Twitter-Daten</h4>
+<ol type="1">
+<li><p>Erstellen Sie Ihre eigene Suchanfrage mit dem <a href="https://developer.twitter.com/apitools/query?query=">Twitter Query Builder</a> von Twitter:</p>
+<ol type="1">
+<li><p>Alle Tweets eines bestimmten Accounts seit dem 01.10.2022</p></li>
+<li><p>Alle Tweets (ohne Retweets) mit dem Hashtag #karneval oder #wokwm am letzten Wochenende</p></li>
+</ol>
+<p>… und ziehen sich die Tweets als .csv &amp; .json mit Hilfe des <a href="https://developer.twitter.com/apitools/downloader">Tweet Downloader</a> (benötigt Chrome, Edge oder Opera)</p></li>
+<li><p>Inspizieren Sie anschließend die Datensätze und schauen Sie, welche Informationen Ihnen geliefert werden.</p></li>
+</ol>
+<!--# TODO How to share BEARER Token -->
+<!--# TODO Add highlights -->
+</section>
+</section>
+<section id="what-do-you-think" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-you-think">What do you think?</h2>
+<section id="verschiedene-diskussionfragen" class="level4">
+<h4 class="anchored" data-anchor-id="verschiedene-diskussionfragen">Verschiedene Diskussionfragen</h4>
+<ul>
+<li><p>Wie unterscheiden sich die Datenformate?</p></li>
+<li><p>Wie würden Sie die Daten analyiseren bzw. welche Aspekte würden Sie sich anschauen?</p></li>
+<li><p>Welche potentielle Fragestellungen könnten Sie auf Basis der Daten spontan entwickeln?</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="beispielhafte-auswertungen" class="level1">
+<h1>Beispielhafte Auswertungen</h1>
+<p>Im Fokus: Karneval &amp; Elon Musk</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+✔ readr   2.1.3      ✔ forcats 0.5.2 
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Package version: 3.2.3
+Unicode version: 13.0
+ICU version: 69.1
+
+Parallel computing: 8 of 8 threads used.
+
+See https://quanteda.io for tutorials and examples.
+
+here() starts at E:/repositories/github/digital-behavioral-data
+
+Install package "strengejacke" from GitHub (`devtools::install_github("strengejacke/strengejacke")`) to load all sj-packages at once!
+
+
+Attaching package: 'sjmisc'
+
+
+The following object is masked from 'package:purrr':
+
+    is_empty
+
+
+The following object is masked from 'package:tidyr':
+
+    replace_na
+
+
+The following object is masked from 'package:tibble':
+
+    add_case
+
+
+Loading required package: timechange
+
+
+Attaching package: 'lubridate'
+
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union</code></pre>
+</div>
+</div>
+<section id="karneval-i" class="level2">
+<h2 class="anchored" data-anchor-id="karneval-i">#karneval I</h2>
+<section id="hintergrund" class="level4">
+<h4 class="anchored" data-anchor-id="hintergrund">Hintergrund</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Alle Tweets herunterladen, die <code>#Karneval</code> enthalten und zwischen 00:00 am 11.11.2022 und 12:00 am 13.12.2022 erschienen sind</p></li>
+<li><p>Weiterverarbeitung und Auswertung der Daten mit R</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Sammlung der Daten mit R:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">get_all_tweets</span>(</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="at">query =</span> <span class="st">"#Karneval"</span>, </span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="at">start_tweets =</span> <span class="st">"2022-11-11T00:00:00Z"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="at">end_tweets =</span> <span class="st">"2022-11-13T12:00:00Z"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="at">file =</span> <span class="st">"karneval"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="at">data_path =</span> <span class="st">"data/raw_karneval/"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="at">n =</span> <span class="dv">100000</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="karneval-ii" class="level2">
+<h2 class="anchored" data-anchor-id="karneval-ii">#karneval II</h2>
+<section id="karneval-im-fokus" class="level4">
+<h4 class="anchored" data-anchor-id="karneval-im-fokus">karneval im Fokus</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 2,637
+Columns: 37
+$ tweet_id               &lt;chr&gt; "1590981439457464321", "1590981390123892740", "…
+$ user_username          &lt;chr&gt; "truthonearth3", "Auno94", "HaiAriane", "ElCobr…
+$ text                   &lt;chr&gt; "RT @faqyoutoo: Ab heute 11:11 h dürfen wir uns…
+$ created_at             &lt;chr&gt; "2022-11-11T08:15:08.000Z", "2022-11-11T08:14:5…
+$ lang                   &lt;chr&gt; "de", "de", "de", "und", "und", "und", "und", "…
+$ possibly_sensitive     &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE,…
+$ author_id              &lt;chr&gt; "1486309822832287746", "2745840416", "995739344…
+$ source                 &lt;chr&gt; "Twitter for Android", "Twitter for Android", "…
+$ conversation_id        &lt;chr&gt; "1590981439457464321", "1590981390123892740", "…
+$ in_reply_to_user_id    &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ user_protected         &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ user_description       &lt;chr&gt; "I♥️Trump\nAnd Trump ♥️US.", "Zertifizierter Alma…
+$ user_profile_image_url &lt;chr&gt; "https://pbs.twimg.com/profile_images/158736121…
+$ user_pinned_tweet_id   &lt;chr&gt; "1591132482271080448", "1346065459297267712", N…
+$ user_verified          &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ user_name              &lt;chr&gt; "truthonearth", "Auno", "Pirschelbär", "Michael…
+$ user_created_at        &lt;chr&gt; "2022-01-26T12:07:54.000Z", "2014-08-19T17:42:0…
+$ user_location          &lt;chr&gt; NA, "Köln, Deutschland", NA, "Bonn, Germany", N…
+$ user_url               &lt;chr&gt; NA, "https://t.co/lodH0xUg0C", NA, NA, NA, NA, …
+$ retweet_count          &lt;int&gt; 2, 0, 0, 178, 178, 178, 178, 178, 178, 178, 178…
+$ like_count             &lt;int&gt; 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ quote_count            &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ user_tweet_count       &lt;int&gt; 840, 5851, 495, 110593, 5045, 1351, 932, 29967,…
+$ user_list_count        &lt;int&gt; 0, 0, 0, 77, 0, 1, 1, 0, 0, 1, 1, 5, 3, 73, 18,…
+$ user_followers_count   &lt;int&gt; 268, 197, 18, 1260, 54, 109, 71, 372, 126, 145,…
+$ user_following_count   &lt;int&gt; 1102, 1124, 118, 476, 436, 403, 411, 748, 1339,…
+$ sourcetweet_type       &lt;chr&gt; "retweeted", NA, NA, "retweeted", "retweeted", …
+$ sourcetweet_id         &lt;chr&gt; "1590967777762086912", NA, NA, "159097615399271…
+$ sourcetweet_text       &lt;chr&gt; "Ab heute 11:11 h dürfen wir uns wieder verklei…
+$ sourcetweet_lang       &lt;chr&gt; "de", NA, NA, "und", "und", "und", "und", "und"…
+$ sourcetweet_author_id  &lt;chr&gt; "946619921454247937", NA, NA, "529561909", "529…
+$ datetime               &lt;dttm&gt; 2022-11-11 08:15:08, 2022-11-11 08:14:57, 2022…
+$ date                   &lt;date&gt; 2022-11-11, 2022-11-11, 2022-11-11, 2022-11-11…
+$ hour                   &lt;int&gt; 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,…
+$ min                    &lt;int&gt; 15, 14, 14, 14, 13, 13, 13, 13, 13, 13, 13, 12,…
+$ hms                    &lt;time&gt; 08:15:08, 08:14:57, 08:14:29, 08:14:29, 08:13:…
+$ hm                     &lt;time&gt; 08:15:00, 08:14:00, 08:14:00, 08:14:00, 08:13:…</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="karneval-ii-1" class="level2">
+<h2 class="anchored" data-anchor-id="karneval-ii-1">#karneval II</h2>
+<section id="tweets-im-zeitverlauf" class="level4">
+<h4 class="anchored" data-anchor-id="tweets-im-zeitverlauf">Tweets im Zeitverlauf</h4>
+<div class="cell" data-layout-align="center" data-fig.dpi="600">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(hour)) <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(date)) <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_fivethirtyeight</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="karneval-ii-2" class="level2">
+<h2 class="anchored" data-anchor-id="karneval-ii-2">#karneval II</h2>
+<section id="user-mit-den-meisten-tweets" class="level4">
+<h4 class="anchored" data-anchor-id="user-mit-den-meisten-tweets">User mit den meisten Tweets</h4>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval<span class="sc">$</span>user_username <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(<span class="at">sort.frq =</span> <span class="st">"desc"</span>, </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">min.frq =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>x &lt;character&gt; 
+# total N=2637 valid N=2637 mean=976.88 sd=562.18
+
+Value           |    N | Raw % | Valid % | Cum. %
+-------------------------------------------------
+Gun17170309     |   65 |  2.46 |    2.46 |   2.46
+berlinaffaires  |   28 |  1.06 |    1.06 |   3.53
+Beratungszimmer |   19 |  0.72 |    0.72 |   4.25
+bartl_katrin    |   16 |  0.61 |    0.61 |   4.85
+rammwars        |   15 |  0.57 |    0.57 |   5.42
+free_cart9      |   12 |  0.46 |    0.46 |   5.88
+ploetschkoepp   |   12 |  0.46 |    0.46 |   6.33
+KespelHelau     |   11 |  0.42 |    0.42 |   6.75
+kryptomania84   |   10 |  0.38 |    0.38 |   7.13
+neussentweetet  |   10 |  0.38 |    0.38 |   7.51
+Raissoussama1   |   10 |  0.38 |    0.38 |   7.89
+n &lt; 10          | 2429 | 92.11 |   92.11 | 100.00
+&lt;NA&gt;            |    0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="time-for-questions" class="level1" data-background-image="images/background_question.svg">
+<h1 data-background-image="images/background_question.svg">Time for questions</h1>
+</section>
+<section id="bis-zur-nächsten-sitzung" class="level1" data-background-color="#04316a">
+<h1 data-background-color="#04316a">Bis zur nächsten Sitzung!</h1>
+<section id="literatur" class="level2">
+<h2 class="anchored" data-anchor-id="literatur">Literatur</h2>
+<div id="refs" role="doc-bibliography">
+
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022, Christoph Adrian</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/chrdrn/digital-behavioral-data">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/chrdrn">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

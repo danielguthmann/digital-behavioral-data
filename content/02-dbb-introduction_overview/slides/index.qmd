@@ -1,7 +1,7 @@
 ---
 title: "Einführung & Überblick"
 title-slide-attributes:
-  # data-background-image: ../../background_title-dimmed_red_light.png
+  data-background-image: ../../00-images/background_title.svg
   data-background-color: "#04316a"
 subtitle: "Digital behavioral data – Session 02"
 author: 
@@ -800,7 +800,7 @@ Beispiel 1: Einige prominente Beispiele sind die Datenpanne bei Ashley Madison i
     Schließlich gibt es angesichts der Komplexität der inhärent kontextabhängigen, anwendungs- und bereichsabhängigen Verzerrungen und Probleme in sozialen Daten und Analysepipelines, die in diesem Papier behandelt werden, keine Einheitslösungen - bei der Bewertung und Bekämpfung von Verzerrungen ist Nuancierung entscheidend.
     :::
 
-# Group Activity
+# Group Activity  {background-color="#E6002E" background-image="../../00-images/background_group_activity.svg"}
 
 Offene Fragen und Diskussion
 
@@ -850,7 +850,9 @@ We consider a privacy-utility trade-off **encountered by users who wish to discl
 
 -   Wie könnten/sollte ein potentielles Bezahlungssystem aussehen?
 
-# Bis zur nächsten Sitzung! {background-color="#04316a"}
+# Time for questions {background-color="#E6002E" background-image="../../00-images/background_questions.svg"}
+
+# Bis zur nächsten Sitzung! {background-color="#E6002E" background-image="../../00-images/background_end_of_session.svg"}
 
 ## Literatur
 

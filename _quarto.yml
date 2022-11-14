@@ -14,7 +14,7 @@ website:
   sidebar: 
     title: "Digital behavioral data"
     subtitle: "Wintersemester 2022/23"
-    style: floating
+    style: floating 
     search: true
     contents: 
       - section: "Kick-Off"

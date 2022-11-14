@@ -1,7 +1,7 @@
 ---
 title: "Kick-Off"
 title-slide-attributes:
-  # data-background-image: ../../background_title-dimmed_red_light.png
+  data-background-image: ../../00-images/background_title.svg
   data-background-color: "#04316a"
 subtitle: "Digital behavioral data"
 author: 
@@ -342,7 +342,7 @@ Bitte scannen Sie den **QR-Cod**e oder nutzen Sie folgenden **Link** und wählen
 
 -   [**Ihre Fragen?**]{.smallcaps}
 
-# Bis zur nächsten Sitzung! {background-color="#04316a"}
+# Bis zur nächsten Sitzung! {background-color="#E6002E" background-image="../../00-images/background_end_of_session.svg"}
 
 ## Literatur
 

@@ -3,7 +3,7 @@ title: "Showcase"
 format: 
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 4
 callout-appearance: simple
 execute: 
   cache: true
@@ -11,12 +11,13 @@ execute:
   echo: true
   message: false
   warning: false
+highlight-style: atom-one
 editor_options: 
   chunk_output_type: console
 ---
 
-# Preparation
-## Load necessary packages
+## Preparation
+### Load necessary packages
 ```{r load packages}
 library(academictwitteR) # Collecting the data
 library(tidyverse) # Preparation of the data
@@ -27,6 +28,7 @@ library(here)
 library(sjmisc)
 library(lubridate)
 library(ggthemes)
+library(ggpubr)
 ```
 
 ## Set personal bearer token
@@ -35,8 +37,8 @@ personal_bearer_token <- "INSERT BEARER TOKEN HERE"
 ```
 
 
-# Mining tweets: hashtag(s)
-## Data collection
+## Mining tweets: hashtag(s)
+### Data collection
 ```{r mine tweets hashtag}
 #| eval: false
 
@@ -47,15 +49,14 @@ get_all_tweets(
     file = "karneval",
     data_path = "data/raw_karneval/",
     n = 100000,
-    bearer_token = personal_bearer_token
+    #bearer_token = personal_bearer_token
   )
 ```
 
-### Read data from disc
+#### Read data from disc
 ```{r read tweets hashtag}
 tweets_karneval <- bind_tweets(
   data_path = here("content/04-api_access-twitter/data/raw_karneval"),
-  # data_path = "data/raw_karneval",
   output_format = "tidy") %>% 
     mutate(
     datetime = ymd_hms(created_at),
@@ -65,30 +66,69 @@ tweets_karneval <- bind_tweets(
     hms  = hms::as_hms(datetime),
     hm   = hms::parse_hm(hms)
   )
-  
 ```
 
-## Data analysis
-### Overview
-```{r}
+### Data analysis
+#### Overview of dataset
+```{r hashtag analysis overview}
 tweets_karneval %>% glimpse
 ```
 
-### Tweets over time
-```{r}
+#### Language of tweets
+```{r hashtag analysis language}
+frq(tweets_karneval$lang, sort.frq = "desc")
+```
+
+#### Tweets over time
+```{r hashtag analysis time}
 tweets_karneval %>% 
   ggplot(aes(hour)) +
   geom_bar() +
   facet_grid(cols = vars(date)) +
-  theme_fivethirtyeight()
+  theme_pubr()
+```
+
+#### Most frequent time (HH:MM) of sending tweets
+```{r hashtag analysis time peaks}
+tweets_karneval %>%
+  frq(hm,
+      sort.frq = "desc", 
+      min.frq = 10)
+```
+
+#### User with the most tweets
+```{r hashtag analysis frequent users}
+tweets_karneval %>% 
+  frq(user_username,
+      sort.frq = "desc", 
+      min.frq = 5)
+```
+
+#### Display tweets from most freuquent users
+```{r hashtag analysis user example 1}
+tweets_karneval %>% 
+  filter(user_username == "Gun17170309") %$% 
+  glue::glue(
+    "Tweet-ID: {tweet_id} 
+    Inhalt:
+    {text}\n\n") %>% 
+  head()
+```
+
+```{r hashtag analysis user example 2}
+tweets_karneval %>% 
+  filter(user_username == "berlinaffaires") %$% 
+  glue::glue(
+    "Tweet-ID: {tweet_id} 
+    Inhalt:
+    {text}\n\n") %>% 
+  head()
 ```
 
 
-
-
-# Mining tweets: profile(s)
-## Data collection
-```{r}
+## Mining tweets: profile(s)
+### Data collection
+```{r mine tweets profile}
 #| eval: false
 
 get_all_tweets(
@@ -102,8 +142,8 @@ get_all_tweets(
   )
 ```
 
-### Read data from disc
-```{r}
+#### Read data from disc
+```{r read tweets profile}
 tweets_musk <- bind_tweets(
   data_path = here("content/04-api_access-twitter/data/raw_elonmusk"),
   # data_path = "data/raw_karneval",
@@ -118,22 +158,22 @@ tweets_musk <- bind_tweets(
   )
 ```
 
-## Data analysis
-### Overview
-```{r}
+### Data analysis
+#### Overview of dataset
+```{r profile analysis overview}
 tweets_musk %>% glimpse
 ```
 
-### Tweets over time
-```{r}
+#### Tweets over time
+```{r profile analysis time}
 tweets_musk %>% 
   ggplot(aes(date)) +
   geom_bar() +
-  theme_fivethirtyeight()
+  theme_pubr()
 ```
 
-### Tweets with the most likes
-```{r}
+#### Tweets with the most likes
+```{r profile analysis most likes}
 tweets_musk %>% 
   filter(is.na(sourcetweet_type)) %>% 
   arrange(-like_count) %>% 
@@ -141,8 +181,8 @@ tweets_musk %>%
   head(10)
 ```
 
-### Tweets with the most retweets
-```{r}
+#### Tweets with the most retweets
+```{r profile analysis most retweets}
 tweets_musk %>% 
   filter(is.na(sourcetweet_type)) %>% 
   arrange(-retweet_count) %>% 
@@ -150,23 +190,22 @@ tweets_musk %>%
   head(10)
 ```
 
-### Proportion of tweets
-```{r}
+#### Proportion of tweets
+```{r profile analysis tweet type}
 tweets_musk %>% 
   frq(sourcetweet_type)
-
 ```
 
-### Languate of tweets
-```{r}
+#### Languate of tweets
+```{r profile analysis language}
 tweets_musk %>% 
   frq(lang)
 ```
 
 
-# Text mining
-## Preprocessing
-```{r}
+## Text mining
+### Preprocessing
+```{r text mining preprocessing}
 remove_html <- "&amp;|&lt;|&gt;"
 
 tweets_en <- tweets_musk %>% 
@@ -176,13 +215,13 @@ tweets_en <- tweets_musk %>%
   mutate(text = str_remove_all(text, remove_html))
 ```
 
-```{r}
+```{r text mining corpus creation}
 tweets_en_corpus <- corpus(tweets_en,
                            docid_field = "tweet_id",
                            text_field = "text")
 ```
 
-```{r}
+```{r text mining tokenization}
 tweets_en_tokens <- 
   tokens(tweets_en_corpus,
          remove_punct = TRUE,
@@ -193,37 +232,40 @@ tweets_en_tokens <-
   tokens_remove(stopwords("english"))
 ```
 
-```{r}
+```{r text mining dfm creation}
 tweets_en_dfm <- dfm(tweets_en_tokens)
 ```
 
-## Top Hashtags
-```{r}
+### Analysis
+#### Top Hashtags
+```{r corpus analysis top hashtags}
 tag_dfm <- dfm_select(tweets_en_dfm, pattern = "#*")
 toptag <- names(topfeatures(tag_dfm, 50))
 head(toptag, 10)
 ```
 
-## Top Mentions
-```{r}
+#### Top Mentions
+```{r corpus analysis top metions}
 user_dfm <- dfm_select(tweets_en_dfm, pattern = "@*")
 topuser <- names(topfeatures(user_dfm, 50))
 head(topuser, 10)
 ```
 
-## Exclude Hashtags & Metions
-```{r}
+#### Exclude Hashtags & Metions
+```{r corpus analysis dfm processing}
 tweets_en_clean <- tweets_en_dfm %>% 
   dfm_remove(pattern = "@*") %>% 
   dfm_remove(pattern = "#*")
 ```
 
-```{r}
+#### Top 10 features
+```{r corpus analysis top features}
 term_freq_en <- textstat_frequency(tweets_en_clean)
 head(term_freq_en, n = 10)
 ```
 
-```{r}
+#### Wordcloud with Top 50 features
+```{r corpus analysis top features wordcloud}
 textplot_wordcloud(tweets_en_clean, max_words = 50)
 ```
 

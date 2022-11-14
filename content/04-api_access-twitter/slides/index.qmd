@@ -1,5 +1,5 @@
 ---
-title: "API-Access - Twitter " 
+title: "API-Access – Twitter " 
 title-slide-attributes:
   data-background-image: ../../00-images/background_title.svg
   data-background-color: "#04316a"
@@ -39,7 +39,7 @@ editor_options:
 ## Seminarplan {.smaller}
 
 | Sitzung                                              | Datum                                                         | Thema                                                                            | Referent\*Innen                                                     |
-|------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------|
+|-----------------|-----------------|---------------------|------------------|
 | [1]{.rn rn-type="strike-through" rn-color="#E6002E"} | [26.10.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Kick-Off Session]{.rn rn-type="strike-through" rn-color="#E6002E"}              | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
 | [2]{.rn rn-type="strike-through" rn-color="#E6002E"} | [02.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Einführung und Überblick]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
 | [3]{.rn rn-type="strike-through" rn-color="#E6002E"} | [09.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Datenerhebung]{.rn rn-type="strike-through" rn-color="#E6002E"}            | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
@@ -64,7 +64,7 @@ editor_options:
 1.  **Group Activity**
 2.  **Beispielhafte Anwendungen**
 
-# Group Activity  {background-color="#E6002E" background-image="../../00-images/background_group_activity.svg"}
+# Group Activity {background-color="#E6002E" background-image="../../00-images/background_group_activity.svg"}
 
 Fragen & Gruppenarbeit
 

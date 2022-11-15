@@ -102,6 +102,10 @@ Fragen & Gruppenarbeit
 > Eine gute Studie lebt von den Kriterien der Validität, Objektivität und Reliabilität. Inwieweit können diese Kriterien bei einer Twitter-Analyse erfüllt werden?
 :::
 
+::: {.fragment .fade-in-then-semi-out fragment-index="8"}
+> Was sind die Gründe für den Rückgang der Forschung mit Twitter-Daten rund um das Thema Marketing?
+:::
+
 
 ## Suchanfrage erstellen & Daten sammeln
 

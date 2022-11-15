@@ -9,7 +9,7 @@ author:
     url: https://twitter.com/chrdrn
     affiliation: Lehrstuhl für Kommunikationswissenschaft
     affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
-date: 09 11 2022
+date: 16 11 2022
 date-format: "DD.MM.YYYY"
 format:
   revealjs:
@@ -68,7 +68,7 @@ editor_options:
 
 Fragen & Gruppenarbeit
 
-## Vielen Dank für Ihre Fragen!
+## Vielen Dank für Ihre Fragen! {.scrollable .smaller}
 
 ::: {.fragment .semi-fade-out fragment-index="1"}
 > Was genau kann unter "N-gram analysis" verstanden werden?
@@ -77,6 +77,31 @@ Fragen & Gruppenarbeit
 ::: {.fragment .fade-in-then-semi-out fragment-index="1"}
 > Um semantische Muster der Daten bei der Twitter-Forschung zu erkennen, wendet man häufig Text-Mining-Methoden an. Wie wird dabei mit ironischen Aussagen oder Umgangssprache umgegangen? Sind solche Analysemethoden somit überhaupt verlässlich oder kann man diesbezüglich mit einer hohen Fehleranfälligkeit rechnen?
 :::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="2"}
+> Viele Studien verwenden Twitter in der Forschung. Dabei werden verschiedene Methoden eingesetzt. Welche Methode (aus Table 4 des Pflichtpapers) würden Sie am meisten empfehlen? Welche ist am aussagekräftigsten? Oder ist das Kontext-bezogen und eine allgemeine Aussage kann nicht getätigt werden?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="3"}
+> Interessant wäre es in diesem Kontext vielleicht nicht nur Twitter, sondern eine andere Social-Media-Plattform zu betrachten, zum Bsp. Facebook. Würden die dominierenden Themen der Facebook-basierten Forschung ähnlich wie bei Twitter ausfallen? Wie sieht wohl die Entwicklung der Themen in den letzten Jahren aus?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="4"}
+> Interessant wäre es in diesem Kontext vielleicht nicht nur Twitter, sondern eine andere Social-Media-Plattform zu betrachten, zum Bsp. Facebook. Würden die dominierenden Themen der Facebook-basierten Forschung ähnlich wie bei Twitter ausfallen? Wie sieht wohl die Entwicklung der Themen in den letzten Jahren aus?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="5"}
+> Twitter wird unter anderem für „Opinion Mining“ verwendet. Jedoch kann es gerade bei polarisierenden Themen vorkommen, dass sich vor allem Personen mit extremer Meinung äußern und die Personen mittig im Spektrum zurückhalten. Wie kann man einen solchen Bias ausgleichen?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="6"}
+> Es kann nur ein kleiner Bruchteil der Twitter-Kommunikation per API abgefragt werden, der zudem noch veraltet ist. Inwieweit sind Trend-Analysen überhaupt möglich? Gibt es Möglichkeiten Twitter-Kommunikation zu "streamen"?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="7"}
+> Eine gute Studie lebt von den Kriterien der Validität, Objektivität und Reliabilität. Inwieweit können diese Kriterien bei einer Twitter-Analyse erfüllt werden?
+:::
+
 
 ## Suchanfrage erstellen & Daten sammeln
 

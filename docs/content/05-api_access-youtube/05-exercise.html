@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Showcase: Twitter</title>
+<title>Showcase: YouTube</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,7 +132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Showcase: Twitter</h1>
+      <h1 class="quarto-secondary-nav-title">Showcase: YouTube</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -222,7 +222,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/04-api_access-twitter/04-exercise.html" class="sidebar-item-text sidebar-link active">Showcase: Twitter</a>
+  <a href="../../content/04-api_access-twitter/04-exercise.html" class="sidebar-item-text sidebar-link">Showcase: Twitter</a>
   </div>
 </li>
       </ul>
@@ -293,7 +293,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Showcase: Twitter</h1>
+<h1 class="title d-none d-lg-block">Showcase: YouTube</h1>
 </div>
 
 
@@ -312,7 +312,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="load-necessary-packages" class="level3">
 <h3 class="anchored" data-anchor-id="load-necessary-packages">Load necessary packages</h3>
-<div class="cell" data-hash="04-exercise_cache/html/load packages_8d251bfb176954acec7f6951b0bd41e3">
+<div class="cell" data-hash="05-exercise_cache/html/load packages_e8c0056de7f75039dd7ed8ce564513b3">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(academictwitteR) <span class="co"># Collecting the data</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># Preparation of the data</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda) <span class="co"># Text mining</span></span>
@@ -328,7 +328,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="set-personal-bearer-token" class="level2">
 <h2 class="anchored" data-anchor-id="set-personal-bearer-token">Set personal bearer token</h2>
-<div class="cell" data-hash="04-exercise_cache/html/set bearer_a29815b1220cc5e0e6bf2365b7dc2233">
+<div class="cell" data-hash="05-exercise_cache/html/set bearer_55ac37954aa9261eb175f4a055b8ce4f">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>personal_bearer_token <span class="ot">&lt;-</span> <span class="st">"INSERT BEARER TOKEN HERE"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -336,7 +336,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="mining-tweets-hashtags">Mining tweets: hashtag(s)</h2>
 <section id="data-collection" class="level3">
 <h3 class="anchored" data-anchor-id="data-collection">Data collection</h3>
-<div class="cell" data-hash="04-exercise_cache/html/mine tweets hashtag_3f60c741ee3061868dacc95120c717bf">
+<div class="cell" data-hash="05-exercise_cache/html/mine tweets hashtag_e9170b015225ccab029f8c7458a6f9df">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_all_tweets</span>(</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">query =</span> <span class="st">"#Karneval"</span>, </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">start_tweets =</span> <span class="st">"2022-11-11T00:00:00Z"</span>,</span>
@@ -349,7 +349,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <section id="read-data-from-disc" class="level4">
 <h4 class="anchored" data-anchor-id="read-data-from-disc">Read data from disc</h4>
-<div class="cell" data-hash="04-exercise_cache/html/read tweets hashtag_ebadf54b20278df2b1b2c9b43bc7e2e7">
+<div class="cell" data-hash="05-exercise_cache/html/read tweets hashtag_121acad7f7b412076ae21d0d5103684c">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="ot">&lt;-</span> <span class="fu">bind_tweets</span>(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data_path =</span> <span class="fu">here</span>(<span class="st">"content/04-api_access-twitter/data/raw_karneval"</span>),</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">output_format =</span> <span class="st">"tidy"</span>) <span class="sc">%&gt;%</span> </span>
@@ -368,7 +368,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 class="anchored" data-anchor-id="data-analysis">Data analysis</h3>
 <section id="overview-of-dataset" class="level4">
 <h4 class="anchored" data-anchor-id="overview-of-dataset">Overview of dataset</h4>
-<div class="cell" data-hash="04-exercise_cache/html/hashtag analysis overview_2ea6788cc3411184d858e50d22f944ad">
+<div class="cell" data-hash="05-exercise_cache/html/hashtag analysis overview_64efdb4ce4eb2778aa9e4f801b6cd6a5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> glimpse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 2,637
@@ -415,7 +415,7 @@ $ hm                     &lt;time&gt; 08:15:00, 08:14:00, 08:14:00, 08:14:00, 08
 </section>
 <section id="language-of-tweets" class="level4">
 <h4 class="anchored" data-anchor-id="language-of-tweets">Language of tweets</h4>
-<div class="cell" data-hash="04-exercise_cache/html/hashtag analysis language_c73c6c67783595c0bc99b28b3ca02349">
+<div class="cell" data-hash="05-exercise_cache/html/hashtag analysis language_686dc0090b4bc4ba567a6cddbcbc2718">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">frq</span>(tweets_karneval<span class="sc">$</span>lang, <span class="at">sort.frq =</span> <span class="st">"desc"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x &lt;character&gt; 
@@ -451,20 +451,20 @@ is    |    1 |  0.04 |    0.04 | 100.00
 </section>
 <section id="tweets-over-time" class="level4">
 <h4 class="anchored" data-anchor-id="tweets-over-time">Tweets over time</h4>
-<div class="cell" data-hash="04-exercise_cache/html/hashtag analysis time_a8b17b0285fe2e2d50b6179453838eff">
+<div class="cell" data-hash="05-exercise_cache/html/hashtag analysis time_bbc467c50360619427e6eff7e967f35c">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(hour)) <span class="sc">+</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(date)) <span class="sc">+</span></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_pubr</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="04-exercise_files/figure-html/hashtag analysis time-1.png" class="img-fluid" width="672"></p>
+<p><img src="05-exercise_files/figure-html/hashtag analysis time-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="most-frequent-time-hhmm-of-sending-tweets" class="level4">
 <h4 class="anchored" data-anchor-id="most-frequent-time-hhmm-of-sending-tweets">Most frequent time (HH:MM) of sending tweets</h4>
-<div class="cell" data-hash="04-exercise_cache/html/hashtag analysis time peaks_d73913694bf21baffcbfc564051e48c1">
+<div class="cell" data-hash="05-exercise_cache/html/hashtag analysis time peaks_477e311b322d8090353f29fbae5526fd">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(hm,</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">sort.frq =</span> <span class="st">"desc"</span>, </span>
@@ -489,7 +489,7 @@ n &lt; 10   | 2510 | 95.18 |   95.18 | 100.00
 </section>
 <section id="user-with-the-most-tweets" class="level4">
 <h4 class="anchored" data-anchor-id="user-with-the-most-tweets">User with the most tweets</h4>
-<div class="cell" data-hash="04-exercise_cache/html/hashtag analysis frequent users_f0d0def2f91239399321e5963a497515">
+<div class="cell" data-hash="05-exercise_cache/html/hashtag analysis frequent users_af0f8e701f8619773952fe374970b719">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(user_username,</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">sort.frq =</span> <span class="st">"desc"</span>, </span>
@@ -546,7 +546,7 @@ n &lt; 5           | 2265 | 85.89 |   85.89 | 100.00
 </section>
 <section id="display-tweets-from-most-freuquent-users" class="level4">
 <h4 class="anchored" data-anchor-id="display-tweets-from-most-freuquent-users">Display tweets from most freuquent users</h4>
-<div class="cell" data-hash="04-exercise_cache/html/hashtag analysis user example 1_84808fa6976fa95c9d69206f9e225576">
+<div class="cell" data-hash="05-exercise_cache/html/hashtag analysis user example 1_86ac8b7526d9fe149846ad8e7c554d0a">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(user_username <span class="sc">==</span> <span class="st">"Gun17170309"</span>) <span class="sc">%$%</span> </span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(</span>
@@ -599,7 +599,7 @@ RT @Gun17170309: https://t.co/mw3W1igegD
 💙💚💛🧡❤️🤎💜💙</code></pre>
 </div>
 </div>
-<div class="cell" data-hash="04-exercise_cache/html/hashtag analysis user example 2_b15895ae519257351e817a0eb14dea67">
+<div class="cell" data-hash="05-exercise_cache/html/hashtag analysis user example 2_f715809848b2cbdabc284f878a46053d">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(user_username <span class="sc">==</span> <span class="st">"berlinaffaires"</span>) <span class="sc">%$%</span> </span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(</span>
@@ -644,7 +644,7 @@ RT @bernhardboeth: @hessenschau Was haben wir den ganzen Vormittag auf diesen Mo
 <h2 class="anchored" data-anchor-id="mining-tweets-profiles">Mining tweets: profile(s)</h2>
 <section id="data-collection-1" class="level3">
 <h3 class="anchored" data-anchor-id="data-collection-1">Data collection</h3>
-<div class="cell" data-hash="04-exercise_cache/html/mine tweets profile_5a61d57ac9f642ff36a279c6609a5cb1">
+<div class="cell" data-hash="05-exercise_cache/html/mine tweets profile_2c56c4eaaa3626f1d91a467f6965489a">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_all_tweets</span>(</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">users =</span> <span class="fu">c</span>(<span class="st">"elonmusk"</span>),</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">start_tweets =</span> <span class="st">"2020-11-11T00:00:00Z"</span>,</span>
@@ -657,7 +657,7 @@ RT @bernhardboeth: @hessenschau Was haben wir den ganzen Vormittag auf diesen Mo
 </div>
 <section id="read-data-from-disc-1" class="level4">
 <h4 class="anchored" data-anchor-id="read-data-from-disc-1">Read data from disc</h4>
-<div class="cell" data-hash="04-exercise_cache/html/read tweets profile_b477d3a7ad7d7f5fb9943f24d5a34fac">
+<div class="cell" data-hash="05-exercise_cache/html/read tweets profile_2c2187bc5dc223c2356dd05c3aef36d6">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="ot">&lt;-</span> <span class="fu">bind_tweets</span>(</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data_path =</span> <span class="fu">here</span>(<span class="st">"content/04-api_access-twitter/data/raw_elonmusk"</span>),</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># data_path = "data/raw_karneval",</span></span>
@@ -677,7 +677,7 @@ RT @bernhardboeth: @hessenschau Was haben wir den ganzen Vormittag auf diesen Mo
 <h3 class="anchored" data-anchor-id="data-analysis-1">Data analysis</h3>
 <section id="overview-of-dataset-1" class="level4">
 <h4 class="anchored" data-anchor-id="overview-of-dataset-1">Overview of dataset</h4>
-<div class="cell" data-hash="04-exercise_cache/html/profile analysis overview_a55c0fbe8cafbdd8d42ac9b900bf7380">
+<div class="cell" data-hash="05-exercise_cache/html/profile analysis overview_3c06e2ea5f96bdf3bb4bc8edf44955d1">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> glimpse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 7,255
@@ -724,19 +724,19 @@ $ hm                     &lt;time&gt; 23:07:00, 23:02:00, 18:13:00, 18:05:00, 16
 </section>
 <section id="tweets-over-time-1" class="level4">
 <h4 class="anchored" data-anchor-id="tweets-over-time-1">Tweets over time</h4>
-<div class="cell" data-hash="04-exercise_cache/html/profile analysis time_432ef03ad20777d785ff7ef75b785a26">
+<div class="cell" data-hash="05-exercise_cache/html/profile analysis time_98ddc18801b7dc4b64b726333b579206">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(date)) <span class="sc">+</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_pubr</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="04-exercise_files/figure-html/profile analysis time-1.png" class="img-fluid" width="672"></p>
+<p><img src="05-exercise_files/figure-html/profile analysis time-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
 <section id="tweets-with-the-most-likes" class="level4">
 <h4 class="anchored" data-anchor-id="tweets-with-the-most-likes">Tweets with the most likes</h4>
-<div class="cell" data-hash="04-exercise_cache/html/profile analysis most likes_2ddaddf6d5ccc1d1f04522646c20f225">
+<div class="cell" data-hash="05-exercise_cache/html/profile analysis most likes_e142fe67ac9955a5addc1ba210eeda61">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(sourcetweet_type)) <span class="sc">%&gt;%</span> </span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>like_count) <span class="sc">%&gt;%</span> </span>
@@ -762,7 +762,7 @@ $ hm                     &lt;time&gt; 23:07:00, 23:02:00, 18:13:00, 18:05:00, 16
 </section>
 <section id="tweets-with-the-most-retweets" class="level4">
 <h4 class="anchored" data-anchor-id="tweets-with-the-most-retweets">Tweets with the most retweets</h4>
-<div class="cell" data-hash="04-exercise_cache/html/profile analysis most retweets_d2ba515a1aaa63b6f1c94b0098605485">
+<div class="cell" data-hash="05-exercise_cache/html/profile analysis most retweets_59a1d1ff8c3480c05298f7ae2e6ee994">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(sourcetweet_type)) <span class="sc">%&gt;%</span> </span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>retweet_count) <span class="sc">%&gt;%</span> </span>
@@ -788,7 +788,7 @@ $ hm                     &lt;time&gt; 23:07:00, 23:02:00, 18:13:00, 18:05:00, 16
 </section>
 <section id="proportion-of-tweets" class="level4">
 <h4 class="anchored" data-anchor-id="proportion-of-tweets">Proportion of tweets</h4>
-<div class="cell" data-hash="04-exercise_cache/html/profile analysis tweet type_e08c50b38a3fb089b36767b0b5ef8d72">
+<div class="cell" data-hash="05-exercise_cache/html/profile analysis tweet type_78b471da1a00ec41ae1be2762d5eecbd">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(sourcetweet_type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -805,7 +805,7 @@ retweeted |  364 |  5.02 |   74.44 | 100.00
 </section>
 <section id="languate-of-tweets" class="level4">
 <h4 class="anchored" data-anchor-id="languate-of-tweets">Languate of tweets</h4>
-<div class="cell" data-hash="04-exercise_cache/html/profile analysis language_1699cddc93719e90c63866a498d4e040">
+<div class="cell" data-hash="05-exercise_cache/html/profile analysis language_8acfb9c1e0da09d5e1ebe0ca242abf94">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>tweets_musk <span class="sc">%&gt;%</span> </span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(lang)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -864,7 +864,7 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 <h2 class="anchored" data-anchor-id="text-mining">Text mining</h2>
 <section id="preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing">Preprocessing</h3>
-<div class="cell" data-hash="04-exercise_cache/html/text mining preprocessing_d80fb82202c5857bbc28db711e7deb34">
+<div class="cell" data-hash="05-exercise_cache/html/text mining preprocessing_b9cf71eac9f11888ad09659c93f158e1">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>remove_html <span class="ot">&lt;-</span> <span class="st">"&amp;amp;|&amp;lt;|&amp;gt;"</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>tweets_en <span class="ot">&lt;-</span> tweets_musk <span class="sc">%&gt;%</span> </span>
@@ -873,12 +873,12 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 <span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(tweet_id, text, user_username) <span class="sc">%&gt;%</span> </span>
 <span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">text =</span> <span class="fu">str_remove_all</span>(text, remove_html))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="04-exercise_cache/html/text mining corpus creation_1bb52cefd063182e46a75c047bdf56a9">
+<div class="cell" data-hash="05-exercise_cache/html/text mining corpus creation_bfa49bb7d08d82052ea25dec05316d74">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>tweets_en_corpus <span class="ot">&lt;-</span> <span class="fu">corpus</span>(tweets_en,</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>                           <span class="at">docid_field =</span> <span class="st">"tweet_id"</span>,</span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">text_field =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="04-exercise_cache/html/text mining tokenization_50a0a0525ddce60d60bdf63c6d50a870">
+<div class="cell" data-hash="05-exercise_cache/html/text mining tokenization_0f1799ddf58286b93dbb065fe13a6818">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>tweets_en_tokens <span class="ot">&lt;-</span> </span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens</span>(tweets_en_corpus,</span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">remove_punct =</span> <span class="cn">TRUE</span>,</span>
@@ -888,7 +888,7 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 <span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens_tolower</span>() <span class="sc">%&gt;%</span> </span>
 <span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens_remove</span>(<span class="fu">stopwords</span>(<span class="st">"english"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="04-exercise_cache/html/text mining dfm creation_bdbfb7985743308b94b0c858d2179e53">
+<div class="cell" data-hash="05-exercise_cache/html/text mining dfm creation_c9b8b9f2f969add20c65c8e817b19b70">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>tweets_en_dfm <span class="ot">&lt;-</span> <span class="fu">dfm</span>(tweets_en_tokens)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -896,7 +896,7 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 <h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
 <section id="top-hashtags" class="level4">
 <h4 class="anchored" data-anchor-id="top-hashtags">Top Hashtags</h4>
-<div class="cell" data-hash="04-exercise_cache/html/corpus analysis top hashtags_d471ecae1236aed4e380a6bde62ebc8d">
+<div class="cell" data-hash="05-exercise_cache/html/corpus analysis top hashtags_a49d734636a8685c1bc6e53f68ed91e3">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>tag_dfm <span class="ot">&lt;-</span> <span class="fu">dfm_select</span>(tweets_en_dfm, <span class="at">pattern =</span> <span class="st">"#*"</span>)</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>toptag <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">topfeatures</span>(tag_dfm, <span class="dv">50</span>))</span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(toptag, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -908,7 +908,7 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 </section>
 <section id="top-mentions" class="level4">
 <h4 class="anchored" data-anchor-id="top-mentions">Top Mentions</h4>
-<div class="cell" data-hash="04-exercise_cache/html/corpus analysis top metions_b6f2f8c146b2e872aaad4535fb613745">
+<div class="cell" data-hash="05-exercise_cache/html/corpus analysis top metions_30b53cbd6dbc7b178a2d00996a59e50a">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>user_dfm <span class="ot">&lt;-</span> <span class="fu">dfm_select</span>(tweets_en_dfm, <span class="at">pattern =</span> <span class="st">"@*"</span>)</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>topuser <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">topfeatures</span>(user_dfm, <span class="dv">50</span>))</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(topuser, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -921,7 +921,7 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 </section>
 <section id="exclude-hashtags-metions" class="level4">
 <h4 class="anchored" data-anchor-id="exclude-hashtags-metions">Exclude Hashtags &amp; Metions</h4>
-<div class="cell" data-hash="04-exercise_cache/html/corpus analysis dfm processing_de7a65b31bc8ed4d24a6450d417c9cc4">
+<div class="cell" data-hash="05-exercise_cache/html/corpus analysis dfm processing_2406af76080fae94bd67d45560e5e509">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>tweets_en_clean <span class="ot">&lt;-</span> tweets_en_dfm <span class="sc">%&gt;%</span> </span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm_remove</span>(<span class="at">pattern =</span> <span class="st">"@*"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm_remove</span>(<span class="at">pattern =</span> <span class="st">"#*"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -929,7 +929,7 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 </section>
 <section id="top-10-features" class="level4">
 <h4 class="anchored" data-anchor-id="top-10-features">Top 10 features</h4>
-<div class="cell" data-hash="04-exercise_cache/html/corpus analysis top features_418f9c8e5a54bb19d71b0219500ad730">
+<div class="cell" data-hash="05-exercise_cache/html/corpus analysis top features_cc7ded4797ba4b5c2694a61fb52ab634">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>term_freq_en <span class="ot">&lt;-</span> <span class="fu">textstat_frequency</span>(tweets_en_clean)</span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(term_freq_en, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -949,10 +949,10 @@ zxx   |  169 |  2.33 |    2.33 | 100.00
 </section>
 <section id="wordcloud-with-top-50-features" class="level4">
 <h4 class="anchored" data-anchor-id="wordcloud-with-top-50-features">Wordcloud with Top 50 features</h4>
-<div class="cell" data-hash="04-exercise_cache/html/corpus analysis top features wordcloud_3dc094594881bbc6b5929f87e56e3c92">
+<div class="cell" data-hash="05-exercise_cache/html/corpus analysis top features wordcloud_ba6e82b330295f8acc0034dec7533a06">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">textplot_wordcloud</span>(tweets_en_clean, <span class="at">max_words =</span> <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="04-exercise_files/figure-html/corpus analysis top features wordcloud-1.png" class="img-fluid" width="672"></p>
+<p><img src="05-exercise_files/figure-html/corpus analysis top features wordcloud-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 

@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christoph Adrian">
+
+<title>API-Access – Twitter</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
+<script src="../../../site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">API-Access – Twitter</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../../">Digital behavioral data</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Kick-Off</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/01-kick-off/01-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Introduction</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/02-dbb-introduction_overview/02-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Data Collection</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/03-dbd-data_collection/03-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">API Access: Twitter</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/04-api_access-twitter/04-slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/04-api_access-twitter/04-exercise.html" class="sidebar-item-text sidebar-link">Showcase: Twitter</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#seminarplan" id="toc-seminarplan" class="nav-link active" data-scroll-target="#seminarplan">Seminarplan</a></li>
+  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
+  <li><a href="#group-activity" id="toc-group-activity" class="nav-link" data-scroll-target="#group-activity">Group Activity</a>
+  <ul class="collapse">
+  <li><a href="#vielen-dank-für-ihre-fragen" id="toc-vielen-dank-für-ihre-fragen" class="nav-link" data-scroll-target="#vielen-dank-für-ihre-fragen">Vielen Dank für Ihre Fragen!</a></li>
+  <li><a href="#suchanfrage-erstellen-daten-sammeln" id="toc-suchanfrage-erstellen-daten-sammeln" class="nav-link" data-scroll-target="#suchanfrage-erstellen-daten-sammeln">Suchanfrage erstellen &amp; Daten sammeln</a></li>
+  <li><a href="#format-der-daten-potentielle-analysen" id="toc-format-der-daten-potentielle-analysen" class="nav-link" data-scroll-target="#format-der-daten-potentielle-analysen">Format der Daten &amp; potentielle Analyse(n)</a></li>
+  </ul></li>
+  <li><a href="#beispielhafte-auswertungen" id="toc-beispielhafte-auswertungen" class="nav-link" data-scroll-target="#beispielhafte-auswertungen">Beispielhafte Auswertungen</a>
+  <ul class="collapse">
+  <li><a href="#setup-und-datensammlung-mit-r" id="toc-setup-und-datensammlung-mit-r" class="nav-link" data-scroll-target="#setup-und-datensammlung-mit-r">Setup und Datensammlung mit R</a></li>
+  <li><a href="#kurzer-blick-in-die-daten" id="toc-kurzer-blick-in-die-daten" class="nav-link" data-scroll-target="#kurzer-blick-in-die-daten">Kurzer Blick in die Daten</a></li>
+  <li><a href="#deutsch-hashtags-englisch" id="toc-deutsch-hashtags-englisch" class="nav-link" data-scroll-target="#deutsch-hashtags-englisch">Deutsch, Hashtags, Englisch …</a></li>
+  <li><a href="#am-11.11.-um-1011" id="toc-am-11.11.-um-1011" class="nav-link" data-scroll-target="#am-11.11.-um-1011">Am 11.11. um 10:11?</a></li>
+  <li><a href="#utc-statt-utc1" id="toc-utc-statt-utc1" class="nav-link" data-scroll-target="#utc-statt-utc1">UTC statt UTC+1</a></li>
+  <li><a href="#ein-blick-auf-die-senderinnen" id="toc-ein-blick-auf-die-senderinnen" class="nav-link" data-scroll-target="#ein-blick-auf-die-senderinnen">Ein Blick auf die Sender:Innen</a></li>
+  </ul></li>
+  <li><a href="#time-for-questions" id="toc-time-for-questions" class="nav-link" data-scroll-target="#time-for-questions">Time for questions</a></li>
+  <li><a href="#bis-zur-nächsten-sitzung" id="toc-bis-zur-nächsten-sitzung" class="nav-link" data-scroll-target="#bis-zur-nächsten-sitzung">Bis zur nächsten Sitzung!</a>
+  <ul class="collapse">
+  <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">API-Access – Twitter</h1>
+<p class="subtitle lead">Digital behavioral data - Session 04</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading"></div>
+  
+    <div class="quarto-title-meta-contents">
+    <a href="https://twitter.com/chrdrn">Christoph Adrian</a> 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.kowi.rw.fau.de/person/christoph-adrian/">
+            Lehrstuhl für Kommunikationswissenschaft
+            </a>
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">16.11.2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="seminarplan" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="seminarplan">Seminarplan</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Sitzung</th>
+<th>Datum</th>
+<th>Thema</th>
+<th>Referent*Innen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">1</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">26.10.2022</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Kick-Off Session</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Christoph Adrian</span></td>
+</tr>
+<tr class="even">
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">2</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">02.11.2022</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">DBD: Einführung und Überblick</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Christoph Adrian</span></td>
+</tr>
+<tr class="odd">
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">3</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">09.11.2022</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">DBD: Datenerhebung</span></td>
+<td><span class="rn" data-rn-type="strike-through" data-rn-color="#E6002E">Christoph Adrian</span></td>
+</tr>
+<tr class="even">
+<td><span class="rn" data-rn-type="highlight"><strong>4</strong></span></td>
+<td><span class="rn" data-rn-type="highlight"><strong>16.11.2022</strong></span></td>
+<td><span class="rn" data-rn-type="highlight"><strong>API-Access (I): Twitter</strong></span></td>
+<td><span class="rn" data-rn-type="highlight">Falk</span></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>23.11.2022</td>
+<td>API-Access (II): <em>YouTube</em></td>
+<td>Denisov</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>30.11.2022</td>
+<td>API-Access (II): <em>Reddit</em></td>
+<td>Landauer</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>07.12.2022</td>
+<td>Webscraping: <em>TikTok</em></td>
+<td>Brand &amp; Kocher</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>14.12.2022</td>
+<td>Exkurs: DBD Analyse mit R</td>
+<td>Christoph Adrian</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><em>WEIHNACHTSPAUSE</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>12.01.2023</td>
+<td>ESM: <em>m-path</em></td>
+<td>Dörr</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>19.01.2023</td>
+<td>Data Donations</td>
+<td>Hofmann &amp; Wierzbicki</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>26.01.2023</td>
+<td><em>PUFFER</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>02.02.2023</td>
+<td><em>Guest Lecture: Linking DBD &amp; Survey data</em></td>
+<td><a href="https://www.johannesbreuer.com/">Johannes Breuer</a></td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>09.02.2023</td>
+<td>Semesterabschluss &amp; Evaluation</td>
+<td>Christoph Adrian</td>
+</tr>
+</tbody>
+</table>
+<div class="notes">
+<p>▶️</p>
+</div>
+</section>
+<section id="agenda" class="level1">
+<h1>Agenda</h1>
+<ol type="1">
+<li><strong>Group Activity</strong></li>
+<li><strong>Beispielhafte Anwendungen</strong></li>
+</ol>
+</section>
+<section id="group-activity" class="level1" data-background-color="#E6002E" data-background-image="../../00-images/background_group_activity.svg">
+<h1 data-background-color="#E6002E" data-background-image="../../00-images/background_group_activity.svg">Group Activity</h1>
+<p>Fragen &amp; Gruppenarbeit</p>
+<section id="vielen-dank-für-ihre-fragen" class="level2 scrollable smaller">
+<h2 class="scrollable smaller anchored" data-anchor-id="vielen-dank-für-ihre-fragen">Vielen Dank für Ihre Fragen!</h2>
+<div class="fragment semi-fade-out" data-fragment-index="1">
+<blockquote class="blockquote">
+<p>Was genau kann unter “N-gram analysis” verstanden werden?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="1">
+<blockquote class="blockquote">
+<p>Um semantische Muster der Daten bei der Twitter-Forschung zu erkennen, wendet man häufig Text-Mining-Methoden an. Wie wird dabei mit ironischen Aussagen oder Umgangssprache umgegangen? Sind solche Analysemethoden somit überhaupt verlässlich oder kann man diesbezüglich mit einer hohen Fehleranfälligkeit rechnen?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<blockquote class="blockquote">
+<p>Viele Studien verwenden Twitter in der Forschung. Dabei werden verschiedene Methoden eingesetzt. Welche Methode (aus Table 4 des Pflichtpapers) würden Sie am meisten empfehlen? Welche ist am aussagekräftigsten? Oder ist das Kontext-bezogen und eine allgemeine Aussage kann nicht getätigt werden?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="3">
+<blockquote class="blockquote">
+<p>Interessant wäre es in diesem Kontext vielleicht nicht nur Twitter, sondern eine andere Social-Media-Plattform zu betrachten, zum Bsp. Facebook. Würden die dominierenden Themen der Facebook-basierten Forschung ähnlich wie bei Twitter ausfallen? Wie sieht wohl die Entwicklung der Themen in den letzten Jahren aus?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="4">
+<blockquote class="blockquote">
+<p>Interessant wäre es in diesem Kontext vielleicht nicht nur Twitter, sondern eine andere Social-Media-Plattform zu betrachten, zum Bsp. Facebook. Würden die dominierenden Themen der Facebook-basierten Forschung ähnlich wie bei Twitter ausfallen? Wie sieht wohl die Entwicklung der Themen in den letzten Jahren aus?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="5">
+<blockquote class="blockquote">
+<p>Twitter wird unter anderem für „Opinion Mining“ verwendet. Jedoch kann es gerade bei polarisierenden Themen vorkommen, dass sich vor allem Personen mit extremer Meinung äußern und die Personen mittig im Spektrum zurückhalten. Wie kann man einen solchen Bias ausgleichen?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="6">
+<blockquote class="blockquote">
+<p>Es kann nur ein kleiner Bruchteil der Twitter-Kommunikation per API abgefragt werden, der zudem noch veraltet ist. Inwieweit sind Trend-Analysen überhaupt möglich? Gibt es Möglichkeiten Twitter-Kommunikation zu “streamen”?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="7">
+<blockquote class="blockquote">
+<p>Eine gute Studie lebt von den Kriterien der Validität, Objektivität und Reliabilität. Inwieweit können diese Kriterien bei einer Twitter-Analyse erfüllt werden?</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="8">
+<blockquote class="blockquote">
+<p>Was sind die Gründe für den Rückgang der Forschung mit Twitter-Daten rund um das Thema Marketing?</p>
+</blockquote>
+</div>
+</section>
+<section id="suchanfrage-erstellen-daten-sammeln" class="level2">
+<h2 class="anchored" data-anchor-id="suchanfrage-erstellen-daten-sammeln">Suchanfrage erstellen &amp; Daten sammeln</h2>
+<section id="twitter-case-study---teil-1-suchen-sammeln" class="level4">
+<h4 class="anchored" data-anchor-id="twitter-case-study---teil-1-suchen-sammeln">Twitter case study - Teil 1: Suchen &amp; Sammeln</h4>
+<div class="callout-important callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Für die Nutzung des <a href="https://developer.twitter.com/apitools/downloader">Tweet Downloader</a> benötigen Sie einen <code>Bearer Token</code>. Diesen finden Sie auf MS Teams.</p>
+</div>
+</div>
+</div>
+<p>Wäheln Sie eine der folgenden Szenarien aus und erstellen Sie eine Suchanfrage mit Hilfe des <a href="https://developer.twitter.com/apitools/query?query=">Twitter Query Builder</a>:</p>
+<ul>
+<li><p>Alle Tweets eines <strong>bestimmten Accounts</strong> seit dem <strong>01.10.2022</strong></p></li>
+<li><p>Alle Tweets (<u>ohne Retweets</u>) <strong>mit dem Hashtag</strong> <code>#karneval</code> oder <code>#wokwm</code> am <strong>letzten Wochenende</strong></p></li>
+</ul>
+<p>… und ziehen sich die Tweets <strong>als .csv &amp; .json</strong> mit Hilfe des <a href="https://developer.twitter.com/apitools/downloader">Tweet Downloader</a> (<em>benötigt Chrome, Edge oder Opera</em>)</p>
+</section>
+</section>
+<section id="format-der-daten-potentielle-analysen" class="level2">
+<h2 class="anchored" data-anchor-id="format-der-daten-potentielle-analysen">Format der Daten &amp; potentielle Analyse(n)</h2>
+<section id="twitter-case-study---teil-2-sichten-konzipieren" class="level4">
+<h4 class="anchored" data-anchor-id="twitter-case-study---teil-2-sichten-konzipieren">Twitter case study - Teil 2: Sichten &amp; Konzipieren</h4>
+<ol type="1">
+<li><p>Inspizieren Sie anschließend die Datensätze und schauen Sie, welche Informationen Ihnen geliefert werden.</p>
+<ul>
+<li>Wie unterscheiden sich die Datenformate?</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li><p>Auf Basis der gesichteten Daten …</p>
+<ul>
+<li><p>Wie würden Sie die Daten analyiseren bzw. welche Aspekte würden Sie sich anschauen?</p></li>
+<li><p>Welche potentielle Fragestellungen könnten Sie spontan entwickeln?</p></li>
+</ul></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="beispielhafte-auswertungen" class="level1" data-background-color="#E6002E">
+<h1 data-background-color="#E6002E">Beispielhafte Auswertungen</h1>
+<p>Im Fokus: <code>#Karneval</code></p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+✔ readr   2.1.3      ✔ forcats 0.5.2 
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Package version: 3.2.3
+Unicode version: 13.0
+ICU version: 69.1
+
+Parallel computing: 8 of 8 threads used.
+
+See https://quanteda.io for tutorials and examples.
+
+here() starts at D:/repos/github/digital-behavioral-data
+
+
+Attaching package: 'sjmisc'
+
+
+The following object is masked from 'package:purrr':
+
+    is_empty
+
+
+The following object is masked from 'package:tidyr':
+
+    replace_na
+
+
+The following object is masked from 'package:tibble':
+
+    add_case
+
+
+Loading required package: timechange
+
+
+Attaching package: 'lubridate'
+
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union</code></pre>
+</div>
+</div>
+<section id="setup-und-datensammlung-mit-r" class="level2">
+<h2 class="anchored" data-anchor-id="setup-und-datensammlung-mit-r">Setup und Datensammlung mit R</h2>
+<section id="karneval-im-fokus-hintergrund-und-datensammelung" class="level4">
+<h4 class="anchored" data-anchor-id="karneval-im-fokus-hintergrund-und-datensammelung"><code>#Karneval</code> im Fokus: Hintergrund und Datensammelung</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Alle Tweets herunterladen, die</p>
+<ul>
+<li><p><strong><code>#Karneval</code></strong> enthalten</p></li>
+<li><p>zwischen <strong>00:00 am 11.11.2022</strong> und <strong>12:00 am 13.12.2022</strong> erschienen sind</p></li>
+</ul>
+<p>Weiterverarbeitung und Auswertung der Daten mit R, Fokus auf Paket <code>academictwitteR</code> <span class="citation" data-cites="barrie2021">(<a href="#ref-barrie2021" role="doc-biblioref">Barrie &amp; Ho, 2021</a>)</span></p>
+</div><div class="column" style="width:50%;">
+<p>Sammlung der Daten mit <code>academictwitteR</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">get_all_tweets</span>(</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="at">query =</span> <span class="st">"#Karneval"</span>, </span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="at">start_tweets =</span> <span class="st">"2022-11-11T00:00:00Z"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="at">end_tweets =</span> <span class="st">"2022-11-13T12:00:00Z"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="at">file =</span> <span class="st">"karneval"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="at">data_path =</span> <span class="st">"data/raw_karneval/"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="at">n =</span> <span class="dv">100000</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="kurzer-blick-in-die-daten" class="level2">
+<h2 class="anchored" data-anchor-id="kurzer-blick-in-die-daten">Kurzer Blick in die Daten</h2>
+<section id="karneval-im-fokus-datenübersicht" class="level4">
+<h4 class="anchored" data-anchor-id="karneval-im-fokus-datenübersicht"><code>#Karneval</code> im Fokus: Datenübersicht</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 2,637
+Columns: 37
+$ tweet_id               &lt;chr&gt; "1590981439457464321", "1590981390123892740", "…
+$ user_username          &lt;chr&gt; "truthonearth3", "Auno94", "HaiAriane", "ElCobr…
+$ text                   &lt;chr&gt; "RT @faqyoutoo: Ab heute 11:11 h dürfen wir uns…
+$ created_at             &lt;chr&gt; "2022-11-11T08:15:08.000Z", "2022-11-11T08:14:5…
+$ lang                   &lt;chr&gt; "de", "de", "de", "und", "und", "und", "und", "…
+$ possibly_sensitive     &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE,…
+$ author_id              &lt;chr&gt; "1486309822832287746", "2745840416", "995739344…
+$ source                 &lt;chr&gt; "Twitter for Android", "Twitter for Android", "…
+$ conversation_id        &lt;chr&gt; "1590981439457464321", "1590981390123892740", "…
+$ in_reply_to_user_id    &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ user_protected         &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ user_description       &lt;chr&gt; "I♥️Trump\nAnd Trump ♥️US.", "Zertifizierter Alma…
+$ user_profile_image_url &lt;chr&gt; "https://pbs.twimg.com/profile_images/158736121…
+$ user_pinned_tweet_id   &lt;chr&gt; "1591132482271080448", "1346065459297267712", N…
+$ user_verified          &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE…
+$ user_name              &lt;chr&gt; "truthonearth", "Auno", "Pirschelbär", "Michael…
+$ user_created_at        &lt;chr&gt; "2022-01-26T12:07:54.000Z", "2014-08-19T17:42:0…
+$ user_location          &lt;chr&gt; NA, "Köln, Deutschland", NA, "Bonn, Germany", N…
+$ user_url               &lt;chr&gt; NA, "https://t.co/lodH0xUg0C", NA, NA, NA, NA, …
+$ retweet_count          &lt;int&gt; 2, 0, 0, 178, 178, 178, 178, 178, 178, 178, 178…
+$ like_count             &lt;int&gt; 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ quote_count            &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ user_tweet_count       &lt;int&gt; 840, 5851, 495, 110593, 5045, 1351, 932, 29967,…
+$ user_list_count        &lt;int&gt; 0, 0, 0, 77, 0, 1, 1, 0, 0, 1, 1, 5, 3, 73, 18,…
+$ user_followers_count   &lt;int&gt; 268, 197, 18, 1260, 54, 109, 71, 372, 126, 145,…
+$ user_following_count   &lt;int&gt; 1102, 1124, 118, 476, 436, 403, 411, 748, 1339,…
+$ sourcetweet_type       &lt;chr&gt; "retweeted", NA, NA, "retweeted", "retweeted", …
+$ sourcetweet_id         &lt;chr&gt; "1590967777762086912", NA, NA, "159097615399271…
+$ sourcetweet_text       &lt;chr&gt; "Ab heute 11:11 h dürfen wir uns wieder verklei…
+$ sourcetweet_lang       &lt;chr&gt; "de", NA, NA, "und", "und", "und", "und", "und"…
+$ sourcetweet_author_id  &lt;chr&gt; "946619921454247937", NA, NA, "529561909", "529…
+$ datetime               &lt;dttm&gt; 2022-11-11 08:15:08, 2022-11-11 08:14:57, 2022…
+$ date                   &lt;date&gt; 2022-11-11, 2022-11-11, 2022-11-11, 2022-11-11…
+$ hour                   &lt;int&gt; 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,…
+$ min                    &lt;int&gt; 15, 14, 14, 14, 13, 13, 13, 13, 13, 13, 13, 12,…
+$ hms                    &lt;time&gt; 08:15:08, 08:14:57, 08:14:29, 08:14:29, 08:13:…
+$ hm                     &lt;time&gt; 08:15:00, 08:14:00, 08:14:00, 08:14:00, 08:13:…</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="deutsch-hashtags-englisch" class="level2">
+<h2 class="anchored" data-anchor-id="deutsch-hashtags-englisch">Deutsch, Hashtags, Englisch …</h2>
+<section id="karneval-im-fokus-sprache-der-tweets" class="level4">
+<h4 class="anchored" data-anchor-id="karneval-im-fokus-sprache-der-tweets"><code>#Karneval</code> im Fokus: Sprache der Tweets</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(tweets_karneval<span class="sc">$</span>lang)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  ca   cs   cy   da   de   en   es   et   eu   fi   fr   in   is   ja   lt   nl 
+   5    3    2    4 2180  112   18    2    3    3    9    7    1    2    2    9 
+  no   pl  qht  qme   tr  und 
+   7    8    6   43   10  201 </code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">frq</span>(tweets_karneval<span class="sc">$</span>lang, <span class="at">sort.frq =</span> <span class="st">"desc"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>x &lt;character&gt; 
+# total N=2637 valid N=2637 mean=6.85 sd=5.06
+
+Value |    N | Raw % | Valid % | Cum. %
+---------------------------------------
+de    | 2180 | 82.67 |   82.67 |  82.67
+und   |  201 |  7.62 |    7.62 |  90.29
+en    |  112 |  4.25 |    4.25 |  94.54
+qme   |   43 |  1.63 |    1.63 |  96.17
+es    |   18 |  0.68 |    0.68 |  96.85
+tr    |   10 |  0.38 |    0.38 |  97.23
+fr    |    9 |  0.34 |    0.34 |  97.57
+nl    |    9 |  0.34 |    0.34 |  97.91
+pl    |    8 |  0.30 |    0.30 |  98.22
+in    |    7 |  0.27 |    0.27 |  98.48
+no    |    7 |  0.27 |    0.27 |  98.75
+qht   |    6 |  0.23 |    0.23 |  98.98
+ca    |    5 |  0.19 |    0.19 |  99.17
+da    |    4 |  0.15 |    0.15 |  99.32
+cs    |    3 |  0.11 |    0.11 |  99.43
+eu    |    3 |  0.11 |    0.11 |  99.54
+fi    |    3 |  0.11 |    0.11 |  99.66
+cy    |    2 |  0.08 |    0.08 |  99.73
+et    |    2 |  0.08 |    0.08 |  99.81
+ja    |    2 |  0.08 |    0.08 |  99.89
+lt    |    2 |  0.08 |    0.08 |  99.96
+is    |    1 |  0.04 |    0.04 | 100.00
+&lt;NA&gt;  |    0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>qme = only hashtags</p>
+<p>und = unidentified</p>
+</div>
+</section>
+</section>
+<section id="am-11.11.-um-1011" class="level2">
+<h2 class="anchored" data-anchor-id="am-11.11.-um-1011">Am 11.11. um 10:11?</h2>
+<section id="karneval-im-fokus-tweets-im-zeitverlauf" class="level4">
+<h4 class="anchored" data-anchor-id="karneval-im-fokus-tweets-im-zeitverlauf"><code>#Karneval</code> im Fokus: Tweets im Zeitverlauf</h4>
+<div class="cell" data-layout-align="center" data-fig.dpi="600">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(hour)) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(date)) <span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_pubr</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="utc-statt-utc1" class="level2">
+<h2 class="anchored" data-anchor-id="utc-statt-utc1">UTC statt UTC+1</h2>
+<section id="karneval-im-fokus-stärkste-konzentration-von-tweets" class="level4">
+<h4 class="anchored" data-anchor-id="karneval-im-fokus-stärkste-konzentration-von-tweets"><code>#Karneval</code> im Fokus: Stärkste Konzentration von Tweets</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(hm,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">sort.frq =</span> <span class="st">"desc"</span>, </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">min.frq =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>hm &lt;numeric&gt; 
+# total N=2637 valid N=2637 mean=48463.12 sd=16629.59
+
+Value    |    N | Raw % | Valid % | Cum. %
+------------------------------------------
+10:11:00 |   59 |  2.24 |    2.24 |   2.24
+10:12:00 |   14 |  0.53 |    0.53 |   2.77
+10:13:00 |   12 |  0.46 |    0.46 |   3.22
+16:54:00 |   12 |  0.46 |    0.46 |   3.68
+10:10:00 |   10 |  0.38 |    0.38 |   4.06
+11:29:00 |   10 |  0.38 |    0.38 |   4.44
+16:53:00 |   10 |  0.38 |    0.38 |   4.82
+n &lt; 10   | 2510 | 95.18 |   95.18 | 100.00
+&lt;NA&gt;     |    0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="ein-blick-auf-die-senderinnen" class="level2">
+<h2 class="anchored" data-anchor-id="ein-blick-auf-die-senderinnen">Ein Blick auf die Sender:Innen</h2>
+<section id="karneval-im-fokus-user-mit-den-meisten-tweets" class="level4">
+<h4 class="anchored" data-anchor-id="karneval-im-fokus-user-mit-den-meisten-tweets"><code>#Karneval</code> im Fokus: User mit den meisten Tweets</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval<span class="sc">$</span>user_username <span class="sc">%&gt;%</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">frq</span>(<span class="at">sort.frq =</span> <span class="st">"desc"</span>, </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">min.frq =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>x &lt;character&gt; 
+# total N=2637 valid N=2637 mean=976.88 sd=562.18
+
+Value           |    N | Raw % | Valid % | Cum. %
+-------------------------------------------------
+Gun17170309     |   65 |  2.46 |    2.46 |   2.46
+berlinaffaires  |   28 |  1.06 |    1.06 |   3.53
+Beratungszimmer |   19 |  0.72 |    0.72 |   4.25
+bartl_katrin    |   16 |  0.61 |    0.61 |   4.85
+rammwars        |   15 |  0.57 |    0.57 |   5.42
+free_cart9      |   12 |  0.46 |    0.46 |   5.88
+ploetschkoepp   |   12 |  0.46 |    0.46 |   6.33
+KespelHelau     |   11 |  0.42 |    0.42 |   6.75
+kryptomania84   |   10 |  0.38 |    0.38 |   7.13
+neussentweetet  |   10 |  0.38 |    0.38 |   7.51
+Raissoussama1   |   10 |  0.38 |    0.38 |   7.89
+n &lt; 10          | 2429 | 92.11 |   92.11 | 100.00
+&lt;NA&gt;            |    0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="r-stack">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(user_username <span class="sc">==</span> <span class="st">"Gun17170309"</span>) <span class="sc">%$%</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Tweet-ID: {tweet_id} </span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="st">    Inhalt:</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="st">    {text}</span><span class="sc">\n\n</span><span class="st">"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tweet-ID: 1591125966809878528 
+Inhalt:
+#FünfteJahreszeit #Fasching #Faschingsbeginn #fastnacht #Karneval  
+💙💚💛🧡❤️🤎💜💙
+https://t.co/peg7JWAKdN
+Karnevals-Klassiker: Rheinische Krapfen🤡 https://t.co/Am7A84C4Dj
+
+Tweet-ID: 1591120408102961153 
+Inhalt:
+RT @Gun17170309: #FünfteJahreszeit #Fasching #Faschingsbeginn #fastnacht #Karneval  
+💙💚💛🧡❤️🤎💜💙
+https://t.co/vZxzhaeUNY
+Fasching Berliner😋 h…
+
+Tweet-ID: 1591120391904587777 
+Inhalt:
+RT @Gun17170309: #FünfteJahreszeit #Fasching #Faschingsbeginn #fastnacht #Karneval  
+💙💚💛🧡❤️🤎💜💙
+https://t.co/6XKwts10gk
+Tätä-Tätä – Das Karn…
+
+Tweet-ID: 1591120367321419776 
+Inhalt:
+RT @Gun17170309: #FünfteJahreszeit #Fasching #Faschingsbeginn #fastnacht #Karneval  
+💙💚💛🧡❤️🤎💜💙
+So schnell gehen Berliner, Kreppel, Krapfenr…
+
+Tweet-ID: 1591120292436643840 
+Inhalt:
+#FünfteJahreszeit #Fasching #Faschingsbeginn #fastnacht #Karneval  
+💙💚💛🧡❤️🤎💜💙
+So schnell gehen Berliner, Kreppel, Krapfenräppel, Pfannkuchen, Krapfen,
+in Frankreich: „Boule de Berlin“
+in England „Jelly Doughnut“
+. . . einfach selber backen, lecker!
+https://t.co/mw3W1iynuL https://t.co/WQ45iMavLn
+
+Tweet-ID: 1591119195928166400 
+Inhalt:
+RT @Gun17170309: https://t.co/mw3W1igegD 
+#FünfteJahreszeit #Fasching #Faschingsbeginn #fastnacht #Karneval  
+💙💚💛🧡❤️🤎💜💙</code></pre>
+</div>
+</div>
+<div class="fragment" data-fragment-index="1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>tweets_karneval <span class="sc">%&gt;%</span> </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(user_username <span class="sc">==</span> <span class="st">"berlinaffaires"</span>) <span class="sc">%$%</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Tweet-ID: {tweet_id} </span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="st">    Inhalt:</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="st">    {text}</span><span class="sc">\n\n</span><span class="st">"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tweet-ID: 1591076515110060033 
+Inhalt:
+RT @berlinaffaires: #HauptstadtStudio #SanktMartin #Karneval #Fastnacht #Fasching #ElfteElfte der Himmel über Berlin
+Luftrettung Christoph…
+
+Tweet-ID: 1591076479663624192 
+Inhalt:
+#HauptstadtStudio #SanktMartin #Karneval #Fastnacht #Fasching #ElfteElfte der Himmel über Berlin
+Luftrettung Christoph Callsign fliegt immer noch hin und her #DHXCA #CHX31 #H135 #MASH #HelicopterSpotting https://t.co/OETymAoOL1
+
+Tweet-ID: 1591055201598701568 
+Inhalt:
+RT @berlinaffaires: #HauptstadtStudio #SanktMartin #Karneval #Fastnacht #Fasching #ElfteElfte der Himmel über Berlin
+Luftrettung Christoph…
+
+Tweet-ID: 1591055143579004928 
+Inhalt:
+#HauptstadtStudio #SanktMartin #Karneval #Fastnacht #Fasching #ElfteElfte der Himmel über Berlin
+Luftrettung Christoph Callsign #DHXCA #CHX31 #H135 #MASH #HelicopterSpotting #Funkturm https://t.co/jv22RwAgS9
+
+Tweet-ID: 1591043114181218306 
+Inhalt:
+RT @DresdenNews: #Karneval im #PieschenerRathaus: Am 11.11 übernehmen um 11:11 Uhr die #Närrinnen und #Narren der Initiative Karneval in #P…
+
+Tweet-ID: 1591042750408929280 
+Inhalt:
+RT @bernhardboeth: @hessenschau Was haben wir den ganzen Vormittag auf diesen Moment hingefiebert #Fasching #Fastnacht #Karneval https://t.…</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="time-for-questions" class="level1" data-background-color="#E6002E" data-background-image="../../00-images/background_questions.svg">
+<h1 data-background-color="#E6002E" data-background-image="../../00-images/background_questions.svg">Time for questions</h1>
+</section>
+<section id="bis-zur-nächsten-sitzung" class="level1" data-background-color="#E6002E" data-background-image="../../00-images/background_end_of_session.svg">
+<h1 data-background-color="#E6002E" data-background-image="../../00-images/background_end_of_session.svg">Bis zur nächsten Sitzung!</h1>
+<section id="literatur" class="level2">
+<h2 class="anchored" data-anchor-id="literatur">Literatur</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-barrie2021" class="csl-entry" role="doc-biblioentry">
+Barrie, C., &amp; Ho, J. (2021). academictwitteR: An r package to access the twitter academic research product track v2 API endpoint. <em>Journal of Open Source Software</em>, <em>6</em>(62), 3272. <a href="https://doi.org/10.21105/joss.03272">https://doi.org/10.21105/joss.03272</a>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022, Christoph Adrian</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/chrdrn/digital-behavioral-data">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/chrdrn">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

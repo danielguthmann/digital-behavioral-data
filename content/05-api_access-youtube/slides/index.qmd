@@ -1,0 +1,323 @@
+---
+title: "API-Access – YouTube" 
+title-slide-attributes:
+  data-background-image: ../../00-images/background_title.svg
+  data-background-color: "#04316a"
+subtitle: "Digital behavioral data - Session 04"
+author: 
+  - name: Christoph Adrian 
+    url: https://twitter.com/chrdrn
+    affiliation: Lehrstuhl für Kommunikationswissenschaft
+    affiliation-url: https://www.kowi.rw.fau.de/person/christoph-adrian/
+date: 23 11 2022
+date-format: "DD.MM.YYYY"
+format:
+  revealjs:
+    theme: ../../slidetheme.scss
+    template-partials:
+      - title-slide.html
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: ../../logo.png
+    footer: "[Digital Behavioral Data](https://chrdrn.github.io/digital-behavioral-data/)"
+highlight-style: atom-one
+comments:
+  hypothesis: 
+    theme: clean
+filters:
+  - roughnotation
+execute:
+  echo: true
+csl: ../../apa.csl
+bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
+---
+
+## Seminarplan {.smaller}
+
+| Sitzung                                              | Datum                                                         | Thema                                                                            | Referent\*Innen                                                     |
+|-----------------|-----------------|---------------------|------------------|
+| [1]{.rn rn-type="strike-through" rn-color="#E6002E"} | [26.10.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Kick-Off Session]{.rn rn-type="strike-through" rn-color="#E6002E"}              | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
+| [2]{.rn rn-type="strike-through" rn-color="#E6002E"} | [02.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Einführung und Überblick]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
+| [3]{.rn rn-type="strike-through" rn-color="#E6002E"} | [09.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Datenerhebung]{.rn rn-type="strike-through" rn-color="#E6002E"}            | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
+| [**4**]{.rn rn-type="highlight"}                     | [**16.11.2022**]{.rn rn-type="highlight"}                     | [**API-Access (I): Twitter**]{.rn rn-type="highlight"}                           | [Falk]{.rn rn-type="highlight"}                                     |
+| 5                                                    | 23.11.2022                                                    | API-Access (II): *YouTube*                                                       | Denisov                                                             |
+| 6                                                    | 30.11.2022                                                    | API-Access (II): *Reddit*                                                        | Landauer                                                            |
+| 7                                                    | 07.12.2022                                                    | Webscraping: *TikTok*                                                            | Brand & Kocher                                                      |
+| 8                                                    | 14.12.2022                                                    | Exkurs: DBD Analyse mit R                                                        | Christoph Adrian                                                    |
+|                                                      |                                                               | *WEIHNACHTSPAUSE*                                                                |                                                                     |
+| 9                                                    | 12.01.2023                                                    | ESM: *m-path*                                                                    | Dörr                                                                |
+| 10                                                   | 19.01.2023                                                    | Data Donations                                                                   | Hofmann & Wierzbicki                                                |
+| 11                                                   | 26.01.2023                                                    | *PUFFER*                                                                         |                                                                     |
+| 12                                                   | 02.02.2023                                                    | *Guest Lecture: Linking DBD & Survey data*                                       | [Johannes Breuer](https://www.johannesbreuer.com/)                  |
+| 13                                                   | 09.02.2023                                                    | Semesterabschluss & Evaluation                                                   | Christoph Adrian                                                    |
+
+::: notes
+▶️
+:::
+
+# Agenda
+
+1.  **Group Activity**
+2.  **Beispielhafte Anwendungen**
+
+# Group Activity {background-color="#E6002E" background-image="../../00-images/background_group_activity.svg"}
+
+Fragen & Gruppenarbeit
+
+## Vielen Dank für Ihre Fragen! {.scrollable .smaller}
+
+::: {.fragment .semi-fade-out fragment-index="1"}
+> Was genau kann unter "N-gram analysis" verstanden werden?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="1"}
+> Um semantische Muster der Daten bei der Twitter-Forschung zu erkennen, wendet man häufig Text-Mining-Methoden an. Wie wird dabei mit ironischen Aussagen oder Umgangssprache umgegangen? Sind solche Analysemethoden somit überhaupt verlässlich oder kann man diesbezüglich mit einer hohen Fehleranfälligkeit rechnen?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="2"}
+> Viele Studien verwenden Twitter in der Forschung. Dabei werden verschiedene Methoden eingesetzt. Welche Methode (aus Table 4 des Pflichtpapers) würden Sie am meisten empfehlen? Welche ist am aussagekräftigsten? Oder ist das Kontext-bezogen und eine allgemeine Aussage kann nicht getätigt werden?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="3"}
+> Interessant wäre es in diesem Kontext vielleicht nicht nur Twitter, sondern eine andere Social-Media-Plattform zu betrachten, zum Bsp. Facebook. Würden die dominierenden Themen der Facebook-basierten Forschung ähnlich wie bei Twitter ausfallen? Wie sieht wohl die Entwicklung der Themen in den letzten Jahren aus?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="4"}
+> Interessant wäre es in diesem Kontext vielleicht nicht nur Twitter, sondern eine andere Social-Media-Plattform zu betrachten, zum Bsp. Facebook. Würden die dominierenden Themen der Facebook-basierten Forschung ähnlich wie bei Twitter ausfallen? Wie sieht wohl die Entwicklung der Themen in den letzten Jahren aus?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="5"}
+> Twitter wird unter anderem für „Opinion Mining“ verwendet. Jedoch kann es gerade bei polarisierenden Themen vorkommen, dass sich vor allem Personen mit extremer Meinung äußern und die Personen mittig im Spektrum zurückhalten. Wie kann man einen solchen Bias ausgleichen?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="6"}
+> Es kann nur ein kleiner Bruchteil der Twitter-Kommunikation per API abgefragt werden, der zudem noch veraltet ist. Inwieweit sind Trend-Analysen überhaupt möglich? Gibt es Möglichkeiten Twitter-Kommunikation zu "streamen"?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="7"}
+> Eine gute Studie lebt von den Kriterien der Validität, Objektivität und Reliabilität. Inwieweit können diese Kriterien bei einer Twitter-Analyse erfüllt werden?
+:::
+
+::: {.fragment .fade-in-then-semi-out fragment-index="8"}
+> Was sind die Gründe für den Rückgang der Forschung mit Twitter-Daten rund um das Thema Marketing?
+:::
+
+
+## Suchanfrage erstellen & Daten sammeln
+
+#### Twitter case study - Teil 1: Suchen & Sammeln
+
+::: {.callout-important appearance="simple"}
+Für die Nutzung des [Tweet Downloader](https://developer.twitter.com/apitools/downloader) benötigen Sie einen `Bearer Token`. Diesen finden Sie auf MS Teams.
+:::
+
+Wäheln Sie eine der folgenden Szenarien aus und erstellen Sie eine Suchanfrage mit Hilfe des [Twitter Query Builder](https://developer.twitter.com/apitools/query?query=):
+
+-   Alle Tweets eines **bestimmten Accounts** seit dem **01.10.2022**
+
+-   Alle Tweets ([ohne Retweets]{.underline}) **mit dem Hashtag** `#karneval` oder `#wokwm` am **letzten Wochenende**
+
+... und ziehen sich die Tweets **als .csv & .json** mit Hilfe des [Tweet Downloader](https://developer.twitter.com/apitools/downloader) (*benötigt Chrome, Edge oder Opera*)
+
+## Format der Daten & potentielle Analyse(n)
+
+#### Twitter case study - Teil 2: Sichten & Konzipieren
+
+1.  Inspizieren Sie anschließend die Datensätze und schauen Sie, welche Informationen Ihnen geliefert werden.
+
+    -   Wie unterscheiden sich die Datenformate?
+
+<br>
+
+2.  Auf Basis der gesichteten Daten ...
+
+    -   Wie würden Sie die Daten analyiseren bzw. welche Aspekte würden Sie sich anschauen?
+
+    -   Welche potentielle Fragestellungen könnten Sie spontan entwickeln?
+
+# Beispielhafte Auswertungen {background-color="#E6002E"}
+
+Im Fokus: `#Karneval`
+
+```{r}
+#| echo: false
+
+# Load packages
+library(academictwitteR) # Collecting the data
+library(tidyverse) # Preparation of the data
+library(quanteda) # Text mining
+library(quanteda.textstats) # Text statistics
+library(quanteda.textplots) # Visualisation of text data
+library(here)
+library(sjmisc)
+library(lubridate)
+library(ggthemes)
+library(ggpubr)
+
+# Load data 
+tweets_karneval <- bind_tweets(
+  data_path = here("content/04-api_access-twitter/data/raw_karneval"),
+  # data_path = "data/raw_karneval",
+  output_format = "tidy") %>% 
+    mutate(
+    datetime = ymd_hms(created_at),
+    date = date(datetime),
+    hour = hour(datetime),
+    min  = minute(datetime),
+    hms  = hms::as_hms(datetime),
+    hm   = hms::parse_hm(hms)
+  )
+  
+```
+
+## Setup und Datensammlung mit R
+
+#### `#Karneval` im Fokus: Hintergrund und Datensammelung
+
+::: columns
+::: {.column width="50%"}
+Alle Tweets herunterladen, die
+
+-   **`#Karneval`** enthalten
+
+-   zwischen **00:00 am 11.11.2022** und **12:00 am 13.12.2022** erschienen sind
+
+Weiterverarbeitung und Auswertung der Daten mit R, Fokus auf Paket `academictwitteR` [@barrie2021]
+:::
+
+::: {.column width="50%"}
+Sammlung der Daten mit `academictwitteR`:
+
+```{r}
+#| code-line-numbers: "|2|3|4|7"
+#| eval: false
+
+get_all_tweets(
+  query = "#Karneval", 
+  start_tweets = "2022-11-11T00:00:00Z",
+  end_tweets = "2022-11-13T12:00:00Z",
+  file = "karneval",
+  data_path = "data/raw_karneval/",
+  n = 100000
+  )
+```
+:::
+:::
+
+## Kurzer Blick in die Daten
+
+#### `#Karneval` im Fokus: Datenübersicht
+
+```{r}
+tweets_karneval %>% glimpse()
+
+```
+
+## Deutsch, Hashtags, Englisch ...
+
+#### `#Karneval` im Fokus: Sprache der Tweets
+
+::: columns
+::: {.column width="50%"}
+```{r}
+table(tweets_karneval$lang)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+frq(tweets_karneval$lang, sort.frq = "desc")
+```
+:::
+:::
+
+::: notes
+qme = only hashtags
+
+und = unidentified
+:::
+
+## Am 11.11. um 10:11?
+
+#### `#Karneval` im Fokus: Tweets im Zeitverlauf
+
+```{r}
+#| fig-dpi: 600
+#| fig-align: center
+
+tweets_karneval %>% 
+  ggplot(aes(hour)) +
+  geom_bar() +
+  facet_grid(cols = vars(date)) +
+  theme_pubr()
+```
+
+## UTC statt UTC+1
+
+#### `#Karneval` im Fokus: Stärkste Konzentration von Tweets
+
+```{r}
+tweets_karneval %>%
+  frq(hm,
+      sort.frq = "desc", 
+      min.frq = 10)
+```
+
+## Ein Blick auf die Sender:Innen
+
+#### `#Karneval` im Fokus: User mit den meisten Tweets
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| layout-align: center
+
+tweets_karneval$user_username %>% 
+  frq(sort.frq = "desc", 
+      min.frq = 10)
+```
+:::
+
+::: {.column width="50%"}
+::: r-stack
+```{r}
+
+tweets_karneval %>% 
+  filter(user_username == "Gun17170309") %$% 
+  glue::glue(
+    "Tweet-ID: {tweet_id} 
+    Inhalt:
+    {text}\n\n") %>% 
+  head()
+
+```
+
+::: {.fragment fragment-index="1"}
+```{r}
+
+tweets_karneval %>% 
+  filter(user_username == "berlinaffaires") %$% 
+  glue::glue(
+    "Tweet-ID: {tweet_id} 
+    Inhalt:
+    {text}\n\n") %>% 
+  head()
+
+```
+:::
+:::
+:::
+:::
+
+# Time for questions {background-color="#E6002E" background-image="../../00-images/background_questions.svg"}
+
+# Bis zur nächsten Sitzung! {background-color="#E6002E" background-image="../../00-images/background_end_of_session.svg"}
+
+## Literatur
+
+::: {#refs}
+:::

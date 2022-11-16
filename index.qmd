@@ -50,7 +50,7 @@ Below is the scheudle for the current semester.
 | 3                   | 09.11.2022                   | DBD: Data collection process in focus           |
 | 4                   | 16.11.2022                   | API-Access (I): *Twitter*                       |
 | 5                   | 23.11.2022                   | API-Access (II): *YouTube*                      |
-| 6                   | 30.11.2022                   | API-Access (II): *Reddit*                       |
+| 6                   | 30.11.2022                   | API-Access (III): *Reddit*                       |
 | 7                   | 07.12.2022                   | Webscraping: *TikTok*                           |
 | 8                   | 14.12.2022                   | ESM: *m-path*                                   |
 | -                   | -                            | *CHRISTMAS BREAK*                               |

@@ -1,5 +1,6 @@
 ---
 title: "Showcase: YouTube"
+subtitle: "Focus on YouTube Data Tools"
 format: 
   html:
     toc: true
@@ -16,14 +17,25 @@ editor_options:
   chunk_output_type: console
 ---
 
+## Background
+
+Practical application of the YouTube Data Tool (YTDT) using the example of Mai Thi Nguyen-Kim ( [{{< fa brands twitter >}}](https://twitter.com/maithi_nk) \| [{{< fa brands instagram >}}](https://www.instagram.com/maithink/) ) and her [{{< fa brands youtube >}}](https://www.youtube.com/c/maiLab)-Channel [maiLab](https://www.youtube.com/c/maiLab).
+
+#### Assignments
+
+1.  Use the Channel Search Function of the YTDT to find the correct `channel ID` for [{{< fa brands youtube >}}](https://www.youtube.com/c/maiLab)-Channel [maiLab](https://www.youtube.com/c/maiLab). Therefore, enter "*mailab*" in the field `search query` and download the results as `.csv`. Open the file and search extract the correct channel ID.\
+    If in doubt, use `Channel Info` function to check if the selected ID matches the channel description.
+
 ## Preparation
+
 ### Load necessary packages
+
 ```{r load packages}
-library(academictwitteR) # Collecting the data
 library(tidyverse) # Preparation of the data
 library(quanteda) # Text mining
 library(quanteda.textstats) # Text statistics
 library(quanteda.textplots) # Visualisation of text data
+library(readr) # Data import
 library(here)
 library(sjmisc)
 library(lubridate)
@@ -31,244 +43,48 @@ library(ggthemes)
 library(ggpubr)
 ```
 
-## Set personal bearer token
-```{r set bearer}
-personal_bearer_token <- "INSERT BEARER TOKEN HERE"
+## Identify `Channel ID`
+
+### Import data
+
+From `Channel Search` results from YTDT
+
+```{r}
+channel_search <- read_csv(
+  here(
+    "content/05-api_access-youtube/data/channelsearch_channels50_2022_11_16-19_45_44.csv"))
+
+# Preview
+channel_search %>% glimpse
 ```
 
+### Explorative analysis
 
-## Mining tweets: hashtag(s)
-### Data collection
-```{r mine tweets hashtag}
-#| eval: false
+#### Identify correct ID
 
-get_all_tweets(
-    query = "#Karneval", 
-    start_tweets = "2022-11-11T00:00:00Z",
-    end_tweets = "2022-11-13T12:00:00Z",
-    file = "karneval",
-    data_path = "data/raw_karneval/",
-    n = 100000,
-    #bearer_token = personal_bearer_token
-  )
+```{r}
+# Overview
+channel_search %>%
+  select(position , id, title)
 ```
 
-#### Read data from disc
-```{r read tweets hashtag}
-tweets_karneval <- bind_tweets(
-  data_path = here("content/04-api_access-twitter/data/raw_karneval"),
-  output_format = "tidy") %>% 
-    mutate(
-    datetime = ymd_hms(created_at),
-    date = date(datetime),
-    hour = hour(datetime),
-    min  = minute(datetime),
-    hms  = hms::as_hms(datetime),
-    hm   = hms::parse_hm(hms)
-  )
+## Get channel video list
+
+### Import data
+
+```{r}
+video_list <- read_csv(
+  here(
+    "content/05-api_access-youtube/data/videolist_channel186_2022_11_16-20_50_14.csv"))
+
+# Preview
+video_list %>% glimpse
 ```
 
-### Data analysis
-#### Overview of dataset
-```{r hashtag analysis overview}
-tweets_karneval %>% glimpse
+### Explorative analysis
+
+#### Video uploads over time
+
+```{r}
+
 ```
-
-#### Language of tweets
-```{r hashtag analysis language}
-frq(tweets_karneval$lang, sort.frq = "desc")
-```
-
-#### Tweets over time
-```{r hashtag analysis time}
-tweets_karneval %>% 
-  ggplot(aes(hour)) +
-  geom_bar() +
-  facet_grid(cols = vars(date)) +
-  theme_pubr()
-```
-
-#### Most frequent time (HH:MM) of sending tweets
-```{r hashtag analysis time peaks}
-tweets_karneval %>%
-  frq(hm,
-      sort.frq = "desc", 
-      min.frq = 10)
-```
-
-#### User with the most tweets
-```{r hashtag analysis frequent users}
-tweets_karneval %>% 
-  frq(user_username,
-      sort.frq = "desc", 
-      min.frq = 5)
-```
-
-#### Display tweets from most freuquent users
-```{r hashtag analysis user example 1}
-tweets_karneval %>% 
-  filter(user_username == "Gun17170309") %$% 
-  glue::glue(
-    "Tweet-ID: {tweet_id} 
-    Inhalt:
-    {text}\n\n") %>% 
-  head()
-```
-
-```{r hashtag analysis user example 2}
-tweets_karneval %>% 
-  filter(user_username == "berlinaffaires") %$% 
-  glue::glue(
-    "Tweet-ID: {tweet_id} 
-    Inhalt:
-    {text}\n\n") %>% 
-  head()
-```
-
-
-## Mining tweets: profile(s)
-### Data collection
-```{r mine tweets profile}
-#| eval: false
-
-get_all_tweets(
-    users = c("elonmusk"),
-    start_tweets = "2020-11-11T00:00:00Z",
-    end_tweets = "2022-11-13T12:00:00Z",
-    file = "elonmusk",
-    data_path = here("content/04-api_access-twitter/data/raw_elonmusk/"),
-    n = 100000,
-    bearer_token = personal_bearer_token
-  )
-```
-
-#### Read data from disc
-```{r read tweets profile}
-tweets_musk <- bind_tweets(
-  data_path = here("content/04-api_access-twitter/data/raw_elonmusk"),
-  # data_path = "data/raw_karneval",
-  output_format = "tidy") %>% 
-    mutate(
-    datetime = ymd_hms(created_at),
-    date = date(datetime),
-    hour = hour(datetime),
-    min  = minute(datetime),
-    hms  = hms::as_hms(datetime),
-    hm   = hms::parse_hm(hms)
-  )
-```
-
-### Data analysis
-#### Overview of dataset
-```{r profile analysis overview}
-tweets_musk %>% glimpse
-```
-
-#### Tweets over time
-```{r profile analysis time}
-tweets_musk %>% 
-  ggplot(aes(date)) +
-  geom_bar() +
-  theme_pubr()
-```
-
-#### Tweets with the most likes
-```{r profile analysis most likes}
-tweets_musk %>% 
-  filter(is.na(sourcetweet_type)) %>% 
-  arrange(-like_count) %>% 
-  select(text, created_at, like_count) %>% 
-  head(10)
-```
-
-#### Tweets with the most retweets
-```{r profile analysis most retweets}
-tweets_musk %>% 
-  filter(is.na(sourcetweet_type)) %>% 
-  arrange(-retweet_count) %>% 
-  select(text, created_at, retweet_count) %>% 
-  head(10)
-```
-
-#### Proportion of tweets
-```{r profile analysis tweet type}
-tweets_musk %>% 
-  frq(sourcetweet_type)
-```
-
-#### Languate of tweets
-```{r profile analysis language}
-tweets_musk %>% 
-  frq(lang)
-```
-
-
-## Text mining
-### Preprocessing
-```{r text mining preprocessing}
-remove_html <- "&amp;|&lt;|&gt;"
-
-tweets_en <- tweets_musk %>% 
-  filter(lang == "en",
-         is.na(sourcetweet_type)) %>% 
-  select(tweet_id, text, user_username) %>% 
-  mutate(text = str_remove_all(text, remove_html))
-```
-
-```{r text mining corpus creation}
-tweets_en_corpus <- corpus(tweets_en,
-                           docid_field = "tweet_id",
-                           text_field = "text")
-```
-
-```{r text mining tokenization}
-tweets_en_tokens <- 
-  tokens(tweets_en_corpus,
-         remove_punct = TRUE,
-         remove_numbers = TRUE,
-         remove_symbols = TRUE,
-         remove_url = TRUE) %>% 
-  tokens_tolower() %>% 
-  tokens_remove(stopwords("english"))
-```
-
-```{r text mining dfm creation}
-tweets_en_dfm <- dfm(tweets_en_tokens)
-```
-
-### Analysis
-#### Top Hashtags
-```{r corpus analysis top hashtags}
-tag_dfm <- dfm_select(tweets_en_dfm, pattern = "#*")
-toptag <- names(topfeatures(tag_dfm, 50))
-head(toptag, 10)
-```
-
-#### Top Mentions
-```{r corpus analysis top metions}
-user_dfm <- dfm_select(tweets_en_dfm, pattern = "@*")
-topuser <- names(topfeatures(user_dfm, 50))
-head(topuser, 10)
-```
-
-#### Exclude Hashtags & Metions
-```{r corpus analysis dfm processing}
-tweets_en_clean <- tweets_en_dfm %>% 
-  dfm_remove(pattern = "@*") %>% 
-  dfm_remove(pattern = "#*")
-```
-
-#### Top 10 features
-```{r corpus analysis top features}
-term_freq_en <- textstat_frequency(tweets_en_clean)
-head(term_freq_en, n = 10)
-```
-
-#### Wordcloud with Top 50 features
-```{r corpus analysis top features wordcloud}
-textplot_wordcloud(tweets_en_clean, max_words = 50)
-```
-
-
-
-

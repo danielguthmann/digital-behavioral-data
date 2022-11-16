@@ -3,7 +3,7 @@ title: "API-Access – YouTube"
 title-slide-attributes:
   data-background-image: ../../00-images/background_title.svg
   data-background-color: "#04316a"
-subtitle: "Digital behavioral data - Session 04"
+subtitle: "Digital behavioral data - Session 05"
 author: 
   - name: Christoph Adrian 
     url: https://twitter.com/chrdrn
@@ -31,7 +31,6 @@ filters:
 execute:
   echo: true
 csl: ../../apa.csl
-bibliography: references.bib
 editor_options: 
   chunk_output_type: console
 ---
@@ -39,12 +38,12 @@ editor_options:
 ## Seminarplan {.smaller}
 
 | Sitzung                                              | Datum                                                         | Thema                                                                            | Referent\*Innen                                                     |
-|-----------------|-----------------|---------------------|------------------|
+|------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | [1]{.rn rn-type="strike-through" rn-color="#E6002E"} | [26.10.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Kick-Off Session]{.rn rn-type="strike-through" rn-color="#E6002E"}              | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
 | [2]{.rn rn-type="strike-through" rn-color="#E6002E"} | [02.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Einführung und Überblick]{.rn rn-type="strike-through" rn-color="#E6002E"} | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
 | [3]{.rn rn-type="strike-through" rn-color="#E6002E"} | [09.11.2022]{.rn rn-type="strike-through" rn-color="#E6002E"} | [DBD: Datenerhebung]{.rn rn-type="strike-through" rn-color="#E6002E"}            | [Christoph Adrian]{.rn rn-type="strike-through" rn-color="#E6002E"} |
-| [**4**]{.rn rn-type="highlight"}                     | [**16.11.2022**]{.rn rn-type="highlight"}                     | [**API-Access (I): Twitter**]{.rn rn-type="highlight"}                           | [Falk]{.rn rn-type="highlight"}                                     |
-| 5                                                    | 23.11.2022                                                    | API-Access (II): *YouTube*                                                       | Denisov                                                             |
+| [4]{.rn rn-type="highlight"}                         | [16.11.2022]{.rn rn-type="highlight"}                         | [API-Access (I): Twitter]{.rn rn-type="highlight"}                               | [Falk]{.rn rn-type="highlight"}                                     |
+| **5**                                                | **23.11.2022**                                                | **API-Access (II): *YouTube***                                                   | **Denisov**                                                         |
 | 6                                                    | 30.11.2022                                                    | API-Access (II): *Reddit*                                                        | Landauer                                                            |
 | 7                                                    | 07.12.2022                                                    | Webscraping: *TikTok*                                                            | Brand & Kocher                                                      |
 | 8                                                    | 14.12.2022                                                    | Exkurs: DBD Analyse mit R                                                        | Christoph Adrian                                                    |
@@ -61,12 +60,13 @@ editor_options:
 
 # Agenda
 
-1.  **Group Activity**
-2.  **Beispielhafte Anwendungen**
+1.  **Verständnis- und Diskussionsfragen**
+2.  **Group Activity**
+3.  **Beispielhafte Anwendungen**
 
-# Group Activity {background-color="#E6002E" background-image="../../00-images/background_group_activity.svg"}
+# **Verständnis- und Diskussionsfragen** {background-color="#E6002E" background-image="../../00-images/background_participation.svg"}
 
-Fragen & Gruppenarbeit
+Ihre Fragen aus MS Teams
 
 ## Vielen Dank für Ihre Fragen! {.scrollable .smaller}
 
@@ -91,7 +91,7 @@ Fragen & Gruppenarbeit
 :::
 
 ::: {.fragment .fade-in-then-semi-out fragment-index="5"}
-> Twitter wird unter anderem für „Opinion Mining“ verwendet. Jedoch kann es gerade bei polarisierenden Themen vorkommen, dass sich vor allem Personen mit extremer Meinung äußern und die Personen mittig im Spektrum zurückhalten. Wie kann man einen solchen Bias ausgleichen?
+> Twitter wird unter anderem für „Opinion Mining" verwendet. Jedoch kann es gerade bei polarisierenden Themen vorkommen, dass sich vor allem Personen mit extremer Meinung äußern und die Personen mittig im Spektrum zurückhalten. Wie kann man einen solchen Bias ausgleichen?
 :::
 
 ::: {.fragment .fade-in-then-semi-out fragment-index="6"}
@@ -106,6 +106,27 @@ Fragen & Gruppenarbeit
 > Was sind die Gründe für den Rückgang der Forschung mit Twitter-Daten rund um das Thema Marketing?
 :::
 
+# Group Activity {background-color="#E6002E" background-image="../../00-images/background_group_activity.svg"}
+
+Gruppenarbeit `YouTube Data Tools`
+
+## What is it an who made it
+
+#### Hintergrundinformationen [`YouTube Data Tools`](https://tools.digitalmethods.net/netvizz/youtube/index.php)
+
+-   Sammlung von einfachen Modulen zur Extraktion von Daten aus der YouTube-Plattform über die YouTube-API v3.
+
+-   Keine voll entwickelte Analysesoftware, sondern ein Mittel für Forschende, um Daten in Standarddateiformaten zu sammeln und in anderen Softwarepaketen weiter zu analysieren.
+
+-   geschrieben, entwickelt und gepflegt von [Bernhard Rieder](https://www.uva.nl/en/profile/r/i/b.rieder/b.rieder.html) (Universität Amsterdam)
+
+## And now ... you!
+
+#### Beispielhafte Nutzung
+
+1.  Channel Search nach `maiLab`
+
+#### 
 
 ## Suchanfrage erstellen & Daten sammeln
 

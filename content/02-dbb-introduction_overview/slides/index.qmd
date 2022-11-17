@@ -475,7 +475,7 @@ Behavioral biases that are expressed as lexical, syntactic, semantic, and struct
 
 -   **Kontextbedingte Faktore**n (z.B. zwischenmenschliche Beziehungen) beeinflussen die Art und Weise, wie Benutzer sprechen.[^9]
 
--   Die Inhalte von **bekannten oder "erfahrenen" Nutzer*innen***unterscheiden sich von denen der normalen Nutzer\*innen.[^10]
+-   Die Inhalte von **bekannten oder "erfahrenen" Nutzer*innen*** unterscheiden sich von denen der normalen Nutzer\*innen.[^10]
 
 -   **Unterschiedliche Bevölkerungsgruppen** haben unterschiedliche **Neigungen**, über bestimmte **Themen** zu sprechen.[^11]
 
@@ -548,7 +548,7 @@ Systematic distortions across user populations or behaviors over time.
 
 -   **Saisonale** und **periodische** **Phänomene**[^20][^21].
 
--   **Plötzlich** **auftretende Phänomene** *(z.B. Anstieg oder Rückgang von besteimmten Aktivitäten*[^22] oder externe Ereignisse wie z.B. Katastrophen) wirken sich auf Populationen, Verhaltensweisen und Plattformen aus.
+-   **Plötzlich** **auftretende Phänomene** *(z.B. Anstieg oder Rückgang von bestimmten Aktivitäten*[^22] oder externe Ereignisse wie z.B. Katastrophen) wirken sich auf Populationen, Verhaltensweisen und Plattformen aus.
 
 -   Die **zeitliche Granularität** kann zu **feinkörnig** sein, um langfristige Phänomene zu beobachten, und zu **grobkörnig** sein, um kurzlebige Phänomene zu beobachten.
 
@@ -684,15 +684,15 @@ Punkt 3: Datenanalyse beispielsweise erforderlich sein, um wichtige Dienste bere
 
 ## Achtung der individuellen Autonomie {.smaller}
 
-#### Diskussion der Informierte Zustimmung als Indikator autonomer Entscheidung
+#### Diskussion der Informierten Zustimmung als Indikator autonomer Entscheidung
 
 **Die Einwilligung nach Aufklärung setzt voraus, dass**
 
 1.  die Forscher\*Innen den potenziellen Teilnehmenden alle **relevanten Informationen offenlegen**;
 2.  die potenziellen Teilnehmenden **in der Lage** sind, diese **Informationen zu bewerten;**
 3.  die potenziellen Teilnehmenden **freiwillig entscheiden** können, ob sie **teilnehmen** wollen oder nicht;
-4.  die Teilnehmenden den Forschernden ihre **ausdrückliche Erlaubnis erteilen**, häufig in schriftlicher Form; und
-5.  die Teilnehmende die Möglichkeit haben, ihre **Einwilligung jederzeit zurückzuziehen**.
+4.  die Teilnehmenden den Forschenden ihre **ausdrückliche Erlaubnis erteilen**, häufig in schriftlicher Form; und
+5.  die Teilnehmenden die Möglichkeit haben, ihre **Einwilligung jederzeit zurückzuziehen**.
 
 <br>
 
@@ -778,9 +778,9 @@ Beispiel 1: Einige prominente Beispiele sind die Datenpanne bei Ashley Madison i
 
 **Trend 1: Eine zunehmende Skepsis gegenüber einfachen Antworten**
 
-1.  Wie einstehen die Daten, was enthalten sie tatsächlich und wie die Arbeitsdatensätze zusammengestellt?
+1.  Wie entstehen die Daten, was enthalten sie tatsächlich und wie die Arbeitsdatensätze zusammengestellt?
 
-2.  Wird deutlich, was was ausgewertet wird?
+2.  Wird deutlich, was ausgewertet wird?
 
 3.  Wird die Verwendung von vorgefertigten Datensätzen und Modellen des maschinellen Lernens hinterfragt?
 
